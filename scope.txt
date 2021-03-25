@@ -1,0 +1,59 @@
+Conceptual scope 
+
+How 'big' is your project? What's the balance between the serious and playful sides?  
+
+- With the use of a visual aid we are looking to produce a single webpage application that helps reduce procrastination and provides an insight into the important issue of droughts in Africa. While this project has different aspects we have focused on the simplicity of the idea to ensure we produce a high quality product with helping solve a serious issue but using a competitive/playful aspect to it. 
+
+Are you looking to raise awareness about your serious issue or to provoke a changes in attitudes / behaviour. If so, is this with a particular demographic/group? 
+
+- While we are raising important awareness for a charitable issue, we are looking to have a playful side in the sense that we want to create a competitive area for students/employees to compete on how much time they spend working.  
+
+-- For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
+
+-- For Asaqua, we are looking to raise awareness for an important issue around droughts and water supply in developing nations in Africa. Our initial plan is to have an interactive information part at the end of the 45 mins for a 5 minute break – information about the Ngo story and work Gordon is doing.  
+
+What are the primary objectives for your project? Are there any you could prioritise? 
+
+- Our initial demographic group is students aged 16-24 including school and university students. We realise there is scope to extend this out to employees to help those working from home and tracking their work concentration however given the short timeline of this project we have decided to focus on the demographic we understand the best given we are students ourselves. 
+
+Our key objectives: 
+
+- Aesthetically pleasing front-end with bright colour scheme and bold visual aids. 
+
+- Easy sign up using Facebook to start with (if there is scope we would also like to sign up via LinkedIn or Google). 
+
+- Has to be a competitive aspect that is a leader board between friends or peers – this can be in the form of graphical representation or a swimming race (link with water as the theme).  
+
+- Insightful and interactive information around Asaqua and the work they do for helping countries with drought issues.  
+
+- Have a google adds area on the page – show to investors as source of income from the page.  
+
+Technical Scope 
+
+- We have split the roles across the frontend and backend. Technical development supports our idea. We have tried to focus on simplicity and clarity of thought when assigning work for this project given limited time and resources. On the frontend, we have begun a focus on CCS, HTML, JavaScript as well as Adobe for the graphical interface and development of the visual aid. On the backend, there is a focus on … particularly around how we are integrating the Facebook API with our database and restful API. The main integration between the frontend and backend will be around developing the competitive/playful aspect showing the leader board in the chosen way. 
+
+Need to develop user stories. TODO. 
+
+Evaluation Scope 
+
+To be considered over the next week. 
+
+Next steps: 
+
+- Push a boiler plate website to the repository. 
+
+- Start assigning areas of the report across the team over Easter. 
+
+- Devise a plan for sprints – need to avoid Java time at all costs as they’ll be sure to set us a large amount of work for us again. 
+
+Frontend focus:  
+
+- Learning CSS, HTML, JavaScript and Adobe. 
+
+- Designing the user story and finalise a paper prototype using models. 
+
+Backend focus: 
+
+- Integration of restful and Facebook API to collect data and show leader board 
+
+- Management of mongodb. 
