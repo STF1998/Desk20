@@ -8,9 +8,15 @@ Are you looking to raise awareness about your serious issue or to provoke a chan
 
 - While we are raising important awareness for a charitable issue, we are looking to have a playful side in the sense that we want to create a competitive area for students/employees to compete on how much time they spend working.  
 
+Hugh
+- For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
+
+- For Asaqua, we are looking to raise awareness for an important issue around droughts and water supply in developing nations in Africa. Our initial plan is to have an interactive information part at the end of the 45 mins for a 5 minute break – information about the Ngo story and work Gordon is doing.  
+
 -- For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
 
 -- For Asaqua, we are looking to raise awareness for an important issue around droughts and water supply in developing nations in Africa. Our initial plan is to have an interactive information part at the end of the 45 mins for a 5 minute break – information about the Ngo story and work Gordon is doing.  
+
 
 What are the primary objectives for your project? Are there any you could prioritise? 
 
@@ -28,11 +34,22 @@ Our key objectives:
 
 - Have a google adds area on the page – show to investors as source of income from the page.  
 
+Hugh
+
+Technical Scope 
+
+We have split the roles across the frontend and backend. Technical development supports our idea. We have tried to focus on simplicity and clarity of thought when assigning work for this project given limited time and resources. On the frontend, we have begun a focus on CCS, HTML, JavaScript as well as Adobe for the graphical interface and development of the visual aid. On the backend, there is a focus on … particularly around how we are integrating the Facebook API with our database and restful API. The main integration between the frontend and backend will be around developing the competitive/playful aspect showing the leader board in the chosen way. 
+
+Need to develop user stories. TODO. 
+
+
+=======
 Technical Scope 
 
 - We have split the roles across the frontend and backend. Technical development supports our idea. We have tried to focus on simplicity and clarity of thought when assigning work for this project given limited time and resources. On the frontend, we have begun a focus on CCS, HTML, JavaScript as well as Adobe for the graphical interface and development of the visual aid. On the backend, there is a focus on … particularly around how we are integrating the Facebook API with our database and restful API. The main integration between the frontend and backend will be around developing the competitive/playful aspect showing the leader board in the chosen way. 
 
 Need to develop user stories. TODO. 
+
 
 Evaluation Scope 
 
@@ -46,6 +63,19 @@ Next steps:
 
 - Devise a plan for sprints – need to avoid Java time at all costs as they’ll be sure to set us a large amount of work for us again. 
 
+ Hugh
+- Frontend focus:  
+
+- - Learning CSS, HTML, JavaScript and Adobe. 
+
+- - Designing the user story and finalise a paper prototype using models. 
+
+- Backend focus: 
+
+- - Integration of restful and Facebook API to collect data and show leader board 
+
+- - Management of mongodb. 
+
 Frontend focus:  
 
 - Learning CSS, HTML, JavaScript and Adobe. 
@@ -57,3 +87,4 @@ Backend focus:
 - Integration of restful and Facebook API to collect data and show leader board 
 
 - Management of mongodb. 
+
