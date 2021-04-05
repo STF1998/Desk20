@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './loading-anim.component.html',
   styleUrls: ['./loading-anim.component.css']
 })
+  
 export class LoadingAnimComponent implements OnInit {
 
   constructor() { }
