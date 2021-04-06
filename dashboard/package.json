@@ -22,6 +22,7 @@
     "@angular/router": "~11.2.7",
     "@lottiefiles/lottie-player": "^1.0.1",
     "@teamhive/lottie-player": "^1.0.0",
+    "angular-bootstrap-md": "^11.0.0",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.6.0",
