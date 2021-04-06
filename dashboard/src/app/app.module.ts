@@ -10,6 +10,7 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { LoadingAnimComponent } from './loading-anim/loading-anim.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
