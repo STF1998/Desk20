@@ -1,6 +1,6 @@
 <p align="center"><img src="./report/LOGO_crop.png" width=100%>
 </p>
-<h2 align="center"><b> A web application designed to combat procrastination </b> </h2>
+<h2 align="center"><b> A web application designed to sustainably combat procrastination </b> </h2>
 
 
 
