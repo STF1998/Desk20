@@ -1,6 +1,6 @@
 <div align="center">
 <div style=width:400px;height:280px;>
-    <img src="LOGO.png" />
+    <img src="./report/LOGO_crop.png" />
 </div>
 <b><p style="font-size:20px">A web app designed to combat procrastination</b>
 </div>
