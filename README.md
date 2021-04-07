@@ -1,9 +1,11 @@
 <div align="center">
-<div style="width:400px;height:280px;overflow:hidden">
+<div style=width:400px;height:280px;>
     <img src="LOGO.png" />
 </div>
 <b><p style="font-size:20px">A web app designed to combat procrastination</b>
 </div>
+
+
 
 ## **Team Members**
 
