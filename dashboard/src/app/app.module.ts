@@ -11,6 +11,7 @@ import { LoadingAnimComponent } from './loading-anim/loading-anim.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     ChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent],
