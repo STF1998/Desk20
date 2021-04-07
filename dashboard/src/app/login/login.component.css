@@ -1,3 +1,4 @@
+
 .split {
   height: 100%;
   width: 50%;
@@ -7,6 +8,7 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
+
 
 .left {
   left: 0;
@@ -51,12 +53,19 @@
   color: white;
 }
 
+.arrow{
+  height: 20%;
+  position:absolute;
+  transform: rotate(-120deg);
+  top: 60%;
+  left:45%;
+}
 
 .glass{
   height:10%;
   position:absolute;
   transform: rotate(-20deg);
-  top: 30%;
+  top: 10%;
   left:10%;
 }
 
@@ -64,15 +73,18 @@
   height:7%;
   position:absolute;
   transform: rotate(20deg);
-  top: 55%;
+  top: 35%;
   left:37%;
 }
 
 .click{
   height:10%;
   position:absolute;
-  top: 75%;
-  left:6%;
+  top: 77%;
+  left:9%;
 }
+
+
+
 
   
