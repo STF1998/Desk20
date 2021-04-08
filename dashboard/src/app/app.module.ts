@@ -11,8 +11,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule } from '@angular/material/card';
-=======
-import { CountdownModule } from 'ngx-countdown';
+import { APITestComponent } from './api-test/api-test.component';
 
 @NgModule({
   declarations: [
@@ -20,20 +19,16 @@ import { CountdownModule } from 'ngx-countdown';
     LoadingAnimComponent,
     LoginComponent,
     NavBarComponent,
+    APITestComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
     MatCardModule
-
-    ChartsModule,
-    BrowserAnimationsModule,
-    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent],
