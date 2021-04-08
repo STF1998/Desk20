@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule } from '@angular/material/card';
 import { APITestComponent } from './api-test/api-test.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { APITestComponent } from './api-test/api-test.component';
     LoginComponent,
     NavBarComponent,
     APITestComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
