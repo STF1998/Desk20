@@ -17,6 +17,6 @@
 # Motivation for the project
 
 <p align="center">
-<img src="./report/Images/LucidOfIdeas.png" width="250" height="250">
+<img src="./report/Images/LucidOfIdeas.png" width="750" height="750">
 <b><p align= "center">Figure 1: LucidChart of idea creation stage</p></b>
 
