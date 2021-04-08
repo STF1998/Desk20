@@ -1,11 +1,27 @@
-FLOCUS 
+<p align="center"><img src="./report/LOGO_crop.png" width=100%>
+</p>
+<h2 align="center"><b> A web application designed to sustainably combat procrastination </b> </h2>
 
-In the project we propose FLOCUS, a single webpage application that aims to combat procrastination for students and employees working from home amongst friends and employees. This addresses the serious problem of procrastination, especially when working on devices. We propose a single page application that fills up a simple glass of water from a tap as you work. The glass would fill up every 1hr and then the user is encouraged to take a 5-10 min break to relax from work. We plan to link the account to friends to ensure that work schedule is synced. This could act to replace a library environment that has been absent throughout Covid-19. Ultimately, through combating procrastination we hope to raise awareness for water-accessibility charities. 
- 
-Extension ideas: 
-•	Ability to sync up with a friend – taking breaks together. 
-•	Daily and weekly winner. 
-•	AD Revenue to fund NGO to increase water accessibility. 
-•	About page – to show our motivation. 
-•	Super extension: connect you and friends through call on the break time (if we have time) 
-•	Super, Super extension: link to mobile app to see if someone is procrastinating. 
+
+
+## **Team Members**
+
+- Sam
+
+- Hugh
+
+- Jati
+
+- Gordon
+
+- Tom
+
+## **Report**
+
+### [1. Introduction](https:/https://github.com/STF1998/Desk20/report/introduction.md)
+### [2. Background and Motivation](https:/https://github.com/STF1998/Desk20/report/backgroundAndMotivation)
+### [3. System Implementation](https://github.com/STF1998/Desk20/report/systemImplementation)
+### [4. UX Design](https:/https://github.com/STF1998/Desk20/report/branch/UXDesign)
+### [5. Sprints & Project Management](https:/https://github.com/STF1998/Desk20/report/sprints&ProjectManagement)
+### [6. Evaluation](https:/https://github.com/STF1998/Desk20/report/evaluation)
+### [7. Conclusion](https:/https://github.com/STF1998/Desk20/report/conclusion)
