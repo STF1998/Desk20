@@ -8,10 +8,16 @@ import { DataService } from '../data.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(private dataService: DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  loginFunction() {
+    alert("testing");
+    return this.dataService.loginFB();
   }
 
 }
+
