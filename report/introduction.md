@@ -24,3 +24,6 @@ The team begun the project by drafting up ideas around playful ideas and serious
 
 However, while we had defined the two key aspects required by the project brief, we quickly realised we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water accessibility in developing nations. Fortunately, Gordon, one of our team members, had founded his own NGO called Asaqua that provided affordable solutions to the water crisis in Africa. 
 
+FLOCUS solves two problems identified in the research and ideation stage:
+-	[The serious problem of procrastination amongst students, particularly with an increase of students working on devices accentuated by the COVID-19 pandemic.](The-serious-problem-of-procrastination-amongst-students,-particularly-with-an-increase-of-students-working-on-devices-accentuated-by-the-COVID-19-pandemic.)
+-	[Lack of awareness for water accessibility in Africa](#Lack-of-awareness-for-water-accessibility-in-Africa.)
