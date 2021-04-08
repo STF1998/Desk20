@@ -4,18 +4,18 @@
 # 1. Introduction
 
 ## Contents of Introduction
-- [**a. Abstract**](#a.-Abstract)
+- [**Abstract**](#a.-Abstract)
   - [Motivation for the project](#Motivation-for-the-project)
   - [The problem we aim to solve](#The-problem-we-aim-to-solve)
   - [High level overview of our project](#High-level-overview-of-our-project)
-- [**b. Project Objectives**](#b.-Project-Objectives)
+- [**Project Objectives**](#b.-Project-Objectives)
   - [High level aims and goals](#High-level-aims-and-goals)
   - [How are we solving the problems?](#How-are-we-solving-the-problems?)
   - [Team checklist](#Team-checklist)
-- [**c. System Explanation Video**](#c.-System-Explanation-Video)
+- [**System Explanation Video**](#c.-System-Explanation-Video)
   - [Video link](#Video-link)
 
-# a. Abstract
+# Abstract
 
 ## Motivation for the project
 
@@ -38,13 +38,31 @@ FLOCUS solves two problems identified in the research and ideation stage:
 
 From this development of the ideation stage, we came up with FLOCUS, a single webpage application that aims to combat procrastination for students while raising awareness for Asaqua. The single page application will be focused on a simple glass of water filling up from a tap as you work. The glass would fill up every 1hr and then the user is encouraged to take a 5-10 min break to relax from work. The page will include a login through Facebook, which will allow the page to display a table to encourage competitiveness between friends on how much work they are doing without procrastination. We will have a google ads area to raise funds towards Asaqua with a pop up educating on the work Asaqua are doing to combat water accessibility in Africa. 
 
-# b. Project Objectives
+# Project Objectives
 
 ## High level aims and goals
 
+Project goal:
+-	Build a MEAN stack web app with effective integration of a single page frontend with a database and Facebook API to provide a login and persistent storage.
+-	Build a single-page application that has a responsive design with a customisable time and desktop usability. 
+
+Project aims:
+-	Help solve procrastination in student populations by providing a visual aid and a timer rather than just a clock. 
+-	Encourage students to take regular breaks with the use of the visual aid and timer with a pop up to read and look at in their break.
+-	Raise awareness for water accessibility and Asaqua, a charity working to solve the water crisis in developing nations across Africa.
+-	Integrate a table/chart to represent a competition between friends to encourage competitiveness and work ethic amongst student populations.
+
 ## How are we solving the problems?
 
-# c. System Explanation Video
+To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time followed by a break. This has been inspired by the time management method called Pomodoro Technique and the use of intervals to help students work for an interval combined with rewards of a break. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
+
+ “Solving water scarcity and procrastination one glass at a time”
+
+While students are working, the google ads section will be generating revenue which will be donated to Asaqua. Therefore, students not only have the satisfaction of working towards a target and rewarded with a break but are also rewarded by the fact they are actually contributing and helping raise funds for an important issue in water accessibility. It is a win-win scenario for all parties involved. 
+
+To further encourage students to use Flocus, we are integrating a Facebook login to allow students to compete with their friends on how much time they are committing to work but also how much they are raising for charity by using our website. The competitive nature will further encourage students to increase their productivity but also return and use the application on future occasions rather than being a one-stop shop.
+
+# System Explanation Video
 
 ## Video link
 
