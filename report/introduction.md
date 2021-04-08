@@ -1,3 +1,6 @@
+<p align="center"><img src="./report/introduction.png" width=100%>
+</p>
+
 # 1. Introduction
 
 ## Contents of Introduction
@@ -17,7 +20,8 @@
 ## Motivation for the project
 
 <p align="center">
-<img src="./report/Images/Introduction_Section/ideas.jpg" width=50%>
+<img src="./report/Images/ideas.jpg" width=50%>
+</p>
 <b><p align= "center">Figure 1: LucidChart of idea creation stage</p></b>
 
 The team begun the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources we swiftly aimed to define a simple but effective project idea that solved a critical issue but also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all had an understanding of and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas we decided the most suitable and simple idea would be to create a competitive aspect based on avoiding procrastination. 
