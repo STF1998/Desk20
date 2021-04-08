@@ -1,4 +1,4 @@
-<p align="center"><img src="../report/Introduction.png" width=100%>
+<p align="center"><img src="../report/Images/Introduction.png" width=100%>
 </p>
 
 # 1. Introduction
@@ -20,7 +20,7 @@
 ## Motivation for the project
 
 <p align="center">
-<img src="./report/Images/ideas.jpg" width=50%>
+<img src="../report/Images/ideas.jpg" width=50%>
 </p>
 <b><p align= "center">Figure 1: LucidChart of idea creation stage</p></b>
 
