@@ -1,4 +1,4 @@
-<p align="center"><img src="./report/Introduction.png" width=100%>
+<p align="center"><img src="../report/Introduction.png" width=100%>
 </p>
 
 # 1. Introduction
