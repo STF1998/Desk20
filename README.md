@@ -18,7 +18,7 @@
 
 ## **Report**
 
-### [1. Introduction](https:/https://github.com/STF1998/Desk20/report/introduction.md)
+### [1. Introduction](report/introduction.md)
 ### [2. Background and Motivation](https:/https://github.com/STF1998/Desk20/report/backgroundAndMotivation)
 ### [3. System Implementation](https://github.com/STF1998/Desk20/report/systemImplementation)
 ### [4. UX Design](https:/https://github.com/STF1998/Desk20/report/branch/UXDesign)
