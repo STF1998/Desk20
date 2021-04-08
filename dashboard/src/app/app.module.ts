@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule } from '@angular/material/card';
 import { APITestComponent } from './api-test/api-test.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { APITestComponent } from './api-test/api-test.component';
     MatButtonModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
