@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule } from '@angular/material/card';
 import { APITestComponent } from './api-test/api-test.component';
 import { HomeComponent } from './home/home.component';
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,10 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

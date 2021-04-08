@@ -44,5 +44,4 @@ export class RadarChartComponent implements OnInit {
     alert("testing");
     return this.dataService.loginFB();
   }
-
 }
