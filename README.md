@@ -19,7 +19,7 @@
 ## **Report**
 
 ### [1. Introduction](report/introduction.md)
-### [2. Background and Motivation](report/backgroundAndMotivation)
+### [2. Background and Motivation](report/backgroundAndMotivation.md)
 ### [3. System Implementation](report/systemImplementation)
 ### [4. UX Design](report/branch/UXDesign)
 ### [5. Sprints & Project Management](report/sprints&ProjectManagement)
