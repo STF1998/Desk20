@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+h1 {
+  color: white;
+  font-size: 1000%;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 5vw;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  position:absolute;
+  top:40%;
+  left:5%;
+}
+
+.loading_cont {
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+
+#loader {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+}
+   
+
+.blobs {
+	-webkit-filter: url("#goo");
+	filter: url("#goo");
+	position: relative;
+}
+   
+.blob1,
+.blob2,
+.blob3,
+.blob4,
+.blob5, 
+.blob6{
+	fill: #9fbce4;
+	position:relative;
+}
+
+.blob3{
+	animation: wobble 20s infinite;
+}
+
+.blob2{
+   animation: wobbleWobble 60s infinite;
+}
+
+.blob6{
+	animation: wobbleWobblewobble 60s infinite;
+}
+
+@keyframes wobble{
+	0% {transform: translate(0%, 0%); }
+	50% {transform: translate(-10%, -5%); }
+	100% {transform: translate(0%, 0%);}
+}
+
+@keyframes wobbleWobble{
+	0% {transform: translate(0%, 0%); }
+	33% {transform: translate(30%, 8%); }
+	66% {transform: translate(-30%, 10%);}
+	100% {transform: translate(0%, 0%);}
+}
+
+@keyframes wobbleWobblewobble{
+	0% {transform: translate(0%, 0%); }
+	50% {transform: translate(10%, -6%); }
+	100% {transform: translate(0%, 0%);}
+}

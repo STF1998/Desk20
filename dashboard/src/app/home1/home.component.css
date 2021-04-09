@@ -17,6 +17,8 @@ h1 {
   fill: #9fbce4;
   animation: blob1saunter 12s infinite ease-in-out;
   transform-origin: 50% 50%;
+  -webkit-filter: url("#goo");
+	filter: url("#goo");
 }
 
 .blob2 {
@@ -26,6 +28,8 @@ h1 {
   fill: #9fbce4;
   animation: blob2saunter 12s infinite ease-in-out;
   transform-origin: 50% 50%;
+  -webkit-filter: url("#goo");
+	filter: url("#goo");
 }
 
 
