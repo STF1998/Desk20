@@ -6,23 +6,23 @@
 
 ## **Team Members**
 
-- [Sam Fitton](#https://github.com/STF1998) 
+- [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
 
 Sam's role has been full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
 
-- [Hugh Hamilton-Green](#https://github.com/hamilh1000)
+- [**Hugh Hamilton-Green**](https://github.com/hamilh1000) (Username: HH17035)
 
 Hugh's role has been focused around the front-end design and implemeentation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.
 
-- [Jati Wicaksono](#https://github.com/jatiwicaksono98)
+- [**Jati Wicaksono**](https://github.com/jatiwicaksono98) (Username: CL20627)
 
 Jati's role has been focused around the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page.
 
-- [Gordon Tse](#https://github.com/GordonTse0922)
+- [**Gordon Tse**](https://github.com/GordonTse0922) (Username: XV20486)
 
 Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep.
 
-- [Tom Cockain](#https://github.com/tomcockain)
+- [**Tom Cockain**](https://github.com/tomcockain) (Username: YW20279)
 
 Tom's role has been focused around integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.
 
