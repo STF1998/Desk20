@@ -29,6 +29,7 @@
     "@teamhive/lottie-player": "^1.0.0",
     "@types/chart.js": "^2.9.31",
     "angular-bootstrap-md": "^11.0.0",
+    "angular-svg-icon": "^11.2.0",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -41,6 +42,7 @@
     "ngx-countdown": "^11.0.3",
     "rxjs": "~6.6.0",
     "serve": "^11.3.2",
+    "svg.js": "^2.7.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
