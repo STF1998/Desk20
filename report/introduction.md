@@ -4,15 +4,15 @@
 # 1. Introduction [10%]
 
 ## Contents of Introduction
-- [**Abstract**](#a.-Abstract)
+- [**Abstract**](#Abstract)
   - [Motivation for the project](#Motivation-for-the-project)
   - [The problem we aim to solve](#The-problem-we-aim-to-solve)
   - [High level overview of our project](#High-level-overview-of-our-project)
-- [**Project Objectives**](#b.-Project-Objectives)
+- [**Project Objectives**](#Project-Objectives)
   - [High level aims and goals](#High-level-aims-and-goals)
   - [How are we solving the problems?](#How-are-we-solving-the-problems?)
   - [Team checklist](#Team-checklist)
-- [**System Explanation Video**](#c.-System-Explanation-Video)
+- [**System Explanation Video**](#System-Explanation-Video)
   - [Video link](#Video-link)
 
 # Abstract
