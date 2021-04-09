@@ -1,7 +1,7 @@
 <p align="center"><img src="../report/Images/Introduction.png" width=100%>
 </p>
 
-# 1. Introduction
+# 1. Introduction [10%]
 
 ## Contents of Introduction
 - [**Abstract**](#a.-Abstract)
