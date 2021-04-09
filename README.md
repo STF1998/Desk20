@@ -4,7 +4,19 @@
 
 <h2><ul align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</li></h2>
 
-## **Team Members**
+## Our Product
+
+FLOCUS is a single-page application that aims to combat procrastination from students working on devices amongst friends while raising awareness for the critical world issue of water accessibility. Our application uses a glass filling up as a visual aid as people work following the principles of the Pomodoro technique of an interval for work followed by a break. In this break, users will have the opportunity to learn more about water accessibility and Asaqua, a charity that is working to improve water accessibility in Africa.
+
+The application will display how much work their friends have done to further encourage good studying practices, thus improving overall productivity and increasing us of our application. 
+
+Our aim is simple: combat procrastination and raise awareness for water accessibility one glass at a time!
+
+## Our Target Market
+
+## Our Stakeholders
+
+## Team Members
 
 - [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
 
