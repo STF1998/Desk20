@@ -2,6 +2,8 @@
 </p>
 <h2 align="center"><b> A web application designed to sustainably combat procrastination </b></h2>
 
+Solving procastination and raising awareness for water accessibility one glass at a time!
+
 ## **Team Members**
 
 - [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
