@@ -31,7 +31,7 @@ Given the situation caused by the COVID=19 pandemic, we decided to create an onl
 
 Please see figure below:
 
-<p align="center"><img src="./report/Images/MoodBoard.png" width=70%>
+<p align="center"><img src="../report/Images/MoodBoard.png" width=70%>
 </p>
 <h2 align="center"><b> Figure 1: A mood board created as part of the ideation stage.</b></h2>
 
