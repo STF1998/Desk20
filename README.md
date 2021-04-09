@@ -26,10 +26,10 @@ Tom's role has been focused on integration of front and back-end and aiding Gord
 
 ## **Report**
 
-### [1. Introduction](../report/introduction.md)
-### [2. Background and Motivation](../report/backgroundAndMotivation.md)
-### [3. System Implementation](../report/systemImplementation.md)
-### [4. UX Design](../report/report/UXDesign.md)
-### [5. Sprints & Project Management](../report/sprints&ProjectManagement.md)
-### [6. Evaluation](../report/evaluation.md)
-### [7. Conclusion](../report/conclusion.md)
+### [1. Introduction](report/introduction.md)
+### [2. Background and Motivation](report/backgroundAndMotivation.md)
+### [3. System Implementation](report/systemImplementation.md)
+### [4. UX Design](report/report/UXDesign.md)
+### [5. Sprints & Project Management](report/sprints&ProjectManagement.md)
+### [6. Evaluation](report/evaluation.md)
+### [7. Conclusion](report/conclusion.md)
