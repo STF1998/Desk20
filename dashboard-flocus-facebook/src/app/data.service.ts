@@ -19,4 +19,8 @@ export class DataService {
   public loginFB() {
     return this.httpClient.get(this.REST_API_FACEBOOK_LOGIN)
   }
+
+  public postData(newData: Object) {
+    return this.httpClient.post(this.REST_API_SERVER, newData)
+  }
 }
