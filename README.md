@@ -2,7 +2,7 @@
 </p>
 <h2 align="center"><b> A web application designed to sustainably combat procrastination </b></h2>
 
-Solving procastination and raising awareness for water accessibility one glass at a time!
+<ul align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</li>
 
 ## **Team Members**
 
