@@ -1,47 +1,54 @@
-html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+h1 {
+  color: white;
+  font-size: 1000%;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 10vw;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
-div {
-  height: 100%;
-  float: left;
+.blob1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #9fbce4;
+  animation: blob1saunter 12s infinite ease-in-out;
+  transform-origin: 50% 50%;
 }
 
-#div1 {
-  background: rgb(66, 85, 170);
+.blob2 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  fill: #9fbce4;
+  animation: blob2saunter 12s infinite ease-in-out;
+  transform-origin: 50% 50%;
 }
 
-#div2 {
-  background: rgb(80, 97, 168);
+
+@keyframes blob1saunter {
+  0%   { transform: scale(1) translate(10%, -70%); }
+  40%  { transform: scale(1.2) translate(200%, 70%) rotate(160deg); }
+  80%  { transform: scale(0.8) translate(-20%, 100%) rotate(-20deg); }
+  100% { transform: scale(1) translate(10%, -70%); }
 }
 
-#div3 {
-  background:rgb(80, 97, 160);
+@keyframes blob2saunter {
+  0%   { transform: scale(1) translate(-10%, 70%); }
+  40%  { transform: scale(0.8) translate(-200%, -70%) rotate(160deg); }
+  80%  { transform: scale(1.2) translate(0%, -50%) rotate(-20deg); }
+  100% { transform: scale(1) translate(-10%, 70%); }
 }
 
-#div4 {
-  background: rgb(80, 97, 153);
-}
-#div5 {
-  background: white;
-}
-  
-#div6 {
- background:rgb(80, 97, 120);
-}
-  
-#div7 {
-  background: rgb(80, 97, 110);
-}
-  
-#div8 {
-  background: rgb(80, 97, 105);
-}
 
-#div9 {
-  background: rgb(80, 97, 100);
+.focus{
+  position:absolute;
+  top:50%;
+  left:50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
-
