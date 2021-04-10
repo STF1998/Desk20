@@ -1,7 +1,7 @@
 <p align="center"><img src="./report/Images/LOGO_crop.png" width=100%>
 </p>
 <h2 align="center"><b> A web application designed to sustainably combat procrastination </b></h2>
-# Solving procastination and raising awareness for water accessibility one glass at a time!
+<h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 
 ## Our Product
 
