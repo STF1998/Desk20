@@ -1,47 +1,74 @@
-html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+h1 {
+  color: white;
+  font-size: 1000%;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 5vw;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  position:absolute;
+  top:40%;
+  left:5%;
 }
 
-div {
-  height: 100%;
-  float: left;
+.loading_cont {
+	width: 100%;
+	height: 80%;
+	background: white;
 }
 
-#div1 {
-  background: rgb(66, 85, 170);
+#loader {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+}
+   
+
+.blobs {
+	-webkit-filter: url("#goo");
+	filter: url("#goo");
+	position: relative;
+}
+   
+.blob1,
+.blob2,
+.blob3,
+.blob4,
+.blob5, 
+.blob6{
+	fill: #9fbce4;
+	position:relative;
 }
 
-#div2 {
-  background: rgb(80, 97, 168);
+.blob3{
+	animation: wobble 20s infinite;
 }
 
-#div3 {
-  background:rgb(80, 97, 160);
+.blob2{
+   animation: wobbleWobble 60s infinite;
 }
 
-#div4 {
-  background: rgb(80, 97, 153);
-}
-#div5 {
-  background: white;
-}
-  
-#div6 {
- background:rgb(80, 97, 120);
-}
-  
-#div7 {
-  background: rgb(80, 97, 110);
-}
-  
-#div8 {
-  background: rgb(80, 97, 105);
+.blob6{
+	animation: wobbleWobblewobble 60s infinite;
 }
 
-#div9 {
-  background: rgb(80, 97, 100);
+@keyframes wobble{
+	0% {transform: translate(0%, 0%); }
+	50% {transform: translate(-10%, -5%); }
+	100% {transform: translate(0%, 0%);}
 }
 
+@keyframes wobbleWobble{
+	0% {transform: translate(0%, 0%); }
+	33% {transform: translate(30%, 8%); }
+	66% {transform: translate(-30%, 10%);}
+	100% {transform: translate(0%, 0%);}
+}
+
+@keyframes wobbleWobblewobble{
+	0% {transform: translate(0%, 0%); }
+	50% {transform: translate(10%, -6%); }
+	100% {transform: translate(0%, 0%);}
+}
