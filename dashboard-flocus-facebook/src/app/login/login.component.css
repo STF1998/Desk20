@@ -6,7 +6,6 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 
 
@@ -43,9 +42,9 @@
 
 
 .fa-facebook-f {
-  padding: 30%;
+  padding: 18px;
   font-size: 35px;
-  width: 145%;
+  width: 70px;
   text-align: center;
   text-decoration: none;
   border-radius: 25%;
