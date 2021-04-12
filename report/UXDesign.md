@@ -89,5 +89,5 @@ You can view our survey here! (TODO add a link to survey)
 
 # Wireframes and Systems
 
-
+Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage. 
 
