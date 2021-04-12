@@ -2,9 +2,10 @@
 
 
 .container{
-  position: absolute;
-  top:13%;
-  left:63%;
+  position: relative;
+  top:-10%;
+  left:41%;
+  transform: translate(-50%, -50%);
   height: 100%;
   width: 20%;
 }
@@ -15,13 +16,12 @@
 }
 
 .nav-link{
-  margin: 3vw;
+  margin: -5vw;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 650%;
   text-transform: uppercase;
   color: #9fbce4;
-  transition: transform 0.5s;
 }
 
 a:hover{

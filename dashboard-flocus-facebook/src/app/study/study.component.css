@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
 .back{
 	background-color: #9fbce4;
@@ -71,7 +72,7 @@
     left: 80%;
     z-index: 1;
     fill: rgb(226, 240, 250);
-    animation: drift1 600s infinite;
+    animation: drift1 300s infinite;
     z-index:3;
 }
 
@@ -81,7 +82,7 @@
     left: -5%;
     z-index: 1;
     fill: rgb(226, 240, 250);
-    animation: drift2 300s infinite;
+    animation: drift2 100s infinite;
     z-index:5;
 }
 
@@ -90,7 +91,7 @@
     top: 30%;
     left: 0%;
     fill: white;
-    animation: glide1 30s infinite;
+    animation: glide1 20s ease infinite;
     z-index:5;
 }
 
@@ -100,7 +101,7 @@
     top: 20%;
     left: 10%;
     fill: white;
-    animation: glide2 30s infinite; 
+    animation: glide2 20s infinite; 
     z-index:5;
 }
 
@@ -149,15 +150,15 @@
 }
 
 @keyframes glide1{
-    33% {transform: translate(30%, -15%)}
-    66% {transform: translate(15%, 15%)}
+    33% {transform: translate(30%, -30%)}
+    66% {transform: translate(-15%, 15%)}
     100%{transform: translate(0%, 0%)}
 }
 
 @keyframes glide2{
     0% {transform: rotate(0deg)}
     33% {transform: rotate(-20deg) translate(-30%, 15%)}
-    66% {transform: rotate(10deg) translate(-15%, -15%)}
+    66% {transform: rotate(10deg) translate(15%, -60%)}
     100%{transform: rotate(0deg) translate(0%, 0%)}
 }
 
@@ -223,37 +224,56 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    z-index: 10;
-    animation: spinner 5s infinite;
+    z-index: 7;
+    background-color: white;
   }
 
-  @keyframes spinner{
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(0deg);}
+  .tapHandle:hover{
+    background-color: rgb(64, 20, 167);
   }
-
-  .bottom{
-    animation: bottomJump 5s infinite;
-  }
-
-  @keyframes bottomJump{
-    50% {transform: transform(0%, 10%);}
-    100% {transform: transform(0%, 0%);}
-  }
-
-
-
-
-
 
   
+  .nav-link{
+    margin: 3vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: #ffffff;
+    position:absolute;
+    top: -5%;
+    left: -10%;
+    z-index: 6;
+  }
 
+  .nav-link:hover{
+    transform: translateX(-4%);
+    color: #5c82b8;
+  }
 
-  
-  
+  .counter{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10%;
+    opacity: 0.8;
+    position: absolute;
+    transform: scale(0.5);
+    top: -5%;
+    left: 95%;
+    border-radius: 30%;
+    z-index: 6;
+  }
 
-
-
-
-
+  .number{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3000%;
+    color: rgb(64, 20, 167);
+    opacity: 1;
+    position: absolute;
+    top:62.5%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:7;
+  }
 

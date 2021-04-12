@@ -12,4 +12,6 @@ export class StudyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  dayGlassCount = 8;
+
 }
