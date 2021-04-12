@@ -12,4 +12,4 @@ var recordSchema = mongoose.Schema({
   timeSpent: Number
 });
 
-module.exports = mongoose.model('Record', userSchema);
+module.exports = mongoose.model('Record', recordSchema);
