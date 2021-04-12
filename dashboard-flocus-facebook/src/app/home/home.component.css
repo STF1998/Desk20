@@ -10,13 +10,14 @@ h1 {
   text-transform: uppercase;
   position:absolute;
   top:40%;
-  left:5%;
+  left:2%;
 }
 
 .loading_cont {
 	width: 100%;
 	height: 80%;
 	background: white;
+	position: relative;
 }
 
 #loader {
