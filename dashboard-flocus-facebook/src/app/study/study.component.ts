@@ -65,5 +65,7 @@ export class StudyComponent implements OnInit {
       console.log("Stopped");
     }
   }
+  
+  dayGlassCount = 8;
 
 }
