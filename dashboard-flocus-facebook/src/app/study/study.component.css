@@ -1,2 +1,223 @@
 
+.back{
+	background-color: #9fbce4;
+    background: repeating-linear-gradient(
+    45deg,
+    #9fbce4,
+    #9fbce4 10px,
+    #bbd1f0 1px,
+    #bbd1f0 11px
+    );
+	width: 100%;
+	height: 100%;
+	z-index:1;
+}
+.wrapper{
+    position:relative;
+    top:50%;
+    left:50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    height:800px;
+    width:1200px;
+}
+
+
+.background{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    height:650px;
+    width:1200px;
+    z-index:3;
+}
+
+.dropframe{
+    position: absolute;
+    top: 27%;
+    left: 56.5%;
+    z-index: 3;
+    transform-origin: 5% 20%;
+    fill: #77a9ee;
+    animation: plop 2s infinite ease-in;
+}
+
+@keyframes plop{
+    0% {transform: scale(0.8);}
+    65% {transform: scale(1) translate(0%,6%);}
+    100% {transform: scale(1) translate(0%,170%);}
+}
+
+.tap{
+   position: absolute;
+   top:46.5%;
+   left:47%;
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   height:465px;
+   width:275px;
+   z-index:4;
+}
+
+.cloud1{
+    position:absolute;
+    top: 18%;
+    left: 80%;
+    z-index: 1;
+    fill: rgb(226, 240, 250);
+    animation: drift1 600s infinite;
+    z-index:3;
+}
+
+.cloud2{
+    position:absolute;
+    top: 0%;
+    left: -5%;
+    z-index: 1;
+    fill: rgb(226, 240, 250);
+    animation: drift2 300s infinite;
+    z-index:5;
+}
+
+.bird1{
+    position:absolute;
+    top: 30%;
+    left: 0%;
+    fill: white;
+    animation: glide1 30s infinite;
+    z-index:5;
+}
+
+.bird2{
+    transform: rotate(-30deg);
+    position:absolute;
+    top: 20%;
+    left: 10%;
+    fill: white;
+    animation: glide2 30s infinite; 
+    z-index:5;
+}
+
+.waterBro{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    color: rgb(192, 178, 178);
+    z-index:5;
+}
+
+.example{
+    position: absolute;
+    width:500px;
+    height: 1000px;
+}
+
+.motion{
+    position: absolute;
+    top: 9%;
+    left: 38.35%;
+    z-index:3;
+}
+
+
+@keyframes drift1{
+    0%{transform: translate(0, 0);}
+    50%{transform: translate(-100%, 0);}
+    100%{transform: translate(0, 0);}
+}
+
+@keyframes drift2{
+    0%{transform: translate(0, 0);}
+    50%{transform: translate(50%, 0);}
+    100%{transform: translate(0, 0);}
+}
+
+@keyframes leftRotation{
+    50% {transform: rotate(0deg)}
+    100% {transform: rotate(0)}
+}
+
+@keyframes rightRotation{
+    50% {transform: translate(2.5%, 0) rotate(-5deg)}
+    100% {transform: rotate(0)}
+}
+
+@keyframes glide1{
+    33% {transform: translate(30%, -15%)}
+    66% {transform: translate(15%, 15%)}
+    100%{transform: translate(0%, 0%)}
+}
+
+@keyframes glide2{
+    0% {transform: rotate(0deg)}
+    33% {transform: rotate(-20deg) translate(-30%, 15%)}
+    66% {transform: rotate(10deg) translate(-15%, -15%)}
+    100%{transform: rotate(0deg) translate(0%, 0%)}
+}
+
+
+.drop{
+    position: absolute;
+    fill: blue;
+    animation: dripdrop ease-in 3s infinite;
+  }
+  
+  @keyframes dripdrop{
+    0%  {transform: scale(0.08) translate(590%,300%); }
+    10% {transform: scale(0.08) translate(590%,320%); }
+    80% {transform: scale(0.08) translate(590%,320%); }
+    100% {transform: scale(0.08) translate(590%,1050%); }
+  }
+  
+  .bub1{
+    animation: sparkle-action 2s infinite linear;
+    fill: #E6EEF7;
+  }
+  
+  @keyframes sparkle-action {
+    0% {
+      transform: translate(0, -20%);
+    }
+    20% {
+      transform: translate(0, -50%);
+    }
+    20.1% {
+      transform: translate(13%, 0);
+    }
+    40% {
+      transform: translate(13%, -50%);
+    }
+    40.1% {
+      transform: translate(5%, -20%);
+    }
+    60% {
+      transform: translate(5%, -50%);
+    }
+    60.1% {
+      transform: translate(21%, 0);
+    }
+    80% {
+      transform: translate(21%, -50%);
+    }
+    80.1% {
+        transform: translate(4%, -7%);
+      }
+    99.9% {
+        transform: translate(4%, -50%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+
+
+
+
+
 
