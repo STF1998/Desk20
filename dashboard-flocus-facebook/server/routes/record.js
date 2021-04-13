@@ -1,11 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const User = require('../../models/User');
+const Record = require('../../models/Record');
 const router = express.Router();
 
 /* GET api listing. */
 router.get('/', (req, res) => {
-  res.send('api works');
+  res.send('get record not implemented yet');
 });
 
 router.post('/', async (req, res) => {
@@ -13,12 +13,19 @@ router.post('/', async (req, res) => {
   // if (error) {
   //     return res.status(400).send(error.details[0].message);
   // }
+  // const user = await User.findById(req.body.genreId);
 
-  let user = new User({ name: req.body.name });
+  let record = new Record({ 
+    uid: req.body.uid,
+    timestamp: req.body.timestamp,
+    timeSpent: req.body.timeSpent
+  });
 
-  user = await user.save();
+  record = await record.save();
+  
 
-  res.send(user);
+
+  res.send(record);
 });
 
 

@@ -11,6 +11,7 @@ const facebookStrategy = require('passport-facebook').Strategy;
 
 // Get our API routes
 const api = require('./server/routes/api');
+const record = require('./server/routes/record');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 
 // Set our api routes
 app.use('/api', api);
+app.use('/api/record', record);
 
 passport.use(new facebookStrategy({
   clientID: "498052027866336",
