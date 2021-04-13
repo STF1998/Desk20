@@ -14,7 +14,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   private breakTime = 5;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = 0;
-  private time: Subscription;
+  private time: Subscription = Subscription.EMPTY;
   private timePassed = 0;
   private isStudy = true;
 
@@ -24,9 +24,11 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
-    this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
-    this.pauseTimer();
+    if(this.timePassed > 0){
+      console.log(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
+      this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
+      this.pauseTimer();
+    }
   }
 
   public press() {
@@ -54,7 +56,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         }
       }
       if (!this.isStudy && this.timePassed == this.breakTime) {
-        console.log('End of the break');
+        console.log('End of the break');  // tmp
         this.timePassed = 0;
         this.time.unsubscribe();
         this.isStudy = true;
@@ -66,7 +68,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   private pauseTimer() {
     if (this.isStudy) {
       this.time.unsubscribe();
-      console.log("Stopped");
+      console.log("Paused");  // tmp 
     }
   }
 
