@@ -50,7 +50,7 @@ Having researched procrastination tools, our team identified the Pomodoro Techni
 4.	Then enjoy a five-minute break.
 5.	After four Pomodoro’s, take a longer, more restorative 15-30 minute break.
 
-Learn more about the Pomodoro technique at this [link](#https://francescocirillo.com/pages/pomodoro-technique)!
+Learn more about the Pomodoro technique at this [link](https://francescocirillo.com/pages/pomodoro-technique)!
 
 Having identified the Pomodoro Technique as a key tool to combat procrastination, we quickly identified existing applications that are based on the technique. This can be seen below in the current industry review.
 
