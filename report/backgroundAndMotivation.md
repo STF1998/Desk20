@@ -78,6 +78,4 @@ Information Science Reference, pp. 364-385.
 Pychyl, T. A., & Flett, G. L. 2012. Procrastination and self-regulatory failure: An introduction
 to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 30(4), 203–212. doi:10.1007/s10942-012-0149-5
 
-Russell, A. 2015. “Progressive Web Apps: Escaping Tabs Without Losing Our Soul,” Accessed: Dec. 20, 2020. Available: https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955/
-
 Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
