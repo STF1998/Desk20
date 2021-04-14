@@ -48,3 +48,36 @@ There is a growing body of research that explains the phenomenon of procrastinat
 
 ## Scope
 ## Challenges
+
+## Reference List
+
+Ali Mesbah, A. V. D. 2006. An Architectural Style for Ajax. Proceedings of the 6th Working
+IEEE/IFIP Conference on Software Architecture (WICSA'07). IEEE Computer Society, 2007.
+
+Ferrari, J. R. 2001. Procrastination as self-regulation failure of performance: Effects of
+cognitive load, self-awareness, and time limits on ‘working best under pressure’. European
+Journal of Personality, 15(5), 391–406. doi:10.1002/per.413.abs
+
+Flach, J. 2018. Serious Play: A different slant on Design Thinking. 
+
+Gee, J, P. 2004. What Video Games Have to Teach Us About Learning and Literacy.
+New York: Palgrave Macmillan.
+
+Klingsieck, K. B. (2013). Procrastination: When good things don’t come to those who wait.
+European Psychologist, 18(1), 24–34. doi:10.1027/1016-9040/a000138
+
+Klingsieck, K. B., Grund, A., Schmid, S., & Fries, S. (2013). Why students procrastinate: A
+qualitative approach. Journal of College Student Development, 54(4), 397–412. doi:10.1353/
+csd.2013.0060
+
+Nolan, S. 2009. ‘Physical Metaphorical Modelling with Lego as a Technology for
+Collaborative Personalised Learning’, in O’Donohue, J. (ed.) Technology-supported
+environments for personalized learning: methods and case studies. USA:
+Information Science Reference, pp. 364-385.
+
+Pychyl, T. A., & Flett, G. L. 2012. Procrastination and self-regulatory failure: An introduction
+to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 30(4), 203–212. doi:10.1007/s10942-012-0149-5
+
+Russell, A. 2015. “Progressive Web Apps: Escaping Tabs Without Losing Our Soul,” Accessed: Dec. 20, 2020. Available: https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955/
+
+Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
