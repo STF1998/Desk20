@@ -10,16 +10,28 @@ The application will display how much work their friends have done to further en
 
 Our aim is simple: combat procrastination and raise awareness for water accessibility one glass at a time!
 
+### How to use Flcous?
+
+1. Sign in via Facebook plugin.
+2. Select how long you'd like to study for and the break time you would like.
+3. Start working with the webpage open. Your glass will start to fill.
+4. When your glass is full, take a break and learn more about Asaqua, the charity we've partnered with to raise awareness and funds for solving the water accessibility issue in developing nations.
+5. See your statistics and compare your work progress compared to your peers.
+
+### Features of Flocus
+
+- 
+- 
+- 
+
 ## Our Target Market
 
 ## Our Stakeholders
 
 ### Asaqua 
 
-ABOUT US
-Asaqua is dedicated to solve the water crisis in underdeveloped countries by offering an affordable rain water harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  Asaqua collaborates with committed locals, NGOs, and research institutes and strives for a sustainable future for our next generation.
+Asaqua is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  Asaqua collaborates with committed locals, NGOs, and research institutes and strives for a sustainable future for our next generation.
 
-VISION
 Our vision is a world where no kid has to trudge miles every day to fetch water, and every individual has the access to clean water.
 
 ## Team Members
