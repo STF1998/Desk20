@@ -14,6 +14,14 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ## Our Stakeholders
 
+### Asaqua 
+
+ABOUT US
+Asaqua is dedicated to solve the water crisis in underdeveloped countries by offering an affordable rain water harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  Asaqua collaborates with committed locals, NGOs, and research institutes and strives for a sustainable future for our next generation.
+
+VISION
+Our vision is a world where no kid has to trudge miles every day to fetch water, and every individual has the access to clean water.
+
 ## Team Members
 
 - [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
