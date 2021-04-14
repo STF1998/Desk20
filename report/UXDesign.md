@@ -39,7 +39,7 @@ Solving procrastination and raising awareness for water accessibility one glass 
 
 ## Mood board
 
-Given the situation caused by the COVID=19 pandemic, we decided to create an online mood board using lucid chart allowing us to pull together our ideas around textures, colours, art, photos, typography, patterns and shapes. At this stage, we were starting to narrow down the specifics of our idea while working out what was feasible.
+Given the situation caused by the COVID-19 pandemic, we decided to create an online mood board using lucid chart allowing us to pull together our ideas around textures, colours, art, photos, typography, patterns and shapes. At this stage, we were starting to narrow down the specifics of our idea while working out what was feasible.
 
 Please see figure below:
 

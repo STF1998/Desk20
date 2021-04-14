@@ -15,6 +15,8 @@ import { APITestComponent } from './api-test/api-test.component';
 import { HomeComponent } from './home/home.component';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { StudyComponent } from './study/study.component';
+import { LeagueComponent } from './league/league.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavBarComponent,
     APITestComponent,
     HomeComponent,
+    StudyComponent,
+    LeagueComponent,
   ],
   imports: [
     BrowserModule,
