@@ -45,7 +45,6 @@
     z-index: 3;
     transform-origin: 5% 20%;
     fill: #77a9ee;
-    animation: plop 2s infinite ease-in;
 }
 
 @keyframes plop{
@@ -166,15 +165,7 @@
 .drop{
     position: absolute;
     fill: blue;
-    animation: dripdrop ease-in 3s infinite;
-  }
-  
-  @keyframes dripdrop{
-    0%  {transform: scale(0.08) translate(590%,300%); }
-    10% {transform: scale(0.08) translate(590%,320%); }
-    80% {transform: scale(0.08) translate(590%,320%); }
-    100% {transform: scale(0.08) translate(590%,1050%); }
-  }
+}
   
   .bub1{
     animation: sparkle-action 2s infinite linear;
