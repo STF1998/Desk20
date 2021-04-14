@@ -1,29 +1,34 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-study',
   templateUrl: './study.component.html',
   styleUrls: ['./study.component.css']
 })
-export class StudyComponent implements OnInit {
+export class StudyComponent implements OnInit, OnDestroy {
 
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 10;     // Amendable: the amount of time for a study session (aka 45 mins)
-  private breakTime = 5;      // Amendable: the amount of time for a break session (aka 15 mins)
+  private studyTime = 10;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
+  private breakTime = 5;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = 0;
-  private time: Subscription;
+  private time: Subscription = Subscription.EMPTY;
   private timePassed = 0;
   private isStudy = true;
 
-  constructor() { }
+  constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
   }
 
   ngOnDestroy(): void {
-
+    if(this.timePassed > 0){
+      console.log(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
+      this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
+      this.pauseTimer();
+    }
   }
 
   public press() {
@@ -44,13 +49,14 @@ export class StudyComponent implements OnInit {
           console.log(this.waterLevel);  // tmp
         }
         if (this.timePassed == this.studyTime) {
-          console.log(JSON.stringify({"uid":"sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed}));  // posting to db
+          console.log(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
+          this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
           this.timePassed = 0;
           this.isStudy = false;
         }
       }
       if (!this.isStudy && this.timePassed == this.breakTime) {
-        console.log('End of the break');
+        console.log('End of the break');  // tmp
         this.timePassed = 0;
         this.time.unsubscribe();
         this.isStudy = true;
@@ -62,10 +68,10 @@ export class StudyComponent implements OnInit {
   private pauseTimer() {
     if (this.isStudy) {
       this.time.unsubscribe();
-      console.log("Stopped");
+      console.log("Paused");  // tmp 
     }
   }
-  
+
   dayGlassCount = 8;
 
 }

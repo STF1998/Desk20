@@ -1,15 +1,22 @@
 const mongoose = require("mongoose");
-const { validate } = require("./User");
-/*
-mongoose.connect("mongodb://localhost:27017/facebookauth", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-*/
+const Joi = require('joi');
+
+// tbc
 var recordSchema = mongoose.Schema({
-  uid: String,
-  timestamp: Date,
-  timeSpent: Number
+  uid: {
+    type: String,
+    required: true
+  },
+  timestamp: {
+    type: Date,
+    required: true
+  },
+  timeSpent: {
+    type: Number,
+    required: true
+  }
 });
+
+// validate function to be added
 
 module.exports = mongoose.model('Record', recordSchema);
