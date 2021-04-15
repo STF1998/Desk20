@@ -58,6 +58,32 @@ Having identified the Pomodoro Technique as a key tool to combat procrastination
 
 # Current industry review
 
+Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity. We came up with a list 
+
+## Pomofocus 
+
+Website: https://pomofocus.io/
+
+Website summary:
+
+Pomofocus is an online pomodoro timer that works on both web and mobile browsers. The webpage revolves around a large timer with different colour backgrounds for study and break intervals (red for study, blue for break).
+
+<table>
+<tr>
+  <th>Pros</th>
+  <th>Cons</th>
+</tr>
+<tr>
+  <td>-	Simple and clear front-end. Minimal but sleek UX design.
+-	Simplified and fast web application
+-	No advertising
+-	Visits are up 32% to 4.75million total visits.</td>
+  <td>
+  -	Can’t compete with friends on time studied/focused
+  -	No social aspect
+  </td>
+</table>
+
 # Defined problem
 
 ## Scope
