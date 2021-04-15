@@ -205,7 +205,7 @@ Easy-to-use web based Pomodoro timer.
   </td>
 </table>
 
-# Market Opportunities identified from current industry research
+## Market Opportunities identified from current industry research
 
 Based on current market research, we identified the following gaps and places for improvement for online procrastination tools inspried by the Pomodoro technqiue:
 
