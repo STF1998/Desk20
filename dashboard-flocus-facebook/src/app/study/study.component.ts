@@ -59,6 +59,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         if (this.timePassed == this.studyTime) {
           console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
           this.DataService.postRecord(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));
+          this.retrieveGlassCount();
           this.timePassed = 0;
           this.isStudy = false;
         }
