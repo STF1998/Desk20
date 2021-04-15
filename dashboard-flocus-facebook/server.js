@@ -20,7 +20,7 @@ app.use(session({ secret: 'desktwentyforthewin' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Point static path to dist (folder where build files are located)
 app.use(express.static(path.join(__dirname, 'dist/dashboard')));

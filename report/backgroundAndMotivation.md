@@ -40,6 +40,20 @@ Procrastination is a well-known experience amongst academic environments. It is 
 
 There is a growing body of research that explains the phenomenon of procrastination as a self-regulation challenge (Pychyl & Flett, 2012). Ferrari (2001) suggests that students need support or tools to help self-regulate their behaviours when in a learning environment. Zimmerman (2008) suggests that students need to learn how to effectively use tools and strategies to help improve self-regulation. In recent times, little research has focused on tools and interventions for procrastination. Overall, our idea to create a procrastination tool fills a clear gap in providing a solution to help students self-regulate their learning and study techniques. 
 
+### Pomodoro Technique
+
+Having researched procrastination tools, our team identified the Pomodoro Technique as a key tool to inspire our single page application around increasing productivity and reducing procrastination. The pomodoro technique was developed by Francesco Cirillo. When he came across the technique, Francesco was struggling to focus on his university work leading to him committing to studying for 10 minutes. He found a tomato shaped timer and the now Pomodoro Technique was created. Its biggest benefit is its simplicity with the following easy and simple steps:
+
+1.	Get a to-do list and a timer.
+2.	Set your timer for 25 minutes and focus on a single task until the timer rings.
+3.	When your session ends, mark off one pomodoro and record what you completed.
+4.	Then enjoy a five-minute break.
+5.	After four Pomodoro’s, take a longer, more restorative 15-30 minute break.
+
+Learn more about the Pomodoro technique at this [link](https://francescocirillo.com/pages/pomodoro-technique)!
+
+Having identified the Pomodoro Technique as a key tool to combat procrastination, we quickly identified existing applications that are based on the technique. This can be seen below in the current industry review.
+
 # State of the art survey
 
 # Current industry review
@@ -224,7 +238,5 @@ Information Science Reference, pp. 364-385.
 
 Pychyl, T. A., & Flett, G. L. 2012. Procrastination and self-regulatory failure: An introduction
 to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 30(4), 203–212. doi:10.1007/s10942-012-0149-5
-
-Russell, A. 2015. “Progressive Web Apps: Escaping Tabs Without Losing Our Soul,” Accessed: Dec. 20, 2020. Available: https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955/
 
 Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
