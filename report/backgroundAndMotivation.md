@@ -164,6 +164,32 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
   </td>
 </table>
 
+## Pomodor
+
+Website: https://pomodor.app/timer
+
+Easy-to-use web based Pomodoro timer.
+
+<table>
+<tr>
+  <th>Pros</th>
+  <th>Cons</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> Incredibly simple. </li>
+      <li> Ability to add labels to your timers and set tasks. </li>
+      <li> Provides a set of tips and ideas to help productivity. </li>
+      <li> Provides useful statistics as an insight into your study behaviours.  </li>
+      <li> Easy adjustment of settings. </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+    </ul>
+  </td>
+</table>
 
 # Defined problem
 
