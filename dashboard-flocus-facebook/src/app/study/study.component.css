@@ -176,10 +176,10 @@
     fill: blue;
 }
   
-  .bub1{
+.bub1{
     animation: sparkle-action 2s infinite linear;
     fill: #E6EEF7;
-  }
+}
   
   @keyframes sparkle-action {
     0% {
@@ -232,7 +232,6 @@
     background-color: rgb(64, 20, 167);
   }
 
-  
   .nav-link{
     margin: 3vw;
     font-weight: bold;

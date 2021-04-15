@@ -17,6 +17,7 @@ import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StudyComponent } from './study/study.component';
 import { LeagueComponent } from './league/league.component';
+import { AsaquaComponent } from './asaqua/asaqua.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LeagueComponent } from './league/league.component';
     HomeComponent,
     StudyComponent,
     LeagueComponent,
+    AsaquaComponent,
   ],
   imports: [
     BrowserModule,
