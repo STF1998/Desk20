@@ -74,13 +74,20 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
   <th>Cons</th>
 </tr>
 <tr>
-  <td>-	Simple and clear front-end. Minimal but sleek UX design.
--	Simplified and fast web application
--	No advertising
--	Visits are up 32% to 4.75million total visits.</td>
   <td>
-  -	Can’t compete with friends on time studied/focused
-  -	No social aspect
+    <ul>
+      <li> Simple and clear front-end. Minimal but sleek UX design. </li>
+      <li> Simplified and fast web application. </li>
+      <li> No advertising. </li>
+      <li> Visits are up 32% to 4.75million total visits. </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> Can’t compete with friends on time studied/focused. </li>
+      <li> No social cause aspect. </li>
+      <li> Nothing to do or read about in the break interval. </li>
+    </ul>
   </td>
 </table>
 
