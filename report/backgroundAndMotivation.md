@@ -50,8 +50,6 @@ Having agreed that we would like to build a single page application inspired by 
 
 Website: https://pomofocus.io/
 
-Website summary:
-
 Pomofocus is an online pomodoro timer that works on both web and mobile browsers. The webpage revolves around a large timer with different colour backgrounds for study and break intervals (red for study, blue for break).
 
 <table>
@@ -65,7 +63,8 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
       <li> Simple and clear front-end. Minimal but sleek UX design. </li>
       <li> Simplified and fast web application. </li>
       <li> No advertising. </li>
-      <li> Visits are up 32% to 4.75million total visits. </li>
+      <li> Visits are up 32% to 4.75 million total visits. </li>
+      <li> Ability to set certain number of tasks. </li>
     </ul>
   </td>
   <td>
@@ -76,6 +75,39 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
     </ul>
   </td>
 </table>
+
+## Tomato Timer
+
+Website: https://tomato-timer.com/
+
+Tomato timer is an online clock timer that follows the Pomodoro technique inspired by Tomatoi.st. It uses jQuery and HTML5 features like Desktop Notifications, Audio API and Local Storage instead of relying on Adobe Flash and other such technologies.
+
+<table>
+<tr>
+  <th>Pros</th>
+  <th>Cons</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> Simple and to the point. </li>
+      <li> Ability to set notifications so you don’t have to stay on the page. </li>
+      <li> Keyboard shortcuts. </li>
+      <li> Ability to change the alert sound. </li>
+      <li> No advertising on the website. </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> No insight into what you’re doing with that time. </li>
+      <li> Un-aesthetically pleasing UX design. </li>
+      <li> No ability to track past activity. </li>
+    </ul>
+  </td>
+</table>
+
+
+
 
 # Defined problem
 
