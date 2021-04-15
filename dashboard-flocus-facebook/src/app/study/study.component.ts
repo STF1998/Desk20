@@ -28,6 +28,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
+    this.retrieveUid();
     this.retrieveGlassCount();
   }
 
@@ -101,10 +102,17 @@ export class StudyComponent implements OnInit, OnDestroy {
       error => {
         console.log(error);
       }
-    );
-    
-    
+    );   
+  }
+
+  private retrieveUid(){
+    this.DataService.getUid().subscribe(
+      userdata => {
+        const uid = userdata;
+        // this.userid = uid.toString();
+        console.log(uid.toString());
+      }
+    )
   }
   
-
 }

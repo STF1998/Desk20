@@ -48,7 +48,7 @@ Hugh's role has been focused on the front-end design and implementation alongsid
 
 Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page.
 
-- [**Gordon Tse**](https://github.com/GordonTse0922) (Username: XV20486)
+- [**Gordon Tse**](https://github.com/gordon-tse (Username: XV20486)
 
 Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep.
 

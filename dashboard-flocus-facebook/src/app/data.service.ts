@@ -13,7 +13,7 @@ export class DataService {
   private REST_API_SERVER = "http://localhost:3000/api";
   private REST_API_FACEBOOK_LOGIN = "http://localhost:3000/auth/facebook";
   private REST_API_SERVER_RECORD = "http://localhost:3000/api/record";
-  // private REST_API_SERVER_RECORD_test = "http://localhost:3000/api/record/test";
+  private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
   constructor(private httpClient: HttpClient) { }
 
   public getAll() {
@@ -23,17 +23,21 @@ export class DataService {
     return this.httpClient.get(this.REST_API_FACEBOOK_LOGIN)
   }
 
+  public getUid() {  // tbc
+    return this.httpClient.get(this.REST_API_FACEBOOK_UID)
+  }
+
   public postData(newData: Object) {
     return this.httpClient.post(this.REST_API_SERVER, newData)
   }
 
   // For Collection "Record"
-  public getRecord(getParameter: any): Observable<any>{
-    return this.httpClient.get(this.REST_API_SERVER_RECORD, {params: getParameter})
+  public getRecord(getParams: any): Observable<any> {
+    return this.httpClient.get(this.REST_API_SERVER_RECORD, { params: getParams })
   }
 
-  public postRecord(newData: Object) {
-    return this.httpClient.post(this.REST_API_SERVER_RECORD, newData)
+  public postRecord(newRecord: Object) {
+    return this.httpClient.post(this.REST_API_SERVER_RECORD, newRecord)
   }
   // Methods for Collection "Record" end here
 }
