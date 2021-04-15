@@ -95,6 +95,8 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
       <li> Keyboard shortcuts. </li>
       <li> Ability to change the alert sound. </li>
       <li> No advertising on the website. </li>
+      <li> Ability to set custom goals. </li>
+      <li> No sign-up requirement. </li>
     </ul>
   </td>
   <td>
@@ -106,7 +108,61 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   </td>
 </table>
 
+## Tomatoes
 
+Website: http://www.tomato.es/
+
+Tomatoes is a Pomodoro Technique driven time tracker.
+
+<table>
+<tr>
+  <th>Pros</th>
+  <th>Cons</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> Simple and minimalist design. </li>
+      <li> Can track history of work by signing in via GitHub or Twitter. </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> Advertising at different areas on the page – quite distracting. </li>
+      <li> Fixed timer at 25 minutes. </li>
+      <li> Not simple to navigate. </li>
+    </ul>
+  </td>
+</table>
+
+## Pomodoro Tracker
+
+Website: https://www.pomodoro-tracker.com/
+
+Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro technique. 
+
+<table>
+<tr>
+  <th>Pros</th>
+  <th>Cons</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> No login required. </li>
+      <li> Ability to set a to-do list and track individual tasks by category. </li>
+      <li> Provides a set of tips and ideas to help productivity. </li>
+      <li> Can be in multiple languages.  </li>
+      <li> Shows statistics of work if signed in. </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> Advertising on the page – however only a single bar. </li>
+      <li> The colour of the text isn’t particular clear. Light grey on charcoal grey. </li>
+    </ul>
+  </td>
+</table>
 
 
 # Defined problem
