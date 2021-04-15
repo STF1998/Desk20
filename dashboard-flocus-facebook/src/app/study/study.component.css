@@ -47,11 +47,20 @@
     fill: #77a9ee;
 }
 
+
 @keyframes plop{
     0% {transform: scale(0.8);}
     65% {transform: scale(1) translate(0%,6%);}
     100% {transform: scale(1) translate(0%,170%);}
 }
+
+
+@keyframes plop2{
+  65% {transform: scale(1) translate(0%,6%);}
+  100% {transform: scale(1) translate(0%,170%);}
+}
+
+
 
 .tap{
    position: absolute;

@@ -118,15 +118,22 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private dripDrop(){
 
+
     var dropElement = document.getElementById('dropframe');
     if(dropElement == null){
+      console.log("dropElement is null");
       return;
     }
-    dropElement.animate([
-      {transform: 'translateY(800px)'}
-    ], {
-      duration: 5000,
-      iterations: Infinity
-    });
+
+    if(this.pressed % 2 == 1){
+      dropElement.animate([
+        {transform: 'translate(0, 0px)'},
+        {transform: 'translate(0, 340px)'}
+      ], {
+        duration: 1500,
+        iterations: Infinity,
+        easing: "ease-in"
+      });
+    }
   }
 }
