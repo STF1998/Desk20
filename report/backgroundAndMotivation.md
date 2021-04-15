@@ -205,6 +205,15 @@ Easy-to-use web based Pomodoro timer.
   </td>
 </table>
 
+## Market Opportunities identified from current industry research
+
+Based on current market research, we identified the following gaps and places for improvement for online procrastination tools inspried by the Pomodoro technqiue:
+
+- Lack of visual aid - sole focus on a clock timer.
+- Very few had the ability to see statistics compared to friends work/study behaviours.
+- None had a social enterprise aspect or links with a charity or charitable organisation.
+- Lack of animations. 
+
 # Defined problem
 
 ## Scope
