@@ -1,5 +1,3 @@
-import { Component, OnInit, OnDestroy, ɵɵInheritDefinitionFeature } from '@angular/core';
-import { assert } from 'node:console';
 import { HttpParams } from '@angular/common/http';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
@@ -17,8 +15,8 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public dayGlassCount: number; /*  = 8 */;
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 45*60;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
-  private breakTime = 10*60;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
+  private studyTime = 10;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
+  private breakTime = 5;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private userid = "testglasscnt"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = 0;
@@ -32,14 +30,23 @@ export class StudyComponent implements OnInit, OnDestroy {
    }
 
   ngOnInit(): void {
-    this.retrieveUid();
+    // this.retrieveUid();
     this.retrieveGlassCount();
   }
 
   ngOnDestroy(): void {
     if(this.timePassed > 0){
       console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
-      this.DataService.postRecord(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));
+      this.DataService.postRecord(
+        JSON.stringify({ 
+          "uid": this.userid, 
+        "timestamp": new Date(), 
+        "timeSpent": this.timePassed 
+      })).subscribe(
+        feedback => {
+          console.log(feedback);
+        }
+      );
       this.pauseTimer();
     }
   }
@@ -64,8 +71,16 @@ export class StudyComponent implements OnInit, OnDestroy {
         }
         if (this.timePassed == this.studyTime) { // if the time you have spent studying is equal to the time allocation
           this.dayGlassCount++;
-          console.log(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
-          this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
+          console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed}));  // posting to db
+          this.DataService.postRecord(JSON.stringify({ 
+            "uid": this.userid, 
+            "timestamp": new Date(), 
+            "timeSpent": this.timePassed 
+          })).subscribe(
+            feedback => {
+              console.log(feedback);
+            }
+          );
           this.retrieveGlassCount();
           this.timePassed = 0; // time is reset
           this.isStudy = false; // it is now not time to study
@@ -167,6 +182,7 @@ export class StudyComponent implements OnInit, OnDestroy {
       data => {
         this.stats = data;
         this.dayGlassCount = this.stats.length;
+        console.log(this.stats);
       },
       error => {
         console.log(error);

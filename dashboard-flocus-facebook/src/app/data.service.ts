@@ -1,5 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { map, filter, switchMap } from 'rxjs/operators';
@@ -33,11 +33,13 @@ export class DataService {
 
   // For Collection "Record"
   public getRecord(getParams: any): Observable<any> {
-    return this.httpClient.get(this.REST_API_SERVER_RECORD, { params: getParams })
+    return this.httpClient.get(this.REST_API_SERVER_RECORD, { params: getParams });
   }
 
-  public postRecord(newRecord: Object) {
-    return this.httpClient.post(this.REST_API_SERVER_RECORD, newRecord)
+  public postRecord(newRecord: any): Observable<any> {
+    const headers = new HttpHeaders().set("Content-Type",'application/json');
+    console.log(newRecord);
+    return this.httpClient.post(this.REST_API_SERVER_RECORD, newRecord, { headers: headers });
   }
   // Methods for Collection "Record" end here
 }
