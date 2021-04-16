@@ -2,7 +2,7 @@
 
 
 .container{
-  position: fixed;
+  position: absolute;
   top:50%;
   left:100%;
   -moz-transform: translateX(-100%) translateY(-50%);

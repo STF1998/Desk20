@@ -29,7 +29,7 @@ import { AsaquaComponent } from './asaqua/asaqua.component';
     HomeComponent,
     StudyComponent,
     LeagueComponent,
-    AsaquaComponent,
+    AsaquaComponent
   ],
   imports: [
     BrowserModule,

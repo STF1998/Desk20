@@ -1,7 +1,9 @@
 import { Component, OnInit, OnDestroy, ɵɵInheritDefinitionFeature } from '@angular/core';
+import { assert } from 'node:console';
 import { Subscription, timer } from 'rxjs';
 import { DataService } from '../data.service';
 import Timer = NodeJS.Timer;
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-study',
@@ -11,8 +13,8 @@ import Timer = NodeJS.Timer;
 export class StudyComponent implements OnInit, OnDestroy {
 
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 60;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
-  private breakTime = 10;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
+  private studyTime = 45*60;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
+  private breakTime = 10*60;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = 0;
   private time: Subscription = Subscription.EMPTY;
@@ -20,7 +22,8 @@ export class StudyComponent implements OnInit, OnDestroy {
   private isStudy = true;
   public dayGlassCount = 0;
 
-  constructor(private DataService: DataService) { }
+  constructor(private DataService: DataService) {
+   }
 
   ngOnInit(): void {
   }
@@ -57,6 +60,8 @@ export class StudyComponent implements OnInit, OnDestroy {
           this.DataService.postRecord(JSON.stringify({ "uid": "sampeluid", "timestamp": new Date(), "timeSpent": this.timePassed }));
           this.timePassed = 0; // time is reset
           this.isStudy = false; // it is now not time to study
+          this.pressed++;
+          this.dripDrop();
           this.emptyOut();
         }
       }
@@ -65,7 +70,6 @@ export class StudyComponent implements OnInit, OnDestroy {
         this.timePassed = 0;
         this.time.unsubscribe();
         this.isStudy = true;
-        this.pressed++;
       }
     });
   }
@@ -116,23 +120,23 @@ export class StudyComponent implements OnInit, OnDestroy {
     }
   }
 
+
   private dripDrop(){
 
-
-    var dropElement = document.getElementById('dropframe');
-    if(dropElement == null){
-      console.log("dropElement is null");
+    var id = document.getElementById("dropframe");
+    if(id == null){
+      alert("null element id for water drop");
       return;
     }
 
+    console.log(this.pressed % 2);
+
     if(this.pressed % 2 == 1){
-      dropElement.animate([
-        {transform: 'translate(0, 0px)'},
-        {transform: 'translate(0, 340px)'}
-      ], {
-        duration: 1500,
-        iterations: Infinity,
-        easing: "ease-in"
+        $(".dropframe").addClass("anim");
+    }
+    else{
+      $(".dropframe").one('animationiteration webkitAnimationIteration', function() {
+        $(".dropframe").removeClass("anim");
       });
     }
   }
