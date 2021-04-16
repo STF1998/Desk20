@@ -2,24 +2,31 @@
 
 
 .container{
-  position: relative;
-  top:-10%;
-  left:41%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 20%;
+  position: absolute;
+  top:50%;
+  left:100%;
+  -moz-transform: translateX(-100%) translateY(-50%);
+  -webkit-transform: translateX(-100%) translateY(-50%);
+  transform: translateX(-100%) translateY(-50%);
+  height: 600px;
+  width: 500px;
 }
 
 .navbar-nav{
   position: absolute;
   text-align: right;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .nav-link{
-  margin: -5vw;
+  margin: -5vh;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: 650%;
+  font-size: 100px;
   text-transform: uppercase;
   color: #9fbce4;
 }
@@ -28,33 +35,3 @@ a:hover{
   transform: translateX(-3%);
   color: #5c82b8;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .logo-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: vissible;
-    margin-top: -6px;
-}
-  
-  
-  

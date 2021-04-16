@@ -1,3 +1,4 @@
+import { AsaquaComponent } from './asaqua/asaqua.component';
 import { LoginComponent } from './login/login.component';
 
 import { APITestComponent } from './api-test/api-test.component';
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'study', component: StudyComponent },
   { path: 'home', component: HomeComponent},
   { path: '**', component: HomeComponent },
-  { path: 'study', component: StudyComponent}
+  { path: 'asaqua', component: AsaquaComponent}
 ];
 
 @NgModule({
