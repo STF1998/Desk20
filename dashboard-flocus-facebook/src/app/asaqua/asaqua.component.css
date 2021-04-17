@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+.contain{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.how{
+    background-color: #9fbce4;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 650px;
+    height:650px;
+    border-radius: 50%;
+
+}
+
+.holder{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top:50%;
+    left:50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.howHeader{
+    text-align: center;
+    margin: 40px;
+    color: white;
+}
+
+
+.point{
+    color: white;
+    margin: 10px;
+}
+
+
+.asaqua{
+    position: absolute;
+    top:70%;
+    left: 80%;
+    -moz-transform: translateX(-80%) translateY(-70%);
+    -webkit-transform: translateX(-80%) translateY(-70%);
+    transform: translateX(-80%) translateY(-70%);
+}
+
+.flocus{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 150px;
+    width: 1400px;
+}
