@@ -19,7 +19,8 @@ export class StudyComponent implements OnInit, OnDestroy {
   private breakTime = 5;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private userid = "testglasscnt"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
-  private pressed = 0;
+  private pressed = false;
+  private isBreak = false;
   private time: Subscription = Subscription.EMPTY;
   private timePassed = 0;
   private isStudy = true;
@@ -52,17 +53,28 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   public press() {
-    this.pressed++;
-    this.dripDrop();
-    if (this.pressed % 2 == 1) {
+    if(this.isBreak == true){
+      return;
+    }
+    if(this.pressed == true){
+      this.pressed = false;
+    }
+    else{
+      this.pressed = true;
+    }
+    if (this.pressed == true) {
+      this.isBreak = false;
+      this.dripDrop("start");
       this.startTimer();
     } else {
+      this.dripDrop("stop");
       this.pauseTimer();
-    }
+     }
   }
 
   private startTimer() {
     this.time = timer(0, 1000).subscribe(t => {
+      console.log(this.timePassed);
       this.timePassed++; //incrementing the time by 1 second
       if (this.isStudy) { //if the current time is for studying
         if (this.timePassed % this.updatefreq == 0) { // updating the water level every 2 seconds
@@ -84,9 +96,10 @@ export class StudyComponent implements OnInit, OnDestroy {
           this.retrieveGlassCount();
           this.timePassed = 0; // time is reset
           this.isStudy = false; // it is now not time to study
-          this.pressed++;
-          this.dripDrop();
+          this.isBreak = true;
+          this.dripDrop("stop");
           this.emptyOut();
+          this.pressed = false;
         }
       }
       if (!this.isStudy && this.timePassed == this.breakTime) {
@@ -94,6 +107,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         this.timePassed = 0;
         this.time.unsubscribe();
         this.isStudy = true;
+        this.isBreak = false;
       }
     });
   }
@@ -117,11 +131,15 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private fillUp(){
 
-    this.elem = document.getElementById('waterfill');
-    this.yPos = this.ydist * this.waterLevel ;
-    console.log(this.yPos);
-    if(this.elem != null){
-      this.elem.style.transform = "translate(0px," + this.yPos + "px)";
+    console.log("fill up called on: " + this.pressed);
+
+    if(this.pressed == true){
+      this.elem = document.getElementById('waterfill');
+      this.yPos = this.ydist * this.waterLevel ;
+      console.log(this.yPos);
+      if(this.elem != null){
+        this.elem.style.transform = "translate(0px," + this.yPos + "px)";
+      }
     }
   }
 
@@ -145,7 +163,9 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
 
-  private dripDrop(){
+  private dripDrop(start: string){
+
+    console.log("drip drop");
 
     var id = document.getElementById("dropframe");
     if(id == null){
@@ -153,10 +173,8 @@ export class StudyComponent implements OnInit, OnDestroy {
       return;
     }
 
-    console.log(this.pressed % 2);
-
-    if(this.pressed % 2 == 1){
-        $(".dropframe").addClass("anim");
+    if(start == "start"){
+      $(".dropframe").addClass("anim");
     }
     else{
       $(".dropframe").one('animationiteration webkitAnimationIteration', function() {
