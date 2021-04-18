@@ -12,22 +12,21 @@
 
 .league{
     position: absolute;
-    top :50%;
-    left: 50%;
-    width: 600px;
-    height: 600px;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    left: 95%;
+    width: 45%;
+    height: 100%;
+    -moz-transform: translateX(-95%);
+    -webkit-transform: translateX(-95%);
+    transform: translateX(-95%);
+    border: black 2px solid;
 }
 
 .table{
     position: absolute;
-    top :50%;
     left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 
@@ -44,8 +43,6 @@ th{
     background-color: #9fbce4;
     color:white;
 }
-
-
 
 tr td:last-child { 
     border-bottom-right-radius: 30px;
@@ -65,20 +62,28 @@ tr th:first-child {
     border-bottom-left-radius: 20px;
 }
 
-
 .pos {
   color: #9fbce4;
   cursor: pointer;
   background: transparent;
   background-image: url('../../assets/waves.png');
   background-repeat: repeat-x;
-  background-position: 0 -30%;
+  background-position: 0 60px;
   transition: 1.3s ease-in-out;
 }
 .pos:hover {
     background-position: 50% 50%;
     color: #ffffff;
-  }
+}
+
+.stats{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    -moz-transform: translateX(-20%) translateY(-25%) ;
+    -webkit-transform: translateX(-20%) translateY(-25%);
+    transform: translateX(-20%) translateY(-25%);
+}
 
     
     
