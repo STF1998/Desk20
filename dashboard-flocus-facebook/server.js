@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Point static path to dist (folder where build files are located)
 app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 
+//app.use(express.static(path.join(__dirname, 'src/app/login')));
 // Set our api routes
 app.use('/api', api);
 app.use('/api/record', record);
@@ -87,13 +88,25 @@ passport.use(new facebookStrategy({
   }));
 
 
-app.get('/success', isLoggedIn, (req, res) => {
+app.get('/status', (req, res) => {
+  res.header("Content-Type", 'application/json');
+  
+  if (req.isAuthenticated()) {
+    res.send(JSON.stringify({ "status": true }));
+    
+  } else {
+    res.send(JSON.stringify({ "status": false }));
+    
+  }
+});
+
+app.get('/toTheLogin',  (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
 });
 
-app.get('/failed', isLoggedIn, (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
-});
+
+
+
 
 passport.serializeUser(function (user, done) {
   done(null, user.id);
@@ -122,9 +135,8 @@ app.get('/auth/facebook', passport.authenticate('facebook', {
 
 app.get('/facebook/callback',
   passport.authenticate('facebook', {
-    
-    successRedirect: '/success',
-    failureRedirect: '/failed'
+    successRedirect: '/toTheLogin',
+    failureRedirect: '/toTheLogin'
   }));
 
 
@@ -142,7 +154,7 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
   res.send(uids);
 });
 
-app.get('/name', isLoggedIn, function (req, res) {
+app.get('/name', isLoggedIn,function (req, res) {
   var theUser = req.user
   res.send(theUser.name)
 });

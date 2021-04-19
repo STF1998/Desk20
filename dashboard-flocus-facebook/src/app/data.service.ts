@@ -11,7 +11,9 @@ export class DataService {
 
   private REST_API_SERVER = "http://localhost:3000/api";
   private REST_API_FACEBOOK_LOGIN = "http://localhost:3000/auth/facebook";
-  private REST_API_SERVER_RECORD = "http://localhost:3000/api/record";
+  private REST_API_SERVER_RECORD = "http://localhost:3000/api/record"
+  private REST_API_SERVER_STATUS = "http://localhost:3000/status";
+  private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";
   constructor(private httpClient: HttpClient) { }
 
   public getAll() {
@@ -19,6 +21,14 @@ export class DataService {
   }
   public loginFB() {
     return this.httpClient.get(this.REST_API_FACEBOOK_LOGIN)
+  }
+
+  public loginStatus() {
+    return this.httpClient.get(this.REST_API_SERVER_STATUS)
+  }
+
+  public toTheLogin() {
+    return this.httpClient.get(this.REST_API_SERVER_LOGINPAGE)
   }
 
   public postData(newData: Object) {
