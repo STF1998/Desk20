@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GoogleChartsModule } from 'angular-google-charts';
 import { DataService } from '../data.service';
 import { HttpParams } from '@angular/common/http';
 
@@ -12,38 +11,41 @@ export class LeagueComponent implements OnInit {
 
   private studyTime = 10;
   private stats: any = [];
+  public dailyCount: number[] = [1, 2, 3, 4, 5, 6, 7];
+  public colors: string[] = ["#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4"];
 
-  constructor( private DataService: DataService ) { }
+
+  constructor( private DataService: DataService ) {
+    this.dailyCount = [1, 2, 3, 4, 5, 6, 7];
+    this.colors = ["#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4"];
+  }
+
 
   ngOnInit(): void {
   }
 
-
-  public drawChart() {
-    var data = google.visualization.arrayToDataTable([
-        ['Day', 'Glasses'],
-        ['Mo', 3],
-        ['Tu', 5],
-        ['We', 6],
-        ['Th', 0],
-        ['Fr', 0],
-        ['Sa', 1]
-    ]);
-    var options = {
-        title: 'Glasses poured per day',
-        isStacked: true
-    };
-    var id = document.getElementById('stats');
-    if(id == null){
-      alert("cannot find stats container");
-      return;
+  public barChartOptions = {
+    responsive: true,
+    scales: {
+      xAxes: [{
+          gridLines: {
+              display: false,
+          }
+      }],
+      yAxis: [{
+        gridLines: {
+            display: false,
+        }
+      }],
     }
-    var chart = new google.visualization.BarChart(id);
-    chart.draw(data, options);
-  }
+  };
 
-  
-  
+  public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+  public barChartType = 'bar';
+  public barChartData = [
+    {data: this.dailyCount,
+    backgroundColor: '#2672db'}
+  ];
 
   private retrieveGlassCount(userid: string, weekStart: Date, weekEnd: Date): number {
 
@@ -71,4 +73,6 @@ export class LeagueComponent implements OnInit {
     ); 
     return -1;  // Error
   }
+
+
 }
