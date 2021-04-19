@@ -71,7 +71,7 @@ tr th:first-child {
   transition: 1.3s ease-in-out;
 }
 .pos:hover {
-    background-position: 50% 50%;
+    background-position: 50% 10%;
     color: #ffffff;
     transform: scale(1.03);
 }
@@ -86,13 +86,17 @@ tr th:first-child {
 }
 
 .lottie{
-    position: absolute;
-    left: 20%;
-    top: 75%;
-    -moz-transform: translateX(-20%) translateY(-75%) ;
-    -webkit-transform: translateX(-20%) translateY(-75%);
-    transform: translateX(-20%) translateY(-75%);
+    position: fixed;
+    left: 10%;
+    top: 100%;
+    -moz-transform: translateX(-10%) translateY(-100%) ;
+    -webkit-transform: translateX(-10%) translateY(-100%);
+    transform: translateX(-10%) translateY(-100%);
 }
+
+.image{
+    height: 450px;
+} 
 
     
     
