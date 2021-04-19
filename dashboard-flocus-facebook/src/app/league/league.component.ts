@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleChartsModule } from 'angular-google-charts';
 import { DataService } from '../data.service';
 import { HttpParams } from '@angular/common/http';
 
@@ -15,6 +16,30 @@ export class LeagueComponent implements OnInit {
   constructor( private DataService: DataService ) { }
 
   ngOnInit(): void {
+  }
+
+
+  public drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Day', 'Glasses'],
+        ['Mo', 3],
+        ['Tu', 5],
+        ['We', 6],
+        ['Th', 0],
+        ['Fr', 0],
+        ['Sa', 1]
+    ]);
+    var options = {
+        title: 'Glasses poured per day',
+        isStacked: true
+    };
+    var id = document.getElementById('stats');
+    if(id == null){
+      alert("cannot find stats container");
+      return;
+    }
+    var chart = new google.visualization.BarChart(id);
+    chart.draw(data, options);
   }
 
   
@@ -45,5 +70,4 @@ export class LeagueComponent implements OnInit {
     ); 
     return -1;  // Error
   }
-
 }
