@@ -25,6 +25,6 @@ export class APITestComponent implements OnInit {
  
   sendData(){
     this.DataService.postData(JSON.stringify(this.testUserData));
-  }
+  } 
 
 }
