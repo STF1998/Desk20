@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
 
 .page{
     position: relative;
@@ -12,6 +14,14 @@
 
 }
 
+.leagueTitle{
+  font-size: 1000%;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  font-family: 'Poppins', sans-serif;
+}
 
 .league{
     position: absolute;

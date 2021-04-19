@@ -34,14 +34,19 @@ export class LeagueComponent implements OnInit {
       }],
       yAxis: [{
         gridLines: {
+            drawBorder: false,
             display: false,
+            zeroLineColor:'transparent',
         }
       }],
-    }
+    },
+    legend: {
+      display: false
+   },
   };
 
   public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
-  public barChartType = 'bar';
+  public barChartType = 'horizontalBar';
   public barChartData = [
     {data: this.dailyCount,
     backgroundColor: '#2672db'}
