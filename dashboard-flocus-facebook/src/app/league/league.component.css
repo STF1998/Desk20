@@ -4,6 +4,13 @@
 .page{
     position: relative;
     background-color: #ffffff;
+    background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 20px,
+    #d3dff0 1px,
+    #d3dff0 21px
+    );
     width: 100vw;
     height: 100vh;
     top :50%;
@@ -21,6 +28,16 @@
   font-weight: bold;
   letter-spacing: 0vw;
   font-family: 'Poppins', sans-serif;
+}
+
+.yourWeek{
+font-size: 500%;
+  text-align: left;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .league{
@@ -44,8 +61,8 @@
 
 td,
 th{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 
