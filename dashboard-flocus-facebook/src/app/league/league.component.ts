@@ -45,7 +45,7 @@ export class LeagueComponent implements OnInit {
   
   
 
-  private retrieveGlassCount(userid: string, rangeStart: Date, rangeEnd: Date): number {
+  private retrieveGlassCount(userid: string, weekStart: Date, weekEnd: Date): number {
 
     var glassCount: number;
     var date = new Date();
@@ -54,9 +54,10 @@ export class LeagueComponent implements OnInit {
 
     var httpParams = new HttpParams()
     .set("uid", userid)
-    .set("dayStart", JSON.parse(JSON.stringify(rangeStart)))
-    .set("dayEnd", JSON.parse(JSON.stringify(rangeEnd)))
-    .set("timeSpent", this.studyTime.toString());
+    .set("dayStart", JSON.parse(JSON.stringify(weekStart)))
+    .set("dayEnd", JSON.parse(JSON.stringify(weekEnd)))
+    .set("timeSpentLower", this.studyTime.toString())
+    .set("timeSpentUpper", this.studyTime.toString());
 
     this.DataService.getRecord(httpParams).subscribe(
       data => {
