@@ -20,7 +20,7 @@ app.use(session({ secret: 'desktwentyforthewin' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Point static path to dist (folder where build files are located)
 app.use(express.static(path.join(__dirname, 'dist/dashboard')));
@@ -154,9 +154,14 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
   res.send(uids);
 });
 
-app.get('/name', isLoggedIn,function (req, res) {
+app.get('/name', isLoggedIn, function (req, res) {
   var theUser = req.user
   res.send(theUser.name)
+});
+
+app.get('/uid', isLoggedIn, function (req, res) {
+  var theUser = req.user
+  res.send(theUser.uid)
 });
 
 app.get('/profilePic', isLoggedIn, function (req, res) {

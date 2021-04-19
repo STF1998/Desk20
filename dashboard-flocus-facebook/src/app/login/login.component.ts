@@ -9,7 +9,6 @@ import { DataService } from '../data.service';
 export class LoginComponent implements OnInit {
 
   public status: boolean;
-  public tempVar: boolean;
   tmp: any = [];
   constructor(private dataService: DataService) { }
  
@@ -27,16 +26,13 @@ export class LoginComponent implements OnInit {
         this.tmp = data;
         console.log(this.tmp);
         this.status = this.tmp.status;
-        this.tempVar = this.tmp.status;
-        console.log(this.tempVar);
-        console.log(this.status);
-        console.log("test");
+
         if (this.status) {
           console.log("yes");
           //route to another page
         } else {
           console.log("no");
-          //let's stay here boiii
+          //let's stay here boi
         }
         
       },
