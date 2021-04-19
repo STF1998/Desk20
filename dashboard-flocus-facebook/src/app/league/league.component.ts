@@ -11,17 +11,33 @@ export class LeagueComponent implements OnInit {
 
   private studyTime = 10;
   private stats: any = [];
-  public dailyCount: number[] = [1, 2, 3, 4, 5, 6, 7];
-  public colors: string[] = ["#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4"];
+  public dailyCount: number[] = [1, 2, 8, 4, 5, 6, 15];
 
 
-  constructor( private DataService: DataService ) {
-    this.dailyCount = [1, 2, 3, 4, 5, 6, 7];
-    this.colors = ["#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4", "#9fbce4"];
-  }
+  constructor( private DataService: DataService ) {}
 
 
   ngOnInit(): void {
+  }
+
+  private assignColors (day: number): string {
+
+    if(this.dailyCount[day] <= 2){
+       return "#cbdef8";
+    }
+    if(this.dailyCount[day] <= 4){
+      return "#b5cef1";
+    }
+    if(this.dailyCount[day] <= 5){
+      return "#6a9be0";
+    }
+    if(this.dailyCount[day] <= 10){
+      return "#a82cda";
+    }
+    if(this.dailyCount[day] > 13){
+      return "#ad445f";
+    }
+    return "#9fbce4"
   }
 
   public barChartOptions = {
@@ -34,18 +50,32 @@ export class LeagueComponent implements OnInit {
       }],
       yAxis: [{
         gridLines: {
+            drawBorder: false,
             display: false,
+            zeroLineColor:'transparent',
         }
       }],
-    }
+    },
+    legend: {
+      display: false
+   },
   };
 
   public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
-  public barChartType = 'bar';
+  public barChartType = 'horizontalBar';
   public barChartData = [
     {data: this.dailyCount,
-    backgroundColor: '#2672db'}
-  ];
+    backgroundColor:[
+      this.assignColors(0),
+      this.assignColors(1),
+      this.assignColors(2),
+      this.assignColors(3),
+      this.assignColors(4),
+      this.assignColors(5),
+      this.assignColors(6)
+    ],
+    hoverBackgroundColor: '#112d53'
+  }];
 
   private retrieveGlassCount(userid: string, weekStart: Date, weekEnd: Date): number {
 
