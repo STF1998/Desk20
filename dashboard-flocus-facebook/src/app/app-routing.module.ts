@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'study', component: StudyComponent },
   { path: 'home', component: HomeComponent},
   { path: 'asaqua', component: AsaquaComponent},
-  { path: '**', component: HomeComponent },
+  { path: '**', component: LoginComponent },
 
 ];
 
