@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
 
 .page{
     position: relative;
     background-color: #ffffff;
+    background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 20px,
+    #d3dff0 1px,
+    #d3dff0 21px
+    );
     width: 100vw;
     height: 100vh;
     top :50%;
@@ -12,6 +21,24 @@
 
 }
 
+.leagueTitle{
+  font-size: 1000%;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.yourWeek{
+  font-size: 500%;
+  text-align: left;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  font-family: 'Poppins', sans-serif;
+
+}
 
 .league{
     position: absolute;
@@ -34,8 +61,8 @@
 
 td,
 th{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 
@@ -83,16 +110,17 @@ tr th:first-child {
     display: block;
     position: absolute;
     left: 10%;
-    top: 10%;
+    top: 15%;
     height: 50%;
     width: 40%;
-    -moz-transform: translateX(-10%) translateY(-10%) ;
-    -webkit-transform: translateX(-10%) translateY(-10%);
-    transform: translateX(-10%) translateY(-10%);
+    -moz-transform: translateX(-10%) translateY(-15%) ;
+    -webkit-transform: translateX(-10%) translateY(-15%);
+    transform: translateX(-10%) translateY(-15%);
 }
 
 .lottie{
     position: fixed;
+    height: 50%;
     left: 10%;
     top: 100%;
     -moz-transform: translateX(-10%) translateY(-100%) ;
@@ -101,8 +129,26 @@ tr th:first-child {
 }
 
 .image{
-    height: 450px;
-} 
+    height: 100%;
+}
+
+.nav-link{
+    margin: 3vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: black;
+    position:absolute;
+    top: -3%;
+    left: -2%;
+    z-index: 6;
+  }
+
+  .nav-link:hover{
+    transform: translateX(-4%);
+    color: #5c82b8;
+  }
 
     
     

@@ -12,9 +12,13 @@ export class DataService {
 
   private REST_API_SERVER = "http://localhost:3000/api";
   private REST_API_FACEBOOK_LOGIN = "http://localhost:3000/auth/facebook";
-  private REST_API_SERVER_RECORD = "http://localhost:3000/api/record";
+
+  private REST_API_SERVER_RECORD = "http://localhost:3000/api/record"
+  private REST_API_SERVER_STATUS = "http://localhost:3000/status";
+  private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";  
   private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
   private REST_API_FACEBOOK_friendsUID = "http://localhost:3000/friendsUID";
+
   constructor(private httpClient: HttpClient) { }
 
   public getAll() {
@@ -24,7 +28,15 @@ export class DataService {
     return this.httpClient.get(this.REST_API_FACEBOOK_LOGIN)
   }
 
-  public getUid() {
+
+  public loginStatus() {
+    return this.httpClient.get(this.REST_API_SERVER_STATUS)
+  }
+
+  public toTheLogin() {
+    return this.httpClient.get(this.REST_API_SERVER_LOGINPAGE)
+  }
+  public getUid() {  // tbc
     return this.httpClient.get(this.REST_API_FACEBOOK_UID)
   }
 
@@ -46,5 +58,9 @@ export class DataService {
     console.log(newRecord);
     return this.httpClient.post(this.REST_API_SERVER_RECORD, newRecord, { headers: headers });
   }
-  // Methods for Collection "Record" end here
+
 }
+
+  // Methods for Collection "Record" end here
+
+
