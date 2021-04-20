@@ -22,10 +22,13 @@ router.get('/', async (req, res) => {
   const record = await Record.find({
     "uid": req.query.uid,
     "timestamp": {
-      "$gte": req.query.dayStart,
-      "$lte": req.query.dayEnd
+      "$gte": req.query.rangeStart,
+      "$lte": req.query.rangeEnd
     },
-    "timeSpent": req.query.timeSpent
+    "timeSpent": {
+      "$gte": req.query.timeSpentLower,
+      "$lte": req.query.timeSpentUpper
+    }
   });
 
   if (!record) return res.status(404).send('No such user');

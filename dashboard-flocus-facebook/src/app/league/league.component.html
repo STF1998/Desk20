@@ -1,3 +1,90 @@
-<div class = "league">
-    <h1>[Your League]</h1>
+<div class = "page">
+    <div class="league">
+        <div class = "leagueTitle">LEAGUE</div>
+        <table class = "table">
+            <tr class="headers">
+                <th>Position</th>
+                <th>Name</th>
+                <th>Glasses Today</th>
+                <th>Hours</th>
+                <th>Glasses this Week</th>
+            </tr>
+            <tr class="pos winner">
+                <td>1</td>
+                <td>Greg</td>
+                <td>2</td>
+                <td>5.2</td>
+                <td>2</td>
+            </tr>
+            <tr class="pos second">
+                <td>2</td>
+                <td>Mr. Water</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr class="pos third">
+                <td>3</td>
+                <td>cheese</td>
+                <td>2</td>
+                <td>2.4</td>
+                <td>1</td>
+            </tr>
+            <tr class="pos">
+                <td>4</td>
+                <td>ChickenLittle</td>
+                <td>2</td>
+                <td>2.3</td>
+                <td>1</td>
+            <tr class="pos">
+                <td>5</td>
+                <td>Tyrone</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>     
+            <tr class="pos">
+                <td>6</td>
+                <td>Tyrone</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>         
+            <tr class="pos">
+                <td>6</td>
+                <td>Tyrone</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>         
+            <tr class="pos">
+                <td>8</td>
+                <td>Tyrone</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>             
+        </table>
+    </div>
+
+    <div class = "left">
+        <div class = "stats">
+            <div class = "yourWeek">YOUR WEEK:</div>
+            <canvas class = "weekly" baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [chartType]="barChartType">
+            </canvas>
+        </div>
+
+        <div class = "lottie">
+            <lottie-player class = "image" src="../../assets/winning.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay >
+            </lottie-player>
+        </div>
+    </div>
 </div>
