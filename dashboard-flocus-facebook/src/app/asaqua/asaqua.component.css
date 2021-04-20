@@ -19,15 +19,14 @@
     #b3cbec 11px
     );
     position: absolute;
-    top: 140%;
+    top: 200%;
     left: 0%;
-    -moz-transform: translateX(0%) translateY(-140%);
-    -webkit-transform: translateX(0%) translateY(-140%);
-    transform: translateX(0%) translateY(-140%);
+    -moz-transform: translateX(0%) translateY(-200%);
+    -webkit-transform: translateX(0%) translateY(-200%);
+    transform: translateX(0%) translateY(-200%);
     width: 650px;
     height:650px;
     border-radius: 50%;
-    text-align: center;
 
 }
 
@@ -47,7 +46,7 @@
 }
 .howHeader{
     text-align: center;
-    margin: 40px;
+    margin: 60px;
     color: white;
     letter-spacing: 1vw;
 }
@@ -61,23 +60,29 @@
 
 .asaqua{
     position: absolute;
-    top:70%;
+    top:100%;
     left: 80%;
-    -moz-transform: translateX(-80%) translateY(-70%);
-    -webkit-transform: translateX(-80%) translateY(-70%);
-    transform: translateX(-80%) translateY(-70%);
+    width: 450px;
+    height: 400px;
+    -moz-transform: translateX(-80%) translateY(-100%);
+    -webkit-transform: translateX(-80%) translateY(-100%);
+    transform: translateX(-80%) translateY(-100%);
 }
 
 .flocus{
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 50%;
-    -moz-transform: translateX(-50%) translateY(-5%);
-    -webkit-transform: translateX(-50%) translateY(-5%);
-    transform: translateX(-50%) translateY(-5%);
+    -moz-transform: translateX(-50%) translateY(-15%);
+    -webkit-transform: translateX(-50%) translateY(-15%);
+    transform: translateX(-50%) translateY(-15%);
     height: 200px;
-    width: 1400px;
+    width: 1200px;
     text-align: justify;
+}
+
+.aim{
+    text-align: center;
 }
 h3{
     line-height: 1;
@@ -86,3 +91,33 @@ h3{
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
+
+.LOGO{
+    position:absolute;
+    top: 100%;
+    left: 95%;
+    -moz-transform: translateX(-95%) translateY(-100%);
+    -webkit-transform: translateX(-95%) translateY(-100%);
+    transform: translateX(-95%) translateY(-100%);
+    height: 100px;
+    width: 100px;
+}
+
+
+.nav-link{
+    margin: 3vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: black;
+    position:absolute;
+    top: -3%;
+    left: -2%;
+    z-index: 6;
+  }
+
+  .nav-link:hover{
+    transform: translateX(-4%);
+    color: #5c82b8;
+  }
