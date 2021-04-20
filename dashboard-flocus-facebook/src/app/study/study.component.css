@@ -25,7 +25,6 @@
     width:1200px;
 }
 
-
 .background{
     position: absolute;
     top:50%;
@@ -45,6 +44,7 @@
     z-index: 3;
     transform-origin: 5% 20%;
     fill: #77a9ee;
+    animation: plop 3s ease-in;
 }
 
 .anim{
