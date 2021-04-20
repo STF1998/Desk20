@@ -31,7 +31,7 @@
 }
 
 .yourWeek{
-font-size: 500%;
+  font-size: 500%;
   text-align: left;
   line-height: 1;
   font-weight: bold;
@@ -120,6 +120,7 @@ tr th:first-child {
 
 .lottie{
     position: fixed;
+    height: 55%;
     left: 10%;
     top: 100%;
     -moz-transform: translateX(-10%) translateY(-100%) ;
@@ -128,7 +129,7 @@ tr th:first-child {
 }
 
 .image{
-    height: 450px;
+    height: 100%;
 } 
 
     
