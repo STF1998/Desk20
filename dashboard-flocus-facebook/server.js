@@ -122,7 +122,7 @@ app.get('/auth/facebook', passport.authenticate('facebook', {
 
 app.get('/facebook/callback',
   passport.authenticate('facebook', {
-    
+
     successRedirect: '/success',
     failureRedirect: '/failed'
   }));
@@ -143,8 +143,12 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
 });
 
 app.get('/uid', isLoggedIn, function (req, res) {
-  var theUser = req.user
-  res.send(theUser.uid)
+  try {
+    var theUser = req.user
+    res.send(theUser.uid)
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 });
 
 app.get('/name', isLoggedIn, function (req, res) {

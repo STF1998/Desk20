@@ -17,7 +17,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
   private studyTime = 10;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
   private breakTime = 5;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
-  private userid = "testglasscnt"; // tmp (will be retrieved from the login component)
+  private userid = "108266374709077"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = false;
   private isBreak = false;
@@ -31,8 +31,7 @@ export class StudyComponent implements OnInit, OnDestroy {
    }
 
   ngOnInit(): void {
-    // this.retrieveUid();
-    this.retrieveGlassCount();
+    this.retrieveUidWithUserData();
   }
 
   ngOnDestroy(): void {
@@ -190,6 +189,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     var dayStart = new Date(date.setHours(0,0,0,0));
     var dayEnd = new Date(date.setHours(23,59,59,999));
 
+    console.log(this.userid);
     var httpParams = new HttpParams()
     .set("uid", this.userid)
     .set("rangeStart", JSON.parse(JSON.stringify(dayStart)))
@@ -200,8 +200,12 @@ export class StudyComponent implements OnInit, OnDestroy {
     this.DataService.getRecord(httpParams).subscribe(
       data => {
         this.stats = data;
-        this.dayGlassCount = this.stats.length;
-        console.log(this.stats);
+        if(this.stats.length == 1){
+          this.dayGlassCount = this.stats[0].session;
+        } else {
+          this.dayGlassCount = 0;
+        }
+        console.log(this.dayGlassCount);
       },
       error => {
         console.log(error);
@@ -209,12 +213,12 @@ export class StudyComponent implements OnInit, OnDestroy {
     );   
   }
 
-  private retrieveUid(){
+  private retrieveUidWithUserData(){
     this.DataService.getUid().subscribe(
       userdata => {
         const uid = userdata;
-        // this.userid = uid.toString();
-        console.log(uid.toString());
+        this.userid = uid.toString();
+        this.retrieveGlassCount();
       }
     )
   }
