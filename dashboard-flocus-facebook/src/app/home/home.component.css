@@ -18,10 +18,10 @@ h1 {
   text-transform: uppercase;
   position:absolute;
   top:50%;
-  left: 20%;
-  -moz-transform: translateX(-20%) translateY(-50%);
-  -webkit-transform: translateX(-20%) translateY(-50%);
-  transform: translateX(-20%) translateY(-50%);
+  left: 10%;
+  -moz-transform: translateX(-10%) translateY(-50%);
+  -webkit-transform: translateX(-10%) translateY(-50%);
+  transform: translateX(-10%) translateY(-50%);
 }
 
 .loading_cont {
@@ -81,7 +81,7 @@ h1 {
 
 @keyframes wobbleWobble{
 	0% {transform: translate(0%, 0%); }
-	33% {transform: translate(53%, 6%); }
+	33% {transform: translate(55%, 6%); }
 	66% {transform: translate(-45%, 8%);}
 	100% {transform: translate(0%, 0%);}
 }
