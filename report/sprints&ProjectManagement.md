@@ -20,4 +20,4 @@ When developing a single page application, it is critical to consider developmen
 <p align="center">
 <img src="../report/Images/agile-scrum-vs-waterfall.png" width=70%>
 </p>
-<b><p align= "center">Figure 1: Agile vs Waterfall methodology (Source: [link](https://saigontechnology.com/blog/agile-vs-waterfall-in-software-development))</p></b>
+<b><p align= "center">Figure 1: Agile vs Waterfall methodology. Source: [link](https://saigontechnology.com/blog/agile-vs-waterfall-in-software-development).</p></b>
