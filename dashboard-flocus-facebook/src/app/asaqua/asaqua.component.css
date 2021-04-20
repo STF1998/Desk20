@@ -11,19 +11,30 @@
 
 .how{
     background-color: #9fbce4;
+    background: repeating-linear-gradient(
+    45deg,
+    #9fbce4,
+    #9fbce4 10px,
+    #b3cbec 1px,
+    #b3cbec 11px
+    );
     position: absolute;
-    top: 35%;
+    top: 140%;
     left: 0%;
+    -moz-transform: translateX(0%) translateY(-140%);
+    -webkit-transform: translateX(0%) translateY(-140%);
+    transform: translateX(0%) translateY(-140%);
     width: 650px;
     height:650px;
     border-radius: 50%;
+    text-align: center;
 
 }
 
 .holder{
     position: absolute;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     top:50%;
     left:50%;
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -31,10 +42,14 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+.flh3{
+    text-align: center;
+}
 .howHeader{
     text-align: center;
     margin: 40px;
     color: white;
+    letter-spacing: 1vw;
 }
 
 
@@ -55,8 +70,19 @@
 
 .flocus{
     position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 150px;
+    top: 5%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-5%);
+    -webkit-transform: translateX(-50%) translateY(-5%);
+    transform: translateX(-50%) translateY(-5%);
+    height: 200px;
     width: 1400px;
+    text-align: justify;
+}
+h3{
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 3vw;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }

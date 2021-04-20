@@ -192,9 +192,10 @@ export class StudyComponent implements OnInit, OnDestroy {
 
     var httpParams = new HttpParams()
     .set("uid", this.userid)
-    .set("dayStart", JSON.parse(JSON.stringify(dayStart)))
-    .set("dayEnd", JSON.parse(JSON.stringify(dayEnd)))
-    .set("timeSpent", this.studyTime.toString());
+    .set("rangeStart", JSON.parse(JSON.stringify(dayStart)))
+    .set("rangeEnd", JSON.parse(JSON.stringify(dayEnd)))
+    .set("timeSpentLower", this.studyTime.toString())
+    .set("timeSpentUpper", this.studyTime.toString());
 
     this.DataService.getRecord(httpParams).subscribe(
       data => {
