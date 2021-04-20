@@ -17,12 +17,6 @@ export class LeagueComponent implements OnInit {
 
   constructor( private DataService: DataService ) {}
 
-  public dailyCount: number[] = [];
-
-  constructor(private DataService: DataService) {
-  }
-
-
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
