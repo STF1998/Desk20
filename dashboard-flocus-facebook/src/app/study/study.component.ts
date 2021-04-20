@@ -173,12 +173,10 @@ export class StudyComponent implements OnInit, OnDestroy {
     }
 
     if(start == "start"){
-      $(".dropframe").addClass("anim");
+      id.style.animationIterationCount = "infinite";
     }
     else{
-      $(".dropframe").one('animationiteration webkitAnimationIteration', function() {
-        $(".dropframe").removeClass("anim");
-      });
+      id.style.animationIterationCount = "1";
     }
   }
   

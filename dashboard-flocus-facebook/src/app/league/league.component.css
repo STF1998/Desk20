@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
-
 .page{
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
     background: repeating-linear-gradient(
     45deg,
@@ -18,7 +17,6 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-
 }
 
 .leagueTitle{

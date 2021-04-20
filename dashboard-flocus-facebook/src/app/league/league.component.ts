@@ -12,10 +12,16 @@ export class LeagueComponent implements OnInit {
   private userid: string = "108266374709077";
   private studyTime = 10;
   private stats: any = [];
+  public dailyCount: number[] = [1, 2, 8, 4, 5, 6, 15];
+ 
+
+  constructor( private DataService: DataService ) {}
+
   public dailyCount: number[] = [];
 
   constructor(private DataService: DataService) {
   }
+
 
 
   ngOnInit(): void {
