@@ -26,6 +26,8 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ## Our Target Market
 
+When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however after initial focus groups and interviews with friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful but easy on the eye animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
+
 ## Our Stakeholders
 
 ### Asaqua 
