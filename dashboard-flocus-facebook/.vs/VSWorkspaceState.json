@@ -4,8 +4,9 @@
     "\\server",
     "\\server\\routes",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\login"
   ],
-  "SelectedNode": "\\src\\app\\login",
+  "SelectedNode": "\\src\\app\\app.component.spec.ts",
   "PreviewInSolutionExplorer": false
 }
