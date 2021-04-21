@@ -48,7 +48,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 <table>
 <tr>
-  <th>Name</th>
+  <th>      Name      </th>
   <th>Photo</th>
   <th>Team role</th>
   <th>Biggest lesson learnt during the project</th>
