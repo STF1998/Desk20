@@ -50,6 +50,15 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
 
+<div id="democontainer">
+<img id="demoimage" src="../report/Images/circle-cropped (5).png" width="153" height="205">
+<ul id="demotext">
+<li>Free contact form</li>
+<li>  [..etc..]  </li>
+</ul>
+<br style="clear: both;">
+</div>
+
 <div><p style="float: left;"><img src="../report/Images/circle-cropped (5).png" height="200px" width="200px" padding="10px"></p>
 <p>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</p>
 </div>
