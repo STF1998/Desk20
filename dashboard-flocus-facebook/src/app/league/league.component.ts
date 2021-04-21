@@ -19,10 +19,12 @@ export class LeagueComponent implements OnInit {
 
 
   public dailyCount: number[] = [];
+  public leagueRow: string[] = [];
   
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
+    this.retrieveAllFriends();
   }
 
   private assignColors (day: number): string {
@@ -144,4 +146,20 @@ export class LeagueComponent implements OnInit {
     )
   }
 
-}
+  private retrieveAllFriends() {
+    let friendIDs: any = this.DataService.getFriendsUid();
+    var lastMonday = new Date();
+    var day = lastMonday.getDay();
+    if(day !== 1){
+      lastMonday.setHours(-24 * (day - 1));
+    }
+    lastMonday.setHours(0,0,0,0); 
+    
+    for(var i = 0; i < friendIDs.length ; i++){
+      this.retrieveUserRecord(friendIDs[i], lastMonday, new Date());
+      this.stats[0].session
+    }
+
+    
+  }
+} 
