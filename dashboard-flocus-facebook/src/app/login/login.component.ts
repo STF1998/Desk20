@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router, RouterModule } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
+
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
 
+
+
+export class LoginComponent implements OnInit {
+  
   public status: boolean;
   tmp: any = [];
-  constructor(private dataService: DataService) { }
- 
-  ngOnInit() {
+  constructor(private dataService: DataService, public router : Router) { }
   
+  ngOnInit() {
+    
     this.retrieveData();
 
   }
@@ -29,6 +36,7 @@ export class LoginComponent implements OnInit {
 
         if (this.status) {
           console.log("yes");
+          this.router.navigate(['home']);
           //route to another page
         } else {
           console.log("no");

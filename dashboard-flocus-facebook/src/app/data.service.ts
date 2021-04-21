@@ -15,10 +15,9 @@ export class DataService {
 
   private REST_API_SERVER_RECORD = "http://localhost:3000/api/record"
   private REST_API_SERVER_STATUS = "http://localhost:3000/status";
-  private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";
-
-  
+  private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";  
   private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
+  private REST_API_FACEBOOK_friendsUID = "http://localhost:3000/friendsUID";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -39,6 +38,10 @@ export class DataService {
   }
   public getUid() {  // tbc
     return this.httpClient.get(this.REST_API_FACEBOOK_UID)
+  }
+
+  public getFriendsUid() {
+    return this.httpClient.get(this.REST_API_FACEBOOK_friendsUID)
   }
 
   public postData(newData: Object) {
