@@ -54,42 +54,33 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
   <th>Biggest lesson learnt during the project</th>
 </tr>
 <tr>
-  <td>
-    <ul>
-      <li> Sam Fitton</li>
-      <li> Hugh Hamilton-Green </li>
-      <li> Jati Wicaksono </li>
-      <li> Gordon Tse </li>
-      <li> Tom Cockain </li>
-    </ul>
-  </td>
-  <td>
-    <ul>
-      <li><img src="../report/Images/circle-cropped (5).png"></li>
-      <li> Un-aesthetically pleasing UX design. </li>
-      <li> No ability to track past activity. </li>
-    </ul>
-  </td>
+  <td> Sam Fitton </td>
+  <td></td>
+  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Hugh Hamilton-Green </td>
+  <td><img src="../report/Images/circle-cropped (5).png"></td>
+  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Jati Wicaksono </td>
+  <td></td>
+  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Gordon Tse</td>
+  <td></td>
+  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Tom Cockain </td>
+  <td></td>
+  <td>Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.</td>
+  <td></td>
+</tr>
 </table>
-
-"../report/Images/circle-cropped (5).png"
-
-- [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
-
-Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
-
-- [**Hugh Hamilton-Green**](https://github.com/hamilh1000) (Username: HH17035)
-
-Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.
-
-- [**Jati Wicaksono**](https://github.com/jatiwicaksono98) (Username: CL20627)
-
-Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page.
-
-- [**Gordon Tse**](https://github.com/gordon-tse) (Username: XV20486)
-
-Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep.
-
-- [**Tom Cockain**](https://github.com/tomcockain) (Username: YW20279)
-
-Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.
