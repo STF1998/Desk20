@@ -61,7 +61,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 </tr>
 <tr>
   <td> Hugh Hamilton-Green </td>
-  <td><img src="../report/Images/circle-cropped (5).png" width=50></td>
+  <td><img src="../report/Images/circle-cropped (5).png" width=200%></td>
   <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
   <td></td>
 </tr>
