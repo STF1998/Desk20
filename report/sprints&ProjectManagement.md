@@ -50,37 +50,19 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
 
-<head>
-    <title>The title of the document</title>
-    <style>
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center
-      }
-      img {
-        max-width: 100%
-      }
-      .image {
-        flex-basis: 40%
-      }
-      .text {
-        font-size: 20px;
-        padding-left: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
+<div><p style="float: left;"><img src="../report/Images/circle-cropped (5).png" height="200px" width="200px" padding="10px"></p>
+<p>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</p>
+</div>
+
+<div class="container">
       <div class="image">
         <img src="../report/Images/circle-cropped (5).png">
       </div>
       <div class="text">
         <h1>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</h1>
         <ul>Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.</li>
-      </div>
-    </div>
-  </body>
+  </div>
+</div>
 
 <body>
     <div class="container">
