@@ -119,6 +119,24 @@ export class LeagueComponent implements OnInit {
         } else {
           this.dailyCount[day-1] = 0;
         }
+
+        if(day == this.dailyCount.length){
+          this.barChartData = [
+            {
+              data: this.dailyCount,
+              backgroundColor: [
+                this.assignColors(0),
+                this.assignColors(1),
+                this.assignColors(2),
+                this.assignColors(3),
+                this.assignColors(4),
+                this.assignColors(5),
+                this.assignColors(6)
+              ],
+              hoverBackgroundColor: '#112d53'
+            }];
+        }
+
       },
       error => {
         console.log(error);
