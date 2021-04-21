@@ -10,7 +10,7 @@
   - [Communication channels](#Communication-channels)
 - [**Meet the team**](#State-of-the-art-survey)
 - [**Sprints documentation*](#Sprints-documentation)
-- [**Use of Git**](#Use-of-Git)
+- [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
 
@@ -84,3 +84,8 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
   <td></td>
 </tr>
 </table>
+
+## Sprints documentation
+
+## Team use of git
+
