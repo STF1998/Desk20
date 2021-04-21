@@ -46,46 +46,37 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 ## Meet The Team
 
+<table>
+<tr>
+  <th>Name</th>
+  <th>Photo</th>
+  <th>Team role</th>
+  <th>Biggest lesson learnt during the project</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> Sam Fitton</li>
+      <li> Hugh Hamilton-Green </li>
+      <li> Jati Wicaksono </li>
+      <li> Gordon Tse </li>
+      <li> Tom Cockain </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><img src="../report/Images/circle-cropped (5).png"></li>
+      <li> Un-aesthetically pleasing UX design. </li>
+      <li> No ability to track past activity. </li>
+    </ul>
+  </td>
+</table>
+
+"../report/Images/circle-cropped (5).png"
+
 - [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
 
 Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
-
-<div id="democontainer">
-<img id="demoimage" src="../report/Images/circle-cropped (5).png" width="153" height="205">
-<ul id="demotext">
-<li>Free contact form</li>
-<li>  [..etc..]  </li>
-</ul>
-<br style="clear: both;">
-</div>
-
-<div><p style="float: left;"><img src="../report/Images/circle-cropped (5).png" height="200px" width="200px" padding="10px"></p>
-<p>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</p>
-</div>
-
-<div class="container">
-      <div class="image">
-        <img src="../report/Images/circle-cropped (5).png">
-      </div>
-      <div class="text">
-        <h1>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</h1>
-        <ul>Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.</li>
-  </div>
-</div>
-
-<body>
-    <div class="container">
-      <div class="image">
-        <img src="../report/Images/circle-cropped (5).png">
-      </div>
-      <div class="text">
-        <h1>Hugh Hamilton-Green (https://github.com/hamilh1000) (Username: HH17035)</h1>
-        <ul>Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.</li>
-      </div>
-    </div>
-  </body>
-
-
 
 - [**Hugh Hamilton-Green**](https://github.com/hamilh1000) (Username: HH17035)
 
