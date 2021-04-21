@@ -102,3 +102,22 @@ h3{
     height: 100px;
     width: 100px;
 }
+
+
+.nav-link{
+    margin: 3vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: black;
+    position:absolute;
+    top: -3%;
+    left: -2%;
+    z-index: 6;
+  }
+
+  .nav-link:hover{
+    transform: translateX(-4%);
+    color: #5c82b8;
+  }
