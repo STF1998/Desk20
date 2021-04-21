@@ -39,3 +39,29 @@ Initially, as a team we sat down (albeit virtually) and wrote a list of the key 
 <b><p align= "center"> Figure 2: Agile methodology cycle </p></b>
 
 Below, you can see more about the breakdown of our sprints (TODO link here).
+
+### Communication channels
+
+Due to the COVID-19 pandemic, our team has been working from home throughout the project. This meant that our communication and the channels we used were key to ensuring we worked well as a team. The two main channels we used were our Microsoft Teams and Discord. Our Teams group at desk 20 allowed us to organise video calls, share documents and speak to the lecturing team. However, our most commonly used channel was our Discord chat where we regularly had conversations about specific areas of the project as well as organising voice and video calls to discuss specific areas of development. While it was tough initially to bond as a team, these channels did help us get to know each other and become a driving force as we began development sprints. 
+
+## Meet The Team
+
+- [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
+
+Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
+
+- [**Hugh Hamilton-Green**](https://github.com/hamilh1000) (Username: HH17035)
+
+Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.
+
+- [**Jati Wicaksono**](https://github.com/jatiwicaksono98) (Username: CL20627)
+
+Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page.
+
+- [**Gordon Tse**](https://github.com/gordon-tse) (Username: XV20486)
+
+Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep.
+
+- [**Tom Cockain**](https://github.com/tomcockain) (Username: YW20279)
+
+Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.
