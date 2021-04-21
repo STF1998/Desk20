@@ -12,34 +12,30 @@ export class LeagueComponent implements OnInit {
   private userid: string = "108266374709077";
   private studyTime = 10;
   private stats: any = [];
-  // public dailyCount: number[] = [1, 2, 8, 4, 5, 6, 15];
- 
-
-  constructor( private DataService: DataService ) {}
+  public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
 
 
-  public dailyCount: number[] = [];
-  
+  constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
   }
 
-  private assignColors (day: number): string {
+  private assignColors(day: number): string {
 
-    if(this.dailyCount[day] <= 2){
-       return "#cbdef8";
+    if (this.dailyCount[day] <= 2) {
+      return "#cbdef8";
     }
-    if(this.dailyCount[day] <= 4){
+    if (this.dailyCount[day] <= 4) {
       return "#b5cef1";
     }
-    if(this.dailyCount[day] <= 5){
+    if (this.dailyCount[day] <= 5) {
       return "#6a9be0";
     }
-    if(this.dailyCount[day] <= 10){
+    if (this.dailyCount[day] <= 10) {
       return "#a82cda";
     }
-    if(this.dailyCount[day] > 13){
+    if (this.dailyCount[day] > 13) {
       return "#ad445f";
     }
     return "#9fbce4"
@@ -55,57 +51,54 @@ export class LeagueComponent implements OnInit {
       }],
       yAxis: [{
         gridLines: {
-            drawBorder: false,
-            display: false,
-            zeroLineColor:'transparent',
+          drawBorder: false,
+          display: false,
+          zeroLineColor: 'transparent',
         }
       }],
     },
     legend: {
       display: false
-   },
+    },
   };
 
   public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
   public barChartType = 'horizontalBar';
   public barChartData = [
-    {data: this.dailyCount,
-    backgroundColor:[
-      this.assignColors(0),
-      this.assignColors(1),
-      this.assignColors(2),
-      this.assignColors(3),
-      this.assignColors(4),
-      this.assignColors(5),
-      this.assignColors(6)
-    ],
-    hoverBackgroundColor: '#112d53'
-  }];
+    {
+      data: this.dailyCount,
+      backgroundColor: [
+        this.assignColors(0),
+        this.assignColors(1),
+        this.assignColors(2),
+        this.assignColors(3),
+        this.assignColors(4),
+        this.assignColors(5),
+        this.assignColors(6)
+      ],
+      hoverBackgroundColor: '#112d53'
+    }];
 
-
-  private async retrieveUserData(userid: string, todayDate: Date) {
+    
+  private retrieveUserData(userid: string, todayDate: Date) {
     var sundayStart = new Date(new Date(new Date().setDate(todayDate.getDate() - todayDate.getDay())).setHours(0, 0, 0, 0));
     var sundayEnd = new Date(new Date(new Date().setDate(todayDate.getDate() - todayDate.getDay())).setHours(23, 59, 59, 999));
     console.log(sundayStart + " " + sundayEnd);
 
     // Get current week data (-7 if previous week)
-    for(var i=1; i<=7; i++){
+    for (var i = 1; i <= 7; i++) {
       var currentDayStart = new Date(sundayStart.setDate(sundayStart.getDate() + 1));
       var currentDayEnd = new Date(sundayEnd.setDate(sundayEnd.getDate() + 1));
       console.log(currentDayStart);
       console.log(currentDayEnd);
 
-      this.retrieveUserRecord(this.userid, currentDayStart, currentDayEnd); 
-    }
-    if(this.dailyCount.length != 7){
-      console.log("Not 7 days a week " + this.dailyCount.length);
+      this.retrieveUserRecord(this.userid, currentDayStart, currentDayEnd, i);
     }
     console.log(this.dailyCount);
 
-
   }
 
-  private async retrieveUserRecord(userid: string, rangeStart: Date, rangeEnd: Date) {
+  private retrieveUserRecord(userid: string, rangeStart: Date, rangeEnd: Date, day: number) {
 
     var minStudyTime = 0;
 
@@ -117,16 +110,15 @@ export class LeagueComponent implements OnInit {
       .set("timeSpentUpper", this.studyTime.toString());
 
     this.DataService.getRecord(httpParams).subscribe(
-      data => {     
+      data => {
         this.stats = data;
-        if(this.stats.length == 1){
+        if (this.stats.length == 1) {
           console.log(this.stats[0].session);
           console.log(this.stats[0].totalTime);
-          this.dailyCount.push(this.stats[0].session);
+          this.dailyCount[day-1] = this.stats[0].session;
         } else {
-          this.dailyCount.push(0);
+          this.dailyCount[day-1] = 0;
         }
-        console.log(this.dailyCount)
       },
       error => {
         console.log(error);
