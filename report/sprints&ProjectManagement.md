@@ -55,7 +55,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 </tr>
 <tr>
   <td> Sam Fitton </td>
-  <td></td>
+  <td><img src="../report/Images/circle-cropped (6).png" width=50</td>
   <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
   <td></td>
 </tr>
@@ -67,19 +67,19 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 </tr>
 <tr>
   <td> Jati Wicaksono </td>
-  <td></td>
+  <td><img src="../report/Images/circle-cropped (8).png" width=50></td>
   <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
   <td></td>
 </tr>
 <tr>
   <td> Gordon Tse</td>
-  <td></td>
+  <td><img src="../report/Images/circle-cropped (7).png" width=50></td>
   <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
   <td></td>
 </tr>
 <tr>
   <td> Tom Cockain </td>
-  <td></td>
+  <td><img src="../report/Images/circle-cropped (9).png" width=50></td>
   <td>Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.</td>
   <td></td>
 </tr>
