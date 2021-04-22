@@ -1,5 +1,4 @@
-<p align="center"><img src="../report/Images/UX.png" width=100%>
-</p>
+![Creating great tasting products to lead a healthy lifestyle (4)](https://user-images.githubusercontent.com/69913789/115699744-d83b8f00-a35d-11eb-88e6-e538908603fb.gif)
 
 # 5. UX Design [15%]
 
