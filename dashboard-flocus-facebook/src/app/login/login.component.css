@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+
 .page{
   position: absolute;
   width: 100vw;
@@ -8,9 +11,6 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-
-
-
 
 .split {
   height: 100%;
@@ -58,7 +58,7 @@
   width: 70px;
   text-align: center;
   text-decoration: none;
-  border-radius: 25%;
+  border-radius: 10%;
   background: #3B5998;
   color: white;
 }
@@ -92,6 +92,26 @@
   position:absolute;
   top: 77%;
   left:9%;
+}
+
+.info{
+  position:absolute;
+  top:10%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-10%);
+  -webkit-transform: translateX(-50%) translateY(-10%);
+  transform: translateX(-50%) translateY(-10%);
+  BORDER: black solid 1px;
+}
+
+h3{
+  font-size: 100%;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 5vw;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
 
