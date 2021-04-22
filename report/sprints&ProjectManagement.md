@@ -1,5 +1,4 @@
-<p align="center"><img src="../report/Images/Sprints.png" width=100%>
-</p>
+![Creating great tasting products to lead a healthy lifestyle (3)](https://user-images.githubusercontent.com/69913789/115699266-68c59f80-a35d-11eb-822a-893f2ef8696d.gif)
 
 # Sprints and project management [15%]
 
