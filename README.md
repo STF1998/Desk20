@@ -1,5 +1,5 @@
-<p align="center"><img src="./report/Images/LOGO_crop-removebg-preview.png" width=100%>
-</p>
+![Untitled design](https://user-images.githubusercontent.com/69913789/115700776-f1910b00-a35e-11eb-9805-73de965768b0.gif)
+
 <h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 
 ## Our Product
