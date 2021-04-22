@@ -244,8 +244,8 @@
     text-transform: uppercase;
     color: #ffffff;
     position:absolute;
-    top: -5%;
-    left: -10%;
+    top: 0%;
+    left: 0%;
     z-index: 6;
   }
 
@@ -260,9 +260,11 @@
     font-size: 10%;
     opacity: 0.8;
     position: absolute;
-    transform: scale(0.5);
-    top: -5%;
+    top: 0%;
     left: 95%;
+    -moz-transform: translateX(-95%) scale(0.5);
+    -webkit-transform: translateX(-95%) scale(0.5);
+    transform: translateX(-95%) scale(0.5);
     border-radius: 30%;
     z-index: 6;
   }

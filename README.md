@@ -1,4 +1,4 @@
-<p align="center"><img src="./report/Images/LOGO_crop.png" width=100%>
+<p align="center"><img src="./report/Images/LOGO_crop-removebg-preview.png" width=100%>
 </p>
 <h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 

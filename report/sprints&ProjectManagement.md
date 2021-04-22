@@ -10,7 +10,7 @@
   - [Communication channels](#Communication-channels)
 - [**Meet the team**](#State-of-the-art-survey)
 - [**Sprints documentation*](#Sprints-documentation)
-- [**Use of Git**](#Use-of-Git)
+- [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
 
@@ -46,22 +46,46 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 ## Meet The Team
 
-- [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
+<table>
+<tr>
+  <th>      Name      </th>
+  <th>Photo</th>
+  <th>Team role</th>
+  <th>Biggest lesson learnt during the project</th>
+</tr>
+<tr>
+  <td> Sam Fitton </td>
+  <td><img src="../report/Images/circle-cropped (6).png" width=1000%></td>
+  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Hugh Hamilton-Green </td>
+  <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
+  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Jati Wicaksono </td>
+  <td><img src="../report/Images/circle-cropped (8).png" width=1000%></td>
+  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Gordon Tse</td>
+  <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
+  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Tom Cockain </td>
+  <td><img src="../report/Images/circle-cropped (9).png" width=1000%></td>
+  <td>Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.</td>
+  <td></td>
+</tr>
+</table>
 
-Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page.
+## Sprints documentation
 
-- [**Hugh Hamilton-Green**](https://github.com/hamilh1000) (Username: HH17035)
+## Team use of git
 
-Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development.
-
-- [**Jati Wicaksono**](https://github.com/jatiwicaksono98) (Username: CL20627)
-
-Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page.
-
-- [**Gordon Tse**](https://github.com/gordon-tse) (Username: XV20486)
-
-Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep.
-
-- [**Tom Cockain**](https://github.com/tomcockain) (Username: YW20279)
-
-Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.
