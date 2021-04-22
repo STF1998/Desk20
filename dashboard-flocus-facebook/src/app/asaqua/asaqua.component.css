@@ -19,8 +19,11 @@
     #b3cbec 11px
     );
     position: absolute;
-    top: 350px;
-    left: 50px;
+    top: 200%;
+    left: 0%;
+    -moz-transform: translateX(0%) translateY(-200%);
+    -webkit-transform: translateX(0%) translateY(-200%);
+    transform: translateX(0%) translateY(-200%);
     width: 650px;
     height:650px;
     border-radius: 50%;

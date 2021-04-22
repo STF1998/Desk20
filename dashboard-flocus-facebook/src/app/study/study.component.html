@@ -1,15 +1,4 @@
 <div class = "back">
-    <!--HOME Nav-link-->
-    <a class="nav-link" href="/home">HOME</a>
-
-    <!--water drop counter in the corner-->
-    <div class = "counter" onmouseover="boxPresent()">
-        <svg width="119" height="165" viewBox="0 0 119 165" fill ="white" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.8" d="M0.450195 105.72C0.450195 73.09 59.5403 0.670044 59.5403 0.670044C59.5403 0.670044 118.63 73.08 118.63 105.72C118.63 138.35 92.1703 164.81 59.5403 164.81C26.9103 164.81 0.450195 138.36 0.450195 105.72Z"/>
-        </svg>
-        <p class= "number">{{dayGlassCount}}</p>
-    </div>
-
     <div class = "wrapper">
 
         <!--tap handle button-->
@@ -24,6 +13,17 @@
                 </div>
             </button>
         </p>
+
+        <!--HOME Nav-link-->
+        <a class="nav-link" href="/home">HOME</a>
+
+        <!--water drop counter in the corner-->
+        <div class = "counter" onmouseover="boxPresent()">
+            <svg width="119" height="165" viewBox="0 0 119 165" fill ="white" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M0.450195 105.72C0.450195 73.09 59.5403 0.670044 59.5403 0.670044C59.5403 0.670044 118.63 73.08 118.63 105.72C118.63 138.35 92.1703 164.81 59.5403 164.81C26.9103 164.81 0.450195 138.36 0.450195 105.72Z"/>
+            </svg>
+            <p class= "number">{{dayGlassCount}}</p>
+        </div>
 
         <!--Background-->
         <img class = "background" src="../../assets/images/background.png" alt = "background">
