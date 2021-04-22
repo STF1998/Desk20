@@ -1,4 +1,4 @@
-![Untitled design](https://user-images.githubusercontent.com/69913789/115700776-f1910b00-a35e-11eb-9805-73de965768b0.gif)
+![Untitled design (1)](https://user-images.githubusercontent.com/69913789/115701016-3ae15a80-a35f-11eb-9f51-31a9b10fefda.gif)
 
 <h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 
