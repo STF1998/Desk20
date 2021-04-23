@@ -76,9 +76,53 @@ Together we identified that the end-user would need an attractive and simple use
 
 ## Questionaires 
 
-Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, we developed a survey and sent it out to friends, family and student peers to get information around the perception of procrastination in student populations. This helped determine the core aspects of the application.
+Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information as well as complying with GDPR regulations with the storage of data agreed at the start of the survey. 
+
+We were able collect data from 23 university students. While the survey was short and with limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination. Please see below snapshots of the results from the survey:
+
+<p align="center"><img src="../report/Images/survey1.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 1.</b></h2>
+
+<p align="center"><img src="../report/Images/survey2.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 2.</b></h2>
+
+<p align="center"><img src="../report/Images/survey3.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 3.</b></h2>
+
+<p align="center"><img src="../report/Images/survey4.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 4.</b></h2>
+
+<p align="center"><img src="../report/Images/survey5.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 5.</b></h2>
+
+<p align="center"><img src="../report/Images/survey6.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 6.</b></h2>
+
+<p align="center"><img src="../report/Images/survey7.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 7.</b></h2>
+
+<p align="center"><img src="../report/Images/survey8.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 8.</b></h2>
+
+<p align="center"><img src="../report/Images/survey9.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 9.</b></h2>
+
+<p align="center"><img src="../report/Images/survey10.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Survey question 10.</b></h2>
 
 From this survey we identified the key points and issues on procrastination in student populations:
+
+- 
 
 - 
 
