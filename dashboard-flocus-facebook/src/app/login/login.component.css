@@ -62,7 +62,7 @@
   padding: 25px;
   font-size: 15px;
   font-weight: bold;
-  width: 240px;
+  width: 260px;
   text-align: center;
   text-decoration: none;
   background: #1778F2;
@@ -82,17 +82,17 @@
 .fb_logo{
   position: absolute;
   top: 50%;
-  left: 0%;
-  -moz-transform: translateX(0%) translateY(-50%);
-  -webkit-transform: translateX(0%) translateY(-50%);
-  transform: translateX(0%) translateY(-50%);
+  left: 2%;
+  -moz-transform: translateX(-2%) translateY(-50%);
+  -webkit-transform: translateX(-2%) translateY(-50%);
+  transform: translateX(-2%) translateY(-50%);
   width: 50px;
 }
 
 .continue{
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 18%;
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
