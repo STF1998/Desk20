@@ -18,6 +18,7 @@ export class DataService {
   private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";  
   private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
   private REST_API_FACEBOOK_friendsUID = "http://localhost:3000/friendsUID";
+  private REST_API_FACEBOOK_friendNames = "http://localhost:3000/friendNames";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -42,6 +43,10 @@ export class DataService {
 
   public getFriendsUid() {
     return this.httpClient.get(this.REST_API_FACEBOOK_friendsUID)
+  }
+
+  public getFriendNames() {
+    return this.httpClient.get(this.REST_API_FACEBOOK_friendNames)
   }
 
   public postData(newData: Object) {

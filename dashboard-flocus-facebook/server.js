@@ -154,6 +154,11 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
   res.send(uids);
 });
 
+app.get('/friendNames', isLoggedIn, async function (req, res) {
+  var theUser = req.user;
+  res.send(JSON.stringify(theUser.friends));
+});
+
 app.get('/name', isLoggedIn, function (req, res) {
   var theUser = req.user
   res.send(theUser.name)

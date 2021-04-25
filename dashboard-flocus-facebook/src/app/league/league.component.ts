@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { HttpParams } from '@angular/common/http';
+import { Observable, forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-league',
@@ -13,11 +14,18 @@ export class LeagueComponent implements OnInit {
   private studyTime = 10;
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
+  private friendIDs: any = [];
+  private friendNames: any = [];
+  private statsLeague: any = [];
+  public leagueTable: any = [];
+  private tmp: any = [];
+  private row: any = new Array(2);
 
   constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
+    this.createLeague();
   }
 
   private assignColors(day: number): string {
@@ -100,7 +108,6 @@ export class LeagueComponent implements OnInit {
   private async retrieveUserRecord(userid: string, rangeStart: Date, rangeEnd: Date, day: number) {
 
     var minStudyTime = 0;
-
     var httpParams = new HttpParams()
       .set("uid", userid)
       .set("rangeStart", JSON.parse(JSON.stringify(rangeStart)))
@@ -151,21 +158,56 @@ export class LeagueComponent implements OnInit {
       }
     )
   }
+  private retrieveRecord(userid: string, rangeStart: Date, rangeEnd: Date) {
+    var minStudyTime = 0;
 
-  private retrieveAllFriends() {
-    let friendIDs: any = this.DataService.getFriendsUid();
-    var lastMonday = new Date();
+    var httpParams = new HttpParams()
+      .set("uid", userid)
+      .set("rangeStart", JSON.parse(JSON.stringify(rangeStart)))
+      .set("rangeEnd", JSON.parse(JSON.stringify(rangeEnd)))
+      .set("timeSpentLower", minStudyTime.toString())
+      .set("timeSpentUpper", this.studyTime.toString());
+
+    return this.DataService.getRecord(httpParams).toPromise();
+  }
+  
+  private async createLeague() {
+    
+    let array = [1,2,3];
+    console.log(array.length); 
+
+    let friendsID = this.DataService.getFriendsUid();
+    await this.DataService.getFriendNames().toPromise;
+    let friendsName = this.DataService.getFriendNames();
+    forkJoin([friendsID, friendsName])
+    .subscribe(
+      async data => {
+        console.log("test");
+        this.friendIDs = data[0];
+        this.friendNames = data[1];
+        console.log(this.friendIDs);
+        console.log(this.friendNames);
+        var lastMonday = new Date();
     var day = lastMonday.getDay();
     if(day !== 1){
       lastMonday.setHours(-24 * (day - 1));
     }
     lastMonday.setHours(0,0,0,0); 
-    
-    for(var i = 0; i < friendIDs.length ; i++){
-      this.retrieveUserRecord(friendIDs[i], lastMonday, new Date());
+    console.log(this.friendNames.length);  
+    for(var i = 0; i < this.friendNames.length ; i++){
+      
+      this.row[0] = this.friendNames[i];
+      console.log(this.friendNames[i]);    
+      let stats = await this.retrieveRecord(this.friendIDs[i], lastMonday, new Date());
 
+      this.row[1] = this.stats.totalTime;
+      this.leagueTable[i] = this.row;
+      console.log(this.row);
     }
-
+    console.log(this.statsLeague);    
+      });
+      
+  
     
   }
 } 
