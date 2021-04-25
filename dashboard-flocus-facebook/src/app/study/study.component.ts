@@ -3,7 +3,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
 import { DataService } from '../data.service';
 import Timer = NodeJS.Timer;
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-study',
@@ -130,12 +129,9 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private fillUp(){
 
-    console.log("fill up called on: " + this.pressed);
-
     if(this.pressed == true){
       this.elem = document.getElementById('waterfill');
       this.yPos = this.ydist * this.waterLevel ;
-      console.log(this.yPos);
       if(this.elem != null){
         this.elem.style.transform = "translate(0px," + this.yPos + "px)";
       }
