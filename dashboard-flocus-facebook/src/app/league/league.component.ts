@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { HttpParams } from '@angular/common/http';
+import { Observable, forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-league',
@@ -13,7 +14,11 @@ export class LeagueComponent implements OnInit {
   private studyTime = 10;
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
-
+  private scores: any = [];
+  private friendNames: any = [];
+  private statsLeague: any = [];
+  public leagueTable: any = [];
+  private row: any = new Array();
 
   constructor(private DataService: DataService) { }
 
@@ -94,13 +99,13 @@ export class LeagueComponent implements OnInit {
 
       this.retrieveUserRecord(this.userid, currentDayStart, currentDayEnd, i);
     }
+    console.log(this.dailyCount);
 
   }
 
   private async retrieveUserRecord(userid: string, rangeStart: Date, rangeEnd: Date, day: number) {
 
     var minStudyTime = 0;
-
     var httpParams = new HttpParams()
       .set("uid", userid)
       .set("rangeStart", JSON.parse(JSON.stringify(rangeStart)))
@@ -118,21 +123,23 @@ export class LeagueComponent implements OnInit {
         } else {
           this.dailyCount[day - 1] = 0;
         }
-        console.log(this.dailyCount)
-        this.barChartData = [
-          {
-            data: this.dailyCount,
-            backgroundColor: [
-              this.assignColors(0),
-              this.assignColors(1),
-              this.assignColors(2),
-              this.assignColors(3),
-              this.assignColors(4),
-              this.assignColors(5),
-              this.assignColors(6)
-            ],
-            hoverBackgroundColor: '#112d53'
-          }];
+
+        if(day == this.dailyCount.length){
+          this.barChartData = [
+            {
+              data: this.dailyCount,
+              backgroundColor: [
+                this.assignColors(0),
+                this.assignColors(1),
+                this.assignColors(2),
+                this.assignColors(3),
+                this.assignColors(4),
+                this.assignColors(5),
+                this.assignColors(6)
+              ],
+              hoverBackgroundColor: '#112d53'
+            }];
+        }
       },
       error => {
         console.log(error);
@@ -146,8 +153,41 @@ export class LeagueComponent implements OnInit {
         const uid = userdata;
         this.userid = uid.toString();
         this.retrieveUserData(this.userid, new Date());
+        this.createLeague(this.userid)
       }
     )
   }
-  
+
+  private async createLeague(userid: string) {
+    var lastMonday = new Date();
+    var day = lastMonday.getDay();
+    if(day !== 1){
+    lastMonday.setHours(-24 * (day - 1));
+    }
+    lastMonday.setHours(0,0,0,0);
+    var httpParams = new HttpParams()
+      .set("uid", userid)
+      .set("rangeStart", JSON.parse(JSON.stringify(lastMonday)))
+      .set("rangeEnd", JSON.parse(JSON.stringify(new Date())))
+    let friendsScore = this.DataService.getLeague(httpParams);
+    await this.DataService.getFriendNames().toPromise;
+    let friendsName = this.DataService.getFriendNames();
+    forkJoin([friendsScore, friendsName])
+    .subscribe(
+      async data => {
+        this.scores = data[0];
+        this.friendNames = data[1];
+        console.log(this.scores);
+        for(let i = 0; i < this.scores.length ; i++){
+          this.row[0] = this.scores[i]._id;
+          this.row[1] = this.scores[i].session;
+          this.row[2] = this.scores[i].totalTime;
+          console.log(this.scores[i]._id);
+          console.log(this.scores[i].session);
+          console.log(this.scores[i].totalTime);
+          this.leagueTable[i] = this.row;     
+        }
+        console.log(this.leagueTable);
+    });
+  }
 }
