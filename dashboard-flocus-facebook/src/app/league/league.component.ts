@@ -14,17 +14,16 @@ export class LeagueComponent implements OnInit {
   private studyTime = 10;
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
-  private friendScores: any = [];
+  private scores: any = [];
   private friendNames: any = [];
   private statsLeague: any = [];
   public leagueTable: any = [];
-  private row: any = new Array(2);
+  private row: any = new Array();
 
   constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
-    this.createLeague();
   }
 
   private assignColors(day: number): string {
@@ -154,10 +153,11 @@ export class LeagueComponent implements OnInit {
         const uid = userdata;
         this.userid = uid.toString();
         this.retrieveUserData(this.userid, new Date());
+        this.createLeague(this.userid)
       }
     )
   }
-  private async createLeague() {
+  private async createLeague(userid: string) {
     var lastMonday = new Date();
     var day = lastMonday.getDay();
     if(day !== 1){
@@ -165,7 +165,7 @@ export class LeagueComponent implements OnInit {
     }
     lastMonday.setHours(0,0,0,0);
     var httpParams = new HttpParams()
-      .set("uid", this.userid)
+      .set("uid", userid)
       .set("rangeStart", JSON.parse(JSON.stringify(lastMonday)))
       .set("rangeEnd", JSON.parse(JSON.stringify(new Date())))
     let friendsScore = this.DataService.getLeague(httpParams);
@@ -174,16 +174,19 @@ export class LeagueComponent implements OnInit {
     forkJoin([friendsScore, friendsName])
     .subscribe(
       async data => {
-        console.log("test");
-        this.friendScores = data[0];
+        this.scores = data[0];
         this.friendNames = data[1];
-        console.log(this.friendScores);
-        console.log(this.friendNames);
-        for(var i = 0; i < this.friendNames.length ; i++){
-          this.row[0] = this.friendNames[i];
-          console.log(this.friendScores[i].session);
-          console.log(this.friendScores[i].totalTime);    
-        } 
-      });
+        console.log(this.scores);
+        for(let i = 0; i < this.scores.length ; i++){
+          this.row[0] = this.scores[i]._id;
+          this.row[1] = this.scores[i].session;
+          this.row[2] = this.scores[i].totalTime;
+          console.log(this.scores[i]._id);
+          console.log(this.scores[i].session);
+          console.log(this.scores[i].totalTime);
+          this.leagueTable[i] = this.row;     
+        }
+        console.log(this.leagueTable);
+    });
   }
 } 
