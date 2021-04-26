@@ -14,11 +14,10 @@ export class LeagueComponent implements OnInit {
   private studyTime = 10;
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
-  private friendIDs: any = [];
+  private friendScores: any = [];
   private friendNames: any = [];
   private statsLeague: any = [];
   public leagueTable: any = [];
-  private tmp: any = [];
   private row: any = new Array(2);
 
   constructor(private DataService: DataService) { }
@@ -158,56 +157,33 @@ export class LeagueComponent implements OnInit {
       }
     )
   }
-  private retrieveRecord(userid: string, rangeStart: Date, rangeEnd: Date) {
-    var minStudyTime = 0;
-
-    var httpParams = new HttpParams()
-      .set("uid", userid)
-      .set("rangeStart", JSON.parse(JSON.stringify(rangeStart)))
-      .set("rangeEnd", JSON.parse(JSON.stringify(rangeEnd)))
-      .set("timeSpentLower", minStudyTime.toString())
-      .set("timeSpentUpper", this.studyTime.toString());
-
-    return this.DataService.getRecord(httpParams).toPromise();
-  }
-  
   private async createLeague() {
-    
-    let array = [1,2,3];
-    console.log(array.length); 
-
-    let friendsID = this.DataService.getFriendsUid();
+    var lastMonday = new Date();
+    var day = lastMonday.getDay();
+    if(day !== 1){
+    lastMonday.setHours(-24 * (day - 1));
+    }
+    lastMonday.setHours(0,0,0,0);
+    var httpParams = new HttpParams()
+      .set("uid", this.userid)
+      .set("rangeStart", JSON.parse(JSON.stringify(lastMonday)))
+      .set("rangeEnd", JSON.parse(JSON.stringify(new Date())))
+    let friendsScore = this.DataService.getLeague(httpParams);
     await this.DataService.getFriendNames().toPromise;
     let friendsName = this.DataService.getFriendNames();
-    forkJoin([friendsID, friendsName])
+    forkJoin([friendsScore, friendsName])
     .subscribe(
       async data => {
         console.log("test");
-        this.friendIDs = data[0];
+        this.friendScores = data[0];
         this.friendNames = data[1];
-        console.log(this.friendIDs);
+        console.log(this.friendScores);
         console.log(this.friendNames);
-        var lastMonday = new Date();
-    var day = lastMonday.getDay();
-    if(day !== 1){
-      lastMonday.setHours(-24 * (day - 1));
-    }
-    lastMonday.setHours(0,0,0,0); 
-    console.log(this.friendNames.length);  
-    for(var i = 0; i < this.friendNames.length ; i++){
-      
-      this.row[0] = this.friendNames[i];
-      console.log(this.friendNames[i]);    
-      let stats = await this.retrieveRecord(this.friendIDs[i], lastMonday, new Date());
-
-      this.row[1] = this.stats.totalTime;
-      this.leagueTable[i] = this.row;
-      console.log(this.row);
-    }
-    console.log(this.statsLeague);    
+        for(var i = 0; i < this.friendNames.length ; i++){
+          this.row[0] = this.friendNames[i];
+          console.log(this.friendScores[i].session);
+          console.log(this.friendScores[i].totalTime);    
+        } 
       });
-      
-  
-    
   }
 } 

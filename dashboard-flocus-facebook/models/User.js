@@ -5,7 +5,7 @@ var userSchema = mongoose.Schema({
   name: String,
   pic: String,
   friends: [String],
-  score: Number
+  friendsUID: [String]
 });
 
 module.exports = mongoose.model('User', userSchema);

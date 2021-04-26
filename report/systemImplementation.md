@@ -1,5 +1,4 @@
-<p align="center"><img src="../report/Images/System.png" width=100%>
-</p>
+![Creating great tasting products to lead a healthy lifestyle (2)](https://user-images.githubusercontent.com/69913789/115699052-33b94d00-a35d-11eb-963f-b5cc8d681e3e.gif)
 
 # System Implementation [20%]
 

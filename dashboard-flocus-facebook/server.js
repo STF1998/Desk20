@@ -12,6 +12,7 @@ const facebookStrategy = require('passport-facebook').Strategy;
 // Get our API routes
 const api = require('./server/routes/api');
 const record = require('./server/routes/record');
+const league = require('./server/routes/league');
 
 const app = express();
 
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 // Set our api routes
 app.use('/api', api);
 app.use('/api/record', record);
-
+app.use('/api/league', league);
 
 passport.use(new facebookStrategy({
   clientID: "498052027866336",
@@ -77,11 +78,14 @@ passport.use(new facebookStrategy({
             }
           }
 
+
           newUser.save(function (err) {
             if (err)
               throw err;
             return done(null, newUser);
           });
+
+         
         }
       });
     })
@@ -144,19 +148,37 @@ app.get('/facebook/callback',
 app.get('/friendsUID', isLoggedIn, async function (req, res) {
   var uids = new Array();
   var theUser = req.user;
+  
+    for (let i = 0; i < theUser.friends.length; i++) {
+      await User.findOne({ 'name': theUser.friends[i] }, 'uid', function (err, user) {
+        //if (!user) return res.status(404).send('The movie with the given ID was not found.');
+        //if (err) return;
+        if (err) {
+          return;
+        }
 
-  for (let i = 0; i < theUser.friends.length; i++) {
-    await User.findOne({ 'name': theUser.friends[i] }, 'uid', function (err, user) {
-      if (err) return handleError(err);
-      uids.push(user.uid)
-    });
-  }
+        if (user) {
+          uids.push(user.uid);
+        } else {
+          return;
+        }
+       
+      });;
+    }
+  console.log("going inside here");
+
+  theUser.friendsUID = uids;
+  theUser.save(function (err) {
+    if (err)
+      throw err;
+    return;
+  });
+
   res.send(uids);
 });
-
 app.get('/friendNames', isLoggedIn, async function (req, res) {
   var theUser = req.user;
-  res.send(JSON.stringify(theUser.friends));
+  res.send(theUser.friends);
 });
 
 app.get('/name', isLoggedIn, function (req, res) {
@@ -185,6 +207,9 @@ app.get('/logout', isLoggedIn, function (req, res) {
   console.log(req.isAuthenticated());
   res.redirect('/');
 })
+
+
+
 
 
 const port = process.env.PORT || '3000';

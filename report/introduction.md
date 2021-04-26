@@ -1,5 +1,4 @@
-<p align="center"><img src="../report/Images/Introduction.png" width=100%>
-</p>
+![Creating great tasting products to lead a healthy lifestyle](https://user-images.githubusercontent.com/69913789/115698727-da511e00-a35c-11eb-9f79-dd7c97ad7276.gif)
 
 # Introduction [10%]
 
