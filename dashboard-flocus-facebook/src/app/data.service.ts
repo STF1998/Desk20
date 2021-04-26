@@ -18,7 +18,7 @@ export class DataService {
   private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";  
   private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
   private REST_API_FACEBOOK_friendsUID = "http://localhost:3000/friendsUID";
-
+ 
   constructor(private httpClient: HttpClient) { }
 
   public getAll() {

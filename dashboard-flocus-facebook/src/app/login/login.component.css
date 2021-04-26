@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+
 .page{
   position: absolute;
   width: 100vw;
@@ -8,9 +11,6 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-
-
-
 
 .split {
   height: 100%;
@@ -28,19 +28,19 @@
 
 .right {
   right: 0;
-  background-color:rgb(215, 234, 246);
+  background-color:#9fbce4;
 }
 
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .login {
-  background-color: RGB(24, 119, 242);
   border: none;
   color: white;
   padding: 13px;
@@ -52,17 +52,52 @@
 }
 
 
-.fa-facebook-f {
-  padding: 18px;
-  font-size: 35px;
-  width: 70px;
+.facebook{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 260px;
   text-align: center;
   text-decoration: none;
-  border-radius: 25%;
-  background: #3B5998;
+  background: #1778F2;
   color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
+.facebook:hover{
+  background: white;
+  color: #1778F2;
+
+}
+
+.fb_logo{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  -moz-transform: translateX(-2%) translateY(-50%);
+  -webkit-transform: translateX(-2%) translateY(-50%);
+  transform: translateX(-2%) translateY(-50%);
+  width: 50px;
+}
+
+.continue{
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 80%;
+}
 .arrow{
   height: 20%;
   position:absolute;
@@ -92,6 +127,44 @@
   position:absolute;
   top: 77%;
   left:9%;
+}
+
+.info{
+  position:absolute;
+  top:10%;
+  left: 50%;
+  width: 70%;
+  height: 30%;
+  -moz-transform: translateX(-50%) translateY(-10%);
+  -webkit-transform: translateX(-50%) translateY(-10%);
+  transform: translateX(-50%) translateY(-10%);
+}
+
+h3{
+  position:absolute;
+  top: 0%;
+  left: 50%;
+  WIDTH: 100%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 150%;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.text{
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 0%;
+  color: white;
+
 }
 
 

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router, RouterModule } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-
 
 
 @Component({
@@ -12,11 +10,11 @@ import { HomeComponent } from '../home/home.component';
 })
 
 
-
 export class LoginComponent implements OnInit {
-  
+  public testvar: String;
   public status: boolean;
   tmp: any = [];
+ 
   constructor(private dataService: DataService, public router : Router) { }
   
   ngOnInit() {
@@ -26,7 +24,6 @@ export class LoginComponent implements OnInit {
   }
 
  
-
   retrieveData() {
     this.dataService.loginStatus().subscribe(
       data => {
@@ -35,6 +32,7 @@ export class LoginComponent implements OnInit {
         this.status = this.tmp.status;
 
         if (this.status) {
+          
           console.log("yes");
           this.router.navigate(['home']);
           //route to another page
@@ -47,7 +45,14 @@ export class LoginComponent implements OnInit {
       error => {
         console.log(error);
       });
-  }
 
+    this.dataService.getFriendsUid().subscribe(
+      data => {
+        
+      },
+      error => {
+        console.log(error);
+      });
+  }
 }
 

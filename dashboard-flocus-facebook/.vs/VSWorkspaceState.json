@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\models",
     "\\server",
     "\\server\\routes",
     "\\src",
     "\\src\\app",
     "\\src\\app\\login"
   ],
-  "SelectedNode": "\\src\\app\\app.component.spec.ts",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }
