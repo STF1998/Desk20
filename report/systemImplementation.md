@@ -70,7 +70,7 @@ Angular offered a number of key advantages in the development of our Single Page
 During our opening sprint, we set up all required components for the project, this is displayed below:
 
 <p align="center">
-<img src="../report/Images/sprint1Front.png" width=70%>
+<img src="../report/Images/sprint_front.png" width=70%>
 </p>
 <b><p align= "center">Figure : A screenshot of the single page application components.</p></b>
 
@@ -96,7 +96,7 @@ The introduction of a clock or timer was discussed at length by the group. Howev
 To introduce a glass fill animation, we used typescript which allows the user to start and stop the glass-fill as they please. The animation was implemented via the use of a SVG clip-path which is transformed vertically to reveal the underlying water animation. 
 
 <p align="center">
-<img src="../report/Images/animation_code.png" width=70%>
+<img src="../report/Images/animation_newcode.png" width=70%>
 </p>
 <b><p align= "center">Figure : A screenshot of the code used to convert the animation into HTML format.</p></b>
 
@@ -125,7 +125,7 @@ Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of
 For the implementation of the personal stats section titled “Your Week”, we utilised Chartjs. To discourage overuse, we have included colour indicators that provide a subtle prompt to an individual if they are overworking - a bar that displays work over 9.75 hours will turn red. For this, we followed the UK governments advice on the 48-hour working limit and assumed that a student was studying for 5 days per week. The typescript code for the Chartjs bar-chart is attached below:
 
 <p align="center">
-<img src="../report/Images/league_table_code.png" width=70%>
+<img src="../report/Images/league_table_code.png" width=50%>
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
 
