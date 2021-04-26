@@ -149,5 +149,5 @@ export class LeagueComponent implements OnInit {
       }
     )
   }
-
+  
 }
