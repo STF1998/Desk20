@@ -85,7 +85,7 @@ The main component in Flocus is the study page where users spend a majority of t
 <p align="center">
 <img src="../report/Images/animation.png" width=70%>
 </p>
-<b><p align= "center">Figure : the front-end animation created using Adobe after-effects and lottie files. </p></b>
+<b><p align= "center">Figure : the front-end study component created using Figma</p></b>
 
 To further emulate a natural scene, CSS transformations were implemented on certain features of the component (e.g. clouds and birds) which, were designed so to avoid fast and distracting movements.  
 
@@ -98,7 +98,7 @@ To introduce a glass fill animation, we used typescript which allows the user to
 <p align="center">
 <img src="../report/Images/animation_newcode.png" width=70%>
 </p>
-<b><p align= "center">Figure : A screenshot of the code used to convert the animation into HTML format.</p></b>
+<b><p align= "center">Figure : A screenshot of the HTML code used for the glass-fill animation.</p></b>
 
 Upon completion of a study session (45 Minutes), the glass empties incrementally over the time allocated for a break.
 
@@ -127,12 +127,12 @@ For the implementation of the personal stats section titled “Your Week”, we 
 <p align="center">
 <img src="../report/Images/table_code1.png" width=50%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
 <p align="center">
 <img src="../report/Images/table_code2.png" width=50%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
 TODO - Resizing HTML League table: (Include when developed).
 
@@ -157,7 +157,7 @@ Lottie is an open-source animation file format that allows creators to easily co
 <p align="center">
 <img src="../report/Images/lottie_code.png" width=70%>
 </p>
-<b><p align= "center">Figure : A snippet of the lottie code used to bring the animation to life. </p></b>
+<b><p align= "center">Figure : A snippet of the lottie-player bringing animations to life. </p></b>
 
 The Lottie-player is a Web-Component for easily including and playing Lottie animations. It was the fastest implementation of Lottie, allowing us to specify certain parameters such as speed and iteration count. However, it is not absent of drawbacks. From our individual use and user feedback, it was made aware that certain browser would not render or handle the animations as desired. The browser that displayed the most issues was Safari. In an attempt to work around this glitch, we rendered the animation on a canvas rather than SVG. However, Lottie animations do not currently support certain animation effects on canvas and so when rendering, the Lottie animation became distorted and un-useable. Given the lack of sufficient time to address these concerns, we had to accept that the application was not going to operate as well in Safari as other browsers (e.g Chrome). We have passed this information to the Asaqua team for future adjustment. 
 

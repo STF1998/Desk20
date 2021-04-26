@@ -31,26 +31,6 @@ export class LeagueComponent implements OnInit {
     this.setTable();
   }
 
-  private assignColors(day: number): string {
-
-    if (this.dailyCount[day] <= 2) {
-      return "#cbdef8";
-    }
-    if (this.dailyCount[day] <= 4) {
-      return "#b5cef1";
-    }
-    if (this.dailyCount[day] <= 5) {
-      return "#6a9be0";
-    }
-    if (this.dailyCount[day] <= 10) {
-      return "#a82cda";
-    }
-    if (this.dailyCount[day] > 13) {
-      return "#ad445f";
-    }
-    return "#9fbce4"
-  }
-
 public barChartOptions = {
     responsive: true,
     scales: {
@@ -88,6 +68,27 @@ public barChartData = [
       ],
       hoverBackgroundColor: '#112d53'
     }];
+
+
+  private assignColors(day: number): string {
+
+      if (this.dailyCount[day] <= 2) {
+        return "#cbdef8";
+      }
+      if (this.dailyCount[day] <= 4) {
+        return "#b5cef1";
+      }
+      if (this.dailyCount[day] <= 5) {
+        return "#6a9be0";
+      }
+      if (this.dailyCount[day] <= 10) {
+        return "#a82cda";
+      }
+      if (this.dailyCount[day] > 13) {
+        return "#ad445f";
+      }
+      return "#9fbce4"
+    }
 
 
 
