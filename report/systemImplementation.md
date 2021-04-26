@@ -70,7 +70,7 @@ Angular offered a number of key advantages in the development of our Single Page
 During our opening sprint, we set up all required components for the project, this is displayed below:
 
 <p align="center">
-<img src="../report/Images/sprint1Front.png" width=70%>
+<img src="../report/Images/sprint_front.png" width=40%>
 </p>
 <b><p align= "center">Figure : A screenshot of the single page application components.</p></b>
 
@@ -78,7 +78,7 @@ One of the primary objectives of Flocus is to provide a healthy and productive v
 
 ## Details of implementation
 
-### Study component - design 
+### Study component - design
 
 The main component in Flocus is the study page where users spend a majority of their time. It was therefore critical for us, as the designers, to produce an environment that encourages productivity whilst minimising the risk of distraction. To achieve these outcomes, we investigated a growing body of research that points to the beneficial effects of nature on health, stress reduction and productivity. Research from the University of Melbourne investigated the impact of exposure to natural scenes on response times, attention deficits and error frequency when conducting menial tasks. The findings offered statistically significant evidence of a negative, causal effect of natural environments on attention deficit and error frequency. Although the effect with the largest magnitude came from immersion in a natural environment, exposure via a screensaver also offered statistically significant results. () Other papers that offer similarly robust evidence include ()()(). As a result, we decided to introduce a natural theme to the study component and, to align with the applications aim of raising awareness for water scarcity, we decided to use a blue colour scheme. This resulted in the following component design:
 
@@ -96,7 +96,7 @@ The introduction of a clock or timer was discussed at length by the group. Howev
 To introduce a glass fill animation, we used typescript which allows the user to start and stop the glass-fill as they please. The animation was implemented via the use of a SVG clip-path which is transformed vertically to reveal the underlying water animation. 
 
 <p align="center">
-<img src="../report/Images/animation_code.png" width=70%>
+<img src="../report/Images/animation_newcode.png" width=70%>
 </p>
 <b><p align= "center">Figure : A screenshot of the code used to convert the animation into HTML format.</p></b>
 
@@ -125,7 +125,12 @@ Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of
 For the implementation of the personal stats section titled “Your Week”, we utilised Chartjs. To discourage overuse, we have included colour indicators that provide a subtle prompt to an individual if they are overworking - a bar that displays work over 9.75 hours will turn red. For this, we followed the UK governments advice on the 48-hour working limit and assumed that a student was studying for 5 days per week. The typescript code for the Chartjs bar-chart is attached below:
 
 <p align="center">
-<img src="../report/Images/league_table_code.png" width=70%>
+<img src="../report/Images/table_code1.png" width=50%>
+</p>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+
+<p align="center">
+<img src="../report/Images/table_code2.png" width=50%>
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
 
@@ -143,9 +148,42 @@ TODO
 
 # Additional Elements and Components
 
-## Lottie animations
+## Front-end
 
-TODO
+### Lottie animations
+
+Lottie is an open-source animation file format that allows creators to easily convert Adobe After-Affects animations for implementation in HTML code. For Flocus, it allowed us to display lightweight, scalable and interactive animations that enhanced the serious play aspect of our application. Initially, we began creating custom made animations for the application in AAE, converting to JSON files via the BodyMovin’ extension. However, this process was far more challenging than initially expected – Lottie files do not currently support certain mattes and effects that make animating in AAE achievable in short periods of time. As a result, we utilised the large and comprehensive Lottie file library where a large number of creators have made their work freely available.
+
+<p align="center">
+<img src="../report/Images/lottie_code.png" width=70%>
+</p>
+<b><p align= "center">Figure : A snippet of the lottie code used to bring the animation to life. </p></b>
+
+The Lottie-player is a Web-Component for easily including and playing Lottie animations. It was the fastest implementation of Lottie, allowing us to specify certain parameters such as speed and iteration count. However, it is not absent of drawbacks. From our individual use and user feedback, it was made aware that certain browser would not render or handle the animations as desired. The browser that displayed the most issues was Safari. In an attempt to work around this glitch, we rendered the animation on a canvas rather than SVG. However, Lottie animations do not currently support certain animation effects on canvas and so when rendering, the Lottie animation became distorted and un-useable. Given the lack of sufficient time to address these concerns, we had to accept that the application was not going to operate as well in Safari as other browsers (e.g Chrome). We have passed this information to the Asaqua team for future adjustment. 
+
+The relevant licence information regarding free-for-use Lottie animations is stated below:
+
+“All the public files available in LottieFiles are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.” (https://lottiefiles.com/page/license)
+
+All files in use by Flocus have been distributed under the Creative Commons license and Asaqua have been informed of the requirement to provide credit to the original creators upon commercial rollout.
+
+URLs for Lottie animations in use:
+- winning.json; https://lottiefiles.com/42226-winning-leadership
+- Login-guy.json; https://lottiefiles.com/36707-working-man
+
+### Adobe Stock
+
+Unfortunately, Flocus’s development budget did not stretch far enough to cover the subscription or the early cancelation fees of Adobe Photoshop or Illustrator. Luckily however, a member of the team had access to Adobe Stock where third-party designs can be fully licensed for commercial use. As such, the Study component has been designed from an illustration licensed under the perpetual and worldwide Adobe licence:
+
+“An Adobe Stock perpetual, worldwide licence allows you to use your licensed asset in all media including print, presentations, broadcasts, websites, and on social media sites.” Additionally, a standard licence allows for the modification of a design. 
+
+We first converted the .ai file to a .svg format for edit in Figma. We then isolated each layer for CSS animations and user interaction. The layering was achieved with the use of the z-index in CSS. 
+
+Adobe licence information: https://stock.adobe.com/uk/license-terms
+
+Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustration-tiny-drinking-fresh-potable-person-concept/269962379
+
+## Back-end
 
 # Deployment Details
 
