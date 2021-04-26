@@ -15,7 +15,7 @@
         </p>
 
         <!--HOME Nav-link-->
-        <a class="nav-link" href="/home">HOME</a>
+        <a class="nav-link" routerLink="/home">HOME</a>
 
         <!--water drop counter in the corner-->
         <div class = "counter" onmouseover="boxPresent()">
@@ -24,6 +24,12 @@
             </svg>
             <p class= "number">{{dayGlassCount}}</p>
         </div>
+
+        <!--Counter sign-->
+        <div class = "info your">YOUR</div>
+        <div class = "info count">COUNT</div>
+        <div class = "info colon">:</div>
+
 
         <!--Background-->
         <img class = "background" src="../../assets/images/background.png" alt = "background">
@@ -73,6 +79,9 @@
 
         <!--The tap -->
         <img class = "tap" src = "../../assets/tap.png" alt = "tap">
+        
+        <!--Press here notification-->
+        <div class = "instructions">PRESS HERE -> </div>
 
         <!--water filling animation-->
         <div class = "motion">

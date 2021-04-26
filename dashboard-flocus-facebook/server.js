@@ -12,6 +12,7 @@ const facebookStrategy = require('passport-facebook').Strategy;
 // Get our API routes
 const api = require('./server/routes/api');
 const record = require('./server/routes/record');
+const league = require('./server/routes/league');
 
 const app = express();
 
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 // Set our api routes
 app.use('/api', api);
 app.use('/api/record', record);
-
+app.use('/api/league', league);
 
 passport.use(new facebookStrategy({
   clientID: "498052027866336",
@@ -175,9 +176,10 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
 
   res.send(uids);
 });
-
-
-
+app.get('/friendNames', isLoggedIn, async function (req, res) {
+  var theUser = req.user;
+  res.send(theUser.friends);
+});
 
 app.get('/name', isLoggedIn, function (req, res) {
   var theUser = req.user
@@ -205,6 +207,9 @@ app.get('/logout', isLoggedIn, function (req, res) {
   console.log(req.isAuthenticated());
   res.redirect('/');
 })
+
+
+
 
 
 const port = process.env.PORT || '3000';

@@ -40,11 +40,19 @@ While, we have been working on this project it was great to learn more about the
 
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
-<img align="center" src="../asaqua1.png" width=70%>
+<p float="left">
+  <img src="asaqua1.png" width="325" height="300">
+  <img src="asaqua2.png" width="325" height="300">
+  <img src="asaqua3.png" width="325" height="300">
+</p>
 
-<img align="center" src="../asaqua2.png" width=70%>
+We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
 
-<img align="center" src="../asaqua3.png" width=70%>
+“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally.
+
+Thank you, Flocus!”
+
+-- The Asaqua Team
 
 ## Team Members
 
