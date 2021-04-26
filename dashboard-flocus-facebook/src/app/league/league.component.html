@@ -1,27 +1,29 @@
+
+
 <div class = "page">
     <a class="nav-link" href="/home">HOME</a>
     <div class="league">
         <div class = "leagueTitle">LEAGUE</div>
-        
-        
-        <body>
-        <table>
-        </table>
-        </body>
-        <script src="build-league.js"></script> 
+            <table class = "table" id = "table">
+                <tr class="headers">
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Total Hours</th>
+                    <th>Glasses this Week</th>
+                </tr>
+            </table>
     </div>
 
     <div class = "left">
         <div class = "stats">
             <div class = "yourWeek">YOUR WEEK:</div>
-            <canvas class = "weekly" baseChart
-                    [datasets]="barChartData"
-                    [labels]="barChartLabels"
-                    [options]="barChartOptions"
-                    [chartType]="barChartType">
-            </canvas>
+                <canvas class = "weekly" baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [chartType]="barChartType">
+                </canvas>
         </div>
-
         <div class = "lottie">
             <lottie-player class = "image" src="../../assets/winning.json"
             background="transparent"
