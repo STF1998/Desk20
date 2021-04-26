@@ -70,7 +70,7 @@ Angular offered a number of key advantages in the development of our Single Page
 During our opening sprint, we set up all required components for the project, this is displayed below:
 
 <p align="center">
-<img src="../report/Images/sprint_front.png" width=70%>
+<img src="../report/Images/sprint_front.png" width=40%>
 </p>
 <b><p align= "center">Figure : A screenshot of the single page application components.</p></b>
 
@@ -78,7 +78,7 @@ One of the primary objectives of Flocus is to provide a healthy and productive v
 
 ## Details of implementation
 
-### Study component - design 
+### Study component - design
 
 The main component in Flocus is the study page where users spend a majority of their time. It was therefore critical for us, as the designers, to produce an environment that encourages productivity whilst minimising the risk of distraction. To achieve these outcomes, we investigated a growing body of research that points to the beneficial effects of nature on health, stress reduction and productivity. Research from the University of Melbourne investigated the impact of exposure to natural scenes on response times, attention deficits and error frequency when conducting menial tasks. The findings offered statistically significant evidence of a negative, causal effect of natural environments on attention deficit and error frequency. Although the effect with the largest magnitude came from immersion in a natural environment, exposure via a screensaver also offered statistically significant results. () Other papers that offer similarly robust evidence include ()()(). As a result, we decided to introduce a natural theme to the study component and, to align with the applications aim of raising awareness for water scarcity, we decided to use a blue colour scheme. This resulted in the following component design:
 
@@ -125,7 +125,12 @@ Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of
 For the implementation of the personal stats section titled “Your Week”, we utilised Chartjs. To discourage overuse, we have included colour indicators that provide a subtle prompt to an individual if they are overworking - a bar that displays work over 9.75 hours will turn red. For this, we followed the UK governments advice on the 48-hour working limit and assumed that a student was studying for 5 days per week. The typescript code for the Chartjs bar-chart is attached below:
 
 <p align="center">
-<img src="../report/Images/league_table_code.png" width=50%>
+<img src="../report/Images/table_code1.png" width=50%>
+</p>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+
+<p align="center">
+<img src="../report/Images/table_code2.png" width=50%>
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
 
