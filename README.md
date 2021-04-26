@@ -41,16 +41,10 @@ While, we have been working on this project it was great to learn more about the
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
 <p float="left">
-  <img src="asaqua1.png" width="200" height="200">
-  <img src="asaqua2.png" width="200">
-  <img src="asaqua3.png" width="200">
+  <img src="asaqua1.png" width="300" height="300">
+  <img src="asaqua2.png" width="300" height="300">
+  <img src="asaqua3.png" width="300" height="300">
 </p>
-
-<img align="center" src="asaqua1.png" width="300">
-
-<img align="center" src="asaqua2.png" width="300">
-
-<img align="center" src="asaqua3.png" width="300">
 
 ## Team Members
 
