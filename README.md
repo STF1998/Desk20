@@ -36,6 +36,82 @@ Asaqua is dedicated to solving the water crisis in underdeveloped countries by o
 
 Our vision is a world where no kid has to trudge miles every day to fetch water, and every individual has the access to clean water.
 
+While, we have been working on this project it was great to learn more about the work Asaqua does in developing nations. This understanding further motivated the team to create a product to the best of our ability given the meaningful impact it could have on both procrastination and helping raise awareness for the work Asaqua does. 
+
+Please see below some very cool photos of the work Asaqua has been doing in Africa:
+
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="../report/Images/asaqua1.jpg" class="slide" width="500" height="300" />
+        <img src="../report/Images/asaqua2.jpg" class="slide" width="500" height="300" />
+        <img src="../report/Images/asaqua3.jpg" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+  </body>
+</html>
+
 ## Team Members
 
 - [**Sam Fitton**](https://github.com/STF1998) (Username: SF17177) 
