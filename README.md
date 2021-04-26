@@ -52,6 +52,12 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
   </div>
 </div>
 
+<p float="left">
+  <img src="asaqua1.png" width="200">
+  <img src="asaqua2.png" width="200">
+  <img src="asaqua3.png" width="200">
+</p>
+
 <img align="center" src="asaqua1.png" width="300">
 
 <img align="center" src="asaqua2.png" width="300">
