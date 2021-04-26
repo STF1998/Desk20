@@ -40,20 +40,8 @@ While, we have been working on this project it was great to learn more about the
 
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
-<div class="row">
-  <div class="column">
-    <img src="asaqua1.png" alt="asaqua1" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="asaqua2.png" alt="asaqua2" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="asaqua3.png" alt="asaqua3" style="width:100%">
-  </div>
-</div>
-
 <p float="left">
-  <img src="asaqua1.png" width="200">
+  <img src="asaqua1.png" width="200" height="200">
   <img src="asaqua2.png" width="200">
   <img src="asaqua3.png" width="200">
 </p>
