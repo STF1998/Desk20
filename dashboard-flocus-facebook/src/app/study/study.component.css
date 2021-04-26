@@ -236,6 +236,19 @@
     background-color: rgb(64, 20, 167);
   }
 
+  .instructions{
+    position: absolute;
+    color: #9fbce4;
+    top: 70%;
+    left: 27%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    -moz-transform: rotate(-15deg) translateX(-27%) translateY(-70%);
+   -webkit-transform: rotate(-15deg) translateX(-27%) translateY(-70%);
+   transform: rotate(-15deg) translateX(-27%) translateY(-70%);
+   z-index: 6;
+  }
   .nav-link{
     margin: 3vw;
     font-weight: bold;
@@ -277,6 +290,50 @@
     top:62.5%;
     left:50%;
     transform: translate(-50%, -50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
     z-index:7;
   }
+
+  .info{
+    position: absolute;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    color: rgb(64, 20, 167);
+    opacity: 1;
+    position: absolute;
+    z-index:7;
+  }
+
+  .your{
+    top:7%;
+    text-align: center;
+    left:90.8%;
+    font-size: 125%;
+    transform: translate(-7%, -90.8%);
+    -moz-transform: translateX(-7%) translateY(-90.8%);
+    -webkit-transform: translateX(-7%) translateY(-90.8%);
+
+  }
+
+  .count{
+    top:9%;
+    left:91%;
+    font-size: 100%;
+    transform: translate(-9%, -91%);
+    -moz-transform: translateX(-9%) translateY(-91%);
+    -webkit-transform: translateX(-9%) translateY(-91%);
+  }
+
+  .colon{
+    color: rgb(64, 20, 167);
+    top:9%;
+    left:96%;
+    font-size: 180%;
+    transform: translate(-9%, -96%);
+    -moz-transform: translateX(-9%) translateY(-96%);
+    -webkit-transform: translateX(-9%) translateY(-96%);
+  }
+
 

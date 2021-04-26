@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router, RouterModule } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-
 
 
 @Component({
@@ -10,7 +8,6 @@ import { HomeComponent } from '../home/home.component';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
 
 
 export class LoginComponent implements OnInit {
@@ -27,7 +24,6 @@ export class LoginComponent implements OnInit {
   }
 
  
-
   retrieveData() {
     this.dataService.loginStatus().subscribe(
       data => {
@@ -58,6 +54,5 @@ export class LoginComponent implements OnInit {
         console.log(error);
       });
   }
-
 }
 

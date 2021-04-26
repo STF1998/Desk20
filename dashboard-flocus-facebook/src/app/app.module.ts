@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoadingAnimComponent } from './loading-anim/loading-anim.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,7 +24,6 @@ import { AsaquaComponent } from './asaqua/asaqua.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoadingAnimComponent,
     LoginComponent,
     NavBarComponent,
     APITestComponent,

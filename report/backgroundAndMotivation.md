@@ -211,11 +211,37 @@ Based on current market research, we identified the following gaps and places fo
 - Lack of visual aid - sole focus on a clock timer.
 - Very few had the ability to see statistics compared to friends work/study behaviours.
 - None had a social enterprise aspect or links with a charity or charitable organisation.
-- Lack of animations. 
+- Lack of animations and visual aids. 
 
 # Defined problem
 
+The problem we aim to solve is procrastination using visual aids with a positive social aspect.
+
 ## Scope
+
+### Conceptual scope
+
+With the use of a visual aid of a glass filling up, we created a single page application that helps reduce procrastination and provides an insight into the important issue of droughts in Africa through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer with a competitive aspect using league tables. We have a running theme of water through the application with the link to water accessibility challenges in developing nations with a focus on the work Asaqua does to help improve water accessibility in Africa. 
+
+Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water accessibility. Thus, our applications looks to raise awareness for water accessibility while also provoking changes in studying behaviours in student populations. 
+ 
+- For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
+- For Asaqua, we are looking to raise awareness for an important issue around droughts and water accessibility in developing nations in Africa. 
+ 
+What are the primary objectives for your project? Are there any you could prioritise? 
+ 
+Our initial demographic group is students aged 16-24 including school and university students. We realise there is scope to extend this out to employees to help those working from home and tracking their work concentration however given the short timeline of this project we have decided to focus on the demographic we understand the best given we are students ourselves. 
+ 
+Our key objectives: 
+- Aesthetically pleasing front-end with bright colour scheme and bold visual aids. 
+- Easy-to-use login using Facebook to start with (future scope we would also like to sign up via LinkedIn or Google). 
+Has to be a competitive aspect that is a leader board between friends or peers – this can be in the form of graphical representation (future scope – create an animation, such as a swimming race, to display leader board.
+- Insightful and interactive information around Asaqua and the work they do for helping countries with drought issues and water accessibility.
+
+### Technical scope
+
+
+
 ## Challenges
 
 ## Reference List

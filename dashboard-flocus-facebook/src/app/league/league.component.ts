@@ -157,6 +157,7 @@ export class LeagueComponent implements OnInit {
       }
     )
   }
+
   private async createLeague(userid: string) {
     var lastMonday = new Date();
     var day = lastMonday.getDay();
@@ -189,4 +190,4 @@ export class LeagueComponent implements OnInit {
         console.log(this.leagueTable);
     });
   }
-} 
+}
