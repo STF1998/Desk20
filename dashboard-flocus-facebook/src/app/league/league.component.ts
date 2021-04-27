@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { HttpParams } from '@angular/common/http';
 import { Observable, forkJoin } from 'rxjs';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-league',
   templateUrl: './league.component.html',
-  styleUrls: ['./league.component.css']
+  styleUrls: ['./league.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LeagueComponent implements OnInit {
 
@@ -17,36 +19,19 @@ export class LeagueComponent implements OnInit {
   private scores: any = [];
   private friendNames: any = [];
   private statsLeague: any = [];
-  public leagueTable: any = [];
+  public leagueTable: any;
   private row: any = new Array();
+  public fill = 1;
 
-  constructor(private DataService: DataService) { }
+  constructor(private DataService: DataService) {
+   }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
+    this.setTable();
   }
 
-  private assignColors(day: number): string {
-
-    if (this.dailyCount[day] <= 2) {
-      return "#cbdef8";
-    }
-    if (this.dailyCount[day] <= 4) {
-      return "#b5cef1";
-    }
-    if (this.dailyCount[day] <= 5) {
-      return "#6a9be0";
-    }
-    if (this.dailyCount[day] <= 10) {
-      return "#a82cda";
-    }
-    if (this.dailyCount[day] > 13) {
-      return "#ad445f";
-    }
-    return "#9fbce4"
-  }
-
-  public barChartOptions = {
+public barChartOptions = {
     responsive: true,
     scales: {
       xAxes: [{
@@ -65,11 +50,11 @@ export class LeagueComponent implements OnInit {
     legend: {
       display: false
     },
-  };
+};
 
-  public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
-  public barChartType = 'horizontalBar';
-  public barChartData = [
+public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+public barChartType = 'horizontalBar';
+public barChartData = [
     {
       data: this.dailyCount,
       backgroundColor: [
@@ -83,6 +68,89 @@ export class LeagueComponent implements OnInit {
       ],
       hoverBackgroundColor: '#112d53'
     }];
+
+
+  private assignColors(day: number): string {
+
+      if (this.dailyCount[day] <= 2) {
+        return "#cbdef8";
+      }
+      if (this.dailyCount[day] <= 4) {
+        return "#b5cef1";
+      }
+      if (this.dailyCount[day] <= 5) {
+        return "#6a9be0";
+      }
+      if (this.dailyCount[day] <= 10) {
+        return "#a82cda";
+      }
+      if (this.dailyCount[day] > 13) {
+        return "#ad445f";
+      }
+      return "#9fbce4"
+    }
+
+
+
+
+public setTable() : void{
+
+  //sort the array
+  if(this.sortLeaders() == -1){
+    this.fill = 0;
+    return;
+  }
+
+  // get the table Selector
+  var table = document.querySelector("table");
+  if(table == null){
+    return;
+  }
+
+  //input values
+  for(var i = 0; i < this.leagueTable.length; i++){
+
+    //add a row
+    var row = table.insertRow(i+1);
+    row.classList.add('pos');
+    //add a cell
+    var cell = row.insertCell();
+    // add the rows position
+    var text = document.createTextNode(String(i + 1));
+    cell.appendChild(text);
+
+    for(var j = 0; j < 3; j++){
+      var cell = row.insertCell();
+      //add the value of the array cell to the cell of the table
+      var text = document.createTextNode(this.leagueTable[i][j]);
+      cell.appendChild(text);
+    }
+  }
+  // this is to stop the thing from going mad
+  this.fill = 0;
+}
+
+
+private sortLeaders() : number{
+
+  if(this.leagueTable == null){
+    return -1;
+  }
+  if(this.leagueTable.length == 0){
+    return -1;
+  }
+  this.leagueTable.sort(this.sortFunction);
+  return 1;
+}
+
+private sortFunction(a: number[], b: number[]) {
+  if (a[2] === b[2]) {
+      return 0;
+  }
+  else {
+      return (a[2] > b[2]) ? -1 : 1;
+  }
+}
 
 
   private async retrieveUserData(userid: string, todayDate: Date) {
