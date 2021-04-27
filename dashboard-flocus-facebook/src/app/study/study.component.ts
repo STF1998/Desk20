@@ -25,9 +25,46 @@ export class StudyComponent implements OnInit, OnDestroy {
   private isStudy = true;
   public dayGlassCount = 0;
   private stats: any = [];
+  private inactiveTime: Date;
+  private inactiveTimePassed = 0;
+  private totalInactiveTime = 0;
+  private isActive = true;
 
   constructor(private DataService: DataService) {
+    // document.addEventListener("visibilitychange", this.onVisibilityChange);
   }
+
+  // onVisibilityChange() {
+  //   if (document.hidden) {
+  //     this.pauseTimer;
+  //     console.log("hidden");
+  //     this.inactiveTime = new Date();
+  //     this.inactiveTimePassed = this.timePassed;
+  //   } else {
+  //     console.log("shown");
+  //     this.totalInactiveTime = Math.floor((new Date().getTime() - this.inactiveTime.getTime()) / 1000);
+  //     console.log("Inactivity time: " + this.totalInactiveTime);
+  //     if (this.isStudy) {
+  //       if (this.inactiveTimePassed + this.totalInactiveTime < this.studyTime) {
+  //         this.timePassed = this.totalInactiveTime + this.inactiveTimePassed;
+  //         console.log("Resumed Study timePassed: " + this.timePassed);
+  //       } else {
+  //         this.timePassed = this.studyTime;
+  //         console.log("Study time's up timePassed: " + this.timePassed);
+  //       }
+  //     } else {
+  //       if (this.inactiveTimePassed + this.totalInactiveTime < this.breakTime) {
+  //         this.timePassed = this.totalInactiveTime + this.inactiveTimePassed;
+  //         console.log("Resumed Break timePassed: " + this.timePassed);
+  //       } else {
+  //         this.timePassed = this.breakTime;
+  //         console.log("Break Time's up timePassed: " + this.timePassed);
+  //       }
+  //     }
+  //     this.startTimer;
+  //   }
+  // }
+
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
@@ -79,6 +116,7 @@ export class StudyComponent implements OnInit, OnDestroy {
           this.waterLevel = this.timePassed / this.studyTime;
           this.fillUp();
         }
+
         if (this.timePassed == this.studyTime) { // if the time you have spent studying is equal to the time allocation
           this.dayGlassCount++;
           console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
@@ -101,6 +139,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         }
       }
       if (!this.isStudy && this.timePassed == this.breakTime) {
+
         console.log('End of the break');  // tmp
         this.timePassed = 0;
         this.time.unsubscribe();
