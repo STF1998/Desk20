@@ -17,10 +17,7 @@ export class LeagueComponent implements OnInit {
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
   private scores: any = [];
-  private friendNames: any = [];
-  private statsLeague: any = [];
-  public leagueTable: any;
-  private row: any = new Array();
+  public leagueTable: any = [];
   public fill = 1;
 
   constructor(private DataService: DataService) {
@@ -28,7 +25,7 @@ export class LeagueComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
-    this.setTable();
+    
   }
 
 public barChartOptions = {
@@ -221,7 +218,7 @@ private sortFunction(a: number[], b: number[]) {
         const uid = userdata;
         this.userid = uid.toString();
         this.retrieveUserData(this.userid, new Date());
-        this.createLeague(this.userid)
+        this.createLeague(this.userid);
       }
     )
   }
@@ -232,29 +229,35 @@ private sortFunction(a: number[], b: number[]) {
     lastMonday.setHours(-24 * (day - 1));
     }
     lastMonday.setHours(0,0,0,0);
+    var minStudyTime = 0;
     var httpParams = new HttpParams()
       .set("uid", userid)
       .set("rangeStart", JSON.parse(JSON.stringify(lastMonday)))
       .set("rangeEnd", JSON.parse(JSON.stringify(new Date())))
-    let friendsScore = this.DataService.getLeague(httpParams);
-    await this.DataService.getFriendNames().toPromise;
-    let friendsName = this.DataService.getFriendNames();
-    forkJoin([friendsScore, friendsName])
+      .set("timeSpentLower", minStudyTime.toString())
+      .set("timeSpentUpper", this.studyTime.toString());
+    this.DataService.getLeague(httpParams)
+    // await this.DataService.getFriendNames().toPromise;
+    // let friendsName = this.DataService.getFriendNames();
+    // forkJoin([friendsScore, friendsName])
     .subscribe(
-      async data => {
-        this.scores = data[0];
-        this.friendNames = data[1];
+      data => {
+        this.scores = data;
+        // this.friendNames = data[1];
         console.log(this.scores);
+        console.log(this.scores.length);
         for(let i = 0; i < this.scores.length ; i++){
-          this.row[0] = this.scores[i]._id;
-          this.row[1] = this.scores[i].session;
-          this.row[2] = this.scores[i].totalTime;
-          console.log(this.scores[i]._id);
-          console.log(this.scores[i].session);
-          console.log(this.scores[i].totalTime);
-          this.leagueTable[i] = this.row;     
+          let row: any = ["",0,0];
+          row[0] = this.scores[i].name;
+          row[1] = this.scores[i].totalTime;
+          row[2] = this.scores[i].session;
+          console.log(row[0]);
+          console.log(row[1]);
+          console.log(row[2]);
+          console.log(row);
+          this.leagueTable[i] = row;     
         }
-        console.log(this.leagueTable);
+        this.setTable();    
     });
   }
 } 
