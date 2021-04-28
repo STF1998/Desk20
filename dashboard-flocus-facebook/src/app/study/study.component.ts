@@ -94,20 +94,16 @@ export class StudyComponent implements OnInit, OnDestroy {
             }
           );
           this.retrieveGlassCount();
-          this.timePassed = 0; // time is reset
           this.isStudy = false; // it is now not time to study
           this.isBreak = true;
           this.dripDrop("stop");
           clearInterval(this.interval);
           this.emptyOut();
           this.pressed = false;
+          this.timePassed = 0;
+          this.isStudy = true;
+          this.isBreak = false;
         }
-      }
-      if (!this.isStudy && this.timePassed == this.breakTime) {
-        console.log('End of the break');  // tmp
-        this.timePassed = 0;
-        this.isStudy = true;
-        this.isBreak = false;
       }
     }, 1000);
   }
@@ -133,7 +129,7 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public minutes: number;
   private ydist = -625;
-  private yIncrementForEmpty = 625 / (this.breakTime / 10);
+  private yIncrementForEmpty = 625 / (this.breakTime / 1000);
   private yPos: number;
   private elem: HTMLElement | null;
   private stop: Timer;
@@ -154,7 +150,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     console.log("empty out called");
     this.elem = document.getElementById('waterfill');
     this.yPos = this.ydist * this.waterLevel;
-    this.stop = setInterval(this.empty.bind(this), 10);
+    this.stop = setInterval(this.empty.bind(this), 1000);
   }
 
   private empty() {
@@ -162,6 +158,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     console.log("empty");
 
     if (this.yPos >= 0) {
+      console.log("clearing interval stop");
       clearInterval(this.stop);
     }
     else {
