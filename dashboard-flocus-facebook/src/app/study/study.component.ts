@@ -14,8 +14,8 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public dayGlassCount: number; /*  = 8 */;
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 25 * 60 * 1000;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
-  private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
+  private studyTime = 25 * 60 * 1000;     // Amendable: the amount of time for a study session in seconds (aka 25 mins)
+  private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 5 mins)
   private userid = "108266374709077"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = false;
@@ -42,7 +42,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         JSON.stringify({
           "uid": this.userid,
           "timestamp": new Date(),
-          "timeSpent": this.timePassed
+          "timeSpent": Math.floor(this.timePassed / 1000)
         })).subscribe(
           feedback => {
             console.log(feedback);
@@ -80,8 +80,8 @@ export class StudyComponent implements OnInit, OnDestroy {
       console.log(this.timePassed);
       this.timePassed = this.getTimePassed(); //incrementing the time by 1 second
       if (this.isStudy) { //if the current time is for studying
-          this.waterLevel = this.timePassed / this.studyTime;
-          this.fillUp();
+        this.waterLevel = this.timePassed / this.studyTime;
+        this.fillUp();
         if (this.timePassed >= this.studyTime) { // if the time you have spent studying is more than or equal to the time allocation
           this.dayGlassCount++;
           this.timePassed = this.studyTime;
@@ -89,7 +89,7 @@ export class StudyComponent implements OnInit, OnDestroy {
           this.DataService.postRecord(JSON.stringify({
             "uid": this.userid,
             "timestamp": new Date(),
-            "timeSpent": this.timePassed
+            "timeSpent": Math.floor(this.timePassed / 1000)
           })).subscribe(
             feedback => {
               console.log(feedback);
@@ -110,7 +110,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     }, 1000);
   }
 
-  private getTimePassed() : number{
+  private getTimePassed(): number {
 
     var now = Date.now();
     var distance = this.CountDownTime - now;
@@ -119,7 +119,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     console.log("Time passed = " + timepassed);
     return timepassed;
   }
-  
+
 
   private pauseTimer() {
     if (this.isStudy) {
@@ -139,7 +139,7 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private fillUp() {
 
-    if(this.pressed == true) {
+    if (this.pressed == true) {
       this.elem = document.getElementById('waterfill');
       this.yPos = this.ydist * this.waterLevel;
       if (this.elem != null) {
@@ -204,7 +204,7 @@ export class StudyComponent implements OnInit, OnDestroy {
       .set("rangeStart", JSON.parse(JSON.stringify(dayStart)))
       .set("rangeEnd", JSON.parse(JSON.stringify(dayEnd)))
       .set("timeSpentLower", this.studyTime.toString())
-      .set("timeSpentUpper", this.studyTime.toString());
+      .set("timeSpentUpper", (this.studyTime / 1000).toString());
 
     this.DataService.getRecord(httpParams).subscribe(
       data => {
