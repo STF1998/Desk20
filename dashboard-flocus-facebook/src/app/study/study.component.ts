@@ -14,8 +14,8 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public dayGlassCount: number; /*  = 8 */;
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 25 * 60;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
-  private breakTime = 5 * 60;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
+  private studyTime = 25 * 60 * 1000;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
+  private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private userid = "108266374709077"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = false;
@@ -25,13 +25,13 @@ export class StudyComponent implements OnInit, OnDestroy {
   private isStudy = true;
   public dayGlassCount = 0;
   private stats: any = [];
-  static isActive = true;
+  private CountDownTime = 0;
+  private interval: Timer;
 
   constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
-    StudyComponent.isActive = true;
     this.timePassed = 0;
   }
 
@@ -74,54 +74,15 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   private startTimer() {
-    let inactiveTime: Date;
-    let timePassedWhenInactive = 0;
-    let totalInactiveTime = 0;
-    this.time = timer(0, 1000).subscribe(t => {
-      console.log("actual time: " + this.timePassed);
-      this.timePassed++; //incrementing the time by 1 second
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-          if (StudyComponent.isActive) {
-            console.log("hidden");
-            inactiveTime = new Date();
-            timePassedWhenInactive = this.timePassed;
-          }
-          StudyComponent.isActive = false;
-        } else {
-          if (!StudyComponent.isActive) {
-            console.log("shown");
-            totalInactiveTime = Math.floor((new Date().getTime() - inactiveTime.getTime()) / 1000);
-            console.log("Inactivity time: " + totalInactiveTime);
-            if (this.isStudy) {
-              if (timePassedWhenInactive + totalInactiveTime < this.studyTime) {
-                this.timePassed = totalInactiveTime + timePassedWhenInactive;
-                console.log("Resumed Study timePassed: " + this.timePassed);
-              } else {
-                this.timePassed = this.studyTime;
-                console.log("Study time's up timePassed: " + this.timePassed);
-              }
-            } else {
-              if (timePassedWhenInactive + totalInactiveTime < this.breakTime) {
-                this.timePassed = totalInactiveTime + timePassedWhenInactive;
-                console.log("Resumed Break timePassed: " + this.timePassed);
-              } else {
-                this.timePassed = this.breakTime;
-                console.log("Break Time's up timePassed: " + this.timePassed);
-              }
-            }
-          }
-          StudyComponent.isActive = true;
-        }
-      });
 
-
+    this.CountDownTime = Date.now() + this.studyTime - this.timePassed;
+    this.interval = setInterval(() => {
+      console.log(this.timePassed);
+      this.timePassed = this.getTimePassed(); //incrementing the time by 1 second
       if (this.isStudy) { //if the current time is for studying
-        if (this.timePassed % this.updatefreq == 0) { // updating the water level every 2 seconds
           this.waterLevel = this.timePassed / this.studyTime;
           this.fillUp();
-        }
-        if (this.timePassed >= this.studyTime) { // if the time you have spent studying is equal to the time allocation
+        if (this.timePassed >= this.studyTime) { // if the time you have spent studying is more than or equal to the time allocation
           this.dayGlassCount++;
           this.timePassed = this.studyTime;
           console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
@@ -135,33 +96,34 @@ export class StudyComponent implements OnInit, OnDestroy {
             }
           );
           this.retrieveGlassCount();
-          this.timePassed = 0; // time is reset
-          timePassedWhenInactive = 0;
-          totalInactiveTime = 0;
-          if (!StudyComponent.isActive) { inactiveTime = new Date(); }
           this.isStudy = false; // it is now not time to study
           this.isBreak = true;
           this.dripDrop("stop");
+          clearInterval(this.interval);
           this.emptyOut();
           this.pressed = false;
-        }
-      }
-      if (!this.isStudy) {
-        if (this.timePassed >= this.breakTime) {
-          console.log('End of the break');  // tmp
           this.timePassed = 0;
-          this.time.unsubscribe();
           this.isStudy = true;
           this.isBreak = false;
         }
       }
-    });
+    }, 1000);
   }
+
+  private getTimePassed() : number{
+
+    var now = Date.now();
+    var distance = this.CountDownTime - now;
+    console.log("distance = " + distance);
+    var timepassed = (this.studyTime - distance);
+    console.log("Time passed = " + timepassed);
+    return timepassed;
+  }
+  
 
   private pauseTimer() {
     if (this.isStudy) {
-      this.time.unsubscribe();
-      console.log("Paused");  // tmp 
+      clearInterval(this.interval);
     }
   }
 
@@ -169,7 +131,7 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public minutes: number;
   private ydist = -625;
-  private yIncrementForEmpty = 625 / (this.breakTime * 1000 / 10);
+  private yIncrementForEmpty = 625 / (this.breakTime / 1000);
   private yPos: number;
   private elem: HTMLElement | null;
   private stop: Timer;
@@ -177,7 +139,7 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private fillUp() {
 
-    if (this.pressed == true) {
+    if(this.pressed == true) {
       this.elem = document.getElementById('waterfill');
       this.yPos = this.ydist * this.waterLevel;
       if (this.elem != null) {
@@ -187,20 +149,25 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   private emptyOut() {
+    console.log("empty out called");
     this.elem = document.getElementById('waterfill');
     this.yPos = this.ydist * this.waterLevel;
-    this.stop = setInterval(this.empty.bind(this), 10);
+    this.stop = setInterval(this.empty.bind(this), 1000);
   }
 
   private empty() {
 
+    console.log("empty");
+
     if (this.yPos >= 0) {
+      console.log("clearing interval stop");
       clearInterval(this.stop);
     }
     else {
       if (this.elem != null) {
         this.yPos = this.yPos + this.yIncrementForEmpty;
         this.elem.style.transform = "translate(0px," + this.yPos + "px)";
+        console.log(this.yPos);
       }
     }
   }
