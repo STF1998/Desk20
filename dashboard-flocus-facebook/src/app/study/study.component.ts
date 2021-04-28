@@ -25,49 +25,14 @@ export class StudyComponent implements OnInit, OnDestroy {
   private isStudy = true;
   public dayGlassCount = 0;
   private stats: any = [];
-  private inactiveTime: Date;
-  private inactiveTimePassed = 0;
-  private totalInactiveTime = 0;
-  private isActive = true;
+  static isActive = true;
 
-  constructor(private DataService: DataService) {
-    // document.addEventListener("visibilitychange", this.onVisibilityChange);
-  }
-
-  // onVisibilityChange() {
-  //   if (document.hidden) {
-  //     this.pauseTimer;
-  //     console.log("hidden");
-  //     this.inactiveTime = new Date();
-  //     this.inactiveTimePassed = this.timePassed;
-  //   } else {
-  //     console.log("shown");
-  //     this.totalInactiveTime = Math.floor((new Date().getTime() - this.inactiveTime.getTime()) / 1000);
-  //     console.log("Inactivity time: " + this.totalInactiveTime);
-  //     if (this.isStudy) {
-  //       if (this.inactiveTimePassed + this.totalInactiveTime < this.studyTime) {
-  //         this.timePassed = this.totalInactiveTime + this.inactiveTimePassed;
-  //         console.log("Resumed Study timePassed: " + this.timePassed);
-  //       } else {
-  //         this.timePassed = this.studyTime;
-  //         console.log("Study time's up timePassed: " + this.timePassed);
-  //       }
-  //     } else {
-  //       if (this.inactiveTimePassed + this.totalInactiveTime < this.breakTime) {
-  //         this.timePassed = this.totalInactiveTime + this.inactiveTimePassed;
-  //         console.log("Resumed Break timePassed: " + this.timePassed);
-  //       } else {
-  //         this.timePassed = this.breakTime;
-  //         console.log("Break Time's up timePassed: " + this.timePassed);
-  //       }
-  //     }
-  //     this.startTimer;
-  //   }
-  // }
-
+  constructor(private DataService: DataService) { }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
+    StudyComponent.isActive = true;
+    this.timePassed = 0;
   }
 
   ngOnDestroy(): void {
@@ -83,6 +48,7 @@ export class StudyComponent implements OnInit, OnDestroy {
             console.log(feedback);
           }
         );
+      this.timePassed = 0;
       this.pauseTimer();
     }
   }
@@ -108,17 +74,56 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   private startTimer() {
+    let inactiveTime: Date;
+    let timePassedWhenInactive = 0;
+    let totalInactiveTime = 0;
     this.time = timer(0, 1000).subscribe(t => {
-      console.log(this.timePassed);
+      console.log("actual time: " + this.timePassed);
       this.timePassed++; //incrementing the time by 1 second
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          if (StudyComponent.isActive) {
+            console.log("hidden");
+            inactiveTime = new Date();
+            timePassedWhenInactive = this.timePassed;
+          }
+          StudyComponent.isActive = false;
+        } else {
+          if (!StudyComponent.isActive) {
+            console.log("shown");
+            totalInactiveTime = Math.floor((new Date().getTime() - inactiveTime.getTime()) / 1000);
+            console.log("Inactivity time: " + totalInactiveTime);
+            if (this.isStudy) {
+              if (timePassedWhenInactive + totalInactiveTime < this.studyTime) {
+                this.timePassed = totalInactiveTime + timePassedWhenInactive;
+                console.log("Resumed Study timePassed: " + this.timePassed);
+              } else {
+                this.timePassed = this.studyTime;
+                console.log("Study time's up timePassed: " + this.timePassed);
+              }
+            } else {
+              if (timePassedWhenInactive + totalInactiveTime < this.breakTime) {
+                this.timePassed = totalInactiveTime + timePassedWhenInactive;
+                console.log("Resumed Break timePassed: " + this.timePassed);
+              } else {
+                this.timePassed = this.breakTime;
+                console.log("Break Time's up timePassed: " + this.timePassed);
+              }
+            }
+          }
+          StudyComponent.isActive = true;
+        }
+      });
+
+
       if (this.isStudy) { //if the current time is for studying
         if (this.timePassed % this.updatefreq == 0) { // updating the water level every 2 seconds
           this.waterLevel = this.timePassed / this.studyTime;
           this.fillUp();
         }
-
-        if (this.timePassed == this.studyTime) { // if the time you have spent studying is equal to the time allocation
+        if (this.timePassed >= this.studyTime) { // if the time you have spent studying is equal to the time allocation
           this.dayGlassCount++;
+          this.timePassed = this.studyTime;
           console.log(JSON.stringify({ "uid": this.userid, "timestamp": new Date(), "timeSpent": this.timePassed }));  // posting to db
           this.DataService.postRecord(JSON.stringify({
             "uid": this.userid,
@@ -131,6 +136,9 @@ export class StudyComponent implements OnInit, OnDestroy {
           );
           this.retrieveGlassCount();
           this.timePassed = 0; // time is reset
+          timePassedWhenInactive = 0;
+          totalInactiveTime = 0;
+          if (!StudyComponent.isActive) { inactiveTime = new Date(); }
           this.isStudy = false; // it is now not time to study
           this.isBreak = true;
           this.dripDrop("stop");
@@ -138,13 +146,14 @@ export class StudyComponent implements OnInit, OnDestroy {
           this.pressed = false;
         }
       }
-      if (!this.isStudy && this.timePassed == this.breakTime) {
-
-        console.log('End of the break');  // tmp
-        this.timePassed = 0;
-        this.time.unsubscribe();
-        this.isStudy = true;
-        this.isBreak = false;
+      if (!this.isStudy) {
+        if (this.timePassed >= this.breakTime) {
+          console.log('End of the break');  // tmp
+          this.timePassed = 0;
+          this.time.unsubscribe();
+          this.isStudy = true;
+          this.isBreak = false;
+        }
       }
     });
   }
