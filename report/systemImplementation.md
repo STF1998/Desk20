@@ -31,10 +31,10 @@ Our team decided to use MEAN stack for developing this project. MEAN stands for 
 
 Below is a diagram on how the each of the technologies interacts with one another within the stack.
 
-<p align="center">
+<p align="left">
 <img src="../report/Images/pathwayStack.png" width=75%>
 </p>
-<b><p align= "center">Figure 1: Stack diagram.</p></b>
+<b><p align= "left">Figure 1: Stack diagram.</p></b>
 
 MEAN stack was chosen due to its advantages, including:
 -	It has a large and helpful online community. There are several tutorials, lectures, and problem-solving articles or videos about MEAN stack on the web. 
