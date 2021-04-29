@@ -69,6 +69,15 @@ As a ateam we also did a bit of research on different stacks, including MEVN and
   </td>
 </table>
 
+The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works. Angular has defintely ensured we have a strong grasp of various areas, including typescript.
+
+According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular one and it is shown in the graph below [link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/). 
+
+<p align="center">
+<img src="../report/Images/2021-star-history.png" width=75%>
+</p>
+<b><p align= "center">Firgure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
+
 ## Class diagrams
 
 ## Sequence diagrams
