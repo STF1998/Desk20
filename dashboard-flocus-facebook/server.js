@@ -35,7 +35,7 @@ app.use('/api/league', league);
 passport.use(new facebookStrategy({
   clientID: "498052027866336",
   clientSecret: "5efc9fa04492574b0d5632d917432018",
-  callbackURL: "http://localhost:3000/facebook/callback",
+  callbackURL: "https://flocus.herokuapp.com/facebook/callback",
   profileFields: ['id', 'friends', 'displayName', 'name', 'picture.type(large)']
 
 },

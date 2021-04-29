@@ -10,16 +10,16 @@ import { Params } from '@angular/router';
 })
 export class DataService {
 
-  private REST_API_SERVER = "http://localhost:3000/api";
-  private REST_API_FACEBOOK_LOGIN = "http://localhost:3000/auth/facebook";
+  private REST_API_SERVER = "https://flocus.herokuapp.com/api";
+  private REST_API_FACEBOOK_LOGIN = "https://flocus.herokuapp.com/auth/facebook";
 
-  private REST_API_SERVER_RECORD = "http://localhost:3000/api/record"
-  private REST_API_SERVER_STATUS = "http://localhost:3000/status";
-  private REST_API_SERVER_LOGINPAGE = "http://localhost:3000/toTheLogin";  
-  private REST_API_FACEBOOK_UID = "http://localhost:3000/uid";
-  private REST_API_FACEBOOK_friendsUID = "http://localhost:3000/friendsUID";
-  private REST_API_FACEBOOK_friendNames = "http://localhost:3000/friendNames";
-  private REST_API_FACEBOOK_LEAGUE= "http://localhost:3000/api/league";
+  private REST_API_SERVER_RECORD = "https://flocus.herokuapp.com/api/record"
+  private REST_API_SERVER_STATUS = "https://flocus.herokuapp.com/status";
+  private REST_API_SERVER_LOGINPAGE = "https://flocus.herokuapp.com/toTheLogin";  
+  private REST_API_FACEBOOK_UID = "https://flocus.herokuapp.com/uid";
+  private REST_API_FACEBOOK_friendsUID = "https://flocus.herokuapp.com/friendsUID";
+  private REST_API_FACEBOOK_friendNames = "https://flocus.herokuapp.com/friendNames";
+  private REST_API_FACEBOOK_LEAGUE= "https://flocus.herokuapp.com/api/league";
  
   constructor(private httpClient: HttpClient) { }
 
