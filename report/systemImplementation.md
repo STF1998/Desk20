@@ -22,6 +22,53 @@
 
 # Stack architecture and system design
 
+Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology are:
+
+-	MongoDB: database solution
+-	Express: NodeJS framework to simplify http request and response
+-	Angular: Front-end browser-side framework
+-	Node.js: Runtime server-side code
+
+Below is a diagram on how the each of the technologies interacts with one another within the stack.
+
+<p align="center">
+<img src="../report/Images/pathwayStack.png" width=75%>
+</p>
+<b><p align= "center">Figure 1: Stack diagram.</p></b>
+
+MEAN stack was chosen due to its advantages, including:
+-	It has a large and helpful online community. There are several tutorials, lectures, and problem-solving articles or videos about MEAN stack on the web. 
+-	Single programming language – this helps to create an easy working environment for full stack development.
+-	Supports automated testing – ensures readily available quality checks.
+-	Isomorphic coding – allows developers to switch to another framework without altering much of the original code.
+-	Support from the faculty, as the lectures and support provided was focused on MEAN stack.
+
+As a ateam we also did a bit of research on different stacks, including MEVN and MERN:
+
+<table>
+<tr>
+  <th>MEVN</th>
+  <th>MERN</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> MongoDB </li>
+      <li> Express </li>
+      <li> Vue </li>
+      <li> Node.js </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> MongoDB </li>
+      <li> Express </li>
+      <li> React </li>
+      <li> Node.js</li>
+    </ul>
+  </td>
+</table>
+
 ## Class diagrams
 
 ## Sequence diagrams
