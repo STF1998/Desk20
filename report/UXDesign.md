@@ -9,8 +9,6 @@
     - [Mood boards](#Mood-boards)
     - [Paper prototyping](#Paper-prototyping)
 - [**Users and Stakeholders**](#Users-and-Stakeholders)
-    - [Users](#Users)
-    - [Stakeholders](#Stakeholders)
 - [**UX Approach**](#UX-Approach)
     - [Design heuristics/approach](#Design-heuristics/approach)
     - [Design methods](#Design-methods)
@@ -64,18 +62,18 @@ diagrams todo
 
 We have included some remarks regarding the “Manage Closely”, “Keep Satisfied” and “Keep Informed” stakeholders:
 
-## ASAQUA
+### ASAQUA
 
 Our first stakeholder is Asaqua, the NGO that Flocus is seeking to support. Gordon, a back-end developer and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome:
 	
 - Increase awareness of Asaqua and its operations
 - Open a future revenue stream via advertisements and the acquisition of charity donors
 
-## Increase awareness of Asaqua and its operations
+### Increase awareness of Asaqua and its operations
 
 In the UK, 9 in 10 households have access to the internet [1] and, on average, adults spend around 5hr 30min online each day [2]. As such, the task to produce a Single Page Application (SPA) offered the perfect opportunity to raise brand awareness for Asaqua. The main tool that Flocus has at its disposal, is the ability to familiarise users with the Asaqua brand. We also wanted to maximise users’ communication with friends which, is part of the reason for why we chose a social media platform for our log-in. Word-of-mouth is one of the most effective ways of building trust and having users connect with their friends and family over Facebook will encourage support and interaction. 
 
-## Future revenue streams
+### Future revenue streams
 
 We Identified two main methods in which Flocus could attract funding for Asaqua: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy and as such, we decided not to pursue this. The prospect of introducing donations and subscriptions to Flocus will be pursued by Asaqua if they decide to do so.
 
