@@ -62,6 +62,19 @@ To see the iteration of the ideation process, see paper prototypes(link to photo
 
 ## Stakeholders
 
+Flocus has been developed to support the operations of Asaqua in developing nations. Gordon played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome:
+
+- Increase awareness of Asaqua and its operations
+- Open a future revenue stream via advertisements and the acquisition of charity donors
+
+### Increase awareness of Asaqua and its operations
+
+In the UK, 9 in 10 households have access to the internet [1] and, on average, adults spend around 5hr 30min online each day [2]. As such, the task to produce a Single Page Application (SPA) offered the perfect opportunity to raise brand awareness for Asaqua. Importantly, this route of advertisement departs from traditional methods by placing a potential brand supporter into a low-pressure environment. The main tool that Flocus has at its disposal, is the ability to socialise users with the Asaqua brand. We also wanted to place a strong importance on making sharing easy which, is part of the reason for why we chose a social media platform for our log-in. Word-of-mouth is one of the most effective ways of building trust and as such, having users connect with their friends and family about an NGO over Facebook will encourage support and interaction.
+
+### Future revenue streams
+
+We Identified two main methods in which Flocus could attract funding for Asaqua: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy. As such, we decided not to pursue this strategy. The prospect of introducing donations and subscriptions to Flocus will be pursued by Asaqua if they decide to do so.
+
 # Understanding of User Group
 
 ## User stories
@@ -133,4 +146,12 @@ You can view our survey here! (TODO add a link to survey)
 # Wireframes and Systems
 
 Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage. 
+
+# References
+
+[1] https://www.ofcom.org.uk/__data/assets/pdf_file/0024/149253/online-nation-summary.pdf
+
+[2] https://www.digitalinformationworld.com/2019/02/internet-users-spend-more-than-a-quarter-of-their-lives-online.html
+
+
 
