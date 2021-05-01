@@ -197,7 +197,7 @@ TODO - Resizing HTML League table: (Include when developed).
 In an endeavour to educate users of the great work that Asaqua has been achieving in Uganda, we included the study component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. We wanted to make this component as simple as possible from a design perspective, although, we did manage to include Owl Pacino in the bottom right of the screen:
 
 <p align="center">
-<img src="../report/Images/Asaqua_Screenshot.png" width=50%>
+<img src="../report/Images/Asaqua_Screenshot.png" width=70%>
 </p>
 <b><p align= "center">Figure : The Asaqua Component</p></b>
 
