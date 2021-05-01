@@ -43,11 +43,8 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
 <p float="center">
   <img src="asaqua2.png" width="300" height="300">
   <img src="asaqua3.png" width="300" height="300">
+  <img src="asaqua1.png" width="400" height="300" align= "center">
 </p>
-<p float="center">
-  <img src="asaqua1.png" width="400" height="300" align ="center">
-</p>
-
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
 
