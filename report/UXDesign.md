@@ -58,7 +58,14 @@ To see the iteration of the ideation process, see paper prototypes(link to photo
 
 After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how do we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
 
-diagrams todo
+<p align="center">
+<img src="../report/Images/Power-Interest.png" width=70%>
+</p>
+<p align="center">
+<img src="../report/Images/Power-Interest_key.png" width=70%>
+</p>
+<h2 align="center"><b> Figure : Mendelow's Matrix</b></h2>
+
 
 We have included some remarks regarding the “Manage Closely”, “Keep Satisfied” and “Keep Informed” stakeholders:
 
