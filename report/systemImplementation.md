@@ -214,7 +214,7 @@ We have attached a screenshot of the home component below, although to get a cle
 
 
 
-To achieve this animation, we created six circles via Scalable Vector Graphics (svg) and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur with the FeColorMatrix to specify the filter and then used this filter with FeBlend which, is like using photoshop or illustrator to merge layers together. In effect, this is similar to introducing a blur effect on an SVGs and then increasing the contrast. The HTML for this is displayed in the code snippet below:
+To achieve this animation, we created six Scalable Vector Graphics (SVG) circle elements and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur and FeColorMatrix to specify the filter. This filter was then used with the FeBlend which merges SVG elements. In effect, this is similar to introducing a blur effect on an SVG and then increasing the contrast.  The HTML for this is displayed in the code snippet below:
 
 <p align="center">
 <img src="../report/Images/HomeComp_Code.png" width=50%>
