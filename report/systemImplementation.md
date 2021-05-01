@@ -165,7 +165,7 @@ The running tap affect was implemented by accessing a HTML DOM element object vi
 The Login component is the initial design that greets users and as such, has been created to give an introduction to the theme of the site whilst offering a brief description of Flocus’s mission. To explore the avenue of serious play, we implemented a CSS hover animation on the login button and a Lottie animation.
 
 <p align="center">
-<img src="../report/Images/welcome.png" width=70%>
+<img src="../report/Images/welcome.png" width=80%>
 </p>
 <b><p align= "center">Figure : A screenshot of welcome and login component in action. </p></b>
 
@@ -174,7 +174,7 @@ The Login component is the initial design that greets users and as such, has bee
 Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, (Burguillo, 2010) found that the introduction of competition to the classroom increased final course performance. Additionally, research by (Le Bouc and Pessiglione, 2013) and (Kilduff, 2014) displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
 
 <p align="center">
-<img src="../report/Images/league_table.png" width=70%>
+<img src="../report/Images/league_table.png" width=80%>
 </p>
 <b><p align= "center">Figure : A screenshot of league table in action. </p></b>
 
@@ -194,10 +194,10 @@ TODO - Resizing HTML League table: (Include when developed).
 
 ### Asaqua component
 
-In an endeavour to educate users of the great work that Asaqua has been achieving in Uganda, we included the study component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. We wanted to make this component as simple as possible from a design perspective, although, we did manage to include Owl Pacino in the bottom right of the screen:
+In an endeavour to educate users about the great work that Asaqua has been achieving in Uganda, we included the asaqua component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. This component was designed to be as simple as possible, although, we did manage to include Owl Pacino in the bottom right of the screen:
 
 <p align="center">
-<img src="../report/Images/Asaqua_Screenshot.png" width=70%>
+<img src="../report/Images/Asaqua_Screenshot.png" width=80%>
 </p>
 <b><p align= "center">Figure : The Asaqua Component</p></b>
 
