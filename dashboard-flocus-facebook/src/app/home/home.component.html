@@ -5,9 +5,11 @@
             <defs>
                 <filter id="goo">
                 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                <feColorMatrix in="blur" mode="matrix" 
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
                 </filter>
+                
+                <feBlend in2="goo" in="SourceGraphic" result="mix" />
             </defs>
             <g class="blobs">
                 <circle class="blob1" cx="440" cy="250" r="80"/>
