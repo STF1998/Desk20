@@ -14,8 +14,8 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public dayGlassCount: number; /*  = 8 */;
   public waterLevel: number;  // used for rendering on frontend (time passed / total study session time)
-  private studyTime = 25 * 60 * 1000;     // Amendable: the amount of time for a study session in seconds (aka 25 mins)
-  private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 5 mins)
+  private studyTime = 25 * 60 * 1000;     // Amendable: the amount of time for a study session in seconds (aka 45 mins)
+  private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private userid = "108266374709077"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
   private pressed = false;
