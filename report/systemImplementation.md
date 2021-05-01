@@ -194,11 +194,12 @@ TODO - Resizing HTML League table: (Include when developed).
 
 ### Asaqua component
 
-TODO 
-- Why did we need?
--What approach to design did you take?
-- Asaqua will be taking the page forward as a useful source of publicity and possibly a source of revenue through ads. 
--Link to Asaqua page was included. 
+In an endeavour to educate users of the great work that Asaqua has been achieving in Uganda, we included the study component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. We wanted to make this component as simple as possible from a design perspective, although, we did manage to include Owl Pacino in the bottom right of the screen:
+
+<p align="center">
+<img src="../report/Images/Asaqua_Screenshot.png" width=50%>
+</p>
+<b><p align= "center">Figure : The Asaqua Component</p></b>
 
 ### Homepage component
 
