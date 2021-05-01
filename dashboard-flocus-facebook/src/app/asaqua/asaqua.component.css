@@ -60,7 +60,7 @@
 
 .asaqua{
     position: absolute;
-    top:100%;
+    top:95%;
     left: 80%;
     width: 450px;
     height: 400px;
@@ -71,7 +71,7 @@
 
 .flocus{
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-15%);
     -webkit-transform: translateX(-50%) translateY(-15%);
