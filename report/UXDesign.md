@@ -62,7 +62,7 @@ After agreeing on the idea of Flocus and deciding on initial design themes and m
 <img src="../report/Images/Power-Interest.png" width=70%>
 </p>
 <p align="center">
-<img src="../report/Images/Power-Interest_key.png" width=70%>
+<img src="../report/Images/Power-Interest_key.png" width=30%>
 </p>
 <h2 align="center"><b> Figure : Mendelow's Matrix</b></h2>
 
