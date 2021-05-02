@@ -84,6 +84,24 @@ According to the GitHub stars received on each of the front-end framework (Angul
 
 # Back End - MongoDB
 
+## Database implementation
+
+As the user first logins to our application, our database keeps their details to identify whether the user is an existing user. After authenticating the user, the backend developers would have to create a separate collection, ‘Records’, in the database to persistently store rapidly growing study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a key to identify the record ownership. The developers had then created a REST API that handles the GET and POST requests, which are to retrieve a summary of previous records and write new records to the database through calling the corresponding methods in angular data service.
+
+The backend developers decided to normalize the data storage, so the database separately stores the user’s information and the user’s usage data in two collections. Such an approach needs fewer design decisions to make and is of higher flexibility to cope with the unknown data storage demand in future development. However, the drawback is that queries that require joining two collections are more difficult to implement.
+
+## Data model
+
+# Middle Tier
+
+## Express
+
+## Node
+
+## The Restful-API
+
+## The Facebook-API
+
 The first objective of the back end (middleware) developers was to be able to authenticate a user coming into our application using the Facebook API. At the same time, creating an API request to get the user data and store the data in our database. The data taken from Facebook is the user’s name, Facebook UID, profile picture, and a list of friends who are or have been using the application. 
 
 To help us achieve the objective, we utilised PassportJS. PassportJS is a comprehensive set of strategies that supports authentication using username and password, Facebook, Twitter etc. The steps shown in the PassportJS documentation on authentication through Facebook [x] were then followed, the steps include:
@@ -103,19 +121,6 @@ Then, the second objective would be to create a get requests that could return a
 <img src="../report/Images/get_request2.png" width=100%>
 </p>
 <b><p align= "center">Figure 2: GET request to get each of the user's friends name</p></b>
-
-
-## Database implementation
-
-## Data model
-
-# Middle Tier
-
-## Express
-
-## Node
-
-## The Restful-API
 
 # Front-End System Implementation
 
