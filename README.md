@@ -44,7 +44,7 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
 <p align="center">
 <img src="asaqua3.png" width=50%>
 </p>
-<b><p align= "center"></p>A recent photo of the setting up of one of ASAQUA's water accessibility tools!</b>
+<b><p align= "center">A recent photo of the setting up of one of ASAQUA's water accessibility tools!</p></b>
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
 
