@@ -397,4 +397,8 @@ Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustrati
 
 # Deployment Details
 
+# Project report navigation
 
+- [Next page: Sprints and Project Management](https://github.com/STF1998/Desk20/blob/main/report/sprints&ProjectManagement.md)
+- [Previous page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)
