@@ -48,6 +48,8 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 </p>
 <b><p align= "center"> Figure 3: Our Discord Chat Setup </p></b>
 
+The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than warranted searching for a previous message, Gordon, Flocus scrum master, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
+
 ## Meet The Team
 
 <table>
