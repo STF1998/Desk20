@@ -71,5 +71,5 @@ TODO --> [This will be a youtube link to a short screen recording of using our w
 
 # Project report navigation
 
-- [Next page: Background and Motivation](report/backgroundAndMotivation.md)
+- [Next page: Background and Motivation](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)
