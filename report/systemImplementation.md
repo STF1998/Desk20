@@ -90,7 +90,22 @@ As the user first logins to our application, our database keeps their details to
 
 The backend developers decided to normalize the data storage, so the database separately stores the user’s information and the user’s usage data in two collections. Such an approach needs fewer design decisions to make and is of higher flexibility to cope with the unknown data storage demand in future development. However, the drawback is that queries that require joining two collections are more difficult to implement.
 
+<p align="center">
+<img src="../report/Images/dbImplement.png" width=75%>
+</p>
+<b><p align= "center">Figure : Entity relationship diagram of the 2 database collections</p></b>
+
 ## Data model
+
+<p align="center">
+<img src="../report/Images/user_data_model.png" width=75%>
+</p>
+<b><p align= "center">Figure : The user data model</p></b>
+
+<p align="center">
+<img src="../report/Images/record_data_model.png" width=75%>
+</p>
+<b><p align= "center">Figure : The record data model</p></b>
 
 # Middle Tier
 
