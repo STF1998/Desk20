@@ -92,7 +92,7 @@ In conclusion, MEAN stack was chosen because of its advantages discussed above a
 Other than those four technologies, our application will also be interacting with Facebook’s API. Other than Facebook’s API we will also be using PassportJS which is a Node.js framework that will help us communicate with Facebook.
 
 <p align="center">
-<img src="../report/Images/stack_arch.png" width=75%>
+<img src="../report/Images/stach_arch.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
 
