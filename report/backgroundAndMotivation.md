@@ -283,6 +283,6 @@ Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historica
 
 # Project report navigation
 
-- [Next page: UX Design](report/UXDesign.md)
-- [Previous page: Introduction](report/introduction.md)
+- [Next page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
+- [Previous page: Introduction](https://github.com/STF1998/Desk20/blob/main/report/introduction.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)
