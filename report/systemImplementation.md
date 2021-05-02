@@ -101,7 +101,7 @@ Other than those four technologies, our application will also be interacting wit
 ## Authentication design
 
 <p align="center">
-<img src="../report/Images/auth.png" width=75%>
+<img src="../report/Images/auth.png" width=50%>
 </p>
 <b><p align= "center">Figure : </p></b>
 
