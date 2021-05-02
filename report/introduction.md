@@ -69,3 +69,7 @@ See the video link below showing a short explanation of our system and how we in
 
 TODO --> [This will be a youtube link to a short screen recording of using our webpage.] 
 
+# Project report navigation
+
+- [Next page: Background and Motivation](report/backgroundAndMotivation.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)

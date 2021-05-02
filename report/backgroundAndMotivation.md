@@ -280,3 +280,9 @@ Pychyl, T. A., & Flett, G. L. 2012. Procrastination and self-regulatory failure:
 to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 30(4), 203–212. doi:10.1007/s10942-012-0149-5
 
 Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
+
+# Project report navigation
+
+- [Next page: UX Design](report/UXDesign.md)
+- [Previous page: Introduction](report/introduction.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)

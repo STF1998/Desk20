@@ -95,3 +95,8 @@ Our team created a remote repository on GitHub for collaboration and version con
 </p>
 <b><p align= "center"> Figure : Diagrammatical representation of our GitHub repository . </p></b>
 
+# Project report navigation
+
+- [Next page: Evaluation](https://github.com/STF1998/Desk20/blob/main/report/evaluation.md)
+- [Previous page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)
