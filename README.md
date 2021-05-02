@@ -30,13 +30,13 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however after initial focus groups and interviews with friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful but easy on the eye animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
 
-## Our Stakeholders
+## Who are we passing Flocus onto?
 
 ### Asaqua 
 
 Asaqua is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  Asaqua collaborates with committed locals, NGOs, and research institutes and strives for a sustainable future for our next generation.
 
-Our vision is a world where no kid has to trudge miles every day to fetch water, and every individual has the access to clean water.
+Their vision is a world where no child has to trudge miles every day to fetch water, and every individual has the access to clean water.
 
 While, we have been working on this project it was great to learn more about the work Asaqua does in developing nations. This understanding further motivated the team to create a product to the best of our ability given the meaningful impact it could have on both procrastination and helping raise awareness for the work Asaqua does. 
 
@@ -47,13 +47,9 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
 </p>
 <b><p align= "center">A recent photo of the setting up of one of ASAQUA's water accessibility tools!</p></b>
 
-We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
+We're also very fortunate to have a message from the ASAQUA team on completion of our project:
 
-“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally.
-
-Thank you, Flocus!”
-
--- The Asaqua Team
+“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally.Thank you team Flocus!”
 
 ## Team Members
 
