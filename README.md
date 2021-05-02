@@ -40,11 +40,8 @@ While, we have been working on this project it was great to learn more about the
 
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
-<p float="center">
-  <img src="asaqua2.png" width="300" height="300">
-  <img src="asaqua3.png" width="300" height="300">
-  <img src="asaqua1.png" width="300" height="300">
-</p>
+<img align="center" src="asaqua3.png" width=70%>
+<h2 align="center">A recent photo of the setting up of one of ASAQUA's water accessibility tools!</h2>
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
 
