@@ -1,5 +1,6 @@
 <img align="center" src="https://user-images.githubusercontent.com/69913789/115701016-3ae15a80-a35f-11eb-9f51-31a9b10fefda.gif" width=100%>
 
+
 <h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 
 ## Our Product
@@ -40,8 +41,10 @@ While, we have been working on this project it was great to learn more about the
 
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
-<img align="center" src="asaqua3.png" width=70%>
-<h2 align="center">A recent photo of the setting up of one of ASAQUA's water accessibility tools!</h2>
+<p align="center">
+<img src="asaqua3.png" width=50%>
+</p>
+<b><p align= "center"></p>A recent photo of the setting up of one of ASAQUA's water accessibility tools!</b>
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
 
