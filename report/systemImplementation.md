@@ -84,6 +84,24 @@ According to the GitHub stars received on each of the front-end framework (Angul
 
 # Back End - MongoDB
 
+## Database implementation
+
+As the user first logins to our application, our database keeps their details to identify whether the user is an existing user. After authenticating the user, the backend developers would have to create a separate collection, ‘Records’, in the database to persistently store rapidly growing study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a key to identify the record ownership. The developers had then created a REST API that handles the GET and POST requests, which are to retrieve a summary of previous records and write new records to the database through calling the corresponding methods in angular data service.
+
+The backend developers decided to normalize the data storage, so the database separately stores the user’s information and the user’s usage data in two collections. Such an approach needs fewer design decisions to make and is of higher flexibility to cope with the unknown data storage demand in future development. However, the drawback is that queries that require joining two collections are more difficult to implement.
+
+## Data model
+
+# Middle Tier
+
+## Express
+
+## Node
+
+## The Restful-API
+
+## The Facebook-API
+
 The first objective of the back end (middleware) developers was to be able to authenticate a user coming into our application using the Facebook API. At the same time, creating an API request to get the user data and store the data in our database. The data taken from Facebook is the user’s name, Facebook UID, profile picture, and a list of friends who are or have been using the application. 
 
 To help us achieve the objective, we utilised PassportJS. PassportJS is a comprehensive set of strategies that supports authentication using username and password, Facebook, Twitter etc. The steps shown in the PassportJS documentation on authentication through Facebook [x] were then followed, the steps include:
@@ -103,19 +121,6 @@ Then, the second objective would be to create a get requests that could return a
 <img src="../report/Images/get_request2.png" width=100%>
 </p>
 <b><p align= "center">Figure 2: GET request to get each of the user's friends name</p></b>
-
-
-## Database implementation
-
-## Data model
-
-# Middle Tier
-
-## Express
-
-## Node
-
-## The Restful-API
 
 # Front-End System Implementation
 
@@ -141,7 +146,7 @@ The main component in Flocus is the study page where users spend a majority of t
 <p align="center">
 <img src="../report/Images/animation.png" width=70%>
 </p>
-<b><p align= "center">Figure : the front-end animation created using Adobe after-effects and lottie files. </p></b>
+<b><p align= "center">Figure : the front-end study component created using Figma</p></b>
 
 To further emulate a natural scene, CSS transformations were implemented on certain features of the component (e.g. clouds and birds) which, were designed so to avoid fast and distracting movements.  
 
@@ -154,7 +159,7 @@ To introduce a glass fill animation, we used typescript which allows the user to
 <p align="center">
 <img src="../report/Images/animation_newcode.png" width=70%>
 </p>
-<b><p align= "center">Figure : A screenshot of the code used to convert the animation into HTML format.</p></b>
+<b><p align= "center">Figure : A screenshot of the HTML code used for the glass-fill animation.</p></b>
 
 Upon completion of a study session (45 Minutes), the glass empties incrementally over the time allocated for a break.
 
@@ -165,7 +170,7 @@ The running tap affect was implemented by accessing a HTML DOM element object vi
 The Login component is the initial design that greets users and as such, has been created to give an introduction to the theme of the site whilst offering a brief description of Flocus’s mission. To explore the avenue of serious play, we implemented a CSS hover animation on the login button and a Lottie animation.
 
 <p align="center">
-<img src="../report/Images/welcome.png" width=70%>
+<img src="../report/Images/welcome.png" width=80%>
 </p>
 <b><p align= "center">Figure : A screenshot of welcome and login component in action. </p></b>
 
@@ -174,7 +179,7 @@ The Login component is the initial design that greets users and as such, has bee
 Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, (Burguillo, 2010) found that the introduction of competition to the classroom increased final course performance. Additionally, research by (Le Bouc and Pessiglione, 2013) and (Kilduff, 2014) displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
 
 <p align="center">
-<img src="../report/Images/league_table.png" width=70%>
+<img src="../report/Images/league_table.png" width=80%>
 </p>
 <b><p align= "center">Figure : A screenshot of league table in action. </p></b>
 
@@ -183,24 +188,48 @@ For the implementation of the personal stats section titled “Your Week”, we 
 <p align="center">
 <img src="../report/Images/table_code1.png" width=50%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
 <p align="center">
 <img src="../report/Images/table_code2.png" width=50%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the league table. </p></b>
+<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
 TODO - Resizing HTML League table: (Include when developed).
 
 ### Asaqua component
 
-TODO 
-- Why did we need?
--What approach to design did you take?
-- Asaqua will be taking the page forward as a useful source of publicity and possibly a source of revenue through ads. 
--Link to Asaqua page was included. 
+In an endeavour to educate users about the great work that Asaqua has been achieving in Uganda, we included the asaqua component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. This component was designed to be as simple as possible, although, we did manage to include Owl Pacino in the bottom right of the screen:
+
+<p align="center">
+<img src="../report/Images/Asaqua_Screenshot.png" width=80%>
+</p>
+<b><p align= "center">Figure : The Asaqua Component</p></b>
 
 ### Homepage component
+
+After speaking to prospective end-users in questionnaires, focus groups and informal interviews, we were made aware of the need to maintain a calm environment on the site, absent of stressful and fast-moving animations. As students ourselves, we fully understand the anxiety and tension that students and working professionals can be under during examination periods. As such, we did not want the study component to be the first thing that a user is confronted with when they complete the log-in process. We wanted to form an area in which users can decide, in their own time, when to proceed to the study component to begin their work. Additionally, from a design perspective, a home component facilitates easy navigation whilst removing the need for a permanent nav-bar and allowing front-end developers to use the full size of the screen to implement eye-pleasing animations. However, the front-end design of this component was a difficult one to achieve. We wanted to use calming animations without increasing the risk of distraction and thus compromising on our main objective of reducing procrastination. 
+
+We have attached a screenshot of the home component below, although to get a clearer view of the animation please visit our demo video.
+
+<p align="center">
+<img src="../report/Images/Home_Component.png" width=80%>
+</p>
+<b><p align= "center">Figure : The Home Component</p></b>
+
+
+
+To achieve this animation, we created six Scalable Vector Graphics (SVG) circle elements and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur and FeColorMatrix to specify the filter. This filter was then used with the FeBlend which merges SVG elements. In effect, this is similar to introducing a blur effect on an SVG and then increasing the contrast.  The HTML for this is displayed in the code snippet below:
+
+<p align="center">
+<img src="../report/Images/HomeComp_Code.png" width=50%>
+</p>
+<b><p align= "center">Figure : A code snippet from the Home Component's main animation</p></b>
+
+
+
+We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
+
 
 # Additional Elements and Components
 
@@ -213,7 +242,7 @@ Lottie is an open-source animation file format that allows creators to easily co
 <p align="center">
 <img src="../report/Images/lottie_code.png" width=70%>
 </p>
-<b><p align= "center">Figure : A snippet of the lottie code used to bring the animation to life. </p></b>
+<b><p align= "center">Figure : A snippet of the lottie-player bringing animation to life. </p></b>
 
 The Lottie-player is a Web-Component for easily including and playing Lottie animations. It was the fastest implementation of Lottie, allowing us to specify certain parameters such as speed and iteration count. However, it is not absent of drawbacks. From our individual use and user feedback, it was made aware that certain browser would not render or handle the animations as desired. The browser that displayed the most issues was Safari. In an attempt to work around this glitch, we rendered the animation on a canvas rather than SVG. However, Lottie animations do not currently support certain animation effects on canvas and so when rendering, the Lottie animation became distorted and un-useable. Given the lack of sufficient time to address these concerns, we had to accept that the application was not going to operate as well in Safari as other browsers (e.g Chrome). We have passed this information to the Asaqua team for future adjustment. 
 
@@ -229,7 +258,7 @@ URLs for Lottie animations in use:
 
 ### Adobe Stock
 
-Unfortunately, Flocus’s development budget did not stretch far enough to cover the subscription or the early cancelation fees of Adobe Photoshop or Illustrator. Luckily however, a member of the team had access to Adobe Stock where third-party designs can be fully licensed for commercial use. As such, the Study component has been designed from an illustration licensed under the perpetual and worldwide Adobe licence:
+Unfortunately, Flocus’s development budget did not stretch far enough to cover the subscription or the early cancelation fees of Adobe Photoshop or Illustrator. Luckily however, with the use of a 30-day free trial, a member of the team accessed Adobe Stock, a platform where third-party designs can be fully licensed for commercial use. As such, the Study component has been designed from an illustration licensed under the perpetual and worldwide Adobe licence:
 
 “An Adobe Stock perpetual, worldwide licence allows you to use your licensed asset in all media including print, presentations, broadcasts, websites, and on social media sites.” Additionally, a standard licence allows for the modification of a design. 
 

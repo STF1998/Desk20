@@ -12,24 +12,60 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class LeagueComponent implements OnInit {
 
-  private userid: string = "108266374709077";
-  private studyTime = 10;
+  private userid: string = "";
+  private studyTime = 25 * 60;
   private stats: any = [];
   public dailyCount: number[] = [0, 0, 0, 0, 0, 0, 0];
   private scores: any = [];
-  private friendNames: any = [];
-  private statsLeague: any = [];
-  public leagueTable: any;
-  private row: any = new Array();
+  public leagueTable: any = [];
   public fill = 1;
 
   constructor(private DataService: DataService) {
-   }
+  }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
-    this.setTable();
+
   }
+
+  public barChartOptions = {
+    responsive: true,
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+        }
+      }],
+      yAxis: [{
+        gridLines: {
+          drawBorder: false,
+          display: false,
+          zeroLineColor: 'transparent',
+        }
+      }],
+    },
+    legend: {
+      display: false
+    },
+  };
+
+  public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+  public barChartType = 'horizontalBar';
+  public barChartData = [
+    {
+      data: this.dailyCount,
+      backgroundColor: [
+        this.assignColors(0),
+        this.assignColors(1),
+        this.assignColors(2),
+        this.assignColors(3),
+        this.assignColors(4),
+        this.assignColors(5),
+        this.assignColors(6)
+      ],
+      hoverBackgroundColor: '#112d53'
+    }];
+
 
   private assignColors(day: number): string {
 
@@ -51,105 +87,67 @@ export class LeagueComponent implements OnInit {
     return "#9fbce4"
   }
 
-public barChartOptions = {
-    responsive: true,
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false,
-        }
-      }],
-      yAxis: [{
-        gridLines: {
-          drawBorder: false,
-          display: false,
-          zeroLineColor: 'transparent',
-        }
-      }],
-    },
-    legend: {
-      display: false
-    },
-};
-
-public barChartLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
-public barChartType = 'horizontalBar';
-public barChartData = [
-    {
-      data: this.dailyCount,
-      backgroundColor: [
-        this.assignColors(0),
-        this.assignColors(1),
-        this.assignColors(2),
-        this.assignColors(3),
-        this.assignColors(4),
-        this.assignColors(5),
-        this.assignColors(6)
-      ],
-      hoverBackgroundColor: '#112d53'
-    }];
 
 
 
+  public setTable(): void {
 
-public setTable() : void{
+    //sort the array
+    if (this.sortLeaders() == -1) {
+      this.fill = 0;
+      return;
+    }
 
-  //sort the array
-  if(this.sortLeaders() == -1){
-    this.fill = 0;
-    return;
-  }
+    // get the table Selector
+    var table = document.querySelector("table");
+    if (table == null) {
+      return;
+    }
 
-  // get the table Selector
-  var table = document.querySelector("table");
-  if(table == null){
-    return;
-  }
+    //input values
+    for (var i = 0; i < this.leagueTable.length; i++) {
 
-  //input values
-  for(var i = 0; i < this.leagueTable.length; i++){
-
-    //add a row
-    var row = table.insertRow(i+1);
-    row.classList.add('pos');
-    //add a cell
-    var cell = row.insertCell();
-    // add the rows position
-    var text = document.createTextNode(String(i + 1));
-    cell.appendChild(text);
-
-    for(var j = 0; j < 3; j++){
+      //add a row
+      var row = table.insertRow(i + 1);
+      row.classList.add('pos');
+      //add a cell
       var cell = row.insertCell();
-      //add the value of the array cell to the cell of the table
-      var text = document.createTextNode(this.leagueTable[i][j]);
+      // add the rows position
+      var text = document.createTextNode(String(i + 1));
       cell.appendChild(text);
+
+      for (var j = 0; j < 3; j++) {
+        var cell = row.insertCell();
+        //add the value of the array cell to the cell of the table
+        var text = document.createTextNode(this.leagueTable[i][j]);
+        cell.appendChild(text);
+      }
+    }
+    // this is to stop the thing from going mad
+    this.fill = 0;
+  }
+
+
+  private sortLeaders(): number {
+
+    if (this.leagueTable == null) {
+      return -1;
+    }
+    if (this.leagueTable.length == 0) {
+      return -1;
+    }
+    this.leagueTable.sort(this.sortFunction);
+    return 1;
+  }
+
+  private sortFunction(a: number[], b: number[]) {
+    if (a[2] === b[2]) {
+      return 0;
+    }
+    else {
+      return (a[2] > b[2]) ? -1 : 1;
     }
   }
-  // this is to stop the thing from going mad
-  this.fill = 0;
-}
-
-
-private sortLeaders() : number{
-
-  if(this.leagueTable == null){
-    return -1;
-  }
-  if(this.leagueTable.length == 0){
-    return -1;
-  }
-  this.leagueTable.sort(this.sortFunction);
-  return 1;
-}
-
-private sortFunction(a: number[], b: number[]) {
-  if (a[2] === b[2]) {
-      return 0;
-  }
-  else {
-      return (a[2] > b[2]) ? -1 : 1;
-  }
-}
 
 
   private async retrieveUserData(userid: string, todayDate: Date) {
@@ -191,7 +189,7 @@ private sortFunction(a: number[], b: number[]) {
           this.dailyCount[day - 1] = 0;
         }
 
-        if(day == this.dailyCount.length){
+        if (day == this.dailyCount.length) {
           this.barChartData = [
             {
               data: this.dailyCount,
@@ -220,41 +218,46 @@ private sortFunction(a: number[], b: number[]) {
         const uid = userdata;
         this.userid = uid.toString();
         this.retrieveUserData(this.userid, new Date());
-        this.createLeague(this.userid)
+        this.createLeague(this.userid);
       }
     )
   }
-
   private async createLeague(userid: string) {
     var lastMonday = new Date();
     var day = lastMonday.getDay();
-    if(day !== 1){
-    lastMonday.setHours(-24 * (day - 1));
+    if (day !== 1) {
+      lastMonday.setHours(-24 * (day - 1));
     }
-    lastMonday.setHours(0,0,0,0);
+    lastMonday.setHours(0, 0, 0, 0);
+    var minStudyTime = 0;
     var httpParams = new HttpParams()
       .set("uid", userid)
       .set("rangeStart", JSON.parse(JSON.stringify(lastMonday)))
       .set("rangeEnd", JSON.parse(JSON.stringify(new Date())))
-    let friendsScore = this.DataService.getLeague(httpParams);
-    await this.DataService.getFriendNames().toPromise;
-    let friendsName = this.DataService.getFriendNames();
-    forkJoin([friendsScore, friendsName])
-    .subscribe(
-      async data => {
-        this.scores = data[0];
-        this.friendNames = data[1];
-        console.log(this.scores);
-        for(let i = 0; i < this.scores.length ; i++){
-          this.row[0] = this.scores[i]._id;
-          this.row[1] = this.scores[i].session;
-          this.row[2] = this.scores[i].totalTime;
-          console.log(this.scores[i]._id);
-          console.log(this.scores[i].session);
-          console.log(this.scores[i].totalTime);
-          this.leagueTable[i] = this.row;     
-        }
-        console.log(this.leagueTable);
-    });
+      .set("timeSpentLower", minStudyTime.toString())
+      .set("timeSpentUpper", this.studyTime.toString());
+    this.DataService.getLeague(httpParams)
+      // await this.DataService.getFriendNames().toPromise;
+      // let friendsName = this.DataService.getFriendNames();
+      // forkJoin([friendsScore, friendsName])
+      .subscribe(
+        data => {
+          this.scores = data;
+          // this.friendNames = data[1];
+          console.log(this.scores);
+          console.log(this.scores.length);
+          for (let i = 0; i < this.scores.length; i++) {
+            let row: any = ["", 0, 0];
+            row[0] = this.scores[i].name;
+            row[1] = Math.round(this.scores[i].totalTime / 3600 * 10) / 10;
+            row[2] = this.scores[i].session;
+            console.log(row[0]);
+            console.log(row[1]);
+            console.log(row[2]);
+            console.log(row);
+            this.leagueTable[i] = row;
+          }
+          this.setTable();
+        });
   }
 }
