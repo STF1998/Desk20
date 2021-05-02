@@ -215,7 +215,7 @@ Based on current market research, we identified the following gaps and places fo
 
 # Defined problem
 
-The problem we aim to solve is procrastination using visual aids with a positive social aspect.
+The problem we aim to solve is procrastination using visual aids with a positive social enterprise aspect.
 
 ## Scope
 
