@@ -240,9 +240,15 @@ Has to be a competitive aspect that is a leader board between friends or peers â
 
 ### Technical scope
 
+(TODO) - 
 
+### Evaluative scope
+
+(TODO) - Hugh
 
 ## Challenges
+
+(TODO) - Hugh
 
 ## Reference List
 
