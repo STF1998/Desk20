@@ -50,9 +50,9 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Gordon, Flocus scrum master, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
 
-### The Sprint Archive
+## The Sprint Archive
 
-## Sprint 1 - A New Hope
+### Sprint 1 - A New Hope
 
 Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases.
 
