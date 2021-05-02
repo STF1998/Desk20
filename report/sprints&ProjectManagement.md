@@ -88,3 +88,10 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 ## Team use of git
 
+Our team created a remote repository on GitHub for collaboration and version control. In our repository, there are mainly the main branch and different personal branches. We use the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers has his personal feature branch, where we make a frequent commit to achieve effective version control during the sprints. Once the newly developed features are ready to merge with the production-ready working copy on the main branch, we either submit a pull request or inform the entire team about the incoming changes. Therefore, all developers can pull from the latest change, review the code and test the latest working copy with Docker.
+
+<p align="center">
+<img src="../report/Images/git_diagram.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Diagrammatical representation of our GitHub repository . </p></b>
+
