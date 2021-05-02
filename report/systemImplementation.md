@@ -20,7 +20,7 @@
 - [**Additional Elements and Components**](#Additional-elements-and-components)
 - [**Deployment Details**](#Deployment-Details)
 
-# Stack architecture and system design
+# Stack Architecture
 
 Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology are:
 
@@ -71,16 +71,126 @@ As a ateam we also did a bit of research on different stacks, including MEVN and
 
 The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works. Angular has defintely ensured we have a strong grasp of various areas, including typescript.
 
-According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular one and it is shown in the graph below [link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/). 
+According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular one and it is shown in the graph below ([link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)). 
 
 <p align="center">
 <img src="../report/Images/2021-star-history.png" width=75%>
 </p>
-<b><p align= "center">Firgure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
+<b><p align= "center">Figure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
+
+However, in terms of job searched on linked in, Angular is at the first place, which shown in the graph below ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)) the data was taken on (10th December 2018). 
+
+<p align="center">
+<img src="../report/Images/angular_vs.png" width=75%>
+</p>
+<b><p align= "center">Figure </p></b>
+
+In conclusion, MEAN stack was chosen because of its advantages discussed above and its high job-employability. 
+
+## Stack architecture implementation on our app
+
+Other than those four technologies, our application will also be interacting with Facebook’s API. Other than Facebook’s API we will also be using PassportJS which is a Node.js framework that will help us communicate with Facebook.
+
+<p align="center">
+<img src="../report/Images/stack-arch.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+# System Design
+
+## Authentication design
+
+<p align="center">
+<img src="../report/Images/auth.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind that are:
+1.   FB’s API makes it convenient for users to find and connect with their friends on the app. The playful aspect of our application is to enable users to compete for the longest studying time within a week among their friends. FB’s API would automatically connect users with their friends on the app.
+2.   FB’s API enables one-click signup and login. It could provide essential user data (e.g. user’s name, user’s FB profile pic) without the user having to manually fill the data when registering/logging back in.
+3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by the framework that we are using in our application called PassportJS.
+4. There are also external support provided by people around the world in the form of videos, articles, and QnA.
+
+The downside of using FB’s authentication is:
+1.   If our app is in development mode, FB does not allow any real FB user other than the app administrator to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
+2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved by FB will real users be able to use our app.
+
+The procedure to use FB’s API is as follows:
+1. 	Create a FB account and go to FB for developer’s site
+2.	Create the application
+3.    FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
+4.	Follow the step-by-step guide on FB authentication using PassportJS on the PassportJS documentation[http://www.passportjs.org/docs/facebook/].
+
+When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate there. Upon successful authentication, FB will ask the user whether the user agrees to share the requested data to the application. The detail of the requested data is shown on the confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
+
+The FB permission type in our code determines the type of data that FB’s API will return to our application. Flocus only uses the “user_friends'' permission, which means that FB will return an array consisting of all of the user’s friends that also grants permission to the application. There are also types of data that does not require a permission to be returned, which are user’s name, user’s uid (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication token because we always ask using the “isAuthenticated()” method before letting the user access data from our database.
+
+After FB returns the user object to our application, we then do a check on our database by checking the uid of the user and comparing it with every uid inside the database. If the user already exists, we only modify the list of friends of the user. If not we then put the user in our database. Details of the user schema and PassportJS will be discussed further on the database and middle tier sections.
+
+Successful or unsuccessful login attempt will redirect us back to the login page. Our login page will check the “isAuthenticated()” method each time it is called, if it is returning a true then the user is redirected to our home page. If it is returning a false then the user is returned to our login page. Our application schema from the home page is shown in the graph below.
+
+<p align="center">
+<img src="../report/Images/auth2.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+Inside the home page we then provide three sections that a user can access, which are study page, league page, and Asaqua page.
+
+## Study page
+
+Inside the study page, we provide an empty glass and a timer button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart of how the timer works is shown in the figure below.
+
+<p align="center">
+<img src="../report/Images/studyDesign.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+The word ‘record’ on the chart means the session details, such as when does the session happen, whether the session is finished or not, and how long does the user inside the session. On the chart shown above shows that we saved both finished and unfinished sessions to the database.
+
+## League
+
+When the league page is accessed, we do a data processing on our database (given the schema shown in the database section) to be able to show each user and the user’s friends’ total study time and finished session within a week (from Monday to Sunday). Then we sort and show the results based on who has the most time spent or session finished within a week and display the results on a league table. Other than the league table, our sessions progress within the week are also presented in a graph. The league page is shown in Figure x below.
+
+<p align="center">
+<img src="../report/Images/league_tab.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+<p align="center">
+<img src="../report/Images/league_tab2.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+<p align="center">
+<img src="../report/Images/league_tab3.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+## Asaqua
+
+The asaqua page shows the background and motivation on why we decided to go through with this app idea and how to use our application.
 
 ## Class diagrams
 
+Shown below is the UML class diagram that demonstrates the making of UserData that then could be accessed by the front-end.
+
+The Facebook’s API returns a user object that is going to be parsed into a chunk of String in the middle tier and then saved on to the database according to the User schema. It is set so that the data saved could only be accessed by one variable per API call (in one API call it only returns userUID only, or userName only).
+
+In terms of record, users could only post one record at a time, but will get all the records within a certain amount of time which will be processed in the front-end to be shown as total study time and total finished session within one week.
+
+<p align="center">
+<img src="../report/Images/class.png" width=75%>
+</p>
+<b><p align= "center">Figure : Class diagram </p></b>
+
 ## Sequence diagrams
+
+The figure below represents how our application is used by a user on a daily basis. 
+
+<p align="center">
+<img src="../report/Images/sequential.png" width=75%>
+</p>
+<b><p align= "center">Figure : Sequential diagram for Flocus</p></b>
 
 # Back End - MongoDB
 

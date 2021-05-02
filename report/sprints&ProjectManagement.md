@@ -62,7 +62,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
   <td> Hugh Hamilton-Green </td>
   <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
   <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
-  <td></td>
+  <td> I really enjoyed learning about end-to-end development with a focus on user experience (UX).</td>
 </tr>
 <tr>
   <td> Jati Wicaksono </td>
