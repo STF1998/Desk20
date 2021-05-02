@@ -31,7 +31,7 @@ Our team decided to use MEAN stack for developing this project. MEAN stands for 
 
 Below is a diagram on how the each of the technologies interacts with one another within the stack.
 
-<p align="left">
+<p align="center">
 <img src="../report/Images/pathwayStack.png" width=75%>
 </p>
 <b><p align= "left">Figure 1: Stack diagram.</p></b>
