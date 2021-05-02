@@ -21,8 +21,7 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ### Features of Flocus
 
-(TODO SAM)
-- 
+- TODO - SAM
 - 
 - 
 
@@ -49,7 +48,7 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our project:
 
-“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally.Thank you team Flocus!”
+“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally. Thank you team Flocus!”
 
 ## Team Members
 
