@@ -146,7 +146,7 @@ To make a start, we held an initial development meeting to discuss the component
 
 [26th March – 2nd April]
 
-During the initial stages of development we were able to produce a preliminary design for the home component. this is displayed in the .gif below.
+During the initial stages of development we were able to produce a preliminary design for the home component. This is displayed in the .gif below.
 
 <br>
 <p align="center">
@@ -200,13 +200,28 @@ Whilst we continued the design of the study component, which was taking longer t
 </div>
 <br>
 
-The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took the constructive criticism onboard to pursue a design that fulfilled our project aims. Subsequent to this, we called a meeting to organise the following actions and events for the week ahead. Our sprint objectives are displayed below:
+The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took constructive criticism onboard to pursue a design that fulfilled our project aims. Subsequent to this, we called a meeting to organise the following actions and events for the week ahead:
 
 <ul>
     <li>Adjust the Home component design to user group feedback</li>
     <li>Complete the Study component front-end development</li>
     <li>Speak to Course Admins regarding the Facebook authentication process</li>
+    <li>Complete the implementation of the Facebook authentication process</li>
 </ul>
+
+### Sprint 4 - 
+
+In the backend development, one of the key challenges in this sprint was to figure out the logic to correctly store data returned from Facebook with a well-thought-out data model. Not only did we have to ensure the data in our database is always up-to-date, but also to make the data model flexible and future-proof. We had not decided how other components will be interacting with the database at that time, so we went for the normalised approach even though we have a NoSQL database. During this sprint, we were mainly using Postman to test the functionality of Passport.js instead of connecting to the database instance right away, which can visualise the behaviour of the Passport.js and helped the developer to learn using it.
+
+### Sprint 5 - 
+
+### Sprint 6 - 
+
+During this sprint, we implemented most of the middle tier RESTful APIs, which are the bridges between the components and the database. The frontend components of our application do not directly access the APIs but through the Angular data service. Although we tested our RESTful APIs like what we did for the Passport.js in the previous sprints, we struggled to pass the request body to the API through the Angular HTTP client. Whilst we were testing our get requests to the APIs with Postman, we passed a request body in JSON format to the API as parameters to the MongoDB Query. However, we did not realise that the Angular HTTP client does not support sending a request body, which causes the API to receive undefined values as the parameters. Eventually, we found a workaround to pass the necessary parameters as HTTP params via the data service. It took some time for our developers to figure out what was happening, so the related tasks in this sprint had a slight delay in delivery.
+
+### Sprint 7 - 
+
+After having the necessary APIs functioning as planned, the study and the league component require the successful login status given in the login process. It also needs the UID as the key to the Record collection. We then created several more get requests to confirm the login status and retrieve the UIDs for those components. We also soon realized that just relying on the UID as a key to get the league table, which involves looping and sorting, was rather computationally complex (in the worst case the complexity is O(n^2n) which, might hinder our server’s reliability). Therefore, we reconstructed the MongoDB query to become multi-staged, leaving all the complex computation to MongoDB to speed up the data retrieval process.
 
 
 ## Meet The Team
