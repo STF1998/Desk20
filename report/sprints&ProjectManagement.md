@@ -76,39 +76,41 @@ Once we had fully understood the project specification and met with everyone in 
 
 With some creative thinking we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. The qualitative feedback on the idea from our end-user group is displayed below:
 
-<table>
-<tr>
-  <th>User</th>
-  <th>Feedback</th>
-</tr>
-<tr>
-  <td> Cheese </td>
-  <td>
-    <ul>
-      <li>Found the idea interesting</li>
-      <li>said that UX will be important</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <td>Mr Water</td>
-  <td>
-    <ul>
-      <li>Liked the idea</li>
-      <li>Concerned about it being distracting</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <td> Toast </td>
-  <td>
-    <ul>
-      <li>Unsure about if it would be well recieved by the market</li>
-      <li>Was interested to give it a couple of weeks trial</li>
-    </ul>
-  </td>
-</tr>
-</table>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Found the idea interesting</li>
+        <li>Thought that UX will be important</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Liked the idea</li>
+        <li>Concerned about it being distracting</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> Toast </td>
+    <td>
+      <ul>
+        <li>Unsure about if it would be well recieved by the market</li>
+        <li>Was interested to give it a couple of weeks trial</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
 
 
 
