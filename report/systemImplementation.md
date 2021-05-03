@@ -231,38 +231,132 @@ The middle tier chosen for our application as discussed on the stack implementat
 
 On this project, RESTful architecture is going to be implemented on our API. RESTful stands for Representational State Transfer. To be called RESTful, an API needs to follow these 6 constraints: 
 
-Client-Server Architecture 
+- Client-Server Architecture 
+- Stateless 
+- Layered System 
+- Cacheable 
+- Uniform Design 
+- Code on Demand 
 
-Stateless 
-
-Layered System 
-
-Cacheable 
-
-Uniform Design 
-
-Code on Demand 
-
-Details of those constraints could be found here https://restfulapi.net/rest-architectural-constraints/. 
+Details of those constraints could be found here [link](https://restfulapi.net/rest-architectural-constraints/). 
 
 In RESTful API, CRUD operation will be used to interact with the data that is going to be passed between applications. CRUD stands for Create, Read, Update, and Delete. We will be using those methods to talk to our database and other applications. The HTTP methods to implement CRUD are: 
 
-GET – reading data  
-
-POST – creating data 
-
-PUT – updating data 
-
-DELETE – deleting data 
+- GET – reading data  
+- POST – creating data 
+- PUT – updating data 
+- DELETE – deleting data 
 
 Those HTTP methods are implemented in our server-side code which is in NodeJS. Those methods are also going to be combined with the functionality of ExpressJS, which makes doing HTTP request, response, and routing much easier. An example of API requests implemented using ExpressJS is shown in Figure x, while API requests without ExpressJS are shown in Figure x. 
 
+<p align="center">
+<img src="../report/Images/middle_intro1.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
 
+Without ExpressJS:
+
+<p align="center">
+<img src="../report/Images/middle_intro2.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
 
 By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we are going to implement RESTful API using ExpressJS.
+
 Other than ExpressJS, we are also going to use PassportJS to help the authentication using Facebook process in our application.
 
 ## PassportJS
+
+PassportJS is an authentication middleware for Node.js which is compatible with any ExpressJS application. PassportJs provides strategies to assist authentication processes including but not limited to: 
+
+-	Username and password
+-	Facebook 
+-	Google 
+-	Twitter
+-	Twitch 
+-	Github 
+
+Further information about what PassportJS is and what could be achieved by it can be found through the following [link](http://www.passportjs.org/). 
+
+However, for our application, we will only be focusing on PassportJS for authentication using Facebook. The complete documentation could be found here: [link](http://www.passportjs.org/docs/facebook/). In this section of the report, we will not dive into the documentation, but will instead discuss the hands-on experience on how we implement PassportJS in Flocus.
+
+To apply PassportJS, we will need to install these three dependencies, which are passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies to implement the functionality of the authentication, while express-session is used to enhance connection security. As we are dealing with authentication and transferring user data, a secure connection would be needed. Beyond the installation, we would also need to use them as shown in Figure x and x.
+
+<p align="center">
+<img src="../report/Images/passport1.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+<p align="center">
+<img src="../report/Images/passport2.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+Further implementation of passport is shown in Figure x below. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
+
+<p align="center">
+<img src="../report/Images/passport3.png" width=60%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+Code explanation by section number:
+
+1.	This is the section where we help Facebook identify our application by supplying the clientID and clientSecret numbers that are acquired after we create an account and application on Facebook for developers’ site. The callbackURL is an URL that we will be led to after the authentication process is submitted, i.e., when we press the submit button after entering our username and password. The URL could be anything we want  will be detailed further in the later section of our report). The profile field is the field where we input the type of data we want to acquire from the user’s Facebook account. For instance, in the code it is saying that our application will request for the user's id, friends, displayname, name, and profile picture. However, to acquire the requested data, it needs to be followed by the right permission. This will also be made clear in the later part of the report.
+
+2.	Is the function that runs after the authentication is successful. Token will be the authentication token, refreshToken will be the refreshToken, and the profile will contain all the user data that the user agrees to give (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure x. Then an internal search will be conducted to check whether a user with the returned profile.id exists in our own database.
+
+3.	If the user exists, the database is updated by emptying their friends’ array and filling the array with the latest friend’s data. The purpose is to check if there are any new friends joining the application.
+
+4.	If the user does not exist, the user’s id, name, profile picture, and friends are saved to our own database. The Friends data that is returned by Facebook is not a complete list of all the user’s friends but just a list of friends who are also using the application.
+
+The figure below shows the pop-up:
+
+<p align="center">
+<img src="../report/Images/passport4.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+The figures below show the raw and json format inside the profile variable:
+
+<p align="center">
+<img src="../report/Images/passport5.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+<p align="center">
+<img src="../report/Images/passport6.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+To call the API (i.e., to be able to redirect the user to the Facebook login page), we could not use CRUD methods. We would have to redirect a user to a link. The link name should be our website name + “/auth/facebook”. Doing a GET API call to the API shown in Figure x below would not redirect the user to the Facebook’s page. 
+
+<p align="center">
+<img src="../report/Images/passport7.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+The scope part is one of the most important parts as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API could be found here(x). However, Flocus will only use the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is done when the user clicks continue on the pop-up message. Upon the success or failure of authentication, doing a GET request on “/facebook/callback” will be called and both of them will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which is our login page. What process happened after this had been discussed on the system implementation section.
+
+As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure x.
+
+<p align="center">
+<img src="../report/Images/passport8.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+Furthermore, the function isLoggedIn is implemented in any other API call in the application. So, an API call will only continue if the user status is logged in. If not, the user will be redirected back to the home screen. API calls to get the user data is shown in Figure x below.
+
+<p align="center">
+<img src="../report/Images/passport9.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+Req.user contains the same data as the profile variable. Finally, one other important function is the logout function which is provided by PassportJS and shown in Figure x below. Req.logout() will end the user session and redirect the user back to the login page.
+
+<p align="center">
+<img src="../report/Images/passport10.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
 
 # Front-End System Implementation
 
