@@ -126,6 +126,20 @@ Generally, we received enthusiastic responses to the idea with constructive crit
 
 ### Sprint 2 - Angular and API setup
 
+[19th March – 26th March]
+
+To make a start, we held an initial development meeting to discuss the components required to begin back- and front-end development. We knew that we were going to have to implement a database for storing glass count data and personal statistics and so an API was required. We identified our week’s objectives:
+
+<ul>
+  <li>Generate all required components to kickstart the development process</li>
+  <li>Make a start with the study component</li>
+  <li>Create our RESTfull API</li>
+  <li>Familiarise with the Facebook API and how to access it</li>
+  <li>Set-up the general environment: Connect express with docker and MongoDB</li>
+  <li>Review feedback from questionnaires</li>
+</ul>
+
+
 
 
 
