@@ -206,7 +206,7 @@ Website: https://pomodor.app/timer
 Easy-to-use web based Pomodoro timer.
 
 <p align="center">
-<img src="../report/Images/pomo2.png" width=70%>
+<img src="../report/Images/pomo5.png" width=70%>
 </p>
 <b><p align= "center"> Figure : Screenshot of Pomodor website </p></b>
 
