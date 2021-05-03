@@ -313,7 +313,7 @@ A further struggle was to implement a simple routing mechanism on Angular. Makin
 
 ### Sprint 6 - The League Table and Databases
 
-Sprint 6 marked the penultimate week of development and we realised that there was still much to achieve before we could perceive the project as complete. For the upcoming week we registered the following task and set about getting as much complete as possible: 
+Sprint 6 marked the penultimate week of development and we realised that there was still much to achieve before we could perceive the project as complete. For the upcoming week, we noted the following tasks and set about getting as much done as possible: 
 
 <ul>
     <li>Create post requests to store data created in the front-end for persistent storage</li>
@@ -324,11 +324,12 @@ Sprint 6 marked the penultimate week of development and we realised that there w
     <li>Receive feedback on the League table and Asaqua components from the User Group</li>
 </ul>
 
-During this sprint, we implemented most of the middle tier RESTful APIs, which are the bridges between the components and the database. The frontend components of our application do not directly access the APIs but through the Angular data service. Although we tested our RESTful APIs like what we did for the Passport.js in the previous sprints, we struggled to pass the request body to the API through the Angular HTTP client. Whilst we were testing our get requests to the APIs with Postman, we passed a request body in JSON format to the API as parameters to the MongoDB Query. However, we did not realise that the Angular HTTP client does not support sending a request body, which causes the API to receive undefined values as the parameters. Eventually, we found a workaround to pass the necessary parameters as HTTP params via the data service. It took some time for our developers to figure out what was happening, so the related tasks in this sprint had a slight delay in delivery.
+During this sprint, we implemented most of the middle tier RESTful APIs, which are the bridges between the components and the database. The frontend components of our application do not directly access the APIs but through the Angular data service. Although we tested our RESTful APIs as Passport.js in the previous sprints, we struggled to pass the request body to the API through the Angular HTTP client. Whilst we were testing our get requests to the APIs with Postman, we passed a request body in JSON format to the API as parameters to the MongoDB Query. However, we did not realise that the Angular HTTP client does not support sending a request body, which causes the API to receive undefined values as the parameters. Eventually, we found a workaround to pass the necessary parameters as HTTP params via the data service. It took some time for our developers to figure out what was happening, so the related tasks in this sprint had a slight delay in delivery.
 
-We did not want to trouble our user group too many more times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
+As for the front-end development, We did not want to trouble our user group too many more times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
 
 
+<br>
 
 ### Sprint 7 - 
 
