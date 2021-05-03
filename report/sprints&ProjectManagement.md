@@ -52,11 +52,29 @@ The above image displays our discord chat set-up. Initially, all project discuss
 
 ## The Sprint Archive
 
-### Sprint 1 - 
+Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
 
-Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases.
+<ul>
+  <li>Cheese</li>
+  <li>Mr water</li>
+  <li>Toast</li>
+</ul>
 
-To Be Continued ... 
+### Sprint 1 - A Setback and the Ideation Process
+
+[26th February – 5th March]
+
+
+Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team, our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases. We organised a meeting at Desk 20 on Monday morning to discuss the matter and revisit the ideation process. We identified some key objectives for that week:
+
+<ul>
+  <li>Revisit the idea matrix and consider new ideas</li>
+  <li>Speak to friends and family about proposed ideas</li>
+  <li>Finalise the ideation process by the end of the week</li>
+  <li>Send out questionnaires to gauge market demand</li>
+</ul>
+
+With some creative thinking we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. The qualitative feedback on the idea from our end-user group is displayed below:
 
 ## Meet The Team
 
