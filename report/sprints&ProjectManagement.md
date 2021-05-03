@@ -327,6 +327,7 @@ Sprint 6 marked the penultimate week of development and we realised that there w
     <li>Implement error handling and data processing algorithms</li>
     <li>Implementing data access from different components with the successful login status</li>
     <li>Check functionality of front-end with a variety of devices and with widely used browsers</li>
+    <li>Launch our application on Heroku in preparation for the focus group participants</li>
     <li>Receive feedback on the League table and Asaqua components from the User Group</li>
 </ul>
 
@@ -402,6 +403,15 @@ This feedback was pivotal in finalising our designs. As we moved into Sprint 7, 
 
 [30th April - 7th May]
 
+Our final sprint, Sprint 7, was characterised by the evaluation and final write-up of our report. We had maintained a good level of documentation throughout the project and so, the final writing was almost exclusively confined to the Evaluation, Sprints and our project conclusion. We have listed the final tasks that we identified as mandatory before the project deadline, all of which have been completed:
+
+
+<ul>
+    <li>Completion of testing from Sprint 6 </li>
+    <li>Continue adapting code to our test results</li>
+    <li>Hold a final focus group for our study participants to gain some insight into how well received the application is</li>
+    <li>Pass on any interesting findings from the focus group to Asaqua if adjustments cannot be made prior to the deadline</li>
+</ul>
 
 
 
