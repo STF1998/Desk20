@@ -83,15 +83,30 @@ With some creative thinking we eventually came to the idea of Flocus. Gordon pro
 </tr>
 <tr>
   <td> Cheese </td>
-  <td>"In general, I think the idea is good."</td>
+  <td>
+    <ul>
+      <li>Found the idea interesting</li>
+      <li>said that UX will be important</li>
+    </ul>
+  </td>
 </tr>
 <tr>
   <td>Mr Water</td>
-  <td>"Good but really depends on the implementation. Your UX has to be good otherwise the project won't work well"</td>
+  <td>
+    <ul>
+      <li>Liked the idea</li>
+      <li>Concerned about it being distracting</li>
+    </ul>
+  </td>
 </tr>
 <tr>
   <td> Toast </td>
-  <td>"Good, I'm unsure as to whether i would use it though"</td>
+  <td>
+    <ul>
+      <li>Unsure about if it would be well recieved by the market</li>
+      <li>Was interested to give it a couple of weeks trial</li>
+    </ul>
+  </td>
 </tr>
 </table>
 
