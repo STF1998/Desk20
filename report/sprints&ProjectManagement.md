@@ -60,7 +60,10 @@ Throughout development, we consulted prospective users so to continuously tailor
   <li>User 3 - Toast</li>
 </ul>
 
-### Sprint 1 - A Setback and the Ideation Process
+<br>
+
+
+### Sprint 1 - A Setback and The Ideation Process
 
 [26th February – 5th March]
 
@@ -74,8 +77,9 @@ Once we had fully understood the project specification and met with everyone in 
   <li>Send out questionnaires to gauge market demand</li>
 </ul>
 
-With some creative thinking we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. The qualitative feedback on the idea from our end-user group is displayed below:
+With some creative thinking, we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. We gained some qualitative feedback on our initial proposal from our end-user group. This is displayed below:
 
+<br>
 <div align = "center">
   <table>
   <tr>
@@ -88,6 +92,7 @@ With some creative thinking we eventually came to the idea of Flocus. Gordon pro
       <ul>
         <li>Found the idea interesting</li>
         <li>Thought that UX will be important</li>
+        <li>Cheese has a problem with procrastinating on deadlines - they thought this idea would address this</li>
       </ul>
     </td>
   </tr>
@@ -97,11 +102,12 @@ With some creative thinking we eventually came to the idea of Flocus. Gordon pro
       <ul>
         <li>Liked the idea</li>
         <li>Concerned about it being distracting</li>
+        <li>Thought that it was important to be rasing awarness for water scarcity</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td> Toast </td>
+    <td>Toast</td>
     <td>
       <ul>
         <li>Unsure about if it would be well recieved by the market</li>
@@ -111,6 +117,15 @@ With some creative thinking we eventually came to the idea of Flocus. Gordon pro
   </tr>
   </table>
 </div>
+<br>
+
+Despite specific concerns from Flocus team members and the user group, we received enthusiastic responses to the idea. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
+
+<br>
+
+
+### Sprint 2 - Angular and API setup
+
 
 
 
