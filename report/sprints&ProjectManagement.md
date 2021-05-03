@@ -142,19 +142,63 @@ To make a start, we held an initial development meeting to discuss the component
 <br>
 
 
-### Sprint 2 - Angular and API setup
+### Sprint 3 - Facebook API issues and Design Time
 
 [26th March – 2nd April]
 
+During the initial stages of development we were able to produce a preliminary design for the home component. this is displayed in the .gif below.
+
+<br>
 <p align="center">
   <img src="../report/Images/First_HomeComponent.gif" alt="" width=50%>
   <br/>
   <b>Video: initial home view design </b>
   <br/><br/>
 </p>
+<br>
 
+Whilst we continued the design of the study component, which was taking longer than expected, we offered the home page to the user group for feedback. We wanted to know if the home component was appropriately designed, given the aim and theme of the application. We recieved the following feedback:
 
-
+<br>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Thought the design is visually pleasing</li>
+        <li>Was unsure if it fits into the theme of the website</li>
+        <li>What is the floating object?</li>
+        <li>Thought that it doesn't really stay with the theme of water</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Good</li>
+        <li>Thought that it may offer a distraction before you start your revision</li>
+        <li>Could sit and watch the animation for a long time if bored</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Toast</td>
+    <td>
+      <ul>
+        <li>Looks proffessionally done</li>
+        <li>Was unsure if it sticks to the theme</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
+<br>
 
 
 
