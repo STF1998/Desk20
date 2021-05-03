@@ -413,6 +413,8 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
     <li>Pass on any interesting findings from the focus group to Asaqua if adjustments cannot be made prior to the deadline</li>
 </ul>
 
+<br>
+<br>
 
 
 ## Meet The Team
