@@ -21,7 +21,7 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ### Features of Flocus
 
-- Visual aid of a glass filling up as an alternative to a clock timer
+- Visual aid of a glass filling up as a alternative pomodoro timer.
 - Facebook login capability
 - League tables to compete with your friends
 - Raises awareness for water accessibility and the work ASAQUA do to improve water accessibility in developing nations.

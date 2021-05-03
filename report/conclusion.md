@@ -57,19 +57,50 @@ Due to our big ideas and aspirations as a team,  when we approached discussing t
 
 So while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
+# Impact of COVID-19 on working practices
+
+Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members however, as mentioned above, the more meeting sna catch ups the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regards to the project. 
+
+At times it could have been useful to be in the same room as one another however with effective use of teams and discord we were able to quickly come together (albeit virtually) to overcome any challenges we had. We believe one key aspect that ensured we worked successfully as a team was the ability to hold one another accountable for individual work. Without building those initial relationships, this would have been very hard. Credit must be given to team member, Jati, who due to the time zone difference was working late into the night in numerous occasions. Our use of virtual tools as mentioned ensured we kept a good communication channel with Jati throughout the project.
+
+Overall, we are very proud of one another for the work in this project. We are very excited to meet up for a few drinks and food to celebrate our work once the restrictions allow (and Jati is able to travel to the UK!). 
+
 # Discussion of Social and Ethical implications of our work
 
 TODO - Tom
 
 # Discussion of future work
 
-## Design
+## Design and development
 
-TODO - Hugh
+On the design side of the FLocus, if we had more time we would have liked to do an extensive user study to develop a strongewr understanding of areas of improvement. However, from discussions within the team we have come up with the following ideas for ideas for future design and development of each page:
 
-## Development 
+### Login landing page
 
-TODO - Jati
+- Login capability by email as well alternative social media channels, such as twitter and LinkedIn, alongside google login option.
+- An about pop up to read more about the application and what Flocus is
+- More animations around studying and the story behind Asaqua.
+
+### Study page
+
+- Introduce a customisable icon that you can design for your work mascot.
+- A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
+
+### League table 
+
+- Improved metrics for personal statistics.
+- Potential for a swimming race animation keeping in line with the theme of water.
+- The current league table only ranked our friends, and the user is not inside it. The improvement would be to make the user also exists in the table.
+
+### About page
+
+- Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
+
+### General development
+
+- Possible organisation of code so the backend and frontend are in separate directories.
+- optimise to be effective on web and mobile browsers.
+- Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
 ## Evaluation
 
