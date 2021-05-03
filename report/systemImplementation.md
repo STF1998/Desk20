@@ -223,35 +223,46 @@ As a team, we agreed to use the UID given by Facebook as the key between the 2 d
 </p>
 <b><p align= "center">Figure : The record data model</p></b>
 
-# Middle Tier
+# Middle Tier - Express, Node, the RESTful API
 
-## Express
+## Introduction
 
-## Node
+The middle tier chosen for our application as discussed on the stack implementation section is NodeJS with the help of ExpressJS framework. We utilised both NodeJS and ExpressJS to play a role as an API in our application. API stands for Application Programming Interface whose function is to allow our application to talk to other applications such as Facebook or our own database server.  
 
-## The Restful-API
+On this project, RESTful architecture is going to be implemented on our API. RESTful stands for Representational State Transfer. To be called RESTful, an API needs to follow these 6 constraints: 
 
-## The Facebook-API
+Client-Server Architecture 
 
-The first objective of the back end (middleware) developers was to be able to authenticate a user coming into our application using the Facebook API. At the same time, creating an API request to get the user data and store the data in our database. The data taken from Facebook is the user’s name, Facebook UID, profile picture, and a list of friends who are or have been using the application. 
+Stateless 
 
-To help us achieve the objective, we utilised PassportJS. PassportJS is a comprehensive set of strategies that supports authentication using username and password, Facebook, Twitter etc. The steps shown in the PassportJS documentation on authentication through Facebook [x] were then followed, the steps include:
-1.	Installing the packages required by PassportJS
-2.	Create an application at Facebook Devs (Facebook for Developers)
-3.	Assigning the unique application ID and application secret acquired from Facebook Devs site to the code which is provided in PassportJS documentation
-4.	Modify the skeleton code provided in the documentation to be able to function as needed
+Layered System 
 
-Then, the second objective would be to create a get requests that could return a specific data wanted by the front-end developers. For instance, as shown in Figure 1 and Figure 2.
+Cacheable 
 
-<p align="center">
-<img src="../report/Images/get_request.png" width=100%>
-</p>
-<b><p align= "center">Figure 1: GET request to get each of the user's friends UID</p></b>
+Uniform Design 
 
-<p align="center">
-<img src="../report/Images/get_request2.png" width=100%>
-</p>
-<b><p align= "center">Figure 2: GET request to get each of the user's friends name</p></b>
+Code on Demand 
+
+Details of those constraints could be found here https://restfulapi.net/rest-architectural-constraints/. 
+
+In RESTful API, CRUD operation will be used to interact with the data that is going to be passed between applications. CRUD stands for Create, Read, Update, and Delete. We will be using those methods to talk to our database and other applications. The HTTP methods to implement CRUD are: 
+
+GET – reading data  
+
+POST – creating data 
+
+PUT – updating data 
+
+DELETE – deleting data 
+
+Those HTTP methods are implemented in our server-side code which is in NodeJS. Those methods are also going to be combined with the functionality of ExpressJS, which makes doing HTTP request, response, and routing much easier. An example of API requests implemented using ExpressJS is shown in Figure x, while API requests without ExpressJS are shown in Figure x. 
+
+
+
+By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we are going to implement RESTful API using ExpressJS.
+Other than ExpressJS, we are also going to use PassportJS to help the authentication using Facebook process in our application.
+
+## PassportJS
 
 # Front-End System Implementation
 
