@@ -46,13 +46,17 @@ Please see figure below:
 
 ## Paper (digital equivalent) prototyping
 
-Based on initial conversations with friends, family and peers, we began drawing up some inital ideas of how we envisaged the application looking and working. We created a user walkthrough of our inital idea and created a Lucidchart to represent what users would see flow through the app with specific attributes asscoiated with different pages/pop-ups.
+Based on initial conversations with friends, family and peers, we began drawing up some inital ideas of how we envisaged the application looking and working. We created a user walkthrough of our inital idea and created a Lucidchart to represent what users would see flow through the app with specific attributes asscoiated with different pages/pop-ups. After creating come lucidcharts, hugh made a short video with a final paper prototype of Flocus.
 
-To see the iteration of the ideation process, see paper prototypes(link to photos of other prototypes). See the figure below representing our paper prototyping with a digital twist:
+See the video below representing our paper prototyping with a digital twist:
 
-<p align="center"><img src="../report/Images/" width=70%>
+<br/><br/>
+<p align="center">
+  <img src="" alt="" width=70%>
+  <br/>
+  <b>Video: Paper Prototype Demo</b>
+  <br/><br/>
 </p>
-<h2 align="center"><b> Figure 2: A final paper prototype created as part of the ideation stage.</b></h2>
 
 # Users and Stakeholders
 
