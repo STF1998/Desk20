@@ -357,8 +357,8 @@ As for the front-end development, We did not want to trouble our user group too 
       <ul>
         <li>Thought that the Asaqua page was clean and informative</li>
         <li>Would have been nice to see a link to Asaqua</li>
-        <li>Commented on the league table saything that the page felt incomplete</li>
-        <li>suggested another personal stats section on league component</li>
+        <li>Commented on the league table, saying that the page felt incomplete</li>
+        <li>Suggested another personal stats section on the league component</li>
       </ul>
     </td>
   </tr>
@@ -367,7 +367,7 @@ As for the front-end development, We did not want to trouble our user group too 
     <td>
       <ul>
         <li>Thought that the Asaqua component did an important job - no further comments</li>
-        <li>Really liked the league table page, although sadi that it looked slightly bare</li>
+        <li>Really liked the league table page, although said that it looked slightly bare</li>
       </ul>
     </td>
   </tr>
