@@ -59,7 +59,7 @@ Having identified the procrastination tools as the area of focus, the team then 
 
 # Current industry review
 
-Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity. We came up with a list 
+Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
 
 ## Pomofocus 
 
