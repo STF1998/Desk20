@@ -151,7 +151,7 @@ During the initial stages of development we were able to produce a preliminary d
 <p align="center">
   <img src="../report/Images/First_HomeComponent.gif" alt="" width=50%>
   <br/>
-  <b>Video: initial Home design </b>
+  <b>Video: Initial Home design </b>
   <br/><br/>
 </p>
 <br>
@@ -245,7 +245,7 @@ The front-end development process had seen success in the implementation of the 
 <p align="center">
 <img src="../report/Images/Old_Study_Comp.png" width=70%>
 </p>
-<b><p align= "center"> Figure 3: The Old Study Component </p></b>
+<b><p align= "center"> Figure 3: The Initial Study Component </p></b>
 
 
 <br>
@@ -328,8 +328,66 @@ During this sprint, we implemented most of the middle tier RESTful APIs, which a
 
 As for the front-end development, We did not want to trouble our user group too many more times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
 
+<br>
+
+<p align="center">
+<img src="../report/Images/old_Asaqua_comp.png" width=70%>
+</p>
+<b><p align= "center"> Figure : The Initial Asaqua Component</p></b>
 
 <br>
+
+<p align="center">
+<img src="../report/Images/old_league_comp.png" width=70%>
+</p>
+<b><p align= "center"> Figure : The Initial League Component</p></b>
+
+
+
+<br>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Thought that the Asaqua page was clean and informative</li>
+        <li>Would have been nice to see a link to Asaqua</li>
+        <li>Commented on the league table, saying that the page felt incomplete</li>
+        <li>Suggested another personal stats section on the league component</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Thought that the Asaqua component did an important job - no further comments</li>
+        <li>Really liked the league table page, although said that it looked slightly bare</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Toast</td>
+    <td>
+      <ul>
+        <li>Asaqua page is good but could do with a link to the NGOs website</li>
+        <li>Suggested that we may need to provide more information on Asaqua</li>
+        <li>Positively commented on the league table</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
+<br>
+<br>
+
+This feedback was pivotal in finalising our designs. As we moved into Sprint 7, we implemented the suggested changes by adding a link to the Asaqua page and providing more information on the NGO and it’s activities. We investigated the prospect of delivering further metrics for the personal stats area but unfortunately, decided that we did not have enough remaining time given our current workload. Instead, we repurposed the code used in the log-in component for the lottie animation and placed this on the bottom left of the screen which, brought the page to a finished product. This was great feedback as it led as to furthering our goal of implementing serious play in our application. 
+
 
 ### Sprint 7 - 
 
