@@ -147,7 +147,7 @@ To make a start, we held an initial development meeting to discuss the component
 [26th March – 2nd April]
 
 <p align="center">
-  <img src="../report/Images/initial_homeview.move" alt="" width=50%>
+  <img src="../report/Images/First_HomeComponent.gif" alt="" width=50%>
   <br/>
   <b>Video: initial home view design </b>
   <br/><br/>
