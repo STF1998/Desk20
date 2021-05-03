@@ -139,6 +139,21 @@ To make a start, we held an initial development meeting to discuss the component
   <li>Review feedback from questionnaires</li>
 </ul>
 
+<br>
+
+
+### Sprint 2 - Angular and API setup
+
+[26th March – 2nd April]
+
+<p align="center">
+  <img src="../report/Images/initial_homeview.move" alt="" width=50%>
+  <br/>
+  <b>Video: initial home view design </b>
+  <br/><br/>
+</p>
+
+
 
 
 
