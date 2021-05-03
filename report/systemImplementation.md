@@ -207,6 +207,12 @@ The backend developers decided to normalize the data storage, so the database se
 
 ## Data model
 
+The above entity-relationship diagram shows that our database has a normalized set up despite using a NoSQL database service. When a user is logging in to our application, Facebook’s passport API returns the necessary information to our server, which allows us to save and update the data regarding the user within the User collection. It ensures all data is up-to-date when the user logins every time. This is particularly important for the competitive league feature to retrieve data of the user’s friends, who potentially might have joined our application, or add the user as a friend on Facebook later than the user.
+
+As a team, we agreed to use the UID given by Facebook as the key between the 2 data collections. The Record collection keeps rapidly growing user's record log, which is generated when a user has completed a session or leaving the component in the midway. Such a data model set up keeps as much user data as possible. Therefore, it allows flexible data retrieval query to fulfil demands from different components and potential future extension. When our application needs data from both collections (aka a join query in a SQL model), we perform multi-staged queries to the database. The database will then handle all the computational complex sorting and searching functions instead of solving them in our server.
+
+[ CAN ADD THE CODE SNIPPET OF A MULTI STAGED QUERY HERE]
+
 <p align="center">
 <img src="../report/Images/user_data_model.png" width=75%>
 </p>
