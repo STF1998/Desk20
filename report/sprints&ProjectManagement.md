@@ -52,11 +52,162 @@ The above image displays our discord chat set-up. Initially, all project discuss
 
 ## The Sprint Archive
 
-### Sprint 1 - 
+Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
 
-Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases.
+<ul>
+  <li>User 1 - Cheese</li>
+  <li>User 2 - Mr Water</li>
+  <li>User 3 - Toast</li>
+</ul>
 
-To Be Continued ... 
+<br>
+
+
+### Sprint 1 - A Setback and The Ideation Process
+
+[26th February – 5th March]
+
+
+Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team, our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases. We organised a meeting at Desk 20 on Monday morning to discuss the matter and revisit the ideation process. We identified some key objectives for that week:
+
+<ul>
+  <li>Revisit the idea matrix and consider new ideas</li>
+  <li>Speak to friends and family about proposed ideas</li>
+  <li>Finalise the ideation process by the end of the week</li>
+  <li>Send out questionnaires to gauge market demand</li>
+</ul>
+
+With some creative thinking, we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. We gained some qualitative feedback on our initial proposal from our end-user group. This is displayed below:
+
+<br>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Found the idea interesting</li>
+        <li>Thought that UX will be important</li>
+        <li>Cheese has a problem with procrastinating on deadlines and thought this idea would address this issue</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Liked the idea</li>
+        <li>Concerned about it being distracting</li>
+        <li>Thought that it was important to be raising awarness for water scarcity</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Toast</td>
+    <td>
+      <ul>
+        <li>Unsure if it would be well recieved by the market</li>
+        <li>Was interested to give it a couple of weeks trial</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
+<br>
+
+Generally, we received enthusiastic responses to the idea with constructive critism often concerning the hurdles of implementation. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
+
+<br>
+
+
+### Sprint 2 - Angular and API setup
+
+[19th March – 26th March]
+
+To make a start, we held an initial development meeting to discuss the components required to begin back- and front-end development. We knew that we were going to have to implement a database for storing glass count data and personal statistics and so an API was required. We identified our week’s objectives:
+
+<ul>
+  <li>Generate all required components to kickstart the development process</li>
+  <li>Make a start with the study component</li>
+  <li>Create our RESTfull API</li>
+  <li>Familiarise with the Facebook API and how to access it</li>
+  <li>Set-up the general environment: Connect express with docker and MongoDB</li>
+  <li>Review feedback from questionnaires</li>
+</ul>
+
+<br>
+
+
+### Sprint 3 - Facebook API issues and Design Time
+
+[26th March – 2nd April]
+
+During the initial stages of development we were able to produce a preliminary design for the home component. this is displayed in the .gif below.
+
+<br>
+<p align="center">
+  <img src="../report/Images/First_HomeComponent.gif" alt="" width=50%>
+  <br/>
+  <b>Video: initial home view design </b>
+  <br/><br/>
+</p>
+<br>
+
+Whilst we continued the design of the study component, which was taking longer than expected, we offered the home page to the user group for feedback. We wanted to know if the home component was appropriately designed, given the aim and theme of the application. We recieved the following feedback:
+
+<br>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Thought the design is visually pleasing</li>
+        <li>Was unsure if it fits into the theme of the website</li>
+        <li>What is the floating object?</li>
+        <li>Thought that it doesn't really stay with the theme of water</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Good</li>
+        <li>Thought that it may offer a distraction before you start your revision</li>
+        <li>Could sit and watch the animation for a long time if bored</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Toast</td>
+    <td>
+      <ul>
+        <li>Looks proffessionally done</li>
+        <li>Was unsure if it sticks to the theme</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
+<br>
+
+The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took the constructive criticism onboard to pursue a design that fulfilled our project aims. Subsequent to this, we called a meeting to organise the following actions and events for the week ahead. Our sprint objectives are displayed below:
+
+<ul>
+    <li>Adjust the Home component design to user group feedback</li>
+    <li>Complete the Study component front-end development</li>
+    <li>Speak to Course Admins regarding the Facebook authentication process</li>
+</ul>
+
 
 ## Meet The Team
 

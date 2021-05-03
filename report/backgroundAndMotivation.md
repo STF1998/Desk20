@@ -55,9 +55,11 @@ Having identified the Pomodoro Technique as a key tool to combat procrastination
 
 # State of the art survey
 
+Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had relatively similar aspects and technologies, each had subtle differences which can be seen the current industry review below.
+
 # Current industry review
 
-Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity. We came up with a list 
+Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
 
 ## Pomofocus 
 
@@ -204,7 +206,7 @@ Website: https://pomodor.app/timer
 Easy-to-use web based Pomodoro timer.
 
 <p align="center">
-<img src="../report/Images/pomo2.png" width=70%>
+<img src="../report/Images/pomo5.png" width=70%>
 </p>
 <b><p align= "center"> Figure : Screenshot of Pomodor website </p></b>
 

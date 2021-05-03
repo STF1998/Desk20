@@ -160,8 +160,6 @@ From this survey we identified the key points and issues on procrastination in s
 - Students work better under pressure - possible use of timer/visual aid.
 - Majority of students do not use timers to help them study - large market opportunity to provide students with a useful study tool.
 
-You can view our survey here at the following [link](https://docs.google.com/forms/d/e/1FAIpQLSd3o1cypjlRFxH6bg9omyE7Un--SX8_qjJbQ6GMQbAJyd6CkA/viewform)
-
 ## Interviews and Focus Groups
 
 Due to time restraints and a lack of ethical approval, we decided that interviews would not be suitable for this project. However, if we had the time and ethical approval we would have liked to complete a user interaction focus group and interviews to find out more about study techniques and how users interact with current products/tools that already exist on the market. 
