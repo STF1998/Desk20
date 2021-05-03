@@ -92,7 +92,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
       <ul>
         <li>Found the idea interesting</li>
         <li>Thought that UX will be important</li>
-        <li>Cheese has a problem with procrastinating on deadlines - they thought this idea would address this</li>
+        <li>Cheese has a problem with procrastinating on deadlines and thought this idea would address this issue</li>
       </ul>
     </td>
   </tr>
@@ -102,7 +102,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
       <ul>
         <li>Liked the idea</li>
         <li>Concerned about it being distracting</li>
-        <li>Thought that it was important to be rasing awarness for water scarcity</li>
+        <li>Thought that it was important to be raising awarness for water scarcity</li>
       </ul>
     </td>
   </tr>
@@ -110,7 +110,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
     <td>Toast</td>
     <td>
       <ul>
-        <li>Unsure about if it would be well recieved by the market</li>
+        <li>Unsure if it would be well recieved by the market</li>
         <li>Was interested to give it a couple of weeks trial</li>
       </ul>
     </td>
@@ -119,7 +119,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
 </div>
 <br>
 
-Despite specific concerns from Flocus team members and the user group, we received enthusiastic responses to the idea. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
+Generally, we received enthusiastic responses to the idea with constructive critism often concerning the hurdles of implementation. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
 
 <br>
 
