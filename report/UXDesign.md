@@ -156,13 +156,19 @@ We were able collect data from 23 university students. While the survey was shor
 
 From this survey we identified the key points and issues on procrastination in student populations:
 
-- 
+- Students struggle with motivation with work they are not interested in (particuarly midway through a task).
+- Students work better under pressure - possible use of timer/visual aid.
+- Majority of students do not use timers to help them study - large market opportunity to provide students with a useful study tool.
 
-- 
+You can view our survey here at the following [link](https://docs.google.com/forms/d/e/1FAIpQLSd3o1cypjlRFxH6bg9omyE7Un--SX8_qjJbQ6GMQbAJyd6CkA/viewform)
 
-You can view our survey here! (TODO add a link to survey)
+## Interviews and Focus Groups
 
-## Interviews
+Due to time restraints and a lack of ethical approval, we decided that interviews would not be suitable for this project. However, if we had the time and ethical approval we would have liked to complete a user interaction focus group and interviews to find out more about study techniques and how users interact with current products/tools that already exist on the market. 
+
+These interviews could be focused on flows on certain webpages with a focus on aesthetics and the front end design of possible competitors. This would help further define the product market fit and opportunity for Flocus.
+
+As an alternative to the above, we held informal conversations with friends and peers to find out more about study techniques and what indidivduals liked about the top 5 current tools on the market (outlined in the [Background and Motivation section](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)). These conversations, yet infromal, helped build our user personas and stories throughout the design and development process.
 
 # Wireframes and Systems
 
