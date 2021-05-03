@@ -265,15 +265,15 @@ Has to be a competitive aspect that is a leader board between friends or peers â
 
 ### Technical scope
 
-(TODO) - 
-
-### Evaluative scope
-
-(TODO) - Hugh
+(TODO) - Jati
 
 ## Challenges
 
-(TODO) - Hugh
+Given limited resources and time restraints, the biggest challenge of this project is effectively creating a minimum viable product that is a tool to help reduce procrastination but also raises awareness for an important issue in water accessibility and the work Asaqua does to improve water accessibility. 
+
+For the front-end, the biggest challenge will be building and integrating slick animations to portray the theme of water but also a visual aid as a timer. 
+
+For the backend, the biggest challenge will be intergating with Facebook-API and selecting the data to be outputted on the webpage. 
 
 ## Reference List
 
