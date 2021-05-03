@@ -5,17 +5,17 @@
 ## Contents of Conclusion
 
 - [**Working practices**](#Working-practices)
-  -[General working practices](#General-working-practices)
+  - [General working practices](#General-working-practices)
 - [**Project reflection**](#Project-reflection)
-  -[Successes](#Successes)
-  -[Weaknesses](#Weaknesses)
+  - [Successes](#Successes)
+  - [Weaknesses](#Weaknesses)
 - [**Impact of COVID-19 on working practices**](Impact-of-COVID-19-on-working-practices)
 - [**Discussion of Social and Ethical implications of our work**](#Discussion-of-Social-and-Ethical-implications-of-your-work)
 - [**Discussion of future work**](#Discussion-of-future-work)
-  -[Design](#Design)
-  -[Development](#Development)
-  -[Evaluation](#Evaluation)
--[**Summary**](#Summary)
+  - [Design](#Design)
+  - [Development](#Development)
+  - [Evaluation](#Evaluation)
+- [**Summary**](#Summary)
 
 # Working practices
 
