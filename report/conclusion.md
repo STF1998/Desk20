@@ -95,11 +95,13 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 ### About page
 
 - Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
+- Option to donate directly to Asaqua.
 
 ### General development
 
 - Possible organisation of code so the backend and frontend are in separate directories.
-- optimise to be effective on web and mobile browsers.
+- Different browser opitimisation.
+- Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
 ## Evaluation
