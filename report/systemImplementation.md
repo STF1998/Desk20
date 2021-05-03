@@ -123,9 +123,9 @@ The procedure to use FB’s API is as follows:
 
 When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate there. Upon successful authentication, FB will ask the user whether the user agrees to share the requested data to the application. The detail of the requested data is shown on the confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
-The FB permission type in our code determines the type of data that FB’s API will return to our application. Flocus only uses the “user_friends'' permission, which means that FB will return an array consisting of all of the user’s friends that also grants permission to the application. There are also types of data that does not require a permission to be returned, which are user’s name, user’s uid (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication token because we always ask using the “isAuthenticated()” method before letting the user access data from our database.
+The FB permission type in our code determines the type of data that FB’s API will return to our application. Flocus only uses the “user_friends'' permission, which means that FB will return an array consisting of all of the user’s friends that also grants permission to the application. There are also types of data that does not require a permission to be returned, which are user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication token because we always ask using the “isAuthenticated()” method before letting the user access data from our database.
 
-After FB returns the user object to our application, we then do a check on our database by checking the uid of the user and comparing it with every uid inside the database. If the user already exists, we only modify the list of friends of the user. If not we then put the user in our database. Details of the user schema and PassportJS will be discussed further on the database and middle tier sections.
+After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. If not we then put the user in our database. Details of the user schema and PassportJS will be discussed further on the database and middle tier sections.
 
 Successful or unsuccessful login attempt will redirect us back to the login page. Our login page will check the “isAuthenticated()” method each time it is called, if it is returning a true then the user is redirected to our home page. If it is returning a false then the user is returned to our login page. Our application schema from the home page is shown in the graph below.
 
@@ -360,6 +360,35 @@ Req.user contains the same data as the profile variable. Finally, one other impo
 <img src="../report/Images/passport10.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
+
+## Records API
+
+In this section, all API requests with relationship to record data would be discussed. The first API request would be a POST request which takes a record object as its parameter. The object must follow the record schema that was discussed on the database section. The POST request is shown in Figure x below.
+
+<p align="center">
+<img src="../report/Images/records.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
+
+So, each time a user finished, pause, or leave a session the POST request would be done, and a record object would be saved in our database.
+
+The next request would be a GET request that takes uid and a range of time as parameter. Range of time meaning a starting date and an ending date. This GET method is used to get all the records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure x.
+
+<p align="center">
+<img src="../report/Images/records2.png" width=75%>
+</p>
+<b><p align= "center">Figure : The GET method</p></b>
+
+## API for League Table
+
+The last request is a GET request for the league table. It takes UID and a range of time as its parameter. The first objective would be to do a search on the user database to find the user with the same UID in the parameter. Then, the query accesses the friendsUID array and friends array of the user. FriendsUID array of a user contains all the user friends’ UID.
+Then do a record search just like the GET request described above for each of the UID's. At the end the GET request will return three arrays:
+
+1.	First array consists of: User’s friend's name 
+2.	Second array consists of: Total number of sessions completed for each user’s friends
+3.	Third array consists of: Total time spent for each user’s friends 
+
+These are inside the range of time specified in the parameter. They are all grouped (connected) before getting sorted on a descending order based on the number of sessions completed. Grouped means that if there is a change in position between elements inside one of the arrays, the other arrays would also experience the same change. As it is sorted on a descending order, then the highest number of sessions completed will be on the top of the array (element 0) and the lowest would be on the bottom of the array.
 
 # Front-End System Implementation
 
