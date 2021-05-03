@@ -1,6 +1,6 @@
 ![Creating great tasting products to lead a healthy lifestyle (1)](https://user-images.githubusercontent.com/69913789/115698894-07053580-a35d-11eb-9099-7732f95f6949.gif)
 
-# 1. Background and Motivation [10%]
+# Background and Motivation [10%]
 
 ## Contents of Background and Motivation
 - [**Background literature**](#Background-literature)
