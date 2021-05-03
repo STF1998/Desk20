@@ -67,6 +67,11 @@ Website: https://pomofocus.io/
 
 Pomofocus is an online pomodoro timer that works on both web and mobile browsers. The webpage revolves around a large timer with different colour backgrounds for study and break intervals (red for study, blue for break).
 
+<p align="center">
+<img src="../report/Images/pomo1.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomofocus website </p></b>
+
 <table>
 <tr>
   <th>Pros</th>
@@ -96,6 +101,11 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
 Website: https://tomato-timer.com/
 
 Tomato timer is an online clock timer that follows the Pomodoro technique inspired by Tomatoi.st. It uses jQuery and HTML5 features like Desktop Notifications, Audio API and Local Storage instead of relying on Adobe Flash and other such technologies.
+
+<p align="center">
+<img src="../report/Images/pomo2.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Tomato Timer website </p></b>
 
 <table>
 <tr>
@@ -129,6 +139,11 @@ Website: http://www.tomato.es/
 
 Tomatoes is a Pomodoro Technique driven time tracker.
 
+<p align="center">
+<img src="../report/Images/pomo3.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Tomatoes website </p></b>
+
 <table>
 <tr>
   <th>Pros</th>
@@ -155,6 +170,11 @@ Tomatoes is a Pomodoro Technique driven time tracker.
 Website: https://www.pomodoro-tracker.com/
 
 Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro technique. 
+
+<p align="center">
+<img src="../report/Images/pomo4.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomodoro Tracker website </p></b>
 
 <table>
 <tr>
@@ -184,6 +204,11 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
 Website: https://pomodor.app/timer
 
 Easy-to-use web based Pomodoro timer.
+
+<p align="center">
+<img src="../report/Images/pomo2.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomodor website </p></b>
 
 <table>
 <tr>
