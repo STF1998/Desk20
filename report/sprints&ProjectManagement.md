@@ -227,6 +227,8 @@ To kickstart the week we had our normal Monday morning call on teams and discuss
 
 The front-end development process had seen success in the implementation of the study component – all CSS animations had been applied successfully to the isolated SVG layers and the component had a natural flow. Additionally, the Home component had been adjusted to the previous feedback of the user group. As such, it was time to integrate user interaction into the site, with particular attention on the study component. The League and navigation panels also needed to begin their development process. Difficulty was encountered when implementing the water fill and tap animation in typescript. The front-end had to learn how to deal with document object model (DOM) elements to manipulate the html structure and perform transformations. As a result of this difficulty, we were unable to provide a full working draft to the user group and instead offered a preliminary design with CSS keyframe animations. A screenshot of this design is displayed below with our user group feedback:
 
+<br>
+
 
 <p align="center">
 <img src="../report/Images/Old_Study_Comp.png" width=70%>
@@ -245,8 +247,8 @@ The front-end development process had seen success in the implementation of the 
     <td> Cheese </td>
     <td>
       <ul>
-        <li>Thought it was really well done</li>
-        <li>Found the Study Component relaxing</li>
+        <li>Thought it was well designed</li>
+        <li>Found the study component relaxing</li>
       </ul>
     </td>
   </tr>
@@ -254,7 +256,7 @@ The front-end development process had seen success in the implementation of the 
     <td>Mr Water</td>
     <td>
       <ul>
-        <li>Their university room overlooks a road - they thought that the study component would offer a good enviroment to study in</li>
+        <li>Their university room overlooks a road - they thought that the study component would create a calm enviroment to study in</li>
         <li>Thought that the animations were slow and not distracting</li>
       </ul>
     </td>
