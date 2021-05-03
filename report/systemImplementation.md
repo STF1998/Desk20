@@ -211,7 +211,10 @@ The above entity-relationship diagram shows that our database has a normalized s
 
 As a team, we agreed to use the UID given by Facebook as the key between the 2 data collections. The Record collection keeps rapidly growing user's record log, which is generated when a user has completed a session or leaving the component in the midway. Such a data model set up keeps as much user data as possible. Therefore, it allows flexible data retrieval query to fulfil demands from different components and potential future extension. When our application needs data from both collections (aka a join query in a SQL model), we perform multi-staged queries to the database. The database will then handle all the computational complex sorting and searching functions instead of solving them in our server.
 
-[ CAN ADD THE CODE SNIPPET OF A MULTI STAGED QUERY HERE]
+<p align="center">
+<img src="../report/Images/db3.png" width=75%>
+</p>
+<b><p align= "center">Figure : </p></b>
 
 <p align="center">
 <img src="../report/Images/user_data_model.png" width=75%>
@@ -453,8 +456,6 @@ We have attached a screenshot of the home component below, although to get a cle
 </p>
 <b><p align= "center">Figure : The Home Component</p></b>
 
-
-
 To achieve this animation, we created six Scalable Vector Graphics (SVG) circle elements and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur and FeColorMatrix to specify the filter. This filter was then used with the FeBlend which merges SVG elements. In effect, this is similar to introducing a blur effect on an SVG and then increasing the contrast.  The HTML for this is displayed in the code snippet below:
 
 <p align="center">
@@ -462,10 +463,7 @@ To achieve this animation, we created six Scalable Vector Graphics (SVG) circle 
 </p>
 <b><p align= "center">Figure : A code snippet from the Home Component's main animation</p></b>
 
-
-
 We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
-
 
 # Additional Elements and Components
 
@@ -503,8 +501,6 @@ We first converted the .ai file to a .svg format for edit in Figma. We then isol
 Adobe licence information: https://stock.adobe.com/uk/license-terms
 
 Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustration-tiny-drinking-fresh-potable-person-concept/269962379
-
-## Back-end
 
 # Deployment Details
 
