@@ -328,8 +328,64 @@ During this sprint, we implemented most of the middle tier RESTful APIs, which a
 
 As for the front-end development, We did not want to trouble our user group too many more times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
 
+<br>
+
+<p align="center">
+<img src="../report/Images/old_Asaqua_comp.png" width=70%>
+</p>
+<b><p align= "center"> Figure : The Old Asaqua Component</p></b>
 
 <br>
+
+<p align="center">
+<img src="../report/Images/old_league_comp.png" width=70%>
+</p>
+<b><p align= "center"> Figure : The Old League Component</p></b>
+
+
+
+<br>
+<div align = "center">
+  <table>
+  <tr>
+    <th>User</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td> Cheese </td>
+    <td>
+      <ul>
+        <li>Thought that the Asaqua page was clean and informative</li>
+        <li>Would have been nice to see a link to Asaqua</li>
+        <li>Commented on the league table saything that the page felt incomplete</li>
+        <li>suggested another personal stats section on league component</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mr Water</td>
+    <td>
+      <ul>
+        <li>Thought that the Asaqua component did an important job - no further comments</li>
+        <li>Really liked the league table page, although sadi that it looked slightly bare</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Toast</td>
+    <td>
+      <ul>
+        <li>Asaqua page is good but could do with a link to the NGOs website</li>
+        <li>Suggested that we may need to provide more information on Asaqua</li>
+        <li>Positively commented about the league table</li>
+      </ul>
+    </td>
+  </tr>
+  </table>
+</div>
+<br>
+<br>
+
 
 ### Sprint 7 - 
 
