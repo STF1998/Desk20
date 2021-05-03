@@ -208,7 +208,19 @@ The feedback from the user group generally hinted that we needed to head back to
     <li>Further research on how to implement the Facebook authentication process</li>
 </ul>
 
-Need an account of Facebook issues and how we got over the issue.
+By this point, Jati, who was handling the Facebook log-in process, had made considerable progress in understanding the relevant API and was able to implement his findings as we moved into Sprint 4.
+
+Regarding this implementation, the initial struggle was to fully understand the API that we were trying to connect to, and the tools required to achieve this which, was Facebook’s API and PassportJS. However, as Facebook’s API and PassportJS have extensive online documentation that is accessed through the web, it helped us to overcome this issue. Furthermore, as these technologies are highly popular, there is a good availability of tutorials and previously posted troubleshooting problems.
+ 
+However, as we progressed, we realised that there was another problem above the API connection and requesting data. To be able to utilise Facebook’s API, we had to first understand and abide by their terms and regulation regarding to the API for authentication. This included the following information: 
+
+<ul>
+    <li>The types of permissions that we needed to include so that FB’s API would return the required data </li>
+    <li>How to simulate and test our application, as Facebook does not let any real user other than the app’s admin login to the application during development mode</li>
+    <li>The deployment procedure - it turns out that Facebook follows an application review process before any real user can use the application</li>
+</ul>
+
+After further research, it became clear that Facebook is strict and careful about letting other applications access their users’ data. Nonetheless, if the procedure provided is followed, there should be no problem when using their API. Facebook provide up to 2000 easy to use and configure test users that we utilised to test the app. The subsequent steps of the implementation were to follow the PassportJS documentation and tutorials online.
 
 <br>
 
@@ -276,10 +288,26 @@ The front-end development process had seen success in the implementation of the 
 
 We found this feedback very encouraging as it mirrored the impact and theme that we were attempting to create. However, we did adjust the final design to reflect Toast’s feedback and included signing to better inform a potential user. 
 
-
 In the backend development, one of the key challenges in this sprint was to figure out the logic to correctly store data returned from Facebook with a well-thought-out data model. Not only did we have to ensure the data in our database is always up-to-date, but also to make the data model flexible and future-proof. We had not decided how other components will be interacting with the database at that time, so we went for the normalised approach even though we have a NoSQL database. During this sprint, we were mainly using Postman to test the functionality of Passport.js instead of connecting to the database instance right away, which can visualise the behaviour of the Passport.js and helped the developer to learn using it.
 
-### Sprint 5 - 
+<br>
+
+### Sprint 5 - Bringing Things Together
+
+Sprint 5 took us into the second half of our development process. We started to become more aware of the looming deadline and as a result, pushed forward to achieve a minimum viable product. This meant bringing all previously designed components together with app-routing and a navigation panel. Most task from the previous sprint were carried over however, in our Monday morning stand-up, we identified some new tasks that are displayed below:
+
+
+<ul>
+    <li>Learning Javascript for error handling and data processing</li>
+    <li>Learning the process of calling an API request and getting the data on the frontend side</li>
+    <li>Learning MongoDB functions to be able to connect and collect data from database</li>
+    <li>Include Asaqua page for user education and water scarcity awareness</li>
+</ul>
+
+
+
+<br>
+
 
 ### Sprint 6 - 
 
