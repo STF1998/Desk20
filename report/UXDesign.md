@@ -172,7 +172,9 @@ As an alternative to the above, we held informal conversations with friends and 
 
 # Wireframes and Systems
 
-Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage. 
+Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage.
+
+
 
 # References
 
@@ -184,6 +186,6 @@ Having defined our target market and the potential users who would be using Floc
 
 # Project report navigation
 
-- [Next page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
-- [Previous page: Background and Motivation](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)
+- [Next page: Sprints and Project Management](https://github.com/STF1998/Desk20/blob/main/report/sprints&ProjectManagement.md)
+- [Previous page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)
