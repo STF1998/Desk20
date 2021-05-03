@@ -5,17 +5,17 @@
 ## Contents of Conclusion
 
 - [**Working practices**](#Working-practices)
-  -[General working practices](#General-working-practices)
+  - [General working practices](#General-working-practices)
 - [**Project reflection**](#Project-reflection)
-  -[Successes](#Successes)
-  -[Weaknesses](#Weaknesses)
+  - [Successes](#Successes)
+  - [Weaknesses](#Weaknesses)
 - [**Impact of COVID-19 on working practices**](Impact-of-COVID-19-on-working-practices)
 - [**Discussion of Social and Ethical implications of our work**](#Discussion-of-Social-and-Ethical-implications-of-your-work)
 - [**Discussion of future work**](#Discussion-of-future-work)
-  -[Design](#Design)
-  -[Development](#Development)
-  -[Evaluation](#Evaluation)
--[**Summary**](#Summary)
+  - [Design](#Design)
+  - [Development](#Development)
+  - [Evaluation](#Evaluation)
+- [**Summary**](#Summary)
 
 # Working practices
 
@@ -38,7 +38,7 @@ This worked well, particualrly in the development sprints, allowing sub groups t
 Please see an example below of the Flocus team using a Thursday meeting opportunity to discuss the Facebook login page.
 
 <p align="center">
-<img src="../report/Images/teamsCall.png" width=70%>
+<img src="../report/Images/teamsCall.jpg" width=70%>
 </p>
 <b><p align= "center"> Figure : A screenshot of a recent team meeting discussing the Facebook login page. </p></b>
 
@@ -60,11 +60,17 @@ So while we had not met our personal goals for the product, we had been successf
 
 # Discussion of Social and Ethical implications of our work
 
+TODO - Tom
+
 # Discussion of future work
 
-## 
+## Design
 
-## 
+TODO - Hugh
+
+## Development 
+
+TODO - Jati
 
 ## Evaluation
 
@@ -96,3 +102,7 @@ Other areas to explore for future work:
 - Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
 
 # Summary
+
+Overall, we have really enjoyed working as a team to build this special project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
+
+We'd also like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
