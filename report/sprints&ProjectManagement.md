@@ -200,6 +200,13 @@ Whilst we continued the design of the study component, which was taking longer t
 </div>
 <br>
 
+The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took the constructive criticism onboard to pursue a design that fulfilled our project aims. Subsequent to this, we called a meeting to organise the following actions and events for the week ahead. Our sprint objectives are displayed below:
+
+<ul>
+    <li>Adjust the Home component design to user group feedback</li>
+    <li>Complete the Study component front-end development</li>
+    <li>Speak to Course Admins regarding the Facebook authentication process</li>
+</ul>
 
 
 ## Meet The Team
