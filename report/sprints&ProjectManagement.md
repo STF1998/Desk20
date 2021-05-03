@@ -304,7 +304,9 @@ Sprint 5 took us into the second half of our development process. We started to 
     <li>Include Asaqua page for user education and water scarcity awareness</li>
 </ul>
 
+The Facebook API implementation was nearly complete, although, there were a few related issues that needed to be addressed in Sprint 5. In terms of coding, the struggle was after we successfully implemented facebook’s API and were able to retrieve simple data from it, such as, the user’s name, the authentication token, and user’s Facebook id. However, when we tried to retrieve more complex data which, was in the form of an object, array, or an array inside an object, it was harder to achieve error handling. Error handling, in this case, is to take care of a null variable or array element. For instance, some people have data inside their friends’ array, but some do not. Some people also have a middle name, but some do not. This issue was far trickier to address than initially expected which was partially due to our lack of prior knowledge in Javascript. However, after doing further research, hands-on debugging, and contacting a helpful teaching assistant (shout out to Marceli), this problem no longer exists. 
 
+A further struggle was to implement a simple routing mechanism on Angular. Making Angular automatically route from the Login to the Home component once the user had successfully logged in via Facebook was challenging. Understanding and implementing the user status checker inside an Angular page/component was a struggle. However, Angular documentation and online forums such as Stack Overflow helped us troubleshoot this problem. 
 
 <br>
 
