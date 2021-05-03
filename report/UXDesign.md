@@ -52,7 +52,7 @@ See the video below representing our paper prototyping with a digital twist:
 
 <br/><br/>
 <p align="center">
-  <img src="" alt="" width=70%>
+  <img src="../report/Images/paper,mov" alt="" width=70%>
   <br/>
   <b>Video: Paper Prototype Demo</b>
   <br/><br/>
