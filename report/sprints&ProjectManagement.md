@@ -55,9 +55,9 @@ The above image displays our discord chat set-up. Initially, all project discuss
 Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
 
 <ul>
-  <li>Cheese</li>
-  <li>Mr water</li>
-  <li>Toast</li>
+  <li>User 1 - Cheese</li>
+  <li>User 2 - Mr Water</li>
+  <li>User 3 - Toast</li>
 </ul>
 
 ### Sprint 1 - A Setback and the Ideation Process
@@ -75,6 +75,33 @@ Once we had fully understood the project specification and met with everyone in 
 </ul>
 
 With some creative thinking we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. The qualitative feedback on the idea from our end-user group is displayed below:
+
+<table>
+<tr>
+  <th>User</th>
+  <th>Feedback</th>
+  <th>Response</th>
+</tr>
+<tr>
+  <td> Cheese </td>
+  <td>"In general, I think the idea is good."</td>
+  <td></td>
+</tr>
+<tr>
+  <td> Mr Water </td>
+  <td>"Good but really depends on the implementation. Your UX has to be good otherwise the project won't work well"</td>
+  <td></td>
+</tr>
+<tr>
+  <td> Toast </td>
+  <td>"good, I probably wouldn't choose to use it though"</td>
+  <td></td>
+</tr>
+
+
+</table>
+
+
 
 ## Meet The Team
 
