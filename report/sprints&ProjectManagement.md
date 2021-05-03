@@ -264,5 +264,5 @@ Our team created a remote repository on GitHub for collaboration and version con
 # Project report navigation
 
 - [Next page: Evaluation](https://github.com/STF1998/Desk20/blob/main/report/evaluation.md)
-- [Previous page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
+- [Previous page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)

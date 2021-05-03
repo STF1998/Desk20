@@ -504,8 +504,43 @@ Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustrati
 
 # Deployment Details
 
+## GitHub
+
+A GitHub repository for the team allowed for a continuous integration of new features for the application. Each developer in the team was able to commit or fetch new changes to and from main and merge these changes to their own branch.
+
+## Docker
+
+It was important during the development of our application to have a consistent environment to deploy the application, particularly as there was a split between MacOS and Windows in the team. 
+
+An open source tool called Docker was used to create a consistent runtime environment which the team could use to deploy our application for testing.
+
+A Dockerfile and docker-compose.yml file were placed in the dashboard directory. This was collectively used by the team to deploy the application with the set environment variables.
+
+<p align="center">
+<img src="../report/Images/docker.png" width=70%>
+</p>
+<b><p align= "center">Figure : The Dockerfile used </p></b>
+
+The dockerfile contains commands used to create a specific image of our application. Each image created using the dockerfile was stored and could be accessed again. This helped achieve continuous integration of our code. Any changes in code could easily be reverted by using an old image.
+
+The docker-compose.yml file was used for defining and running two Docker containers. One container for Node and a second for our database, MongoDB. A wait script was used to ensure the database container was built before Node to prevent Node from attempting to connect to the database before it was built. The two containers are set up from the docker-compose file to communicate over a simple port protocol.   
+
+<p align="center">
+<img src="../report/Images/docker2.png" width=70%>
+</p>
+<b><p align= "center">Figure : The Docker-compose file used </p></b>
+
+<p align="center">
+<img src="../report/Images/docker3.png" width=70%>
+</p>
+<b><p align= "center">Figure : Docker running both Node and MongoDB </p></b>
+
+The two containers were rebuilt as new changes to the application were made using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
+
+The consistent deployment environment managed by Docker enabled the team to robustly integrate new features into the application. Additionally, the Dockerfile could be changed in future to test the application on different platforms. This would greatly simplify shipping the application to any hosting provider.
+
 # Project report navigation
 
-- [Next page: Sprints and Project Management](https://github.com/STF1998/Desk20/blob/main/report/sprints&ProjectManagement.md)
-- [Previous page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
+- [Next page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
+- [Previous page: Background and Motivation](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)
