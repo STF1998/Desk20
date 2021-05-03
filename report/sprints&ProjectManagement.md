@@ -206,10 +206,28 @@ The feedback from the user group generally hinted that we needed to head back to
     <li>Adjust the Home component design to user group feedback</li>
     <li>Complete the Study component front-end development</li>
     <li>Speak to Course Admins regarding the Facebook authentication process</li>
-    <li>Complete the implementation of the Facebook authentication process</li>
+    <li>Further research on how to implement the Facebook authentication process</li>
 </ul>
 
-### Sprint 4 - 
+Need an account of Facebook issues and how we got over the issue.
+
+<br>
+
+### Sprint 4 - The Study Component and MongoDB
+
+To kickstart the week we had our normal Monday morning call on teams and discussed the upcoming weekly tasks:
+
+
+<ul>
+    <li>Complete the study component design and offer this to the user group for feedback</li>
+    <li>Convert some of the animations in the study component to typescript for user interaction and full site functionality. </li>
+    <li>Begin the design process for the league component and navigation panel</li>
+    <li>Model the user and record database</li>
+    <li>Facebook's authentication and data collection through passportJS</li>
+</ul>
+
+The front-end development process had seen success in the implementation of the study component – all CSS animations had been applied successfully to the isolated SVG layers and the component had a natural flow. Additionally, the Home component had been adjusted to the previous feedback of the user group. As such, it was time to integrate user interaction into the site, with particular attention on the study component. The League and navigation panels also needed to begin their development process. Difficulty was encountered when implementing the water fill and tap animation in typescript. The front-end had to learn how to deal with document object model (DOM) elements to manipulate the html structure and perform transformations. As a result of this difficulty, we were unable to provide a full working draft to the user group and instead offered a preliminary design with CSS keyframe animations. A screenshot of this design is displayed below:
+
 
 In the backend development, one of the key challenges in this sprint was to figure out the logic to correctly store data returned from Facebook with a well-thought-out data model. Not only did we have to ensure the data in our database is always up-to-date, but also to make the data model flexible and future-proof. We had not decided how other components will be interacting with the database at that time, so we went for the normalised approach even though we have a NoSQL database. During this sprint, we were mainly using Postman to test the functionality of Passport.js instead of connecting to the database instance right away, which can visualise the behaviour of the Passport.js and helped the developer to learn using it.
 
