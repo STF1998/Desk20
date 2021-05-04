@@ -288,33 +288,41 @@ However, for our application, only be focused on PassportJS for authentication u
 
 To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the Figures below.
 
+<br>
 <p align="center">
 <img src="../report/Images/passport1.png" width=75%>
 </p>
 <b><p align= "center"></p></b>
 
+<br>
+
 <p align="center">
 <img src="../report/Images/passport2.png" width=75%>
 </p>
 <b><p align= "center"></p></b>
+<br>
 
-Further implementation of passport is shown in Figure x below. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
+A further implementation of passport is shown in Figure x. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
+
+<br>
 
 <p align="center">
-<img src="../report/Images/passport3.png" width=60%>
+<img src="../report/Images/passport3.png" width=70%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure x: </p></b>
+
+<br>
 
 Code explanation by section number:
 
-1.	This is the section where we help Facebook identify our application by supplying the clientID and clientSecret numbers that are acquired after we create an account and application on Facebook for developers’ site. The callbackURL is an URL that we will be led to after the authentication process is submitted, i.e., when we press the submit button after entering our username and password. The URL could be anything we want  will be detailed further in the later section of our report). The profile field is the field where we input the type of data we want to acquire from the user’s Facebook account. For instance, in the code it is saying that our application will request for the user's id, friends, displayname, name, and profile picture. However, to acquire the requested data, it needs to be followed by the right permission. This will also be made clear in the later part of the report.
+1.	This is the section where we help Facebook identify our application by supplying the clientID and clientSecret numbers. These numbers were acquired after we created an account and application on the Facebook for developers’ site. The callbackURL is a URL that we are redirected to after the authentication process is complete, i.e. when we press the submit button after entering our username and password. The URL could be anything we want (This will be detailed further in the later section of our report). The profile field is the where we input the type of data we want to acquire from the user’s Facebook account. For instance, in the code, you should be able to see that our application is requesting the user's id, friends, displayname, name, and profile picture. However, to acquire the requested data, we need to provide the correct permission. This will also be made clear in a later part of the report.
 
-2.	Is the function that runs after the authentication is successful. Token will be the authentication token, refreshToken will be the refreshToken, and the profile will contain all the user data that the user agrees to give (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure x. Then an internal search will be conducted to check whether a user with the returned profile.id exists in our own database.
+2.	This is the function that is called after the authentication process is successful. 'token' is the authentication token, 'refreshToken' will be the refreshToken, and the 'profile' will contain all user data that the user has agreed to provide (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure x). Following this, an internal search is conducted to check whether a user with the returned profile.id exists in our own database.
 
 3.	If the user exists, the database is updated by emptying their friends’ array and filling the array with the latest friend’s data. The purpose is to check if there are any new friends joining the application.
 
-4.	If the user does not exist, the user’s id, name, profile picture, and friends are saved to our own database. The Friends data that is returned by Facebook is not a complete list of all the user’s friends but just a list of friends who are also using the application.
-
+4.	If the user does not exist, the user’s id, name, profile picture, and friends are saved to our own database. The Friends data that is returned by Facebook is not a complete list of all the user’s friends but just a list of friends who have also signed-up with our application.
+<br>
 The figure below shows the pop-up:
 
 <p align="center">
