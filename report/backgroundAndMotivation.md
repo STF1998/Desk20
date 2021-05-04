@@ -16,13 +16,13 @@
 
 ### Overview
 
-When starting this project, our team had little knowledge of the research on single-page applications, Serious Play and procrastination. During the initial month, alongside developing our development skills we spent time researching and reading on the technology we were implementing to solve the serious problem we identified: procrastination. This initial research helped further define our project and influenced key aspects around our design and implementation. Below we have provided short reviews for the key areas we felt we needed to learn about before starting design and implementation of development.
+When starting this project, our team had little knowledge or understanding of single page applications (SPA’s), Serious Play, and procrastination. During the first month, alongside developing our development skills, we spent time researching and reading papers and articles on the design and technologies to build a successful SPA (Single Page Application) to solve the fundamental problem we had identified: procrastination. This initial research helped further define our project and influenced key aspects around our design and implementation of Flocus. Below we have provided short reviews for the key areas we felt we needed to learn about before starting design and implementation of development. 
 
 ### Academic research review
 
 #### Single page applications
 
-Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience (Joseph, 2015). A single-page application is a webpage that updated independently on each user’s action and therefore meaning the application has increased responsiveness and user satisfaction (Mesbah, 2006). The architecture of a single page application often consists of the following features (Molin, 2016):
+Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience [1](#Reference-List). A single-page application is a webpage that updated independently on each user’s action and therefore meaning the application has increased responsiveness and user satisfaction (Mesbah, 2006). The architecture of a single page application often consists of the following features (Molin, 2016):
 -	Web interface: Interaction between user and web server
 -	Individual components: The SPA is split into smaller and individual components.
 -	Updated/replaced: A component can be updated or replaced by a new component or page. 
@@ -278,6 +278,10 @@ For the front-end, the biggest challenge will be building and integrating slick 
 For the backend, the biggest challenge will be intergating with Facebook-API and selecting the data to be outputted on the webpage. 
 
 ## Reference List
+
+[1] R. J. Joseph, Single page application and canvas drawing, International Journal of Web & Semantic Technology. 6 (2015) 29.
+
+[2]
 
 Ali Mesbah, A. V. D. 2006. An Architectural Style for Ajax. Proceedings of the 6th Working
 IEEE/IFIP Conference on Software Architecture (WICSA'07). IEEE Computer Society, 2007.
