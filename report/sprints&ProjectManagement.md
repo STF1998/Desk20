@@ -7,8 +7,8 @@
   - [Overview](#Overview)
   - [Agile methodology](#Agile-methodology)
   - [Communication channels](#Communication-channels)
-- [**Meet the team**](#State-of-the-art-survey)
-- [**Sprints documentation*](#Sprints-documentation)
+- [**Meet the team**](#Meet-The-Team)
+- [**The Sprints documentation*](#The-Sprints-documentation)
 - [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
@@ -50,7 +50,48 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
 
-## The Sprint Archive
+## Meet The Team
+
+<table>
+<tr>
+  <th>      Name      </th>
+  <th>Photo</th>
+  <th>Team role</th>
+  <th>Biggest lesson learnt during the project</th>
+</tr>
+<tr>
+  <td> Sam Fitton </td>
+  <td><img src="../report/Images/circle-cropped (6).png" width=1000%></td>
+  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
+  <td> Learning how to implement animations with CSS and typescript to bring HTML elements to life. </td>
+</tr>
+<tr>
+  <td> Hugh Hamilton-Green </td>
+  <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
+  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
+  <td> I really enjoyed learning about end-to-end development with a focus on user experience (UX).</td>
+</tr>
+<tr>
+  <td> Jati Wicaksono </td>
+  <td><img src="../report/Images/circle-cropped (8).png" width=1000%></td>
+  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
+  <td> Learning how to implement a RESTful API and accessing external API's. </td>
+</tr>
+<tr>
+  <td> Gordon Tse</td>
+  <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
+  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
+  <td></td>
+</tr>
+<tr>
+  <td> Tom Cockain </td>
+  <td><img src="../report/Images/circle-cropped (9).png" width=1000%></td>
+  <td> Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end. </td>
+  <td> Understanding how a robust API is key to efficiently adding new features to an application. </td>
+</tr>
+</table>
+
+## The Sprints Documentation
 
 Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
 
@@ -226,6 +267,8 @@ After further research, it became clear that Facebook is strict and careful abou
 
 ### Sprint 4 - The Study Component and MongoDB
 
+[9th April - 16th April]
+
 To kickstart the week we had our normal Monday morning call on teams and discussed the upcoming weekly tasks:
 
 
@@ -294,6 +337,8 @@ In the backend development, one of the key challenges in this sprint was to figu
 
 ### Sprint 5 - Bringing Things Together
 
+[16th April - 23th April]
+
 Sprint 5 took us into the second half of our development process. We started to become more aware of the looming deadline and as a result, pushed forward to achieve a minimum viable product. This meant bringing all previously designed components together with app-routing and a navigation panel. Most task from the previous sprint were carried over however, in our Monday morning stand-up, we identified some new tasks that are displayed below:
 
 
@@ -313,6 +358,8 @@ A further struggle was to implement a simple routing mechanism on Angular. Makin
 
 ### Sprint 6 - The League Table and Databases
 
+[23rd April - 30th April]
+
 Sprint 6 marked the penultimate week of development and we realised that there was still much to achieve before we could perceive the project as complete. For the upcoming week, we noted the following tasks and set about getting as much done as possible: 
 
 <ul>
@@ -321,12 +368,15 @@ Sprint 6 marked the penultimate week of development and we realised that there w
     <li>Implement error handling and data processing algorithms</li>
     <li>Implementing data access from different components with the successful login status</li>
     <li>Check functionality of front-end with a variety of devices and with widely used browsers</li>
+    <li>Launch our application on Heroku in preparation for the focus group participants</li>
     <li>Receive feedback on the League table and Asaqua components from the User Group</li>
 </ul>
 
 During this sprint, we implemented most of the middle tier RESTful APIs, which are the bridges between the components and the database. The frontend components of our application do not directly access the APIs but through the Angular data service. Although we tested our RESTful APIs as Passport.js in the previous sprints, we struggled to pass the request body to the API through the Angular HTTP client. Whilst we were testing our get requests to the APIs with Postman, we passed a request body in JSON format to the API as parameters to the MongoDB Query. However, we did not realise that the Angular HTTP client does not support sending a request body, which causes the API to receive undefined values as the parameters. Eventually, we found a workaround to pass the necessary parameters as HTTP params via the data service. It took some time for our developers to figure out what was happening, so the related tasks in this sprint had a slight delay in delivery.
 
-As for the front-end development, We did not want to trouble our user group too many more times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
+After having the necessary APIs functioning as planned, the study and the league component require the successful login status given in the login process. It also needs the UID as the key to the Record collection. We then created several more get requests to confirm the login status and retrieve the UIDs for those components. We also soon realized that just relying on the UID as a key to get the league table, which involves looping and sorting, was rather computationally complex (in the worst case the complexity is O(n^2n) which, might hinder our server’s reliability). Therefore, we reconstructed the MongoDB query to become multi-staged, leaving all the complex computation to MongoDB to speed up the data retrieval process.
+
+As for the front-end development, We did not want to trouble our user group too many times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
 
 <br>
 
@@ -388,54 +438,24 @@ As for the front-end development, We did not want to trouble our user group too 
 
 This feedback was pivotal in finalising our designs. As we moved into Sprint 7, we implemented the suggested changes by adding a link to the Asaqua page and providing more information on the NGO and it’s activities. We investigated the prospect of delivering further metrics for the personal stats area but unfortunately, decided that we did not have enough remaining time given our current workload. Instead, we repurposed the code used in the log-in component for the lottie animation and placed this on the bottom left of the screen which, brought the page to a finished product. This was great feedback as it led as to furthering our goal of implementing serious play in our application. 
 
+<br>
 
-### Sprint 7 - 
+### Sprint 7 - The Final Countdown
 
-After having the necessary APIs functioning as planned, the study and the league component require the successful login status given in the login process. It also needs the UID as the key to the Record collection. We then created several more get requests to confirm the login status and retrieve the UIDs for those components. We also soon realized that just relying on the UID as a key to get the league table, which involves looping and sorting, was rather computationally complex (in the worst case the complexity is O(n^2n) which, might hinder our server’s reliability). Therefore, we reconstructed the MongoDB query to become multi-staged, leaving all the complex computation to MongoDB to speed up the data retrieval process.
+[30th April - 7th May]
+
+Our final sprint, Sprint 7, was characterised by the evaluation and final write-up of our report. We had maintained a good level of documentation throughout the project and so, the final writing was almost exclusively confined to the Evaluation, Sprints and our project conclusion. We have listed the final tasks that we identified as mandatory before the project deadline, all of which have been completed:
 
 
-## Meet The Team
+<ul>
+    <li>Completion of testing from Sprint 6 </li>
+    <li>Continue adapting code to our test results</li>
+    <li>Hold a final focus group for our study participants to gain some insight into how well received the application is</li>
+    <li>Pass on any interesting findings from the focus group to Asaqua if adjustments cannot be made prior to the deadline</li>
+</ul>
 
-<table>
-<tr>
-  <th>      Name      </th>
-  <th>Photo</th>
-  <th>Team role</th>
-  <th>Biggest lesson learnt during the project</th>
-</tr>
-<tr>
-  <td> Sam Fitton </td>
-  <td><img src="../report/Images/circle-cropped (6).png" width=1000%></td>
-  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Hugh Hamilton-Green </td>
-  <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
-  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
-  <td> I really enjoyed learning about end-to-end development with a focus on user experience (UX).</td>
-</tr>
-<tr>
-  <td> Jati Wicaksono </td>
-  <td><img src="../report/Images/circle-cropped (8).png" width=1000%></td>
-  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Gordon Tse</td>
-  <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
-  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Tom Cockain </td>
-  <td><img src="../report/Images/circle-cropped (9).png" width=1000%></td>
-  <td>Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.</td>
-  <td></td>
-</tr>
-</table>
-
-## Sprints documentation
+<br>
+<br>
 
 ## Team use of git
 

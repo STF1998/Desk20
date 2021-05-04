@@ -4,14 +4,8 @@ const User = require('../../models/User');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-
-  console.log(req.query.uid);
-  console.log(req.query.rangeStart);
-  console.log(req.query.rangeEnd);
-
+  
 let league = await User.aggregate(
-
-
   [
     {
       '$match': {
@@ -139,3 +133,6 @@ let league = await User.aggregate(
 
 
 module.exports = router;
+//console.log(req.query.uid);
+  //console.log(req.query.rangeStart);
+  //console.log(req.query.rangeEnd);

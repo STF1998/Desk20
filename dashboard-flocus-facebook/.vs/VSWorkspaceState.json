@@ -1,17 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\server",
-    "\\server\\routes",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\asaqua",
     "\\src\\app\\home",
-    "\\src\\app\\league",
-    "\\src\\app\\login",
-    "\\src\\app\\nav-bar",
-    "\\src\\app\\study"
+    "\\src\\app\\league"
   ],
-  "SelectedNode": "\\src\\app\\study\\study.component.html",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }

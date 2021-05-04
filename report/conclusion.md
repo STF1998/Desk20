@@ -45,7 +45,22 @@ Alonsgide these meetings, the use of discord was key for the management of issue
 
 ## Evaluation of agile techniques used by the team
 
-TODO - Sam
+During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal experiences of the agile framework. We identified four main aspects of agile that enabled us to succeed in our ambitions:
+
+<ul>
+  <li>Stakeholder Involment</li>
+  <li>Customer Collaboration</li>
+  <li>Flexibility</li>
+  <li>Stress-reduction</li>
+</ul>
+
+Our sprints enabled us to focus on an iterative process of development and allowed us to engage key stakeholders towards the end of each sprint – facilitating a customer centric approach. Additionally, we were able to integrate Asaqua, our partner NGO, into the development process through Gordon’s end-of-sprint liaison and feedback sessions with their team. Organising our tasks into manageable responsibilities also helped the team deal with stress, ensuring that no-one was overwhelmed with work. 
+
+The flexibility of agile added significant value to our MVP. Instead of being focused on process and pre-composed plans, being able to deal with our individual and group responsibilities during incremental sprints, facilitated a greater responsiveness to end-user and stakeholder feedback. This ensured that our design did not deviate from our initial objectives for the theme and message of the application. Additionally, From the feedback that Gordon received from the Asaqua team, the transparency provided by the Agile framework allowed them to maintain a full understating of development. This will provide benefit in the future as Asaqua builds on the work that we have previously achieved.  
+
+Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
+
+
 
 # Project reflection
 
@@ -54,6 +69,8 @@ Overall, as a team we are very proud of Flocus, including the design, developmen
 At the start, we believe we got slightly ahead of ourselves by trying to plan a project idea that had far too many moving parts for a project of this size. However, after a couple of meetings we quickly nailed down the area of focus to procrastination with an aspect of raising awareness for a critical world issue. While the project required only one of these aspects, we believed we could effectively and efficiently design a product that was a procrastination tool but raised awareness for water accessibility, including the theme of water running throughout the whole application.
 
 Due to our big ideas and aspirations as a team,  when we approached discussing the success of our product we slightly struggled due to define whether or not our project was a success. On one side we had created a minimum viable product that functioned effectively with a Facebook Login capability. However, on the other side there were still areas, such as the google ads and portal personlisation, that we still wanted to integrate into the application. Overall, we had been successful in creating an MVP with future potential to help raise funds for ASAQUA and act as a very effective and personlaised procrastination tool.
+
+Specific hurdles/challenges - SAM TODO
 
 So while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
@@ -85,6 +102,7 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 
 - Introduce a customisable icon that you can design for your work mascot.
 - A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
+- Portal personalisation so people can alter how long they want to work and have a break for.
 
 ### League table 
 
@@ -95,11 +113,13 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 ### About page
 
 - Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
+- Option to donate directly to Asaqua.
 
 ### General development
 
 - Possible organisation of code so the backend and frontend are in separate directories.
-- optimise to be effective on web and mobile browsers.
+- Different browser opitimisation.
+- Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
 ## Evaluation
@@ -121,14 +141,21 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 
 With pre-planned ethical analysis and approval we would have liked to include the following in future evaluative technqiues:
 
-- Comprehensive surveys on different demographics, including a range of students and professionals.
-- Focus groups and interviews investigating user flows and specific scenarios when using Flocus.
+### Questionaires
 
-Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. Questionairres allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
+If we had the time and resources we would have liked to undertake comprehensive questionaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students and working professionals. 
+
+These questionaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionaires are a great opportunity to ask a range of closed and open questions
+
+### Interviews
+
+We'd also like to organise one-to-one interview with potential end-users to underatnd their opinions regarding user flows and the design of Flocus.
+
+Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data however explore opinions as they come up in the interviews. Questionairres allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
 
 Other areas to explore for future work:
 
-- Controlled experiments - Flcous team compare users interaction with Flocus and it's close competitiors. 
+- Controlled experiments - Flocus team compare users interaction with Flocus and it's close competitiors. 
 - Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
 
 # Summary
