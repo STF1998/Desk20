@@ -21,7 +21,7 @@ Often a user will be put off by the simplest of bugs. There is a level of trust 
 
 ## Cross Browser Compatibility testing
 
-<p align="right">
+<p align="center">
 <img src="../report/Images/cross-browser-compatibility.jpg" width=40%>
 </p>
 
