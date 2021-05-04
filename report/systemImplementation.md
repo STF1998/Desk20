@@ -85,7 +85,7 @@ However, in terms of job searches on linked in, Angular is in first place ([link
 </p>
 <b><p align= "center">Figure: Linkdin Searches (Data was taken collected on 10th December 2018)</p></b>
 
-In conclusion, MEAN stack was chosen because of its advantages discussed above and its high job-employability. 
+Ostensibly, the argument for using the MEAN stack was compelling, not only for the previously stated reasons but also because of the level of support offered by the university and our course peers. As such, we decided to adopt this approach for our project implementation. 
 
 ## Stack architecture implementation on our app
 
