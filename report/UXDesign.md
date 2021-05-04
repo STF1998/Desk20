@@ -185,15 +185,18 @@ The production of wireframes provided a strong direction to build on once our de
 <h4 align="center" >Wireframe: The Home Component</h4>
 </p>
 <br>
+<br>
 <p align="center">
 <img src="../report/Images/Wireframes/study.png" width=75%>
 <h4 align="center" >Wireframe: The Study Component</h4>
 </p>
 <br>
+<br>
 <p align="center">
 <img src="../report/Images/Wireframes/league.png" width=75%>
 <h4 align="center" >Wireframe: The League Component</h4>
 </p>
+<br>
 <br>
 
 
