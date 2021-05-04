@@ -107,7 +107,7 @@ Other than the previously discussed technologies, our application interacts with
 <p align="center">
 <img src="../report/Images/auth.png" width=50%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: The authentication process</p></b>
 
 We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind this are:
 1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
@@ -140,37 +140,28 @@ Successful and unsuccessful login attempts will redirect users back to the login
 <b><p align= "center">Figure: Application schema for the home page</p></b>
 <br>
 
-Inside the home page we then provide three sections that a user can access, which are study page, league page, and Asaqua page.
+Inside the home page we provide three sections that a user can access. These are the study page, league page, and Asaqua page.
+
+<br>
 
 ## Study page
 
-Inside the study page, we provide an empty glass and a timer button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart of how the timer works is shown in the figure below.
+Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in the figure below.
+
+<br>
 
 <p align="center">
 <img src="../report/Images/studyDesign.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: Study component timer</p></b>
 
-The word ‘record’ on the chart means the session details, such as when does the session happen, whether the session is finished or not, and how long does the user inside the session. On the chart shown above shows that we saved both finished and unfinished sessions to the database.
+<br>
+
+The word ‘record’ on the chart means the session details, such as when does the session happen, whether the session is finished or not, and how long was the user inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database.
 
 ## League
 
-When the league page is accessed, we do a data processing on our database (given the schema shown in the database section) to be able to show each user and the user’s friends’ total study time and finished session within a week (from Monday to Sunday). Then we sort and show the results based on who has the most time spent or session finished within a week and display the results on a league table. Other than the league table, our sessions progress within the week are also presented in a graph. The league page is shown in Figure x below.
-
-<p align="center">
-<img src="../report/Images/league_tab.png" width=75%>
-</p>
-<b><p align= "center">Figure : </p></b>
-
-<p align="center">
-<img src="../report/Images/league_tab2.png" width=75%>
-</p>
-<b><p align= "center">Figure : </p></b>
-
-<p align="center">
-<img src="../report/Images/league_tab3.png" width=75%>
-</p>
-<b><p align= "center">Figure : </p></b>
+When the league page is accessed, we processing the users data in our database (given the schema shown in the database section) to be able to show each user and the user’s friends’ total study time and their complete sessions within the previous week (from Monday to Sunday). Then we sort and display the results based on who has completed the most sessions within that week. These results are displayed on a league table. Other than the league table, the user's weekly progress is also displayed.
 
 ## Asaqua
 
