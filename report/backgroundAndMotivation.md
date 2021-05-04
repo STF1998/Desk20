@@ -250,7 +250,7 @@ The problem we aim to solve is procrastination using visual aids with a positive
 
 With the use of a visual aid of a glass filling up, we created a single page application that helps reduce procrastination and provides an insight into the important issue of droughts in Africa through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer with a competitive aspect using league tables. We have a running theme of water through the application with the link to water accessibility challenges in developing nations with a focus on the work Asaqua does to help improve water accessibility in Africa. 
 
-Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water accessibility. Thus, our applications looks to raise awareness for water accessibility while also provoking changes in studying behaviours in student populations. 
+Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water accessibility. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in student populations. 
  
 - For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
 - For Asaqua, we are looking to raise awareness for an important issue around droughts and water accessibility in developing nations in Africa. 
@@ -310,6 +310,6 @@ Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historica
 
 # Project report navigation
 
-- [Next page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
+- [Next page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
 - [Previous page: Introduction](https://github.com/STF1998/Desk20/blob/main/report/introduction.md)
 - [Go back to Homepage](https://github.com/STF1998/Desk20)

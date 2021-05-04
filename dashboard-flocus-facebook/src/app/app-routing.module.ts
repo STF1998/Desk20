@@ -1,7 +1,7 @@
 import { AsaquaComponent } from './asaqua/asaqua.component';
 import { LoginComponent } from './login/login.component';
 
-import { APITestComponent } from './api-test/api-test.component';
+// import { APITestComponent } from './api-test/api-test.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './home/home.component'

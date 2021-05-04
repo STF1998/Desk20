@@ -21,9 +21,10 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ### Features of Flocus
 
-- TODO - SAM
-- 
-- 
+- Visual aid of a glass filling up as a alternative pomodoro timer.
+- Facebook login capability
+- League tables to compete with your friends
+- Raises awareness for water accessibility and the work ASAQUA do to improve water accessibility in developing nations.
 
 ## Our Target Market
 
@@ -44,7 +45,7 @@ Please see below some very cool photos of the work Asaqua has been doing in Afri
 <p align="center">
 <img src="asaqua3.png" width=50%>
 </p>
-<b><p align= "center">A recent photo of the setting up of one of ASAQUA's water accessibility tools!</p></b>
+<b><p align= "center">A recent photo of ASAQUA installing a water storage unit.</p></b>
 
 We're also very fortunate to have a message from the ASAQUA team on completion of our project:
 
@@ -75,9 +76,57 @@ Tom's role has been focused on integration of front and back-end and aiding Gord
 ## **Report**
 
 ### [1. Introduction](report/introduction.md)
+
+This section conatins the following elements:
+- Abstract and motivation for the project
+- Project aims and objectives
+- A short video explaining Flocus and it's implementation
+
 ### [2. Background and Motivation](report/backgroundAndMotivation.md)
+
+This section contains the following elements:
+- Literature review 
+- State of the art survey and current industry review
+- The problem Flocus is solving 
+
 ### [3. System Implementation](report/systemImplementation.md)
+
+This section contains the following elements:
+- Stack architecture and system design
+- Back-end
+- Middle tier
+- Front-end
+- Deployment details
+
 ### [4. UX Design](report/UXDesign.md)
+
+This section contains the following elements:
+- Design process and protoyping
+- Users and stakeholders
+- UX approach
+- Understanding of user group
+- Wireframes and interaction flow diagrams
+
 ### [5. Sprints & Project Management](report/sprints&ProjectManagement.md)
+
+This section contains the following elements:
+- Group working methods
+- Team roles
+- Sprints documentation
+- Team use of Git
+
 ### [6. Evaluation](report/evaluation.md)
+
+This section contains the following elements:
+- evaluation methods
+- Unit and functional testing
+- User testing
+
 ### [7. Conclusion](report/conclusion.md)
+
+This section contains the following elements:
+- Reflection of working practices
+- Reflection of entire project
+- COVID-19 impact
+- Discussion of Social and Ethical implications
+- Discussion of future work
