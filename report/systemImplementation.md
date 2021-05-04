@@ -323,31 +323,37 @@ Code explanation by section number:
 
 4.	If the user does not exist, the user’s id, name, profile picture, and friends are saved to our own database. The Friends data that is returned by Facebook is not a complete list of all the user’s friends but just a list of friends who have also signed-up with our application.
 <br>
-The figure below shows the pop-up:
+The figure below shows the pop-up displayed to the test user:
 
 <p align="center">
 <img src="../report/Images/passport4.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: test user pop-up</p></b>
+<br>
 
 The figures below show the raw and json format inside the profile variable:
 
 <p align="center">
 <img src="../report/Images/passport5.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: raw format</p></b>
+
+<br>
 
 <p align="center">
 <img src="../report/Images/passport6.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: JSON format</p></b>
+<br>
 
-To call the API (i.e., to be able to redirect the user to the Facebook login page), we could not use CRUD methods. We would have to redirect a user to a link. The link name should be our website name + “/auth/facebook”. Doing a GET API call to the API shown in Figure x below would not redirect the user to the Facebook’s page. 
+To call the API (i.e., to be able to redirect the user to the Facebook login page), we were no table to use CRUD methods. We had to redirect a user via a link. The link name is our website name + “/auth/facebook” and producing a GET API call (shown in Figure x below) did not redirect the user to the Facebook page. 
 
+<br>
 <p align="center">
 <img src="../report/Images/passport7.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
+<br>
 
 The scope part is one of the most important parts as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API could be found here(x). However, Flocus will only use the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is done when the user clicks continue on the pop-up message. Upon the success or failure of authentication, doing a GET request on “/facebook/callback” will be called and both of them will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which is our login page. What process happened after this had been discussed on the system implementation section.
 
