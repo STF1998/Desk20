@@ -127,7 +127,7 @@ We were able collect data from 23 university students. While the survey was shor
 <p align="center"><img src="../report/Images/survey2.png" width=70%>
 </p>
 
-<p align="center"><img src="../report/Images/survey3.png" width=60%>
+<p align="center"><img src="../report/Images/survey3.png" width=70%>
 </p>
 
 <p align="center"><img src="../report/Images/survey4.png" width=70%>
