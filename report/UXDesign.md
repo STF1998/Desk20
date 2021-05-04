@@ -123,7 +123,7 @@ We were able collect data from 23 university students. While the survey was shor
 </p>
 <h2 align="center"><b> Figure : Survey question 2.</b></h2>
 
-<p align="center"><img src="../report/Images/survey3.png" width=70%>
+<p align="center"><img src="../report/Images/survey3.png" width=60%>
 </p>
 <h2 align="center"><b> Figure : Survey question 3.</b></h2>
 
@@ -171,10 +171,33 @@ As an alternative to the above, we held informal conversations with friends and 
 
 # Wireframes and Systems
 
-Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage.
+Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystem requirements and wireframe designs before defining our sprints and product development stage.
+
+
 
 ## Wireframes
 
+The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
+
+<br>
+<p align="center">
+<img src="../report/Images/Wireframes/home.png" width=75%>
+<h4 align="center" >Wireframe: The Home Component</h4>
+</p>
+<br>
+<br>
+<p align="center">
+<img src="../report/Images/Wireframes/study.png" width=75%>
+<h4 align="center" >Wireframe: The Study Component</h4>
+</p>
+<br>
+<br>
+<p align="center">
+<img src="../report/Images/Wireframes/league.png" width=75%>
+<h4 align="center" >Wireframe: The League Component</h4>
+</p>
+<br>
+<br>
 
 
 ## User flow diagram
@@ -184,7 +207,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=80%>
 </p>
-<h2 align="center"><b> Figure : Mendelow's Matrix</b></h2>
+<h4 align="center"><b>User Flow Diagram</b></h4>
 
 # References
 
