@@ -159,32 +159,41 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 
 The word ‘record’ on the chart means the session details, such as when does the session happen, whether the session is finished or not, and how long was the user inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database.
 
+<br>
+
 ## League
 
-When the league page is accessed, we processing the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within that week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
+When the league page is accessed, we process the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
+<br>
 
 ## Class diagrams
 
-Shown below is the UML class diagram that demonstrates the making of UserData that then could be accessed by the front-end.
+Shown below is the UML class diagram that demonstrates the production of UserData to be accessed by the front-end.
 
-The Facebook’s API returns a user object that is going to be parsed into a chunk of String in the middle tier and then saved on to the database according to the User schema. It is set so that the data saved could only be accessed by one variable per API call (in one API call it only returns userUID only, or userName only).
+Facebook’s API returns a user object that is parsed into a chunk of Strings in the middle tier. This is then saved in the database according to the User schema. We have constructed it so that saved data can only be accessed by one variable per API call (in one API call it only returns userUID, or userName).
 
-In terms of record, users could only post one record at a time, but will get all the records within a certain amount of time which will be processed in the front-end to be shown as total study time and total finished session within one week.
+In terms of records, users can only post one record at a time but, will recieve all records within a short period of time. These records are then processed in the front-end to be shown in our league table.
 
+<br>
 <p align="center">
 <img src="../report/Images/class.png" width=75%>
 </p>
 <b><p align= "center">Figure : Class diagram </p></b>
+<br>
 
 ## Sequence diagrams
 
-The figure below represents how our application is used by a user on a daily basis. 
+<br>
 
+The figure below represents how our application is used.
+
+<br>
 <p align="center">
 <img src="../report/Images/sequential.png" width=75%>
 </p>
 <b><p align= "center">Figure : Sequential diagram for Flocus</p></b>
+<br>
 
 # Back End - MongoDB
 
