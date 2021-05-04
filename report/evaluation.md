@@ -65,15 +65,22 @@ By focusing on the above areas, it made it easier to find any bugs and share ano
 
 Gordon - heroku - TODO
 
-Please see below the inital affinity diagram made up of the opinions of those in the focus group.
+After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
-Image - TODO
+Please see below the affinity diagram using Lucidchart:
 
-See below a re-organised version to show the procs, cons and key workons for the development team going forward.
+<p align="center">
+<img src="../report/Images/focus_affinity.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Affinity diagram from user feedback </p></b>
 
-Image - TODO
+The key improvement points identified from the focus group, include the following:
 
-One issue that was picked up by the majority of the focus group was the inability to sign out. 
+- greater personalisation with ability to select work time
+- ability to be in the league table with their friends
+- timer alongside glass to help know time instead of guessing
+- Facebook logout button missing
+
 
 
 # Project report navigation

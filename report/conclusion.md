@@ -85,6 +85,7 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 
 - Introduce a customisable icon that you can design for your work mascot.
 - A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
+- Portal personalisation so people can alter how long they want to work and have a break for.
 
 ### League table 
 
