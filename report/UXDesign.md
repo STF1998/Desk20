@@ -123,7 +123,7 @@ We were able collect data from 23 university students. While the survey was shor
 </p>
 <h2 align="center"><b> Figure : Survey question 2.</b></h2>
 
-<p align="center"><img src="../report/Images/survey3.png" width=70%>
+<p align="center"><img src="../report/Images/survey3.png" width=60%>
 </p>
 <h2 align="center"><b> Figure : Survey question 3.</b></h2>
 
