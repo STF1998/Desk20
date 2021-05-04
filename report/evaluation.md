@@ -37,6 +37,8 @@ We wanted to ensure that prospective users are not restricted to use a specific 
     <li>Microsift Edge</li>
 </ul>
 
+We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
+
 
 
 # User testing
