@@ -22,14 +22,14 @@
 
 # Stack Architecture
 
-Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology are:
+Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology is:
 
--	MongoDB: database solution
+-	MongoDB: Database solution
 -	Express: NodeJS framework to simplify http request and response
 -	Angular: Front-end browser-side framework
 -	Node.js: Runtime server-side code
 
-Below is a diagram on how the each of the technologies interacts with one another within the stack.
+Below is a diagram displaying how each of the technologies within the stack interact:
 
 <p align="center">
 <img src="../report/Images/pathwayStack.png" width=75%>
@@ -43,7 +43,7 @@ MEAN stack was chosen due to its advantages, including:
 -	Isomorphic coding – allows developers to switch to another framework without altering much of the original code.
 -	Support from the faculty, as the lectures and support provided was focused on MEAN stack.
 
-As a ateam we also did a bit of research on different stacks, including MEVN and MERN:
+As a team we also did a bit of research on the different stacks, including MEVN and MERN:
 
 <table>
 <tr>
@@ -69,32 +69,36 @@ As a ateam we also did a bit of research on different stacks, including MEVN and
   </td>
 </table>
 
-The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works. Angular has defintely ensured we have a strong grasp of various areas, including typescript.
+The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works and Angular has ensured that we have a strong grasp of associated areas, including typescript.
 
-According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular one and it is shown in the graph below ([link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)). 
+According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular. This is displayed in the graph below ([link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)):
 
 <p align="center">
 <img src="../report/Images/2021-star-history.png" width=75%>
 </p>
 <b><p align= "center">Figure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
 
-However, in terms of job searched on linked in, Angular is at the first place, which shown in the graph below ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)) the data was taken on (10th December 2018). 
+However, in terms of job searches on linked in, Angular is in first place ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)): 
 
 <p align="center">
 <img src="../report/Images/angular_vs.png" width=75%>
 </p>
-<b><p align= "center">Figure </p></b>
+<b><p align= "center">Figure: Linkdin Searches (Data was taken collected on 10th December 2018)</p></b>
 
-In conclusion, MEAN stack was chosen because of its advantages discussed above and its high job-employability. 
+Ostensibly, the argument for using the MEAN stack was compelling, not only for the previously stated reasons but also because of the level of support offered by the university and our course peers. As such, we decided to adopt this approach for our project implementation. 
 
-## Stack architecture implementation on our app
+<br>
 
-Other than those four technologies, our application will also be interacting with Facebook’s API. Other than Facebook’s API we will also be using PassportJS which is a Node.js framework that will help us communicate with Facebook.
+## Stack architecture implementation in our application
 
+Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js framework that helps our app's communication with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
+
+<br>
 <p align="center">
 <img src="../report/Images/stach_arch.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure : A visual representation of a user's interaction with Flocus</p></b>
+<br>
 
 # System Design
 
@@ -105,34 +109,36 @@ Other than those four technologies, our application will also be interacting wit
 </p>
 <b><p align= "center">Figure : </p></b>
 
-We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind that are:
-1.   FB’s API makes it convenient for users to find and connect with their friends on the app. The playful aspect of our application is to enable users to compete for the longest studying time within a week among their friends. FB’s API would automatically connect users with their friends on the app.
-2.   FB’s API enables one-click signup and login. It could provide essential user data (e.g. user’s name, user’s FB profile pic) without the user having to manually fill the data when registering/logging back in.
-3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by the framework that we are using in our application called PassportJS.
-4. There are also external support provided by people around the world in the form of videos, articles, and QnA.
+We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind this are:
+1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
+2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during the registration process.
+3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by PassportJS.
+4. There is also an abundance of external support provided by people around the world in the form of videos, articles, and QnA.
 
 The downside of using FB’s authentication is:
-1.   If our app is in development mode, FB does not allow any real FB user other than the app administrator to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
-2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved by FB will real users be able to use our app.
+1.   If our app is in development mode, FB does not allow real FB users, other than the app administrator, to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
+2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our app.
 
 The procedure to use FB’s API is as follows:
-1. 	Create a FB account and go to FB for developer’s site
+1. 	Create a FB account and go to the FB for developer’s site
 2.	Create the application
-3.    FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
-4.	Follow the step-by-step guide on FB authentication using PassportJS on the PassportJS documentation[http://www.passportjs.org/docs/facebook/].
+3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
+4.	Follow the step-by-step guide on FB authentication using PassportJS in PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
 
-When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate there. Upon successful authentication, FB will ask the user whether the user agrees to share the requested data to the application. The detail of the requested data is shown on the confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
+When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB asks the user whether the they agree to share the requested data with the application. The details of this data are shown in a confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
-The FB permission type in our code determines the type of data that FB’s API will return to our application. Flocus only uses the “user_friends'' permission, which means that FB will return an array consisting of all of the user’s friends that also grants permission to the application. There are also types of data that does not require a permission to be returned, which are user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication token because we always ask using the “isAuthenticated()” method before letting the user access data from our database.
+The FB permission type in our code, determines the type of data that FB’s API will return to our application. Flocus only uses the "user_friends" permission, which means that FB will return an array consisting of all of the user’s friends. This also grants permission to the application. Additionally, there are types of data that do not require a permission to be returned. These include; user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication tokens because we always call the “isAuthenticated()” method before letting the user access data from our database.
 
-After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. If not we then put the user in our database. Details of the user schema and PassportJS will be discussed further on the database and middle tier sections.
+After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. However, if the user hasn't been previously recorded, we enter them into our database. Details of the user schema and PassportJS will be discussed further on in the database and middle tier sections.
 
-Successful or unsuccessful login attempt will redirect us back to the login page. Our login page will check the “isAuthenticated()” method each time it is called, if it is returning a true then the user is redirected to our home page. If it is returning a false then the user is returned to our login page. Our application schema from the home page is shown in the graph below.
+Successful and unsuccessful login attempts will redirect users back to the login page. Our login page checks the “isAuthenticated()” method each time it is called and if it returns true then the user is redirected to our home page. If it returns false, the user is returned to our login page. Our application schema from the home page is shown in the graph below.
 
+<br>
 <p align="center">
 <img src="../report/Images/auth2.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: Application schema for the home page</p></b>
+<br>
 
 Inside the home page we then provide three sections that a user can access, which are study page, league page, and Asaqua page.
 
