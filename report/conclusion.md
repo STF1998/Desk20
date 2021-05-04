@@ -88,7 +88,7 @@ There were several concerns that were raised in the ideation process regarding h
 
 ### User Data Privacy
 
-Our application’s integration with Facebook was tested using Facebook’s ‘developer mode’ which, allowed for Facebook test accounts to be configured and used. This ensured that during the production process, test-users and focus group participants were protected from data privacy breaches. After development, Flocus will require an application review before it can be deployed to actual Facebook users. The review will assure Facebook that our application only takes necessary data for functionality and that this data is stored in a secure manner. As outlined by Facebook’s best practices guide, we have designed our log-in process to only receive the required data from Facebook. 
+Our application’s integration with Facebook was tested using Facebook’s ‘developer mode’ which, allowed for Facebook test accounts to be configured and used. This ensured that during the production process, test-users and focus group participants were protected from data privacy breaches. After development, Flocus will require an application review before it can be deployed to actual Facebook users. The review will assure Facebook that our application only takes necessary data for functionality and, that this data is stored in a secure manner. As outlined by Facebook’s best practices guide, we have designed our log-in process to only receive the required data from Facebook. 
 
 
 # Discussion of future work
