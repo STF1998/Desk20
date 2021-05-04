@@ -13,7 +13,7 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 
 <p align="center">
-<img src="./report/Images/home-to-studyrecording.gif" width=60%>
+<img src="./report/Images/home-to-studyrecording.gif" width=75%>
 </p>
 <b><p align= "center">A short clip of flocus in action</p></b>
 
