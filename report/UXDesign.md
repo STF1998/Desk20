@@ -180,16 +180,19 @@ Having defined our target market and the potential users who would be using Floc
 The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
 
 <br>
-
 <p align="center">
 <img src="../report/Images/Wireframes/home.png" width=75%>
-<h3>Wireframe: The Home Component</h3>
+<h4>Wireframe: The Home Component</h4>
+</p>
 <br>
+<p align="center">
 <img src="../report/Images/Wireframes/study.png" width=75%>
-<h3>Wireframe: The Study Component</h3>
+<h4>Wireframe: The Study Component</h4>
+</p>
 <br>
+<p align="center">
 <img src="../report/Images/Wireframes/league.png" width=75%>
-<h3>Wireframe: The League Component</h3>
+<h4>Wireframe: The League Component</h4>
 </p>
 <br>
 
@@ -201,7 +204,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=80%>
 </p>
-<h3 align="center"><b>User Flow Diagram</b></h3>
+<h4 align="center"><b>User Flow Diagram</b></h4>
 
 # References
 
