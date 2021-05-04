@@ -199,7 +199,7 @@ The figure below represents how our application is used.
 
 ## Database implementation
 
-As the user first logins to our application, our database keeps their details to identify whether the user is an existing user. After authenticating the user, the backend developers would have to create a separate collection, ‘Records’, in the database to persistently store rapidly growing study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a key to identify the record ownership. The developers had then created a REST API that handles the GET and POST requests, which are to retrieve a summary of previous records and write new records to the database through calling the corresponding methods in angular data service.
+When the user first logs-in to our application, our database keeps their details to identify whether the user is an existing user. After authentication, the backend developers would have to create a separate collection, ‘Records’, in the database to persistently store rapidly growing study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a key to identify the record owner. We then created a REST API that handles the GET and POST requests which, are to retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
 
 The backend developers decided to normalize the data storage, so the database separately stores the user’s information and the user’s usage data in two collections. Such an approach needs fewer design decisions to make and is of higher flexibility to cope with the unknown data storage demand in future development. However, the drawback is that queries that require joining two collections are more difficult to implement.
 
@@ -210,7 +210,7 @@ The backend developers decided to normalize the data storage, so the database se
 
 ## Data model
 
-The above entity-relationship diagram shows that our database has a normalized set up despite using a NoSQL database service. When a user is logging in to our application, Facebook’s passport API returns the necessary information to our server, which allows us to save and update the data regarding the user within the User collection. It ensures all data is up-to-date when the user logins every time. This is particularly important for the competitive league feature to retrieve data of the user’s friends, who potentially might have joined our application, or add the user as a friend on Facebook later than the user.
+The above entity-relationship diagram shows that our database has a normalized set-up despite using a NoSQL database service. When a user loggs into our application, Facebook’s passport API returns the necessary information to our server. This allows us to save and update the data associated with the user within the User collection. This ensures all data is up-to-date when the user logs-in every time. This is particularly important for the league feature to retrieve data of the user’s friends, who potentially might have joined our application, or add the user as a friend on Facebook later than the user.
 
 As a team, we agreed to use the UID given by Facebook as the key between the 2 data collections. The Record collection keeps rapidly growing user's record log, which is generated when a user has completed a session or leaving the component in the midway. Such a data model set up keeps as much user data as possible. Therefore, it allows flexible data retrieval query to fulfil demands from different components and potential future extension. When our application needs data from both collections (aka a join query in a SQL model), we perform multi-staged queries to the database. The database will then handle all the computational complex sorting and searching functions instead of solving them in our server.
 
@@ -233,9 +233,9 @@ As a team, we agreed to use the UID given by Facebook as the key between the 2 d
 
 ## Introduction
 
-The middle tier chosen for our application as discussed on the stack implementation section is NodeJS with the help of ExpressJS framework. We utilised both NodeJS and ExpressJS to play a role as an API in our application. API stands for Application Programming Interface whose function is to allow our application to talk to other applications such as Facebook or our own database server.  
+As discussed on the stack implementation section, the middle tier chosen for our application is NodeJS with the help of the ExpressJS framework. We utilised both NodeJS and ExpressJS to implement an API in our application. API stands for Application Programming Interface and its function is to allow our application to talk to other programmes such as Facebook or our database server.
 
-On this project, RESTful architecture is going to be implemented on our API. RESTful stands for Representational State Transfer. To be called RESTful, an API needs to follow these 6 constraints: 
+On this project, RESTful architecture has been implemented on our API. RESTful stands for Representational State Transfer and in order to be called RESTful, an API needs to follow these 6 constraints:
 
 - Client-Server Architecture 
 - Stateless 
@@ -244,16 +244,16 @@ On this project, RESTful architecture is going to be implemented on our API. RES
 - Uniform Design 
 - Code on Demand 
 
-Details of those constraints could be found here [link](https://restfulapi.net/rest-architectural-constraints/). 
+Details of these constraints can be found here [link](https://restfulapi.net/rest-architectural-constraints/). 
 
-In RESTful API, CRUD operation will be used to interact with the data that is going to be passed between applications. CRUD stands for Create, Read, Update, and Delete. We will be using those methods to talk to our database and other applications. The HTTP methods to implement CRUD are: 
+In RESTful APIs, CRUD operations are used to manipulate and move data between applications. CRUD stands for Create, Read, Update, and Delete. We have used CRUD to communicate with our database and other applications. The HTTP methods to implement CRUD are: 
 
 - GET – reading data  
 - POST – creating data 
 - PUT – updating data 
 - DELETE – deleting data 
 
-Those HTTP methods are implemented in our server-side code which is in NodeJS. Those methods are also going to be combined with the functionality of ExpressJS, which makes doing HTTP request, response, and routing much easier. An example of API requests implemented using ExpressJS is shown in Figure x, while API requests without ExpressJS are shown in Figure x. 
+These HTTP methods are implemented in our server-side code which is in NodeJS and are combined with the functionality of ExpressJS which, makes doing HTTP requests, response, and routing much easier. An example of implementing API requests using ExpressJS is shown in Figure x, while API requests without ExpressJS are shown in Figure x. 
 
 <p align="center">
 <img src="../report/Images/middle_intro1.png" width=75%>
@@ -267,13 +267,13 @@ Without ExpressJS:
 </p>
 <b><p align= "center">Figure : </p></b>
 
-By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we are going to implement RESTful API using ExpressJS.
+By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
 
-Other than ExpressJS, we are also going to use PassportJS to help the authentication using Facebook process in our application.
+Other than ExpressJS, we also used PassportJS to help with our Facebook authentication process.
 
 ## PassportJS
 
-PassportJS is an authentication middleware for Node.js which is compatible with any ExpressJS application. PassportJs provides strategies to assist authentication processes including but not limited to: 
+PassportJS is an authentication middleware for Node.js which, is compatible with any ExpressJS application. PassportJS provides strategies to assist authentication processes including but not limited to: 
 
 -	Username and password
 -	Facebook 
@@ -282,21 +282,21 @@ PassportJS is an authentication middleware for Node.js which is compatible with 
 -	Twitch 
 -	Github 
 
-Further information about what PassportJS is and what could be achieved by it can be found through the following [link](http://www.passportjs.org/). 
+Further information about what PassportJS is and what can be achieved with it can be found through the following [link](http://www.passportjs.org/). 
 
-However, for our application, we will only be focusing on PassportJS for authentication using Facebook. The complete documentation could be found here: [link](http://www.passportjs.org/docs/facebook/). In this section of the report, we will not dive into the documentation, but will instead discuss the hands-on experience on how we implement PassportJS in Flocus.
+However, for our application, only be focused on PassportJS for authentication using Facebook. The complete documentation can be found here: [link](http://www.passportjs.org/docs/facebook/). In this section of the report, we will not dive into the documentation, but will instead discuss the hands-on experience of how we implemented PassportJS in Flocus.
 
-To apply PassportJS, we will need to install these three dependencies, which are passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies to implement the functionality of the authentication, while express-session is used to enhance connection security. As we are dealing with authentication and transferring user data, a secure connection would be needed. Beyond the installation, we would also need to use them as shown in Figure x and x.
+To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the Figures below.
 
 <p align="center">
 <img src="../report/Images/passport1.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center"></p></b>
 
 <p align="center">
 <img src="../report/Images/passport2.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center"></p></b>
 
 Further implementation of passport is shown in Figure x below. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
 
@@ -542,7 +542,7 @@ A GitHub repository for the team allowed for a continuous integration of new fea
 
 ## Docker
 
-It was important during the development of our application to have a consistent environment to deploy the application, particularly as there was a split between MacOS and Windows in the team. 
+It was important during the development of our application to have a consistent environment for deployment, particularly as there was a split between MacOS and Windows in the team. 
 
 An open source tool called Docker was used to create a consistent runtime environment which the team could use to deploy our application for testing.
 
@@ -553,7 +553,7 @@ A Dockerfile and docker-compose.yml file were placed in the dashboard directory.
 </p>
 <b><p align= "center">Figure : The Dockerfile used </p></b>
 
-The dockerfile contains commands used to create a specific image of our application. Each image created using the dockerfile was stored and could be accessed again. This helped achieve continuous integration of our code. Any changes in code could easily be reverted by using an old image.
+The dockerfile contains commands used to create a specific image of our application and each image created using the dockerfile was stored for later access. This helped achieve continuous integration of our code. Any changes in code could easily be reverted by using an old image.
 
 The docker-compose.yml file was used for defining and running two Docker containers. One container for Node and a second for our database, MongoDB. A wait script was used to ensure the database container was built before Node to prevent Node from attempting to connect to the database before it was built. The two containers are set up from the docker-compose file to communicate over a simple port protocol.   
 
@@ -567,9 +567,9 @@ The docker-compose.yml file was used for defining and running two Docker contain
 </p>
 <b><p align= "center">Figure : Docker running both Node and MongoDB </p></b>
 
-The two containers were rebuilt as new changes to the application were made using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
+As new changes to the application were made, the two containers were rebuilt using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
 
-The consistent deployment environment managed by Docker enabled the team to robustly integrate new features into the application. Additionally, the Dockerfile could be changed in future to test the application on different platforms. This would greatly simplify shipping the application to any hosting provider.
+The consistent deployment environment managed by Docker enabled the team to robustly integrate new features into the application. Additionally, the Dockerfile could be changed in the future to test the application on different platforms. This would greatly simplify shipping the application to any hosting provider.
 
 # Project report navigation
 
