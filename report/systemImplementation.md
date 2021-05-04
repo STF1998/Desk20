@@ -111,13 +111,13 @@ Other than the previously discussed technologies, our application interacts with
 
 We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind that are:
 1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
-2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during registration/login.
+2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during the registration process.
 3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by PassportJS.
 4. There is also an abundance of external support provided by people around the world in the form of videos, articles, and QnA.
 
 The downside of using FB’s authentication is:
-1.   If our app is in development mode, FB does not allow any real FB user other than the app administrator to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
-2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved by FB will real users be able to use our app.
+1.   If our app is in development mode, FB does not allow real FB users, other than the app administrator, to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
+2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our application.
 
 The procedure to use FB’s API is as follows:
 1. 	Create a FB account and go to FB for developer’s site
