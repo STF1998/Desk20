@@ -33,6 +33,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.retrieveUidWithUserData();
     this.timePassed = 0;
+
   }
 
   ngOnDestroy(): void {

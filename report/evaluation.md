@@ -7,7 +7,7 @@
 - [**Details of design evaluation**](#Details-of-design-evaluation)
     - [Timeline](#Timeline)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
-- [**User acceptance testing](#User-acceptance-testing)
+- [**User acceptance testing**](#User-acceptance-testing)
 
 # Details of design evaluation 
 
@@ -21,10 +21,25 @@ Often a user will be put off by the simplest of bugs. There is a level of trust 
 
 ## Cross Browser Compatibility testing
 
+<br>
+
 <p align="center">
 <img src="../report/Images/cross-browser-compatibility.png" width=40%>
 </p>
 
+<br>
+
+We wanted to ensure that prospective users are not restricted to use a specific browser when accessing our application. Thus, it was crucial to develop and test the flocus application to ensure libraries, functions and effects were supported in all browsers and not just the most popular, such as Chrome. During the development process we ran manual tests on three of the main four browsers:
+
+<ul>
+    <li>Google Chrome</li>
+    <li>Firefox</li>
+    <li>Microsift Edge</li>
+</ul>
+
+We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
+
+This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
 
 
 # User testing
@@ -54,7 +69,9 @@ One area that was also picked up was the compatability with different browsers. 
 
 ### Beta testing
 
-As part of our user acceptance testing, we undertook field testing with real end-users. Hoever, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers. To keep these individuals anonymous and abide by ethical guidelines we did not record or take any data from those in the focus group. Instead we took meeting notes and asked individuals to add to a lucidchart to help develop a version of an affinity chart.
+As part of our user acceptance testing, we undertook field testing with real end-users. However, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers across Zoom. Focus groups are a great method to help understand user experiences and opinions of web applications. However, in the future we advice combining focus groups with interviews and questionairres to help avoid groupthink.
+
+To ensure these individuals remained anonymous and we abide by ethical guidelines we did not record or take ask for any personal data from those involved in the focus group. Instead, we took written observation notes and asked individuals to anonymously add to a Lucidchart to help develop a version of an affinity chart.
 
 The focus group focused on the following areas:
 - thoughts on aesthetics of the web application
@@ -65,16 +82,32 @@ By focusing on the above areas, it made it easier to find any bugs and share ano
 
 Gordon - heroku - TODO
 
-Please see below the inital affinity diagram made up of the opinions of those in the focus group.
+After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
-Image - TODO
+Please see below the affinity diagram using Lucidchart:
 
-See below a re-organised version to show the procs, cons and key workons for the development team going forward.
+<p align="center">
+<img src="../report/Images/focus_affinity.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Affinity diagram from user feedback </p></b>
 
-Image - TODO
+The key improvement points identified from the focus group, include the following:
 
-One issue that was picked up by the majority of the focus group was the inability to sign out. 
+- greater personalisation with ability to select work time
+- ability to be in the league table with their friends
+- timer alongside glass to help know time instead of guessing
+- Facebook logout button missing
 
+#### Future methods
+
+Possible types of future user testing, include:
+
+- Surveys - help understand user experience.
+- A/B testing - experiemtn with different versions
+- Heat map testing - help undersatnd how users move about the web page
+- Further in house testing
+
+Please see the conclusion section to learn more about future evaluative technqiues.
 
 # Project report navigation
 
