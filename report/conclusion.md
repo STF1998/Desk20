@@ -45,7 +45,7 @@ Alonsgide these meetings, the use of discord was key for the management of issue
 
 ## Evaluation of agile techniques used by the team
 
-TODO - Sam
+During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal opinions of the agile framework.
 
 # Project reflection
 
