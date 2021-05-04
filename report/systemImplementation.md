@@ -87,9 +87,11 @@ However, in terms of job searches on linked in, Angular is in first place ([link
 
 Ostensibly, the argument for using the MEAN stack was compelling, not only for the previously stated reasons but also because of the level of support offered by the university and our course peers. As such, we decided to adopt this approach for our project implementation. 
 
-## Stack architecture implementation on our app
+<br>
 
-Other than those four technologies, our application will also be interacting with Facebook’s API. Other than Facebook’s API we will also be using PassportJS which is a Node.js framework that will help us communicate with Facebook.
+## Stack architecture implementation in our application
+
+Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we will be using PassportJS which, is a Node.js framework that will help our apps communication with Facebook.
 
 <p align="center">
 <img src="../report/Images/stach_arch.png" width=75%>
