@@ -61,7 +61,9 @@ router.get('/', async (req, res) => {
       }, {
         '$group': {
           '_id': req.query.uid,
-          'session': { '$sum': { '$cond': { 'if': { '$eq': ['$timeSpent', parseInt(req.query.timeSpentUpper)] }, 'then': 1, 'else': 0 } } },
+          'session': { '$sum': { '$cond': { 'if': { '$eq':
+            ['$timeSpent', parseInt(req.query.timeSpentUpper)] },
+            'then': 1, 'else': 0 } } },
           'totalTime': { '$sum': '$timeSpent' }
         }
       }

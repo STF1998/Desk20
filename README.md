@@ -11,7 +11,13 @@ The application will display how much work their friends have completed to furth
 
 Our aim is simple: combat procrastination and raise awareness for water scarcity one glass at a time!
 
-### How to use Flocus?
+<p align="center">
+<img src="./report/Images/home-to-studyrecording.gif" width=75%>
+</p>
+<b><p align= "center">A short clip of flocus in action</p></b>
+
+
+### How to use Flcous?
 
 1. Sign in via the Facebook plugin.
 2. Select how long you would like to study for and the break time you would like.

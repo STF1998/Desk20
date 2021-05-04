@@ -3,14 +3,18 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const db = require('./db');
-const passport = require('passport');
-const session = require('express-session');
+
+
 const User = require('./models/User');
 const dotenv = require('dotenv').config();
+
+
+const passport = require('passport');
+const session = require('express-session');
 const facebookStrategy = require('passport-facebook').Strategy;
 
 // Get our API routes
-const api = require('./server/routes/api');
+// const api = require('./server/routes/api');
 const record = require('./server/routes/record');
 const league = require('./server/routes/league');
 
@@ -20,6 +24,8 @@ const app = express();
 app.use(session({ secret: 'desktwentyforthewin' }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -28,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 
 //app.use(express.static(path.join(__dirname, 'src/app/login')));
 // Set our api routes
-app.use('/api', api);
+// app.use('/api', api);
 app.use('/api/record', record);
 app.use('/api/league', league);
 
@@ -45,9 +51,10 @@ passport.use(new facebookStrategy({
         if (err) {
           return done(err);
         }
-
+        
         if (user) {
           console.log("user found");
+          
           user.friends = [];
           for (let i = 0; i < profile._json.friends.data.length; i++) {
             if (profile._json.friends.data[i]) {
@@ -60,32 +67,29 @@ passport.use(new facebookStrategy({
           });
           loginToken = token;
           return done(null, user);
-        } else {
+        }
+        else {
           var newUser = new User();
           newUser.uid = profile.id;
           if (profile.name.middleName) {
-            newUser.name = profile.name.givenName + ' ' + profile.name.middleName + ' ' + profile.name.familyName;
+            newUser.name = profile.name.givenName + ' ' + profile.name.middleName
+              + ' ' + profile.name.familyName;
           }
           else {
             newUser.name = profile.name.givenName + ' ' + profile.name.familyName;
           }
-
           newUser.pic = profile.photos[0].value;
-
           for (let i = 0; i < profile._json.friends.data.length; i++) {
             if (profile._json.friends.data[i]) {
               newUser.friends.push(profile._json.friends.data[i].name);
             }
           }
-
-
+          console.log(user.profile);
           newUser.save(function (err) {
             if (err)
               throw err;
             return done(null, newUser);
           });
-
-         
         }
       });
     })
@@ -109,9 +113,6 @@ app.get('/toTheLogin',  (req, res) => {
 });
 
 
-
-
-
 passport.serializeUser(function (user, done) {
   done(null, user.id);
 });
@@ -124,13 +125,11 @@ passport.deserializeUser(function (id, done) {
 
 
 function isLoggedIn(req, res, next) {
-  // if user is authenticated in the session, carry on
   if (req.isAuthenticated()) {
     return next();
   } else {
     res.redirect('/');
   }
-  // if they aren't redirect them to the home page
 }
 
 app.get('/auth/facebook', passport.authenticate('facebook', {
@@ -144,7 +143,6 @@ app.get('/facebook/callback',
   }));
 
 
-
 app.get('/friendsUID', isLoggedIn, async function (req, res) {
   var uids = new Array();
   var theUser = req.user;
@@ -156,24 +154,20 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
         if (err) {
           return;
         }
-
         if (user) {
           uids.push(user.uid);
         } else {
           return;
         }
-       
       });;
     }
   console.log("going inside here");
-
   theUser.friendsUID = uids;
   theUser.save(function (err) {
     if (err)
       throw err;
     return;
   });
-
   res.send(uids);
 });
 app.get('/friendNames', isLoggedIn, async function (req, res) {
@@ -196,7 +190,6 @@ app.get('/profilePic', isLoggedIn, function (req, res) {
   res.send(theUser.pic)
 });
 
-
 app.get('/friends', isLoggedIn, function (req, res) {
   var theUser = req.user
   res.send(theUser.friends);
@@ -208,15 +201,12 @@ app.get('/logout', isLoggedIn, function (req, res) {
   res.redirect('/');
 })
 
-
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
+});
 
 
 const port = process.env.PORT || '3000';
 app.set('port', port);
-
-
 const server = http.createServer(app);
-
-
 server.listen(port, () => console.log(`API running on localhost:${port}`));

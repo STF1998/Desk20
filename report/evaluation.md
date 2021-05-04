@@ -21,7 +21,26 @@ Often a user will be put off by the simplest of bugs. There is a level of trust 
 
 ## Cross Browser Compatibility testing
 
-TODO - Sam
+<br>
+
+<p align="center">
+<img src="../report/Images/cross-browser-compatibility.png" width=40%>
+</p>
+
+<br>
+
+We wanted to ensure that prospective users are not restricted to use a specific browser when accessing our application. Thus, it was crucial to develop and test the flocus application to ensure libraries, functions and effects were supported in all browsers and not just the most popular, such as Chrome. During the development process we ran manual tests on three of the main four browsers:
+
+<ul>
+    <li>Google Chrome</li>
+    <li>Firefox</li>
+    <li>Microsift Edge</li>
+</ul>
+
+We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
+
+This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
+
 
 # User testing
 
