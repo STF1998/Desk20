@@ -18,7 +18,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   private breakTime = 5 * 60 * 1000;      // Amendable: the amount of time for a break session in seconds (aka 15 mins)
   private userid = "108266374709077"; // tmp (will be retrieved from the login component)
   private updatefreq = 2;     // Amendable: the frequency of updating the waterLevel variable for rendering (in seconds)
-  private pressed = false;
+  public pressed = false;
   private isBreak = false;
   private time: Subscription = Subscription.EMPTY;
   private timePassed = 0;
@@ -74,7 +74,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     }
   }
 
-  private startTimer() {
+  startTimer() {
 
     this.CountDownTime = Date.now() + this.studyTime - this.timePassed;
     this.interval = setInterval(() => {
@@ -122,7 +122,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
 
-  private pauseTimer() {
+  pauseTimer() {
     if (this.isStudy) {
       clearInterval(this.interval);
     }
@@ -138,7 +138,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   private stop: Timer;
 
 
-  private fillUp() {
+  fillUp() {
 
     if (this.pressed == true) {
       this.elem = document.getElementById('waterfill');
@@ -174,7 +174,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
 
-  private dripDrop(start: string) {
+  dripDrop(start: string) {
 
     console.log("drip drop");
 
@@ -193,7 +193,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
 
-  private retrieveGlassCount() {
+  retrieveGlassCount() {
 
     var date = new Date();
     var dayStart = new Date(date.setHours(0, 0, 0, 0));
@@ -223,7 +223,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     );
   }
 
-  private retrieveUidWithUserData() {
+  retrieveUidWithUserData() {
     this.DataService.getUid().subscribe(
       userdata => {
         const uid = userdata;
