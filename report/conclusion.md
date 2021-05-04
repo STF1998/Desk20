@@ -98,7 +98,7 @@ To mitigate against users becoming incentivised to work unhealthy hours whilst u
 
 ### Focus Group
 
-Absent of a specific ethical clearance by the University of Bristol, we had to conduct our final focus group and user group feedback sessions with caution. Primarily, we needed to yield feedback on design, navigation and functionality to better inform out development process and Asaqua’s future efforts. However, there were a few areas in which were needed to be aware of before holding these feedback sessions:
+Absent of a specific ethical clearance by the University of Bristol, we had to conduct our user group feedback sessions and final focus group with caution. Primarily, we needed to yield feedback on design, navigation and functionality to better inform our development process and Asaqua’s future efforts. However, there were a few areas in which were needed to be aware of before holding these feedback sessions:
 
 <ul>
   <li>Personally, Identifiable Information – We did not wish to, nor were we allowed to, garner information from users that would allow them to be personally identified. This included their name and possibly some demographic information. So to avoid this concern, we opted to run a focus group that was solely aimed to yield feedback on design. We were unable to investigate the impact of Flocus on users’ procrastination habits.</li>
