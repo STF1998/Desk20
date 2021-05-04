@@ -109,7 +109,7 @@ Other than the previously discussed technologies, our application interacts with
 </p>
 <b><p align= "center">Figure : </p></b>
 
-We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind that are:
+We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind this are:
 1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
 2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during the registration process.
 3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by PassportJS.
@@ -120,16 +120,16 @@ The downside of using FB’s authentication is:
 2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our app.
 
 The procedure to use FB’s API is as follows:
-1. 	Create a FB account and go to FB for developer’s site
+1. 	Create a FB account and go to the FB for developer’s site
 2.	Create the application
 3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
-4.	Follow the step-by-step guide on FB authentication using PassportJS in the PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
+4.	Follow the step-by-step guide on FB authentication using PassportJS in PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
 
-When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate there. Upon successful authentication, FB will ask the user whether the user agrees to share the requested data to the application. The detail of the requested data is shown on the confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
+When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB will ask the user whether the they agree to share the requested data with the application. The details of this data is shown in a confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
-The FB permission type in our code determines the type of data that FB’s API will return to our application. Flocus only uses the “user_friends'' permission, which means that FB will return an array consisting of all of the user’s friends that also grants permission to the application. There are also types of data that does not require a permission to be returned, which are user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication token because we always ask using the “isAuthenticated()” method before letting the user access data from our database.
+The FB permission type in our code, determines the type of data that FB’s API will return to our application. Flocus only uses the "user_friends" permission, which means that FB will return an array consisting of all of the user’s friends. This also grants permission to the application. Additionally, there are types of data that do not require a permission to be returned. These include; user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication tokens because we always call the “isAuthenticated()” method before letting the user access data from our database.
 
-After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. If not we then put the user in our database. Details of the user schema and PassportJS will be discussed further on the database and middle tier sections.
+After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. However, if the user hasn't been previously recorded, we enter them into our database. Details of the user schema and PassportJS will be discussed further on in the database and middle tier sections.
 
 Successful or unsuccessful login attempt will redirect us back to the login page. Our login page will check the “isAuthenticated()” method each time it is called, if it is returning a true then the user is redirected to our home page. If it is returning a false then the user is returned to our login page. Our application schema from the home page is shown in the graph below.
 
