@@ -102,7 +102,7 @@ Absent of a specific ethical clearance by the University of Bristol, we had to c
 
 <ul>
   <li>Personally, Identifiable Information – We did not wish to, nor were we allowed to, garner information from users that would allow them to be personally identified. This included their name and possibly some demographic information. So to avoid this concern, we opted to run a focus group that was solely directed towards the design of the application. </li>
-  <li>Wellbeing – An interesting line of investigation, and potential thesis proposal, would be the impact of Flocus on users’ mental and physical wellbeing. This could have been investigated in relation to direct and indirect channels. Although this would have potentially offered further evidence as to the success (or failure) that we have experienced in producing our application, mental and physical health are a multi-faceted topics and should be investigated with due regard and process. As such, this avenue of research was not pursued.</li>
+  <li>Wellbeing – An interesting line of investigation, and potential thesis proposal, would be the impact of Flocus on users’ mental and physical wellbeing. This could have been investigated in relation to direct and indirect channels. Although this would have potentially offered further evidence as to the success (or failure) that we have experienced in producing our application, mental and physical health are multi-faceted topics and should be investigated with due regard and process. As such, this avenue of research was not pursued.</li>
 </ul>
 
 # Discussion of future work
