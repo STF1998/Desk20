@@ -177,6 +177,12 @@ Having defined our target market and the potential users who would be using Floc
 
 ## Wireframes
 
+The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
+
+<p align="center">
+<img src="../report/Images/Wireframes/home.png" width=50%>
+</p>
+
 
 
 ## User flow diagram
