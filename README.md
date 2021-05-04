@@ -5,7 +5,7 @@
 
 ## Our Product
 
-Flocus is a single-page application (SPA) that aims to combat procrastination from university students studying on devices while raising awareness for the critical world issue of water scarcity. Our application uses a visual aid of a glass filling up as students work following the principles of the Pomodoro technique of a study interval followed by a break. In this break, users will have the opportunity to learn more about water scarcity and Asaqua, a charity that is working to improve water scarcity in Africa.
+Flocus is a single-page application (SPA) that aims to combat procrastination from university students studying on devices while raising awareness for the critical world issue of water scarcity. Our application uses a visual aid of a glass filling up as students work following the principles of the Pomodoro technique of a study interval followed by a break. In this break, users will have the opportunity to learn more about water scarcity and Asaqua, a charity that is working to improve water scarcity in underdeveloped nations across Africa.
 
 The application will display how much work their friends have completed to further encourage good studying practices, thus improving overall productivity, and increasing use of our web application. 
 
