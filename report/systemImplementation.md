@@ -22,14 +22,14 @@
 
 # Stack Architecture
 
-Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology are:
+Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology is:
 
--	MongoDB: database solution
+-	MongoDB: Database solution
 -	Express: NodeJS framework to simplify http request and response
 -	Angular: Front-end browser-side framework
 -	Node.js: Runtime server-side code
 
-Below is a diagram on how the each of the technologies interacts with one another within the stack.
+Below is a diagram displaying how each of the technologies within the stack interact:
 
 <p align="center">
 <img src="../report/Images/pathwayStack.png" width=75%>
@@ -43,7 +43,7 @@ MEAN stack was chosen due to its advantages, including:
 -	Isomorphic coding – allows developers to switch to another framework without altering much of the original code.
 -	Support from the faculty, as the lectures and support provided was focused on MEAN stack.
 
-As a ateam we also did a bit of research on different stacks, including MEVN and MERN:
+As a team we also did a bit of research on the different stacks, including MEVN and MERN:
 
 <table>
 <tr>
@@ -69,21 +69,21 @@ As a ateam we also did a bit of research on different stacks, including MEVN and
   </td>
 </table>
 
-The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works. Angular has defintely ensured we have a strong grasp of various areas, including typescript.
+The only difference between these stacks is the front-end framework. For this project, Angular was selected. In terms of the front-end, Sam and Hugh have really enjoyed developing a strong understanding of how the front-end works and Angular has ensured that we have a strong grasp of associated areas, including typescript.
 
-According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular one and it is shown in the graph below ([link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)). 
+According to the GitHub stars received on each of the front-end framework (Angular, React, Vue), Angular is the least popular. This is displayed in the graph below ([link](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)):
 
 <p align="center">
 <img src="../report/Images/2021-star-history.png" width=75%>
 </p>
 <b><p align= "center">Figure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
 
-However, in terms of job searched on linked in, Angular is at the first place, which shown in the graph below ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)) the data was taken on (10th December 2018). 
+However, in terms of job searches on linked in, Angular is in first place ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)): 
 
 <p align="center">
 <img src="../report/Images/angular_vs.png" width=75%>
 </p>
-<b><p align= "center">Figure </p></b>
+<b><p align= "center">Figure: Linkdin Searches (Data was taken collected on 10th December 2018)</p></b>
 
 In conclusion, MEAN stack was chosen because of its advantages discussed above and its high job-employability. 
 
