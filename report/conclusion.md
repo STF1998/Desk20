@@ -45,7 +45,14 @@ Alonsgide these meetings, the use of discord was key for the management of issue
 
 ## Evaluation of agile techniques used by the team
 
-During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal opinions of the agile framework. We identified three main aspects of agile that 
+During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal experience of the agile framework. We identified three main aspects of agile that enabled us to succeed in ambitions for project flocus:
+
+<ul>
+  <li>Stakeholder Involment</li>
+  <li>Customer Collaboration</li>
+  <li>Flexibility</li>
+</ul>
+
 
 # Project reflection
 
