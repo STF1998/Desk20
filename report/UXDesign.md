@@ -184,11 +184,8 @@ The production of wireframes provided a strong direction to build on once our de
 </p>
 
 <p align="center">
-<img src="../report/Images/Wireframes/study.png" width=50%>
-</p>
-
-<p align="center">
-<img src="../report/Images/Wireframes/league.png" width=50%>
+<img src="../report/Images/Wireframes/study.png" width=60%>
+<img src="../report/Images/Wireframes/league.png" width=60%>
 </p>
 
 ## User flow diagram
