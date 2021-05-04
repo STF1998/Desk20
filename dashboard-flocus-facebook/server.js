@@ -201,6 +201,10 @@ app.get('/logout', isLoggedIn, function (req, res) {
   res.redirect('/');
 })
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
+});
+
 
 const port = process.env.PORT || '3000';
 app.set('port', port);
