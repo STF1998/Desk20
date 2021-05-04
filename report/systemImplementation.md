@@ -91,7 +91,7 @@ Ostensibly, the argument for using the MEAN stack was compelling, not only for t
 
 ## Stack architecture implementation in our application
 
-Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we will be using PassportJS which, is a Node.js framework that will help our apps communication with Facebook.
+Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js framework that helps our app's communication with Facebook.
 
 <p align="center">
 <img src="../report/Images/stach_arch.png" width=75%>
