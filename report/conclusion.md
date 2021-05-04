@@ -92,7 +92,7 @@ Our application’s integration with Facebook was tested using Facebook’s ‘d
 
 ### Stress, Anxiety and Overworking
 
-We were also concerned about whether the application would induce stress, especially for younger age groups. This was a difficult issue to consider, and one that is not easily mitigated. By removing the stressful stimuli of the league table, we would deprive many prospective users of a highly valued component. As such, this will need to be considered by future developers. Having said this, from our end-user groups we have not received any feedback or complaints regarding stress and anxiety as a consequence of working on the site.
+We were also concerned about whether the application would induce stress, especially for younger age groups. This was a difficult issue to consider, and one that is not easily mitigated. By removing the stressful stimuli of the league table, we would deprive many prospective users of a highly valued component. As such, this will need to be considered by future developers. Having said this, from end-user group feedback, we have not received any criticism regarding stress and anxiety as a consequence of working on the application.
 
 To mitigate against users becoming incentivised to work unhealthy hours whilst using Flocus, we have introduced a set of visual prompts on the personal stats section which, should offer a gentle hint to those who are working too hard. We have aligned these prompts with the UK government’s work hour guidelines and more information is available regarding this implementation in Pt.3 “System Implementation”.
 
