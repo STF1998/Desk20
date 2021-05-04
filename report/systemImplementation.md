@@ -110,7 +110,7 @@ Other than the previously discussed technologies, our application interacts with
 <b><p align= "center">Figure : </p></b>
 
 We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind that are:
-1.   FB’s API makes it convenient for users to find and connect with their friends on the app. The playful aspect of our application is to enable users to compete for the longest studying time, within a week, among their friends. FB’s API automatically connects users with their friends on our application.
+1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends. FB’s API automatically connects users with their friends on our application.
 2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during registration/login.
 3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by PassportJS.
 4. There is also an abundance of external support provided by people around the world in the form of videos, articles, and QnA.
