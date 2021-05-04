@@ -20,7 +20,7 @@
 ### Motivation for the project
 
 <p align="center">
-<img src="../report/Images/ideas.jpg" width=70%>
+<img src="../report/Images/ideas.jpg" width=85%>
 </p>
 <b><p align= "center"> Figure 1: Lucidchart of the initial ideation stage. </p></b>
 
@@ -61,7 +61,7 @@ Build a MEAN stack single page application with integration of a front end (usin
 
 To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time followed by a break. This has been inspired by the time management method called Pomodoro Technique and the use of intervals to help students work for an interval combined with rewards of a break. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
 
-      Solving water scarcity and procrastination one glass at a time!
+      Solving procrastination and water scarcity, one glass at a time!
 
 While students are working, the google ads section will be generating revenue which will be donated to Asaqua. Therefore, students not only have the satisfaction of working towards a target and rewarded with a break but are also rewarded by the fact they are actually contributing and helping raise funds for an important issue in water accessibility. It is a win-win scenario for all parties involved. 
 
