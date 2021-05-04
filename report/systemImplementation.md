@@ -131,7 +131,7 @@ The FB permission type in our code, determines the type of data that FB’s API 
 
 After FB returns the user object to our application, we then do a check on our database by checking the UID of the user and comparing it with every UID inside the database. If the user already exists, we only modify the list of friends of the user. However, if the user hasn't been previously recorded, we enter them into our database. Details of the user schema and PassportJS will be discussed further on in the database and middle tier sections.
 
-Successful or unsuccessful login attempts will redirect users back to the login page. Our login page will check the “isAuthenticated()” method each time it is called and if it returns true then the user is redirected to our home page. If it returns false then the user is returned to our login page. Our application schema from the home page is shown in the graph below.
+Successful and unsuccessful login attempts will redirect users back to the login page. Our login page will check the “isAuthenticated()” method each time it is called and if it returns true then the user is redirected to our home page. If it returns false, the user is returned to our login page. Our application schema from the home page is shown in the graph below.
 
 <br>
 <p align="center">
