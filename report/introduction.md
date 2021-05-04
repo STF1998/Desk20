@@ -33,7 +33,8 @@ However, while we had defined the two key aspects required by the project brief,
 FLOCUS solves two problems identified in the research and ideation stage:
 
 -	The widespread problem of procrastination amongst university students, particularly with an increase of students working on devices accentuated by the COVID-19 pandemic.
--	Lack of awareness for water scarcity in Africa.
+
+-	Severe lack of awareness for water scarcity in Africa.
 
 ## High level overview of our project
 
