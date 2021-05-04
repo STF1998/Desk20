@@ -115,7 +115,7 @@ Having defined our user stories, we began developing the key aspects around redu
 
 We were able collect data from 23 university students. While the survey was short and with limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination. Please see below snapshots of the results from the survey:
 
-<p align="center"><img src="../report/Images/survey1.png" width=600px height=300px>
+<p align="center"><img src="../report/Images/survey1.png" width=654px height=300px>
 </p>
 <h2 align="center"><b> Figure : Survey question 1.</b></h2>
 
