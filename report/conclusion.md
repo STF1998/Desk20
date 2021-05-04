@@ -84,7 +84,26 @@ Overall, we are very proud of one another for the work in this project. We are v
 
 # Discussion of Social and Ethical implications of our work
 
-TODO - Tom
+There were several concerns that were raised in the ideation process regarding how our proposed project could bring harm to the end-users and third parties. The following discussion will highlight the issues raised and outline the actions that we took to mitigate against specific risk factors.
+
+### User Data Privacy
+
+Our application’s integration with Facebook was tested using Facebook’s ‘developer mode’ which, allowed for Facebook test accounts to be configured and used. This ensured that during the production process, test-users and focus group participants were protected from data privacy breaches. After development, Flocus will require an application review before it can be deployed to actual Facebook users. The review will assure Facebook that our application only takes necessary data for functionality and, that this data is stored in a secure manner. As outlined by Facebook’s best practices guide, we have designed our log-in process to only receive the required data from Facebook. 
+
+### Stress, Anxiety and Overworking
+
+We were also concerned about whether the application would induce stress, especially for younger age groups. This was a difficult issue to consider, and one that is not easily mitigated. By removing the stressful stimuli of the league table, we would deprive many prospective users of a highly valued component. As such, this will need to be considered by future developers. Having said this, from end-user group feedback, we have not received any criticism regarding stress and anxiety as a consequence of working on the application.
+
+To mitigate against users becoming incentivised to work unhealthy hours whilst using Flocus, we have introduced a set of visual prompts on the personal stats section which, should offer a gentle hint to those who are working too hard. We have aligned these prompts with the UK government’s work hour guidelines and more information is available regarding this implementation in Pt.3 “System Implementation”.
+
+### Focus Group
+
+Absent of a specific ethical clearance by the University of Bristol, we had to conduct our user group feedback sessions and final focus group with caution. Primarily, we needed to yield feedback on design, navigation and functionality to better inform our development process and Asaqua’s future efforts. However, there were a few areas which we needed to be aware of, before holding these feedback sessions:
+
+<ul>
+  <li>Personally, Identifiable Information – We did not wish to, nor were we allowed to, garner information from users that would allow them to be personally identified. This included their name and possibly some demographic information. So to avoid this concern, we opted to run a focus group that was solely directed towards the design of the application. </li>
+  <li>Wellbeing – An interesting line of investigation, and potential thesis proposal, would be the impact of Flocus on users’ mental and physical wellbeing. This could have been investigated in relation to direct and indirect channels. Although this would have potentially offered further evidence as to the success (or failure) that we have experienced in producing our application, mental and physical health are multi-faceted topics and should be investigated with due regard and process. As such, this avenue of research was not pursued.</li>
+</ul>
 
 # Discussion of future work
 
