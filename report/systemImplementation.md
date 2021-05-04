@@ -135,7 +135,7 @@ Successful and unsuccessful login attempts will redirect users back to the login
 
 <br>
 <p align="center">
-<img src="../report/Images/auth2.png" width=75%>
+<img src="../report/Images/auth2.png" width=50%>
 </p>
 <b><p align= "center">Figure: Application schema for the home page</p></b>
 <br>
@@ -151,7 +151,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 <br>
 
 <p align="center">
-<img src="../report/Images/studyDesign.png" width=30%>
+<img src="../report/Images/studyDesign.png" width=40%>
 </p>
 <b><p align= "center">Figure: Study component timer</p></b>
 
@@ -364,7 +364,7 @@ As discussed previously, PassportJS provides us with the isAuthenticated() metho
 <p align="center">
 <img src="../report/Images/passport8.png" width=75%>
 </p>
-<b><p align= "center">Figure: isloggerIn function</p></b>
+<b><p align= "center">Figure: isloggedIn function</p></b>
 
 <br>
 
@@ -390,16 +390,18 @@ Req.user contains the same data as the profile variable. Finally, another import
 
 ## Records API
 
-In this section, all API requests with relationship to record data would be discussed. The first API request would be a POST request which takes a record object as its parameter. The object must follow the record schema that was discussed on the database section. The POST request is shown in Figure x below.
+In this section, all API requests with relation to record data will be discussed. The first API request is a POST request which, takes a record object as its parameter. For this, the object must follow the record schema that was discussed on the database section. The POST request is shown in Figure x below.
 
+<br>
 <p align="center">
 <img src="../report/Images/records.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
+<br>
 
-So, each time a user finished, pause, or leave a session the POST request would be done, and a record object would be saved in our database.
+So, each time a user completes, pauses or exits a session, a POST request is executed and a record object is saved in our database.
 
-The next request would be a GET request that takes uid and a range of time as parameter. Range of time meaning a starting date and an ending date. This GET method is used to get all the records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure x.
+The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure x.
 
 <p align="center">
 <img src="../report/Images/records2.png" width=75%>
@@ -408,14 +410,14 @@ The next request would be a GET request that takes uid and a range of time as pa
 
 ## API for League Table
 
-The last request is a GET request for the league table. It takes UID and a range of time as its parameter. The first objective would be to do a search on the user database to find the user with the same UID in the parameter. Then, the query accesses the friendsUID array and friends array of the user. FriendsUID array of a user contains all the user friends’ UID.
-Then do a record search just like the GET request described above for each of the UID's. At the end the GET request will return three arrays:
+The last request is a GET request for the league table. It takes UID and a time range as its parameter. This reguest's first objective is to execute a search on the user database to find a user with the same UID as in the parameter. Then, the query accesses the friendsUID array and the friends array of the user. FriendsUID array of a user contains all the user friends’ UIDs.
+We then search through our previous records, as in the GET request described above, for each of these UID's. Finally, the GET request will return three arrays:
 
-1.	First array consists of: User’s friend's name 
-2.	Second array consists of: Total number of sessions completed for each user’s friends
-3.	Third array consists of: Total time spent for each user’s friends 
+1.	First array consists of: The user’s friends's names
+2.	Second array consists of: Total number of sessions completed for each of the user’s friends
+3.	Third array consists of: Total time spent studying for each of the user’s friends 
 
-These are inside the range of time specified in the parameter. They are all grouped (connected) before getting sorted on a descending order based on the number of sessions completed. Grouped means that if there is a change in position between elements inside one of the arrays, the other arrays would also experience the same change. As it is sorted on a descending order, then the highest number of sessions completed will be on the top of the array (element 0) and the lowest would be on the bottom of the array.
+All returns are inside the time range specified in the parameter and all arrays are grouped (connected) before getting sorted in a descending order based on the number of sessions completed. By grouped we mean that if there is a change in position between elements inside one array, then the other two arrays will also experience the same change. As arrays are sorted in a descending order, the highest number of sessions completed will be on the top of the array (element 0) and the lowest will be on the bottom of the array.
 
 # Front-End System Implementation
 
