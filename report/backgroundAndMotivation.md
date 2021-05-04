@@ -85,16 +85,16 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
 <tr>
   <td>
     <ul>
-      <li> Simple and clear front-end. Minimal but sleek UX design. </li>
+      <li> Simple and clear front end. Minimal but sleek UX design. </li>
       <li> Simplified and fast web application. </li>
       <li> No advertising. </li>
-      <li> Visits are up 32% to 4.75 million total visits. </li>
-      <li> Ability to set certain number of tasks. </li>
+      <li> Visits are up 32% to 4.75 million total visits in 2020. </li>
+      <li> Ability to set a certain number of tasks. </li>
     </ul>
   </td>
   <td>
     <ul>
-      <li> Can’t compete with friends on time studied/focused. </li>
+      <li> Cannot compete with friends on time studied/focused. </li>
       <li> No social cause aspect. </li>
       <li> Nothing to do or read about in the break interval. </li>
     </ul>
@@ -132,7 +132,7 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   <td>
     <ul>
       <li> No insight into what you’re doing with that time. </li>
-      <li> Un-aesthetically pleasing UX design. </li>
+      <li> Unattractive front end design. </li>
       <li> No ability to track past activity. </li>
     </ul>
   </td>
@@ -158,12 +158,12 @@ Tomatoes is a Pomodoro Technique driven time tracker.
   <td>
     <ul>
       <li> Simple and minimalist design. </li>
-      <li> Can track history of work by signing in via GitHub or Twitter. </li>
+      <li> Ability to track history of work by signing in via GitHub or Twitter. </li>
     </ul>
   </td>
   <td>
     <ul>
-      <li> Advertising at different areas on the page – quite distracting. </li>
+      <li> Advertising at different areas on the page. This is quite distracting. </li>
       <li> Fixed timer at 25 minutes. </li>
       <li> Not simple to navigate. </li>
     </ul>
@@ -198,8 +198,8 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
   </td>
   <td>
     <ul>
-      <li> Advertising on the page – however only a single bar. </li>
-      <li> The colour of the text isn’t particular clear. Light grey on charcoal grey. </li>
+      <li> Advertising on the page. </li>
+      <li> The colour of the text isn’t particular clear due to light grey text on charcoal grey background. </li>
     </ul>
   </td>
 </table>
@@ -208,7 +208,7 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
 
 Website: https://pomodor.app/timer
 
-Easy-to-use web based Pomodoro timer.
+Easy-to-use web-based Pomodoro timer.
 
 <p align="center">
 <img src="../report/Images/pomo5.png" width=70%>
