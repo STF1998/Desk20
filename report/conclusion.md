@@ -45,7 +45,22 @@ Alonsgide these meetings, the use of discord was key for the management of issue
 
 ## Evaluation of agile techniques used by the team
 
-During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal opinions of the agile framework. We identified three main aspects of agile that 
+During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal experiences of the agile framework. We identified four main aspects of agile that enabled us to succeed in our ambitions:
+
+<ul>
+  <li>Stakeholder Involment</li>
+  <li>Customer Collaboration</li>
+  <li>Flexibility</li>
+  <li>Stress-reduction</li>
+</ul>
+
+Our sprints enabled us to focus on an iterative process of development and allowed us to engage key stakeholders towards the end of each sprint – facilitating a customer centric approach. Additionally, we were able to integrate Asaqua, our partner NGO, into the development process through Gordon’s end-of-sprint liaison and feedback sessions with their team. Organising our tasks into manageable responsibilities also helped the team deal with stress, ensuring that no-one was overwhelmed with work. 
+
+The flexibility of agile added significant value to our MVP. Instead of being focused on process and pre-composed plans, being able to deal with our individual and group responsibilities during incremental sprints, facilitated a greater responsiveness to end-user and stakeholder feedback. This ensured that our design did not deviate from our initial objectives for the theme and message of the application. Additionally, From the feedback that Gordon received from the Asaqua team, the transparency provided by the Agile framework allowed them to maintain a full understating of development. This will provide benefit in the future as Asaqua builds on the work that we have previously achieved.  
+
+Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
+
+
 
 # Project reflection
 
