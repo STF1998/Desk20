@@ -7,20 +7,20 @@
   - [Overview](#Overview)
   - [Academic research review](#Academic-research-review)
 - [**State of the art survey**](#State-of-the-art-survey)
-- [**Current industry review**](#Current-industry-review)
+  - [Current industry review](#Current-industry-review)
 - [**Defined problem**](#Defined-problem)
   - [Scope](#Scope)
   - [Challenges](#Challenges)
 
-# Background literature
+## Background literature
 
-## Overview
+### Overview
 
 When starting this project, our team had little knowledge of the research on single-page applications, Serious Play and procrastination. During the initial month, alongside developing our development skills we spent time researching and reading on the technology we were implementing to solve the serious problem we identified: procrastination. This initial research helped further define our project and influenced key aspects around our design and implementation. Below we have provided short reviews for the key areas we felt we needed to learn about before starting design and implementation of development.
 
-## Academic research review
+### Academic research review
 
-### Single page applications
+#### Single page applications
 
 Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience (Joseph, 2015). A single-page application is a webpage that updated independently on each user’s action and therefore meaning the application has increased responsiveness and user satisfaction (Mesbah, 2006). The architecture of a single page application often consists of the following features (Molin, 2016):
 -	Web interface: Interaction between user and web server
@@ -29,17 +29,17 @@ Over the past decade, the field of application development has seen significant 
 -	Reloaded: A typical web page needs to be reloaded, in contrary to an SPA. 
 -	User action: A user can make input to an SPA from any I/O device, causing action to occur.
 
-### Serious play
+#### Serious play
 
 The methodology of Serious Play, an innovative approach to exploring complex issues with the use of playful techniques to engage audiences, was developed by the CEO of Lego, Kjeld Kirk Kristiensen, alongside two academic professors at IMD Business School, Bart Victor and Johan Roos. When the above first came up with Serious Play it was intended to be used in corporate sectors generating greater engagement through imaginative and playful approaches to solving business problems (Nolan, 2009). However, since then Serious Play has developed into a core set of activities and processes which integrate both innovative and creative techniques (Gee, 2004). In recent times, the Serious Play process has been applied to the software development industry with the concept being used as part of design thinking to be more productive and innovative in solving problems (Flach, 2018). Overall, the Serious Play aspect will be utilised throughout our design and implementation of a single-page web application.
 
-### Procrastination
+#### Procrastination
 
 Procrastination is a well-known experience amongst academic environments. It is defined as “the needless delay of things one intends to do” often associated with negative outcomes with regard to performance and subjective wellbeing (Klingseick, 2013). Studies, such as those undertaken by Klingsieck et al. (2013), suggest that over 70% of college students tend to procrastinate on a regular basis, often with negative consequences. Kim and Seo (2015) found that younger students often procrastinate more than older students with a possible applanation of the maturity level and inability to take responsibility for their own learning. 
 
 There is a growing body of research that explains the phenomenon of procrastination as a self-regulation challenge (Pychyl & Flett, 2012). Ferrari (2001) suggests that students need support or tools to help self-regulate their behaviours when in a learning environment. Zimmerman (2008) suggests that students need to learn how to effectively use tools and strategies to help improve self-regulation. In recent times, little research has focused on tools and interventions for procrastination. Overall, our idea to create a procrastination tool fills a clear gap in providing a solution to help students self-regulate their learning and study techniques. 
 
-### Pomodoro Technique
+#### Pomodoro Technique
 
 Having researched procrastination tools, our team identified the Pomodoro Technique as a key tool to inspire our single page application around increasing productivity and reducing procrastination. The pomodoro technique was developed by Francesco Cirillo. When he came across the technique, Francesco was struggling to focus on his university work leading to him committing to studying for 10 minutes. He found a tomato shaped timer and the now Pomodoro Technique was created. Its biggest benefit is its simplicity with the following easy and simple steps:
 
@@ -53,15 +53,15 @@ Learn more about the Pomodoro technique at this [link](https://francescocirillo.
 
 Having identified the Pomodoro Technique as a key tool to combat procrastination, we quickly identified existing applications that are based on the technique. This can be seen below in the current industry review.
 
-# State of the art survey
+## State of the art survey
 
 Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had relatively similar aspects and technologies, each had subtle differences which can be seen the current industry review below.
 
-# Current industry review
+### Current industry review
 
 Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
 
-## Pomofocus 
+#### Pomofocus 
 
 Website: https://pomofocus.io/
 
@@ -96,7 +96,7 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
   </td>
 </table>
 
-## Tomato Timer
+#### Tomato Timer
 
 Website: https://tomato-timer.com/
 
@@ -133,7 +133,7 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   </td>
 </table>
 
-## Tomatoes
+#### Tomatoes
 
 Website: http://www.tomato.es/
 
@@ -165,7 +165,7 @@ Tomatoes is a Pomodoro Technique driven time tracker.
   </td>
 </table>
 
-## Pomodoro Tracker
+#### Pomodoro Tracker
 
 Website: https://www.pomodoro-tracker.com/
 
@@ -199,7 +199,7 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
   </td>
 </table>
 
-## Pomodor
+#### Pomodor
 
 Website: https://pomodor.app/timer
 
@@ -231,7 +231,7 @@ Easy-to-use web based Pomodoro timer.
   </td>
 </table>
 
-## Market Opportunities identified from current industry research
+#### Market Opportunities identified from current industry research
 
 Based on current market research, we identified the following gaps and places for improvement for online procrastination tools inspried by the Pomodoro technqiue:
 
@@ -240,13 +240,13 @@ Based on current market research, we identified the following gaps and places fo
 - None had a social enterprise aspect or links with a charity or charitable organisation.
 - Lack of animations and visual aids. 
 
-# Defined problem
+## Defined problem
 
 The problem we aim to solve is procrastination using visual aids with a positive social enterprise aspect.
 
-## Scope
+### Scope
 
-### Conceptual scope
+#### Conceptual scope
 
 With the use of a visual aid of a glass filling up, we created a single page application that helps reduce procrastination and provides an insight into the important issue of droughts in Africa through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer with a competitive aspect using league tables. We have a running theme of water through the application with the link to water accessibility challenges in developing nations with a focus on the work Asaqua does to help improve water accessibility in Africa. 
 
@@ -265,11 +265,11 @@ Our key objectives:
 Has to be a competitive aspect that is a leader board between friends or peers – this can be in the form of graphical representation (future scope – create an animation, such as a swimming race, to display leader board.
 - Insightful and interactive information around Asaqua and the work they do for helping countries with drought issues and water accessibility.
 
-### Technical scope
+#### Technical scope
 
 (TODO) - Jati
 
-## Challenges
+### Challenges
 
 Given limited resources and time restraints, the biggest challenge of this project is effectively creating a minimum viable product that is a tool to help reduce procrastination but also raises awareness for an important issue in water accessibility and the work Asaqua does to improve water accessibility. 
 
@@ -308,7 +308,7 @@ to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 
 
 Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
 - [Previous page: Introduction](https://github.com/STF1998/Desk20/blob/main/report/introduction.md)
