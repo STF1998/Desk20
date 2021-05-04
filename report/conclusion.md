@@ -58,6 +58,10 @@ Our sprints enabled us to focus on an iterative process of development and allow
 
 The flexibility of agile added significant value to our MVP. Instead of being focused on process and pre-composed plans, being able to deal with our individual and group responsibilities during incremental sprints, facilitated a greater responsiveness to end-user and stakeholder feedback. This ensured that our design did not deviate from our initial objectives for the theme and message of the application. 
 
+From the feedback that Gordon received from the Asaqua team, the transparency provided by the Agile framework allowed them to maintain a full understating of development. This will provide benefit in the future as Asaqua builds on the work that we have previously achieved. 
+
+Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
+
 
 
 # Project reflection
