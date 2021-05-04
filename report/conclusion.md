@@ -88,7 +88,16 @@ There were several concerns that were raised in the ideation process regarding h
 
 ### User Data Privacy
 
-Our application’s integration with Facebook was tested using Facebook’s ‘developer mode’ which, allowed for Facebook test accounts to be configured and used. This ensured that during the production process, test-users and focus group participants were protected from data privacy breaches. After development, Flocus will require an application review before it can be deployed to actual Facebook users. The review will assure Facebook that our application only takes necessary data for functionality and that this data is stored in a secure manner. As outlined by Facebook’s best practices guide, we have designed our log-in process to only receive the required data from Facebook. 
+Our application’s integration with Facebook was tested using Facebook’s ‘developer mode’ which, allowed for Facebook test accounts to be configured and used. This ensured that during the production process, test-users and focus group participants were protected from data privacy breaches. After development, Flocus will require an application review before it can be deployed to actual Facebook users. The review will assure Facebook that our application only takes necessary data for functionality and, that this data is stored in a secure manner. As outlined by Facebook’s best practices guide, we have designed our log-in process to only receive the required data from Facebook. 
+
+### Stress, Anxiety and Overworking
+
+We were also concerned about whether the application would induce stress, especially for younger age groups. This was a difficult issue to consider, and one that is not easily mitigated. By removing the stressful stimuli of the league table, we would deprive many prospective users of a highly valued component. As such, this will need to be considered by future developers. Having said this, from our end-user groups we have not received any feedback or complaints regarding stress and anxiety as a consequence of working on the site.
+
+To mitigate against users becoming incentivised to work unhealthy hours whilst using Flocus, we have introduced a set of visual prompts on the personal stats section which, should offer a gentle hint to those who are working too hard. We have aligned these prompts with the UK government’s work hour guidelines and more information is available regarding this implementation in Pt.3 “System Implementation”.
+
+### Focus Group
+
 
 
 # Discussion of future work
