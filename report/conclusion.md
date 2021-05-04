@@ -51,7 +51,7 @@ During our final stand-up &#128543;, we discussed our overall experience of the 
   <li>Stakeholder Involment</li>
   <li>Customer Collaboration</li>
   <li>Flexibility</li>
-  <li>Stress-reducing</li>
+  <li>Stress-reduction</li>
 </ul>
 
 Our sprints enabled us to focus on an iterative process of development and allowed us to engage key stakeholders towards the end of each sprint – facilitating a customer centric approach. Additionally, we were able to integrate Asaqua, our partner NGO, into the development process through Gordon’s end-of-sprint liaison and feedback sessions with their team. Organising our tasks into manageable responsibilities also helped the team deal with stress, ensuring that no-one was overwhelmed with work. 
