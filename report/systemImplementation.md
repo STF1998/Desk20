@@ -346,37 +346,47 @@ The figures below show the raw and json format inside the profile variable:
 <b><p align= "center">Figure: JSON format</p></b>
 <br>
 
-To call the API (i.e., to be able to redirect the user to the Facebook login page), we were no table to use CRUD methods. We had to redirect a user via a link. The link name is our website name + “/auth/facebook” and producing a GET API call (shown in Figure x below) did not redirect the user to the Facebook page. 
+To call the API (i.e., to be able to redirect the user to the Facebook login page), we were no table to use CRUD methods. We had to redirect a user via a link. The link name is our website name + “/auth/facebook”. Producing a GET API call (shown in Figure x below) did not redirect the user to the Facebook’s page. 
 
 <br>
 <p align="center">
 <img src="../report/Images/passport7.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center"></p></b>
 <br>
 
-The scope part is one of the most important parts as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API could be found here(x). However, Flocus will only use the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is done when the user clicks continue on the pop-up message. Upon the success or failure of authentication, doing a GET request on “/facebook/callback” will be called and both of them will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which is our login page. What process happened after this had been discussed on the system implementation section.
+The 'scope' is the most important to draw attention to as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API can be found here(x). However, Flocus only uses the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is provided when the user offers their approval on the pop-up message. Upon the success or failure of authentication, a GET request on “/facebook/callback” is called and both outcomes will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which, is our login page. The processes that occur after this have been discussed in the previos system implementation sections.
 
-As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure x.
+As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure x below.
+
+<br>
 
 <p align="center">
 <img src="../report/Images/passport8.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: isloggerIn function</p></b>
 
-Furthermore, the function isLoggedIn is implemented in any other API call in the application. So, an API call will only continue if the user status is logged in. If not, the user will be redirected back to the home screen. API calls to get the user data is shown in Figure x below.
+<br>
+
+Furthermore, the function, isLoggedIn(),  is implemented in all other API calls in the application. So, an API call will only proceed if the user is logged in. If not, the user will be redirected back to the home screen. The API calls that are used to retrieve a user's data is shown in Figure x below.
+
+<br>
 
 <p align="center">
 <img src="../report/Images/passport9.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure: API get requests</p></b>
 
-Req.user contains the same data as the profile variable. Finally, one other important function is the logout function which is provided by PassportJS and shown in Figure x below. Req.logout() will end the user session and redirect the user back to the login page.
+<br>
 
+Req.user contains the same data as the profile variable. Finally, another important function is the logout function which, is provided by PassportJS and is shown in Figure x below. Req.logout() will end the user session and redirect the user back to the login page.
+
+<br>
 <p align="center">
 <img src="../report/Images/passport10.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
+<br>
 
 ## Records API
 
