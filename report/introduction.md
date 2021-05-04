@@ -9,7 +9,7 @@
   - [High level overview of our project](#High-level-overview-of-our-project)
 - [**Project Objectives**](#Project-Objectives)
   - [High level aims and goals](#High-level-aims-and-goals)
-  - [How are we solving the problems?](#How-are-we-solving-the-problems?)
+  - [How are we solving the problems?](#How-are-we-solving-the-problems)
   - [Team checklist](#Team-checklist)
 - [**System Explanation Video**](#System-Explanation-Video)
   - [Video link](#Video-link)
