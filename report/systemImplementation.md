@@ -117,13 +117,13 @@ We decided to make Facebook’s (FB)’s authentication the only sign-in method 
 
 The downside of using FB’s authentication is:
 1.   If our app is in development mode, FB does not allow real FB users, other than the app administrator, to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
-2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our application.
+2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our app.
 
 The procedure to use FB’s API is as follows:
 1. 	Create a FB account and go to FB for developer’s site
 2.	Create the application
-3.    FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
-4.	Follow the step-by-step guide on FB authentication using PassportJS on the PassportJS documentation[http://www.passportjs.org/docs/facebook/].
+3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
+4.	Follow the step-by-step guide on FB authentication using PassportJS in the PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
 
 When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate there. Upon successful authentication, FB will ask the user whether the user agrees to share the requested data to the application. The detail of the requested data is shown on the confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
