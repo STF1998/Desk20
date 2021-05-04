@@ -7,7 +7,7 @@
 - [**Details of design evaluation**](#Details-of-design-evaluation)
     - [Timeline](#Timeline)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
-- [**User acceptance testing](#User-acceptance-testing)
+- [**User acceptance testing**](#User-acceptance-testing)
 
 # Details of design evaluation 
 
@@ -70,7 +70,9 @@ One area that was also picked up was the compatability with different browsers. 
 
 ### Beta testing
 
-As part of our user acceptance testing, we undertook field testing with real end-users. Hoever, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers. To keep these individuals anonymous and abide by ethical guidelines we did not record or take any data from those in the focus group. Instead we took meeting notes and asked individuals to add to a lucidchart to help develop a version of an affinity chart.
+As part of our user acceptance testing, we undertook field testing with real end-users. However, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers across Zoom. Focus groups are a great method to help understand user experiences and opinions of web applications. However, in the future we advice combining focus groups with interviews and questionairres to help avoid groupthink.
+
+To ensure these individuals remained anonymous and we abide by ethical guidelines we did not record or take ask for any personal data from those involved in the focus group. Instead, we took written observation notes and asked individuals to anonymously add to a Lucidchart to help develop a version of an affinity chart.
 
 The focus group focused on the following areas:
 - thoughts on aesthetics of the web application
@@ -97,7 +99,16 @@ The key improvement points identified from the focus group, include the followin
 - timer alongside glass to help know time instead of guessing
 - Facebook logout button missing
 
+#### Future methods
 
+Possible types of future user testing, include:
+
+- Surveys - help understand user experience.
+- A/B testing - experiemtn with different versions
+- Heat map testing - help undersatnd how users move about the web page
+- Further in house testing
+
+Please see the conclusion section to learn more about future evaluative technqiues.
 
 # Project report navigation
 

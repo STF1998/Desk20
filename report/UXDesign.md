@@ -65,6 +65,7 @@ After agreeing on the idea of Flocus and deciding on initial design themes and m
 <p align="center">
 <img src="../report/Images/Power-Interest.png" width=70%>
 </p>
+
 <p align="center">
 <img src="../report/Images/Power-Interest_key.png" width=30%>
 </p>
@@ -172,15 +173,24 @@ As an alternative to the above, we held informal conversations with friends and 
 
 Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage.
 
+## Wireframes
 
+
+
+## User flow diagram
+
+Having finalised our SPA and UX design, we put together a simple flow diagram using Lucidchart to display how we envisage users migrating through Flocus. See below:
+
+<p align="center">
+<img src="../report/Images/flow_diagram.png" width=80%>
+</p>
+<h2 align="center"><b> Figure : Mendelow's Matrix</b></h2>
 
 # References
 
 [1] https://www.ofcom.org.uk/__data/assets/pdf_file/0024/149253/online-nation-summary.pdf
 
 [2] https://www.digitalinformationworld.com/2019/02/internet-users-spend-more-than-a-quarter-of-their-lives-online.html
-
-
 
 # Project report navigation
 
