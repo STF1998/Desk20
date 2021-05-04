@@ -115,43 +115,43 @@ Having defined our user stories, we began developing the key aspects around redu
 
 We were able collect data from 23 university students. While the survey was short and with limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination. Please see below snapshots of the results from the survey:
 
-<p align="center"><img src="../report/Images/survey1.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey1.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 1.</b></h2>
 
-<p align="center"><img src="../report/Images/survey2.png" width=545px height=250px>
+<p align="center"><img src="../report/Images/survey2.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 2.</b></h2>
 
-<p align="center"><img src="../report/Images/survey3.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey3.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 3.</b></h2>
 
-<p align="center"><img src="../report/Images/survey4.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey4.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 4.</b></h2>
 
-<p align="center"><img src="../report/Images/survey5.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey5.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 5.</b></h2>
 
-<p align="center"><img src="../report/Images/survey6.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey6.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 6.</b></h2>
 
-<p align="center"><img src="../report/Images/survey7.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey7.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 7.</b></h2>
 
-<p align="center"><img src="../report/Images/survey8.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey8.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 8.</b></h2>
 
-<p align="center"><img src="../report/Images/survey9.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey9.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 9.</b></h2>
 
-<p align="center"><img src="../report/Images/survey10.png" width=654px height=300px>
+<p align="center"><img src="../report/Images/survey10.png" width=70%>
 </p>
 <h2 align="center"><b> Figure : Survey question 10.</b></h2>
 
