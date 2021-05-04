@@ -161,11 +161,8 @@ The word ‘record’ on the chart means the session details, such as when does 
 
 ## League
 
-When the league page is accessed, we processing the users data in our database (given the schema shown in the database section) to be able to show each user and the user’s friends’ total study time and their complete sessions within the previous week (from Monday to Sunday). Then we sort and display the results based on who has completed the most sessions within that week. These results are displayed on a league table. Other than the league table, the user's weekly progress is also displayed.
+When the league page is accessed, we processing the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within that week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
-## Asaqua
-
-The asaqua page shows the background and motivation on why we decided to go through with this app idea and how to use our application.
 
 ## Class diagrams
 
