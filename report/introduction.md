@@ -14,6 +14,7 @@
 - [**System Explanation Video**](#System-Explanation-Video)
   - [Video link](#Video-link)
 
+
 # Abstract
 
 ## Motivation for the project
@@ -37,6 +38,7 @@ FLOCUS solves two problems identified in the research and ideation stage:
 ## High level overview of our project
 
 From this development of the ideation stage, we produced FLOCUS, a single page application that aims to combat procrastination for university students while raising awareness for Asaqua and water scarcity. The single page application will be focused on a simple glass filling up with water from a tap as you work. The glass would fill up every study interval followed by the user being encouraged to take a short break to relax from work. The page will include a login through Facebook, which will allow the page to display a league table to encourage competitiveness between friends on how much work they are doing. Our initial aim was to integrate a google ads area to raise funds towards Asaqua however this has been included as an opportunity for future development work.  
+
 
 # Project Objectives
 
@@ -64,11 +66,22 @@ While students are working, the google ads section will be generating revenue wh
 
 To further encourage students to use Flocus, we are integrating a Facebook login to allow students to compete with their friends on how much time they are committing to work but also how much they are raising for charity by using our website. The competitive nature will further encourage students to increase their productivity but also return and use the application on future occasions rather than being a one-stop shop.
 
+## Team checklist
+
+See the following key points that we used as a checklist to keep the team motivated to succeed in this project: 
+
+- Build a working single page application that was both a procrastination tool and raises awareness for water scarcity in underdeveloped nations. 
+
+- Build extensive and attractive animations for the front-end with quick loading pages. 
+
+- Integrate the single page application with Facebook-API for login capability.
+
+
 # System Explanation Video
 
 ## Video link
 
-See the video link below showing a short explanation of our system and how we invisage consumers using FLOCUS.
+See the video link below showing a short explanation of our system and how we envisage consumers using FLOCUS.
 
 TODO --> [This will be a youtube link to a short screen recording of using our webpage.] 
 
