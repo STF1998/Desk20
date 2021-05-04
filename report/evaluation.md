@@ -21,7 +21,7 @@ Often a user will be put off by the simplest of bugs. There is a level of trust 
 
 ## Cross Browser Compatibility testing
 
-TODO - Sam
+<div id="all-browser-ww-monthly-202004-202104" width="600" height="400" style="width:600px; height: 400px;"></div><p>Source: <a href="https://gs.statcounter.com/browser-market-share">StatCounter Global Stats - Browser Market Share</a></p><script type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="https://gs.statcounter.com/chart.php?all-browser-ww-monthly-202004-202104&chartWidth=600"></script>
 
 # User testing
 
