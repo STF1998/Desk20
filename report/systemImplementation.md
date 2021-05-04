@@ -428,9 +428,9 @@ Angular offered a number of key advantages in the development of our Single Page
 During our opening sprint, we set up all required components for the project, this is displayed below:
 
 <p align="center">
-<img src="../report/Images/sprint_front.png" width=40%>
+<img src="../report/Images/sprint_front.png" width=30%>
 </p>
-<b><p align= "center">Figure : A screenshot of the single page application components.</p></b>
+<b><p align= "center">Figure : A screenshot of our Angular components.</p></b>
 
 One of the primary objectives of Flocus is to provide a healthy and productive virtual space for students and experienced professionals to use for their studies. We realised the importance of being evidence-led when designing the front-end of our application and as such, conducted a brief literature overview to inform the design process of each component.
 
@@ -488,11 +488,11 @@ For the implementation of the personal stats section titled “Your Week”, we 
 <b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
 <p align="center">
-<img src="../report/Images/table_code2.png" width=50%>
+<img src="../report/Images/table_code2.png" width=30%>
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
-TODO - Resizing HTML League table: (Include when developed).
+
 
 ### Asaqua component
 
