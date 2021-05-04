@@ -183,15 +183,16 @@ The production of wireframes provided a strong direction to build on once our de
 
 <p align="center">
 <img src="../report/Images/Wireframes/home.png" width=75%>
-<p>Wireframe: The Home Component</p>
+<h3>Wireframe: The Home Component</h3>
 <br>
 <img src="../report/Images/Wireframes/study.png" width=75%>
-<p>Wireframe: The Study Component</p>
+<h3>Wireframe: The Study Component</h3>
 <br>
 <img src="../report/Images/Wireframes/league.png" width=75%>
-<p>Wireframe: The League Component</p>
+<h3>Wireframe: The League Component</h3>
 </p>
 <br>
+
 
 ## User flow diagram
 
@@ -200,7 +201,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=80%>
 </p>
-<h2 align="center"><b> Figure : Mendelow's Matrix</b></h2>
+<h3 align="center"><b>User Flow Diagram</b></h3>
 
 # References
 
