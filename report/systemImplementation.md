@@ -394,7 +394,7 @@ In this section, all API requests with relation to record data will be discussed
 
 <br>
 <p align="center">
-<img src="../report/Images/records.png" width=75%>
+<img src="../report/Images/records.png" width=60%>
 </p>
 <b><p align= "center">Figure : </p></b>
 <br>
