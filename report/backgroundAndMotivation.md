@@ -1,6 +1,6 @@
 ![Creating great tasting products to lead a healthy lifestyle (1)](https://user-images.githubusercontent.com/69913789/115698894-07053580-a35d-11eb-9099-7732f95f6949.gif)
 
-# 1. Background and Motivation [10%]
+# Background and Motivation [10%]
 
 ## Contents of Background and Motivation
 - [**Background literature**](#Background-literature)
@@ -55,15 +55,22 @@ Having identified the Pomodoro Technique as a key tool to combat procrastination
 
 # State of the art survey
 
+Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had relatively similar aspects and technologies, each had subtle differences which can be seen the current industry review below.
+
 # Current industry review
 
-Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity. We came up with a list 
+Having agreed that we would like to build a single page application inspired by the pomodoro technique, we set about researching and analysing current webpages out there that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
 
 ## Pomofocus 
 
 Website: https://pomofocus.io/
 
 Pomofocus is an online pomodoro timer that works on both web and mobile browsers. The webpage revolves around a large timer with different colour backgrounds for study and break intervals (red for study, blue for break).
+
+<p align="center">
+<img src="../report/Images/pomo1.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomofocus website </p></b>
 
 <table>
 <tr>
@@ -94,6 +101,11 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
 Website: https://tomato-timer.com/
 
 Tomato timer is an online clock timer that follows the Pomodoro technique inspired by Tomatoi.st. It uses jQuery and HTML5 features like Desktop Notifications, Audio API and Local Storage instead of relying on Adobe Flash and other such technologies.
+
+<p align="center">
+<img src="../report/Images/pomo2.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Tomato Timer website </p></b>
 
 <table>
 <tr>
@@ -127,6 +139,11 @@ Website: http://www.tomato.es/
 
 Tomatoes is a Pomodoro Technique driven time tracker.
 
+<p align="center">
+<img src="../report/Images/pomo3.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Tomatoes website </p></b>
+
 <table>
 <tr>
   <th>Pros</th>
@@ -153,6 +170,11 @@ Tomatoes is a Pomodoro Technique driven time tracker.
 Website: https://www.pomodoro-tracker.com/
 
 Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro technique. 
+
+<p align="center">
+<img src="../report/Images/pomo4.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomodoro Tracker website </p></b>
 
 <table>
 <tr>
@@ -182,6 +204,11 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
 Website: https://pomodor.app/timer
 
 Easy-to-use web based Pomodoro timer.
+
+<p align="center">
+<img src="../report/Images/pomo5.png" width=70%>
+</p>
+<b><p align= "center"> Figure : Screenshot of Pomodor website </p></b>
 
 <table>
 <tr>
@@ -215,7 +242,7 @@ Based on current market research, we identified the following gaps and places fo
 
 # Defined problem
 
-The problem we aim to solve is procrastination using visual aids with a positive social aspect.
+The problem we aim to solve is procrastination using visual aids with a positive social enterprise aspect.
 
 ## Scope
 
@@ -223,7 +250,7 @@ The problem we aim to solve is procrastination using visual aids with a positive
 
 With the use of a visual aid of a glass filling up, we created a single page application that helps reduce procrastination and provides an insight into the important issue of droughts in Africa through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer with a competitive aspect using league tables. We have a running theme of water through the application with the link to water accessibility challenges in developing nations with a focus on the work Asaqua does to help improve water accessibility in Africa. 
 
-Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water accessibility. Thus, our applications looks to raise awareness for water accessibility while also provoking changes in studying behaviours in student populations. 
+Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water accessibility. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in student populations. 
  
 - For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
 - For Asaqua, we are looking to raise awareness for an important issue around droughts and water accessibility in developing nations in Africa. 
@@ -240,9 +267,15 @@ Has to be a competitive aspect that is a leader board between friends or peers �
 
 ### Technical scope
 
-
+(TODO) - Jati
 
 ## Challenges
+
+Given limited resources and time restraints, the biggest challenge of this project is effectively creating a minimum viable product that is a tool to help reduce procrastination but also raises awareness for an important issue in water accessibility and the work Asaqua does to improve water accessibility. 
+
+For the front-end, the biggest challenge will be building and integrating slick animations to portray the theme of water but also a visual aid as a timer. 
+
+For the backend, the biggest challenge will be intergating with Facebook-API and selecting the data to be outputted on the webpage. 
 
 ## Reference List
 
@@ -274,3 +307,9 @@ Pychyl, T. A., & Flett, G. L. 2012. Procrastination and self-regulatory failure:
 to the special issue. Journal of Rational-Emotive & Cognitive-Behavior Therapy, 30(4), 203–212. doi:10.1007/s10942-012-0149-5
 
 Zimmerman, B. J. (2008). Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183. doi:10.3102/0002831207312909
+
+# Project report navigation
+
+- [Next page: System Implementation](https://github.com/STF1998/Desk20/blob/main/report/systemImplementation.md)
+- [Previous page: Introduction](https://github.com/STF1998/Desk20/blob/main/report/introduction.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)

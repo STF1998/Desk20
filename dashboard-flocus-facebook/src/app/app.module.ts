@@ -13,7 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 
 import {ChartsModule} from 'ng2-charts';
 
-import { APITestComponent } from './api-test/api-test.component';
+// import { APITestComponent } from './api-test/api-test.component';
 import { HomeComponent } from './home/home.component';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,7 +26,7 @@ import { AsaquaComponent } from './asaqua/asaqua.component';
     AppComponent,
     LoginComponent,
     NavBarComponent,
-    APITestComponent,
+    // APITestComponent,
     HomeComponent,
     StudyComponent,
     LeagueComponent,

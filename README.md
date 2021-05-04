@@ -1,5 +1,6 @@
 <img align="center" src="https://user-images.githubusercontent.com/69913789/115701016-3ae15a80-a35f-11eb-9f51-31a9b10fefda.gif" width=100%>
 
+
 <h2 align="center">Solving procastination and raising awareness for water accessibility one glass at a time!</h2>
 
 ## Our Product
@@ -20,39 +21,35 @@ Our aim is simple: combat procrastination and raise awareness for water accessib
 
 ### Features of Flocus
 
-- 
-- 
-- 
+- Visual aid of a glass filling up as a alternative pomodoro timer.
+- Facebook login capability
+- League tables to compete with your friends
+- Raises awareness for water accessibility and the work ASAQUA do to improve water accessibility in developing nations.
 
 ## Our Target Market
 
 When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however after initial focus groups and interviews with friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful but easy on the eye animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
 
-## Our Stakeholders
+## Who are we passing Flocus onto?
 
 ### Asaqua 
 
 Asaqua is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  Asaqua collaborates with committed locals, NGOs, and research institutes and strives for a sustainable future for our next generation.
 
-Our vision is a world where no kid has to trudge miles every day to fetch water, and every individual has the access to clean water.
+Their vision is a world where no child has to trudge miles every day to fetch water, and every individual has the access to clean water.
 
 While, we have been working on this project it was great to learn more about the work Asaqua does in developing nations. This understanding further motivated the team to create a product to the best of our ability given the meaningful impact it could have on both procrastination and helping raise awareness for the work Asaqua does. 
 
 Please see below some very cool photos of the work Asaqua has been doing in Africa:
 
-<p float="center">
-  <img src="asaqua1.png" width="300" height="300">
-  <img src="asaqua2.png" width="300" height="300">
-  <img src="asaqua3.png" width="300" height="300">
+<p align="center">
+<img src="asaqua3.png" width=50%>
 </p>
+<b><p align= "center">A recent photo of ASAQUA installing a water storage unit.</p></b>
 
-We're also very fortunate to have a message from the ASAQUA team on completion of our MVP. See below:
+We're also very fortunate to have a message from the ASAQUA team on completion of our project:
 
-“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally.
-
-Thank you, Flocus!”
-
--- The Asaqua Team
+“We'd like to extend our heartfelt gratitude to Flocus who have been working with us to raise awareness for the water scarcity crisis that 1/3 of the global population are currently facing. The Flocus team shares the same values as us and has provided a fantastic opportunity for ASAQUA to build awareness and potential ad revenues - we are looking forward to taking over the Flocus project in the future. The cooperation between Asaqua and Flocus demonstrates a novel charity model where users can create a social impact digitally. Thank you team Flocus!”
 
 ## Team Members
 
@@ -79,9 +76,57 @@ Tom's role has been focused on integration of front and back-end and aiding Gord
 ## **Report**
 
 ### [1. Introduction](report/introduction.md)
+
+This section conatins the following elements:
+- Abstract and motivation for the project
+- Project aims and objectives
+- A short video explaining Flocus and it's implementation
+
 ### [2. Background and Motivation](report/backgroundAndMotivation.md)
+
+This section contains the following elements:
+- Literature review 
+- State of the art survey and current industry review
+- The problem Flocus is solving 
+
 ### [3. System Implementation](report/systemImplementation.md)
+
+This section contains the following elements:
+- Stack architecture and system design
+- Back-end
+- Middle tier
+- Front-end
+- Deployment details
+
 ### [4. UX Design](report/UXDesign.md)
+
+This section contains the following elements:
+- Design process and protoyping
+- Users and stakeholders
+- UX approach
+- Understanding of user group
+- Wireframes and interaction flow diagrams
+
 ### [5. Sprints & Project Management](report/sprints&ProjectManagement.md)
+
+This section contains the following elements:
+- Group working methods
+- Team roles
+- Sprints documentation
+- Team use of Git
+
 ### [6. Evaluation](report/evaluation.md)
+
+This section contains the following elements:
+- evaluation methods
+- Unit and functional testing
+- User testing
+
 ### [7. Conclusion](report/conclusion.md)
+
+This section contains the following elements:
+- Reflection of working practices
+- Reflection of entire project
+- COVID-19 impact
+- Discussion of Social and Ethical implications
+- Discussion of future work

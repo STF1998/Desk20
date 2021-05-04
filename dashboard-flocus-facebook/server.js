@@ -14,7 +14,7 @@ const session = require('express-session');
 const facebookStrategy = require('passport-facebook').Strategy;
 
 // Get our API routes
-const api = require('./server/routes/api');
+// const api = require('./server/routes/api');
 const record = require('./server/routes/record');
 const league = require('./server/routes/league');
 
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'dist/dashboard')));
 
 //app.use(express.static(path.join(__dirname, 'src/app/login')));
 // Set our api routes
-app.use('/api', api);
+// app.use('/api', api);
 app.use('/api/record', record);
 app.use('/api/league', league);
 
