@@ -11,6 +11,13 @@
 
 # Details of design evaluation 
 
+We wanted to ensure that prospective users are not restricted to use a specific browser when accessing our application. Thus, it was crucial to develop and test the flocus application to ensure libraries, functions and effects were supported in all browsers and not just the most popular, such as Chrome. During the development process we ran manual tests on three of the main four browsers:
+
+<ul>
+    <li>Google Chrome</li>
+    <li>Firefox</li>
+    <li>Microsift Edge</li>
+</ul>
 
 
 # Unit/Functional testing
