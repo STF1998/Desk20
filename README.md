@@ -17,7 +17,7 @@ Our aim is simple: combat procrastination and raise awareness for water scarcity
 <b><p align= "center">A short clip of flocus in action</p></b>
 
 
-### How to use Flcous?
+### How to use Flocus?
 
 1. Sign in via the Facebook plugin.
 2. Select how long you would like to study for and the break time you would like.
