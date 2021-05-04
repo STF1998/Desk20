@@ -19,13 +19,13 @@
     #b3cbec 11px
     );
     position: absolute;
-    top: 200%;
+    top: 130%;
     left: 0%;
-    -moz-transform: translateX(0%) translateY(-200%);
-    -webkit-transform: translateX(0%) translateY(-200%);
-    transform: translateX(0%) translateY(-200%);
-    width: 650px;
-    height:650px;
+    -moz-transform: translateX(0%) translateY(-130%);
+    -webkit-transform: translateX(0%) translateY(-130%);
+    transform: translateX(0%) translateY(-130%);
+    width: 600px;
+    height:600px;
     border-radius: 50%;
 
 }

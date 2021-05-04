@@ -19,13 +19,17 @@ export class LeagueComponent implements OnInit {
   private scores: any = [];
   public leagueTable: any = [];
   public fill = 1;
+  public isSafari: boolean  = false;
 
   constructor(private DataService: DataService) {
   }
 
   ngOnInit(): void {
     this.retrieveUidWithUserData();
-
+    const userAgent = window.navigator.userAgent;
+    if(userAgent.includes("Safari") == true && userAgent.includes("Chrome") == false){
+      this.isSafari = true;
+    }
   }
 
   public barChartOptions = {
