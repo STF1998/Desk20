@@ -42,7 +42,6 @@ We tested the study component on Safari but, on reflection, did not have a compr
 This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
 
 
-
 # User testing
 
 Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability testing plan, we wanted to focus on ensuring we had tested the following key points:
