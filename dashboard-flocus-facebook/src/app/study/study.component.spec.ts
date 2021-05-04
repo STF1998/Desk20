@@ -1,22 +1,30 @@
+
+import { HttpClientModule } from '@angular/common/http';
+import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { DataService } from '../data.service';
 
 import { StudyComponent } from './study.component';
 
 describe('StudyComponent', () => {
   let component: StudyComponent;
   let fixture: ComponentFixture<StudyComponent>;
+  let html: DebugElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StudyComponent ]
+      imports: [ HttpClientModule ],
+      declarations: [ StudyComponent ],
+      providers: [ DataService ]
     })
-    .compileComponents();
-  });
+    .compileComponents().then(() => {
+      fixture = TestBed.createComponent(StudyComponent);
+      component = fixture.componentInstance;
+      html = fixture.debugElement;
+    });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(StudyComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
+
   });
 
   it('should create', () => {
