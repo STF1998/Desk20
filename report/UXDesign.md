@@ -115,7 +115,7 @@ Having defined our user stories, we began developing the key aspects around redu
 
 We were able collect data from 23 university students. While the survey was short and with limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination. Please see below snapshots of the results from the survey:
 
-<p align="center"><img src="../report/Images/survey1.png" width=70%>
+<p align="center"><img src="../report/Images/survey1.png" width=100px>
 </p>
 <h2 align="center"><b> Figure : Survey question 1.</b></h2>
 
@@ -171,7 +171,9 @@ As an alternative to the above, we held informal conversations with friends and 
 
 # Wireframes and Systems
 
-Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystems and wireframe requirements before defining our sprints and product development stage.
+Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystem requirements and wireframe designs before defining our sprints and product development stage.
+
+
 
 ## Wireframes
 
