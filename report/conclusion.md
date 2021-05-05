@@ -7,18 +7,22 @@
 - [**Working practices**](#Working-practices)
   - [General working practices](#General-working-practices)
   - [Management of isses](#Management-of-issues)
+  - [Evaluation of agile techniques](#Evaluation-of-agile-techniques)
 - [**Project reflection**](#Project-reflection)
 - [**Impact of COVID-19 on working practices**](#Impact-of-COVID-19-on-working-practices)
 - [**Discussion of Social and Ethical implications of our work**](#Discussion-of-Social-and-Ethical-implications-of-our-work)
+  - [User Data Privacy](#User-Data-Privacy)
+  - [Stress, Anxiety and Overworking](#Stress,-Anxiety-and-Overworking)
+  - [Focus Group](#Focus-Group)
 - [**Discussion of future work**](#Discussion-of-future-work)
   - [Design and development](#Design-and-development)
   - [Development testing](#Development-testing)
   - [Evaluation](#Evaluation)
 - [**Summary**](#Summary)
 
-# Working practices
+## Working practices
 
-## General working practices
+### General working practices
 
 Throughout the project, we feel we have worked effectively and efficiently with one another with consistent communication throughout the design, development and evaluation process.
 
@@ -26,7 +30,7 @@ From the beginning, each individual expressed a desire to work in specific areas
 
 While we may have struggled at times to get everyone in a meeting due to covid restrictions and difference in time zones, we feel our use of alternative technology and creation of discord chats and use of GitHub allowed the group to work effectively regardless of location or time zone. In the key sprints of development, our team had regular weekly meetings at the start of the week to ensure everyone’s progress and aims for the week were on the same page. If we had any issues throughout the week, we effectively shared queries via the discord chat and Sam hosted regular 1-to-1 talks with team members to ensure they were on track. 
 
-## Management of issues
+### Management of issues
 
 Initially, as a team we did struggle with team communication. This was most likely caused by the lack of familarlity with one another and challenging coursework in other modules. However, to improve our relationship as a team we started to meet more regualrly, having short meetings before the Thrusday lab where we would update one another on ideas, progress on the project and day-to-day activities. 
 
@@ -43,7 +47,7 @@ Please see an example below of the Flocus team using a Thursday meeting opportun
 
 Alonsgide these meetings, the use of discord was key for the management of issues. As seen in the communication channels section, we had different discord sub-channels to discuss specific issues to do with ther sprints. These were increibly useful for sub teams to query issues and then if any required the whole team they would be put into the general channel. Overall, the regular team and sub-team meetings alongside use of discord channels enabled quick resolution of any issues the team came across throughout the project.
 
-## Evaluation of agile techniques used by the team
+### Evaluation of agile techniques 
 
 During our final stand-up &#128543;, we discussed our overall experience of the project, including our personal experiences of the agile framework. We identified four main aspects of agile that enabled us to succeed in our ambitions:
 
@@ -61,7 +65,7 @@ The flexibility of agile added significant value to our MVP. Instead of being fo
 Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
 
 
-# Project reflection
+## Project reflection
 
 Overall, as a team we are very proud of Flocus, including the design, development and evaluation of our MVP (minimum viable product).
 
@@ -71,7 +75,7 @@ Due to our big ideas and aspirations as a team,  when we approached discussing t
 
 So while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
-# Impact of COVID-19 on working practices
+## Impact of COVID-19 on working practices
 
 Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members however, as mentioned above, the more meeting sna catch ups the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regards to the project. 
 
@@ -79,7 +83,7 @@ At times it could have been useful to be in the same room as one another however
 
 Overall, we are very proud of one another for the work in this project. We are very excited to meet up for a few drinks and food to celebrate our work once the restrictions allow (and Jati is able to travel to the UK!). 
 
-# Discussion of Social and Ethical implications of our work
+## Discussion of Social and Ethical implications of our work
 
 There were several concerns that were raised in the ideation process regarding how our proposed project could bring harm to the end-users and third parties. The following discussion will highlight the issues raised and outline the actions that we took to mitigate against specific risk factors.
 
@@ -102,47 +106,47 @@ Absent of a specific ethical clearance by the University of Bristol, we had to c
   <li>Wellbeing – An interesting line of investigation, and potential thesis proposal, would be the impact of Flocus on users’ mental and physical wellbeing. This could have been investigated in relation to direct and indirect channels. Although this would have potentially offered further evidence as to the success (or failure) that we have experienced in producing our application, mental and physical health are multi-faceted topics and should be investigated with due regard and process. As such, this avenue of research was not pursued.</li>
 </ul>
 
-# Discussion of future work
+## Discussion of future work
 
-## Design and development
+### Design and development
 
 On the design side of the FLocus, if we had more time we would have liked to do an extensive user study to develop a strongewr understanding of areas of improvement. However, from discussions within the team we have come up with the following ideas for ideas for future design and development of each page:
 
-### Login landing page
+#### Login landing page
 
 - Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside google login option.
 - An about pop up to read more about the application and what Flocus is
 - More animations around studying and the story behind Asaqua.
 
-### Study page
+#### Study page
 
 - Introduce a customisable icon that you can design for your work mascot.
 - A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
 - Portal personalisation so people can alter how long they want to work and have a break for.
 
-### League table 
+#### League table 
 
 - Improved metrics for personal statistics.
 - Potential for a swimming race animation keeping in line with the theme of water.
 - The current league table only ranked our friends, and the user is not inside it. The improvement would be to make the user also exists in the table.
 
-### About page
+#### About page
 
 - Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
 - Option to donate directly to Asaqua.
 
-### General development
+#### General development
 
 - Possible organisation of code so the backend and frontend are in separate directories.
 - Different browser opitimisation.
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
-## Development testing
+### Development testing
 
 TODO
 
-## Evaluation
+### Evaluation
 
 As mentioned previously, in the future we woould like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
 
@@ -161,13 +165,13 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 
 With pre-planned ethical analysis and approval we would have liked to include the following in future evaluative technqiues:
 
-### Questionaires
+#### Questionaires
 
 If we had the time and resources we would have liked to undertake comprehensive questionaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students and working professionals. 
 
 These questionaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionaires are a great opportunity to ask a range of closed and open questions
 
-### Interviews
+#### Interviews
 
 We'd also like to organise one-to-one interview with potential end-users to underatnd their opinions regarding user flows and the design of Flocus.
 
@@ -178,7 +182,7 @@ Other areas to explore for future work:
 - Controlled experiments - Flocus team compare users interaction with Flocus and it's close competitiors. 
 - Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
 
-# Summary
+## Summary
 
 Overall, we have really enjoyed working as a team to build this special project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
 
