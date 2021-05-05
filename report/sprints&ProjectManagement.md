@@ -7,8 +7,15 @@
   - [Overview](#Overview)
   - [Agile methodology](#Agile-methodology)
   - [Communication channels](#Communication-channels)
-- [**Meet the team**](#State-of-the-art-survey)
-- [**Sprints documentation*](#Sprints-documentation)
+- [**Meet the team**](#Meet-The-Team)
+- [**The Sprints documentation**](#The-Sprints-documentation)
+  - [Sprint 1 - An Early Setback and The Ideation Process](#Sprint-1---An-Early-Setback-and-The-Ideation-Process)
+  - [Sprint 2 - Angular and API setup](#Sprint-2---Angular-and-API-setup)
+  - [Sprint 3 - Facebook API issues and Design Time](#Sprint-3---Facebook-API-issues-and-Design-Time)
+  - [Sprint 4 - The Study Component and MongoDB](#Sprint-4---The-Study-Component-and-MongoDB)
+  - [Sprint 5 - Bringing Things Together](#Sprint-5---Bringing-Things-Together)
+  - [Sprint 6 - The League Table and Databases](#Sprint-6---The-League-Table-and-Databases)
+  - [Sprint 7 - The Final Countdown](#Sprint-7---The-Final-Countdown)
 - [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
@@ -50,7 +57,48 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 
 The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
 
-## The Sprint Archive
+## Meet The Team
+
+<table>
+<tr>
+  <th>      Name      </th>
+  <th>Photo</th>
+  <th>Team role</th>
+  <th>Biggest lesson learnt during the project</th>
+</tr>
+<tr>
+  <td> Sam Fitton </td>
+  <td><img src="../report/Images/circle-cropped (6).png" width=1000%></td>
+  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
+  <td> Learning how to implement animations with CSS and typescript to bring HTML elements to life. </td>
+</tr>
+<tr>
+  <td> Hugh Hamilton-Green </td>
+  <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
+  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
+  <td> I really enjoyed learning about end-to-end development with a focus on user experience (UX).</td>
+</tr>
+<tr>
+  <td> Jati Wicaksono </td>
+  <td><img src="../report/Images/circle-cropped (8).png" width=1000%></td>
+  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
+  <td> Learning how to implement a RESTful API and accessing external API's. </td>
+</tr>
+<tr>
+  <td> Gordon Tse</td>
+  <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
+  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
+  <td> Building future-proof and flexible data models that allow multiple components to access data efficiently. </td>
+</tr>
+<tr>
+  <td> Tom Cockain </td>
+  <td><img src="../report/Images/circle-cropped (9).png" width=1000%></td>
+  <td> Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end. </td>
+  <td> Understanding how a robust API is key to efficiently adding new features to an application. </td>
+</tr>
+</table>
+
+## The Sprints Documentation
 
 Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
 
@@ -416,50 +464,6 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
 <br>
 <br>
 
-
-## Meet The Team
-
-<table>
-<tr>
-  <th>      Name      </th>
-  <th>Photo</th>
-  <th>Team role</th>
-  <th>Biggest lesson learnt during the project</th>
-</tr>
-<tr>
-  <td> Sam Fitton </td>
-  <td><img src="../report/Images/circle-cropped (6).png" width=1000%></td>
-  <td>Sam's role has been focused on full-stack development with a focus on designing the front-end and integrating Facebook's log-in onto the page. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Hugh Hamilton-Green </td>
-  <td><img src="../report/Images/circle-cropped (5).png" width=1000%></td>
-  <td> Hugh's role has been focused on the front-end design and implementation alongside keeping up-to-date with documentation and ensuring the construction of report alongside development. </td>
-  <td> I really enjoyed learning about end-to-end development with a focus on user experience (UX).</td>
-</tr>
-<tr>
-  <td> Jati Wicaksono </td>
-  <td><img src="../report/Images/circle-cropped (8).png" width=1000%></td>
-  <td> Jati's role has been focused on the back-end with particular focus on building our API and integrating with Facebook's API allowing login usability on the page. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Gordon Tse</td>
-  <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
-  <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
-  <td></td>
-</tr>
-<tr>
-  <td> Tom Cockain </td>
-  <td><img src="../report/Images/circle-cropped (9).png" width=1000%></td>
-  <td>Tom's role has been focused on integration of front and back-end and aiding Gordon with the database and how we display the selected data on the front-end.</td>
-  <td></td>
-</tr>
-</table>
-
-## Sprints documentation
-
 ## Team use of git
 
 Our team created a remote repository on GitHub for collaboration and version control. In our repository, there are mainly the main branch and different personal branches. We use the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers has his personal feature branch, where we make a frequent commit to achieve effective version control during the sprints. Once the newly developed features are ready to merge with the production-ready working copy on the main branch, we either submit a pull request or inform the entire team about the incoming changes. Therefore, all developers can pull from the latest change, review the code and test the latest working copy with Docker.
@@ -469,7 +473,7 @@ Our team created a remote repository on GitHub for collaboration and version con
 </p>
 <b><p align= "center"> Figure : Diagrammatical representation of our GitHub repository . </p></b>
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: Evaluation](https://github.com/STF1998/Desk20/blob/main/report/evaluation.md)
 - [Previous page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
