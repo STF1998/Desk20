@@ -11,8 +11,8 @@
 - [**Impact of COVID-19 on working practices**](Impact-of-COVID-19-on-working-practices)
 - [**Discussion of Social and Ethical implications of our work**](#Discussion-of-Social-and-Ethical-implications-of-your-work)
 - [**Discussion of future work**](#Discussion-of-future-work)
-  - [Design](#Design)
-  - [Development](#Development)
+  - [Design and development](#Design-and-development)
+  - [Development testing](#Development-testing)
   - [Evaluation](#Evaluation)
 - [**Summary**](#Summary)
 
@@ -138,6 +138,10 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 - Different browser opitimisation.
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
+
+## Development testing
+
+TODO
 
 ## Evaluation
 
