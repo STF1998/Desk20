@@ -411,14 +411,18 @@ In this section, all API requests with relation to record data will be discussed
 <b><p align= "center">Figure : </p></b>
 <br>
 
-So, each time a user completes, pauses or exits a session, a POST request is executed and a record object is saved in our database.
+So, each time a user completes or exits a session, a POST request is executed and a record object is saved in our database. 
 
-The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure x.
+The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified in the parameter, from the database. Then all the record objects that are returned are iteratively processed. After the completion of this process, there are two variables which, are returned. The first return value is the total time spent and the second value is the total sessions completed. This process is displayed below in the flowchart: 
+
+
+By 1500, we are referring to the number of seconds for each study session. To the process above, MongoDB smart query function calls aggregate. The documentation on aggregate functions can be found <a href = "https://docs.mongodb.com/manual/aggregation/">here</a>. The GET method is shown below: 
+
 
 <p align="center">
 <img src="../report/Images/records2.png" width=75%>
 </p>
-<b><p align= "center">Figure : The GET method</p></b>
+<b><p align= "center">Figure: The GET method</p></b>
 
 ## API for League Table
 
