@@ -6,19 +6,22 @@
 
 - [**Details of design evaluation**](#Details-of-design-evaluation)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
+  - [Cross browser compatibility testing](#Cross-browser-compatibility-testing)
 - [**User acceptance testing**](#User-acceptance-testing)
+  - [Alpha testing](#Alpha-testing)
+  - [Beta testing](#Beta-testing)
 
-# Details of design evaluation 
+## Details of design evaluation 
 
 
 
-# Unit/Functional testing
+## Unit/Functional testing
 
 When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
 
 Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their login details but in future development this could include payment data. Therefore, testing is critical to software success, particualrly with a single poage application focused on user experience. 
 
-## Cross Browser Compatibility testing
+### Cross browser compatibility testing
 
 <br>
 
@@ -106,7 +109,7 @@ Possible types of future user testing, include:
 
 Please see the conclusion section to learn more about future evaluative technqiues.
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: Conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md)
 - [Previous page: Sprints and Project Management](https://github.com/STF1998/Desk20/blob/main/report/sprints%26ProjectManagement.md)
