@@ -8,7 +8,7 @@
   - [Agile methodology](#Agile-methodology)
   - [Communication channels](#Communication-channels)
 - [**Meet the team**](#Meet-The-Team)
-- [**The Sprints documentation*](#The-Sprints-documentation)
+- [**The Sprints documentation**](#The-Sprints-documentation)
 - [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
