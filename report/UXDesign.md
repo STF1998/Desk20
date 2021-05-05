@@ -46,7 +46,7 @@ Please see figure below:
 
 <p align="center"><img src="../report/Images/MoodBoard.png" width=100%>
 </p>
-<h2 align="center"><b> Figure 1: A mood board created as part of the ideation stage.</b></h2>
+<p align="center"><b> Figure 1: A mood board created as part of the ideation stage.</b></p>
 
 ### Paper prototyping
 
@@ -73,7 +73,7 @@ After agreeing on the idea of Flocus and deciding on initial design themes and m
 <p align="center">
 <img src="../report/Images/Power-Interest_key.png" width=30%>
 </p>
-<h2 align="center"><b> Figure 2: Our version of Mendelow's Matrix</b></h2>
+<p align="center"><b> Figure 2: Our version of Mendelow's Matrix</b></p>
 
 We have included some remarks regarding the “Manage Closely”, “Keep Satisfied” and “Keep Informed” stakeholders:
 
@@ -194,7 +194,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=100%>
 </p>
-<p align="center">Figure 3: User flow diagram</p>
+<b><p align="center">Figure 3: User flow diagram</p></b>
 
 ## References
 
