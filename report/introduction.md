@@ -24,7 +24,7 @@
 </p>
 <b><p align= "center"> Figure 1: Lucidchart of the initial ideation stage. </p></b>
 
-The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources, we swiftly aimed to define a simple but effective project idea that solved a critical issue but, also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas we decided the most suitable and simple idea would be to create a competitive aspect based on avoiding procrastination. 
+The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources, we swiftly aimed to define a simple but effective project idea that solved a critical issue but, also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas, we decided the most suitable and simple idea would be to create a competitive aspect, based on avoiding procrastination. 
 
 However, while we had defined the two key aspects required by the project brief, we quickly realised we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water scarcity in developing nations. Fortunately, Gordon, one of our team members, had founded his own NGO (non-governmental organisation) called Asaqua that provides affordable solutions to the water crisis in Africa. 
 
