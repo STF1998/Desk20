@@ -177,7 +177,7 @@ Generally, we received enthusiastic responses to the idea with constructive crit
 
 ### Sprint 2 - Angular and API setup
 
-[19th March – 26th March]
+##### 19th March – 26th March
 
 To make a start, we held an initial development meeting to discuss the components required to begin back- and front-end development. We knew that we were going to have to implement a database for storing glass count data and personal statistics and so an API was required. We identified our week’s objectives:
 
@@ -194,7 +194,7 @@ To make a start, we held an initial development meeting to discuss the component
 
 ### Sprint 3 - Facebook API issues and Design Time
 
-[26th March – 2nd April]
+##### 26th March – 2nd April
 
 During the initial stages of development we were able to produce a preliminary design for the home component. This is displayed in the .gif below.
 
@@ -277,7 +277,7 @@ After further research, it became clear that Facebook is strict and careful abou
 
 ### Sprint 4 - The Study Component and MongoDB
 
-[9th April - 16th April]
+##### 9th April - 16th April
 
 To kickstart the week we had our normal Monday morning call on teams and discussed the upcoming weekly tasks:
 
@@ -347,7 +347,7 @@ In the backend development, one of the key challenges in this sprint was to figu
 
 ### Sprint 5 - Bringing Things Together
 
-[16th April - 23th April]
+##### 16th April - 23th April
 
 Sprint 5 took us into the second half of our development process. We started to become more aware of the looming deadline and as a result, pushed forward to achieve a minimum viable product. This meant bringing all previously designed components together with app-routing and a navigation panel. Most task from the previous sprint were carried over however, in our Monday morning stand-up, we identified some new tasks that are displayed below:
 
@@ -368,7 +368,7 @@ A further struggle was to implement a simple routing mechanism on Angular. Makin
 
 ### Sprint 6 - The League Table and Databases
 
-[23rd April - 30th April]
+##### 23rd April - 30th April
 
 Sprint 6 marked the penultimate week of development and we realised that there was still much to achieve before we could perceive the project as complete. For the upcoming week, we noted the following tasks and set about getting as much done as possible: 
 
@@ -452,7 +452,7 @@ This feedback was pivotal in finalising our designs. As we moved into Sprint 7, 
 
 ### Sprint 7 - The Final Countdown
 
-[30th April - 7th May]
+##### 30th April - 7th May
 
 Our final sprint, Sprint 7, was characterised by the evaluation and final write-up of our report. We had maintained a good level of documentation throughout the project and so, the final writing was almost exclusively confined to the Evaluation, Sprints and our project conclusion. We have listed the final tasks that we identified as mandatory before the project deadline, all of which have been completed:
 
