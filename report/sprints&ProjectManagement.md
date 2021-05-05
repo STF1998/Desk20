@@ -116,7 +116,7 @@ Throughout development, we consulted prospective users so to continuously tailor
 
 ### Sprint 1 - An Early Setback and The Ideation Process
 
-[26th February – 5th March]
+##### 26th February – 5th March
 
 
 Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team, our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases. We organised a meeting at Desk 20 on Monday morning to discuss the matter and revisit the ideation process. We identified some key objectives for that week:
