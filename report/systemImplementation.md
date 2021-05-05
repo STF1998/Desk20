@@ -26,7 +26,7 @@
 
 ### Stack architecture
 
-Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology is:
+Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology are:
 
 -	MongoDB: Database solution
 -	Express: NodeJS framework to simplify http request and response
@@ -167,7 +167,7 @@ The word ‘record’ on the chart means the session details, such as when does 
 
 #### League
 
-When the league page is accessed, we process the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
+When the league page is accessed, we process the user's data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
 Implementing the league table was more difficult than anticipated. We originally intended to use the RESTful API functions such as getFriendsUid() to get each user’s friends’ IDs which, would then allow us to use our getRecord() function, using the ids collected to form a league table. 
 
@@ -183,7 +183,7 @@ Shown below is the UML class diagram that demonstrates the production of UserDat
 
 Facebook’s API returns a user object that is parsed into a chunk of Strings in the middle tier. This is then saved in the database according to the User schema. We have constructed it so that saved data can only be accessed by one variable per API call (in one API call it only returns userUID, or userName).
 
-In terms of records, users can only post one record at a time but, will recieve all records within a short period of time. These records are then processed in the front-end to be shown in our league table.
+In terms of records, users can only post one record at a time but, will receive all records within a short period. These records are then processed in the front-end to be shown in our league table.
 
 <br>
 <p align="center">
