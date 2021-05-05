@@ -197,16 +197,18 @@ These questionaires are perfect for collecting a broad range of qualitative and 
 
 #### Interviews
 
-We'd also like to organise one-to-one interview with potential end-users to underatnd their opinions regarding user flows and the design of Flocus.
+We'd also like to organise one-to-one interviews with potential end-users to understand their opinions regarding user flows and the design of Flocus.
 
-Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data however explore opinions as they come up in the interviews. Questionairres allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
+Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data although we would have explored opinions as they come up in the interviews. Questionaires allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
 
 Other areas to explore for future work:
 
 - Controlled experiments - Flocus team compare user's interaction with Flocus and it's close competitiors. 
-- Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
+- Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to automate testing of usability. 
 
 For future ideas around design testing and evaluation, please see our [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md).
+
+<br>
 
 ## Unit/Functional testing
 
