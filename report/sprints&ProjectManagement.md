@@ -81,7 +81,7 @@ The above image displays our discord chat set-up. Initially, all project discuss
   <td> Gordon Tse</td>
   <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
   <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
-  <td></td>
+  <td> Building future-proof and flexible data models that allow multiple components to access data efficiently. </td>
 </tr>
 <tr>
   <td> Tom Cockain </td>
