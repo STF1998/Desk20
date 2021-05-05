@@ -13,11 +13,11 @@
   - [Beta testing](#Beta-testing)
 
 
-## Overview of evaluation
+## Overview of Evaluation
 
 As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
 
-Gordon, Tom and Jati were responsible for testing the development and back end side of things. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
+Gordon, Tom and Jati were responsible for testing the development and back-end. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
 
 ### Short timeline for testing and evaluation:
 
@@ -56,7 +56,7 @@ Although this point is short, we believe it is one of the most important. The qu
 
 ### Manual approach to testing
 
- Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
+ Due to our target end user being the same demographic as every team member, we were fortunate to have an abundance of possible end-users to test out Flocus. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
 
 - Users can complete the main action of using the visual aid as a study tool
 - Users can navigate the pages easily 
@@ -178,10 +178,10 @@ Please see below a table summarising some of the key user test cases along with 
 </tr>
 </table>
 
-This helped pick up minor bugs, including:
+This helped pick up minor bugs which, we have since fixed. These include:
 - issues with the glass filling up animation
 - issues with the font and size of some of the text on the about page
-- compatability issues with browsers focused on loading the lottie animations correctly.
+- compatability issues with browsers focused on loading the lottie animations correctly. Specifically, the user Agent in the league component was detecting Chrome as Safari.
 
 As outlined above, one area that was also picked up was the compatability with different browsers. Having researched online, we realised this is a common error when working with Angular-CLI. Therefore, this was included as part of key areas of functional testing below.
 
