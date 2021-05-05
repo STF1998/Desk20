@@ -295,7 +295,7 @@ The front-end development process had seen success in the implementation of the 
 <p align="center">
 <img src="../report/Images/Old_Study_Comp.png" width=70%>
 </p>
-<b><p align= "center"> Figure 3: The Initial Study Component </p></b>
+<b><p align= "center"> Figure 4: The Initial Study Component </p></b>
 
 
 <br>
@@ -390,14 +390,14 @@ As for the front-end development, We did not want to trouble our user group too 
 <p align="center">
 <img src="../report/Images/old_Asaqua_comp.png" width=70%>
 </p>
-<b><p align= "center"> Figure : The Initial Asaqua Component</p></b>
+<b><p align= "center"> Figure 5: The Initial Asaqua Component</p></b>
 
 <br>
 
 <p align="center">
 <img src="../report/Images/old_league_comp.png" width=70%>
 </p>
-<b><p align= "center"> Figure : The Initial League Component</p></b>
+<b><p align= "center"> Figure 6: The Initial League Component</p></b>
 
 
 
@@ -471,7 +471,7 @@ Our team created a remote repository on GitHub for collaboration and version con
 <p align="center">
 <img src="../report/Images/git_diagram.png" width=70%>
 </p>
-<b><p align= "center"> Figure : Diagrammatical representation of our GitHub repository . </p></b>
+<b><p align= "center"> Figure 7: Diagrammatical representation of our GitHub repository </p></b>
 
 ## Project report navigation
 
