@@ -34,7 +34,7 @@ We formed a matrix with our top ideas of critical world issues and gamification 
 
 - Shoot all the big tycoons who are dominating fast fashion. 
 
-Based upon our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with the use of interval times and by taking inspiration from the Pomodoro technique. Alongside this, our team focused on how to incorporate a focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and displaying competitive statistics between friends. This led to our punch line of: 
+Based on our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with the use of interval times and by taking inspiration from the Pomodoro technique. Alongside this, our team focused on how to incorporate a focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and displaying competitive statistics between friends. This led to our punch line of: 
 
 <p align = "center">Solving procrastination and raising awareness for water scarcity, one glass at a time! </p>
 
@@ -64,7 +64,7 @@ See the video below representing our paper prototyping with a digital twist:
 
 ## Users and Stakeholders
 
-After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how do we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
+After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how to we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
 
 <p align="center">
 <img src="../report/Images/Power-Interest.png" width=70%>
@@ -79,7 +79,7 @@ We have included some remarks regarding the “Manage Closely”, “Keep Satisf
 
 #### ASAQUA
 
-Our first stakeholder is Asaqua, the NGO (non-governmental organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome: 
+Our first stakeholder is Asaqua, the NGO (non-government organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome: 
 	
 - Increase awareness of Asaqua and its operations.
 
@@ -105,9 +105,9 @@ To implement full functionality, Flocus will need to receive Facebook’s approv
 
 ### User personas
 
-When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however after initial focus groups and interviews with friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful but easy on the eye animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
+When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however, after initial feedback from friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful, but easy on the eye, animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
 
-Together we identified that the end-user would need an attractive and simple user-interface to interact with focused around a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
+Together we identified that the end-user would need an attractive and simple user-interface to interact with, focused around a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
 
 - Gordon is an a-level student who is struggling to concentrate on his exam revision due to distraction from social media and other webpages, such as the news and sport. Gordon wants to use a tool to help him focus for a specific time like 45 minutes. He does not just want to look at a clock so uses Flocus due to its interactive animation of a glass filling up. 
 
