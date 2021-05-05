@@ -34,18 +34,20 @@ While we may have struggled at times to get everyone in a meeting due to covid r
 
 Initially, as a team we did struggle with team communication. This was caused by the lack of familiarity with one another and challenging coursework in other modules. However, to improve our relationship as a team we started to meet more regularly, having short meetings before the Thursday lab where we would update one another on ideas, progress on the project and day-to-day activities. 
 
-At the start, we found this incredibly useful to get to know one another given the current virtual environment we found ourselves in. As we approached the development sprints, these meetings became incredibly useful in helping define our project as well as ensuring each member understood all the aspects of Flocus. As we approached sprint development before the Easter break, we started dividing into subgroups with Sam and Hugh focused on the front-end with Jati, Gordon and Tom focused on the back end. Alongside our weekly meetings on Thursday, these subgroups would meet at the beginning of each week to go over any issues and talk about the work for the upcoming week. 
+At the start, we found this incredibly useful to get to know one another given the current virtual environment we found ourselves in. As we approached the development sprints, these meetings became incredibly useful in helping define our project as well as ensuring each member understood all the aspects of Flocus. As we approached sprint development before the Easter break, we started dividing into subgroups with Sam and Hugh focused on the front-end and Jati, Gordon and Tom focused on the back-end. Alongside our weekly meetings on Thursday, these subgroups would meet at the beginning of each week to go over any issues and talk about the work for the upcoming week. 
 
-This worked well, particularly in the development sprints, allowing subgroups to focus on specific problems and challenges with the Thursday meeting used to ensure everyone was on the same page and discuss prioritised issues. We often built the project in Docker on the Thursday meetings to ensure everything was running as it should with a focus on checking the implementations from the previous week of development. 
+This worked well, particularly in the development sprints, allowing subgroups to focus on specific problems and challenges with the Thursday meetings used to ensure everyone was on the same page and discuss prioritised issues. We often built the project in Docker on the Thursday meetings to ensure everything was running as it should with a focus on checking the implementations from the previous week of development. 
 
 Please see an example below of the Flocus team using a Thursday meeting opportunity to discuss the Facebook login page. 
 
+<br>
 <p align="center">
 <img src="../report/Images/teamsCall.jpg" width=70%>
 </p>
 <b><p align= "center"> Figure 1: A screenshot of a recent team meeting discussing the Facebook login page. </p></b>
+</br>
 
-Alonsgide these meetings, the use of discord was key for the management of issues. As seen in the communication channels section, we had different discord sub-channels to discuss specific issues to do with ther sprints. These were increibly useful for sub teams to query issues and then if any required the whole team they would be put into the general channel. Overall, the regular team and sub-team meetings alongside use of discord channels enabled quick resolution of any issues the team came across throughout the project.
+Alonsgide these meetings, the use of discord was key for the management of issues. As seen in the communication channels section, we had different discord sub-channels to discuss specific issues. These were incredibly useful for sub-teams to query issues and if a specific challenge required the whole team, discussion took place in the general channel. Overall, the regular team and sub-team meetings alongside use of discord channels enabled quick resolution of any of the issues that the team came across throughout the project.
 
 ### Evaluation of agile techniques 
 
