@@ -508,9 +508,15 @@ For the production of the League table, we wanted users to view all friends on F
 The above typescript can be explained in the following steps:
 
 <ol>
-<li></li>
+<li>Ensure that there are entries within the league array. If empty, do not proceed to create the table</li>
+<li>Sort all entries into descending order by number of glasses earnt</li>
+<li>Use the query selector to fetch the HTMLelement object that matches the CSS selector of ‘table’ and assign this object to a variable for further use</li>
+<li>Iterate through the leagueTable array, inserting a row and three cells into the table for each user.</li>
 </ol>
 
+To insert values into each cell of the table, we had to first create a text node and then append the cell with the .appendChild(String text) method.
+
+However, once this was fully implemented, we found that our CSS animations were not applying correctly to their corresponding HTMLElements. After extensive research to resolve this matter, it turned out that we were experiencing a problem relating to Angular CSS encapsulation. By default, Angular uses encapsulation so that CSS styles in one component do not affect the rest of the application. This applies an attribute to all DOM elements in the encapsulated component and because we were dynamically inserting HTML, these attributes were not being added to some of our HTML elements. As we could not find a more sophisticated work-around, we had to remove encapsulation on the league table component. Obviously, this presents risks to the rest of the applications styling. However, we were careful to choose specific class names in our HTML league structure to mitigate issues in the future. This is something that needs to be addressed in a more sophisticated manner but, because of a lack of time, we were unable to implement this before the deadline.
 
 
 
