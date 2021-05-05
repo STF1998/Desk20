@@ -215,21 +215,25 @@ The above entity-relationship diagram shows that our database has a normalized s
 
 As a team, we agreed to use the UID given by Facebook as the primary key between the two data collections. The Record collection holds the user's record log, which is generated when a user has completed a session or leaves the study component before their work session is over. Such a data model keeps as much user data as possible. Therefore, it allows for flexible data retrieval when fulfilling the demands of different components and offers the potential for future extensions. For example, you can flexibly alter the timespan in which you require data from, by specifying the desired time start and time end parameters. This offers the opportunity for future developers to extend the competition period or to easily add new components to the application. When our application needs data from both collections (aka a join query in a SQL model), we perform multi-staged queries to the database. The database then handles all the computationally complex sorting and searching functions which, reduces the computational burden on our server.
 
-
+<br>
 <p align="center">
 <img src="../report/Images/db3.png" width=75%>
 </p>
 <b><p align= "center">Figure : </p></b>
+
+<br>
 
 <p align="center">
 <img src="../report/Images/user_data_model.png" width=75%>
 </p>
 <b><p align= "center">Figure : The user data model</p></b>
 
+<br>
 <p align="center">
 <img src="../report/Images/record_data_model.png" width=75%>
 </p>
 <b><p align= "center">Figure : The record data model</p></b>
+<br>
 
 # Middle Tier - Express, Node, the RESTful API
 
