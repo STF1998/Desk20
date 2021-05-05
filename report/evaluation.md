@@ -6,56 +6,36 @@
 
 - [**Details of design evaluation**](#Details-of-design-evaluation)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
+  - [Study component testing](#Study-component-testing)
   - [Cross browser compatibility testing](#Cross-browser-compatibility-testing)
 - [**User acceptance testing**](#User-acceptance-testing)
   - [Alpha testing](#Alpha-testing)
   - [Beta testing](#Beta-testing)
 
+## Overview of evaluation
+
+As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
+
+Gordon, Tom and Jati were responsible for testing the development and back end side of things. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
+
+### Short timeline for testing and evaulation:
+
+Back end testing and evaluation:
+
+Front end testing and evaluation:
+
+
+
 ## Details of design evaluation 
 
+ TODO - Sam
 
-
-## Unit/Functional testing
-
-When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
-
-Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their login details but in future development this could include payment data. Therefore, testing is critical to software success, particualrly with a single poage application focused on user experience. 
-
-### Cross browser compatibility testing
-
-<br>
-
-<p align="center">
-<img src="../report/Images/cross-browser-compatibility.png" width=40%>
-</p>
-
-<br>
-
-We wanted to ensure that prospective users are not restricted to use a specific browser when accessing our application. Thus, it was crucial to develop and test the flocus application to ensure libraries, functions and effects were supported in all browsers and not just the most popular, such as Chrome. During the development process we ran manual tests on three of the main four browsers:
-
-<ul>
-    <li>Google Chrome</li>
-    <li>Firefox</li>
-    <li>Microsoft Edge</li>
-</ul>
-
-We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
-
-This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
-
-
-# User testing
-
-Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability testing plan, we wanted to focus on ensuring we had tested the following key points:
+ Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
 
 - Users can complete the main action of using the visual aid as a study tool
 - Users can navigate the pages easily 
 - Don't come across any significant bugs/errors
 - Have an enjoyable experience of Flocus
-
-## User acceptance testing
-
-### Alpha testing
 
 Throughout the development process, Sam and Hugh focused on building and running Flocus to ensure there were no bugs in the code by testing out manual scenarios. As we approached the end of the development sprints, Hugh and Sam worked together to devise several possible user scenarios and flows from the landing page. These test cases were based off the user stories/personas created when designing the front-end. 
 
@@ -78,7 +58,7 @@ Please see below a table summarising some of the key user test cases along with 
   <td> 1.2 </td>
   <td> Landing page </td>
   <td> Check animations load correctly. </td>
-  <td> Pass </td>
+  <td> Fail </td>
 </tr>
 <tr>
   <td> 1.3 </td>
@@ -132,7 +112,7 @@ Please see below a table summarising some of the key user test cases along with 
   <td> 3.3 </td>
   <td> Study page </td>
   <td> Ensure the glass filling animation runs after clicking the start button. </td>
-  <td> Pass </td>
+  <td> Fail </td>
 </tr>
 <tr>
   <td> 3.4 </td>
@@ -172,12 +152,77 @@ Please see below a table summarising some of the key user test cases along with 
 </tr>
 </table>
 
-
 This helped pick up minor bugs, including:
 - issues with the glass filling up animation
 - issues with the font and size of some of the text on the about page
+- compatability issues with browsers focused on loading the lottie animations correctly.
 
-One area that was also picked up was the compatability with different browsers. Having researched online, we realised this is a common error when working with Angular-CLI. Therefore, we have identified this as a future work on going forward. 
+As outlined above, one area that was also picked up was the compatability with different browsers. Having researched online, we realised this is a common error when working with Angular-CLI. Therefore, this was included as part of key areas of functional testing below.
+
+For future ideas around design testing and evaluation, please see our [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md).
+
+## Unit/Functional testing
+
+When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
+
+Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their login details but in future development this could include payment data. Therefore, testing is critical to software success, particualrly with a single poage application focused on user experience. 
+
+### Study component testing
+
+The primary objective of our application is to time a ‘study session’, which is to aid students to focus better and achieve better productivity. Therefore, it is crucial to guarantee the timer is working accurately and storing data correctly to keep track of a user’s performance. Due to the time limitation, we were not able to implement testing on all units within the components but some of the most critical functionality, namely:
+
+- Retrieving the user ID correctly from the data service
+
+- Loading the the correct user’s record data to display
+
+- Starting the timer and timing accurately after clicking the button
+
+- Correctly saving user’s record on time is up
+
+- Correctly saving user’s record on destroy
+
+The study component uses a service to retrieve data from the database. To avoid the testing process tries to make calls to the database service, we used Jasmine helper to create spies that return fake values, which are to be ‘expected’ in the testing.
+
+<p align="center">
+<img src="../report/Images/backend_study_test.png" width=60%>
+</p>
+<b><p align= "center"> Figure : Testing of some of the most critical functionalities of the study page. </p></b>
+
+#### Further testing to be done on the Study Component
+
+As we use Karma to test our application, the testing is run on the browser, allowing us to test the runtime behaviour of different features on different browsers. To deliver a consistent cross-browser user experience, it would be ideal to test the animations including the filling up and emptying-out processes.
+
+### Cross browser compatibility testing
+
+<br>
+<p align="center">
+<img src="../report/Images/cross-browser-compatibility.png" width=40%>
+</p>
+<br>
+
+We wanted to ensure that prospective users are not restricted to use a specific browser when accessing our application. Thus, it was crucial to develop and test the flocus application to ensure libraries, functions and effects were supported in all browsers and not just the most popular, such as Chrome. During the development process we ran manual tests on three of the main four browsers:
+
+<ul>
+    <li>Google Chrome</li>
+    <li>Firefox</li>
+    <li>Microsoft Edge</li>
+</ul>
+
+We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
+
+This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
+
+
+# User testing
+
+Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
+
+- Users can complete the main action of using the visual aid as a study tool
+- Users can navigate the pages easily 
+- Don't come across any significant bugs/errors
+- Have an enjoyable experience of Flocus
+
+## User acceptance testing
 
 ### Beta testing
 
