@@ -43,12 +43,13 @@ Initially, as a team we sat down (albeit virtually) and wrote a list of the key 
 <img src="../report/Images/methodology-agile.png" width=70%>
 </p>
 <b><p align= "center"> Figure 2: Agile methodology cycle </p></b>
+<br>
 
-Below, you can see more about the breakdown of our sprints (TODO link here).
+Below, you can see more about the breakdown of our sprints.
 
 ### Communication channels
 
-Due to the COVID-19 pandemic, our team has been working from home throughout the project. This meant that our communication and the channels we used were key to ensuring we worked well as a team. The two main channels we used were our Microsoft Teams and Discord. Our Teams group at desk 20 allowed us to organise video calls, share documents and speak to the lecturing team. However, our most commonly used channel was our Discord chat where we regularly had conversations about specific areas of the project as well as organising voice and video calls to discuss specific areas of development. While it was tough initially to bond as a team, these channels did help us get to know each other and become a driving force as we began development sprints.
+Due to the COVID-19 pandemic, our team has been working from home throughout the project. This meant that our communication and the channels we used were key to ensuring we worked well as a team. The two main channels we used were Microsoft Teams and Discord. Our Teams group at desk 20 allowed us to organise video calls, share documents and speak to the lecturing team. However, our most commonly used channel was our Discord chat where we regularly had conversations about specific areas of the project as well as organising voice and video calls to discuss specific areas of development. While it was tough initially to bond as a team, these channels did help us get to know each other and became a driving force as we began our development sprints.
 
 <p align="center">
 <img src="../report/Images/team_Organisation.png" width=20%>
@@ -56,6 +57,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 <b><p align= "center"> Figure 3: Our Discord Chat Setup </p></b>
 
 The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
+<br>
 
 ## Meet The Team
 
@@ -97,6 +99,7 @@ The above image displays our discord chat set-up. Initially, all project discuss
   <td> Understanding how a robust API is key to efficiently adding new features to an application. </td>
 </tr>
 </table>
+<br>
 
 ## The Sprints Documentation
 
