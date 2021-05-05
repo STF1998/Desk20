@@ -159,6 +159,25 @@ This helped pick up minor bugs, including:
 
 As outlined above, one area that was also picked up was the compatability with different browsers. Having researched online, we realised this is a common error when working with Angular-CLI. Therefore, this was included as part of key areas of functional testing below.
 
+With pre-planned ethical analysis and approval, we would have liked to include the following in future evaluative technqiues:
+
+#### Questionaires
+
+If we had the time and resources, we would have liked to undertake comprehensive questionaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students and working professionals. 
+
+These questionaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionaires are a great opportunity to ask a range of closed and open questions.
+
+#### Interviews
+
+We'd also like to organise one-to-one interview with potential end-users to underatnd their opinions regarding user flows and the design of Flocus.
+
+Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data however explore opinions as they come up in the interviews. Questionairres allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
+
+Other areas to explore for future work:
+
+- Controlled experiments - Flocus team compare user's interaction with Flocus and it's close competitiors. 
+- Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
+
 For future ideas around design testing and evaluation, please see our [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md).
 
 ## Unit/Functional testing
