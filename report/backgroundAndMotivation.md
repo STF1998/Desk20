@@ -280,6 +280,13 @@ Prior to the start of the development sprints, we had gained a broad understandi
 
 When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs, course peers and online forums, we were confident that the project was achievable.
 
+#### Fidelity
+
+One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional.
+
+#### Data
+
+
 ### Challenges
 
 Given limited resources and time restraints, the biggest challenge of this project is effectively creating an MVP (minimum viable product) that is a tool to help reduce procrastination but also raises awareness for a critical issue in water scarcity and the work Asaqua does to improve water accessibility in underdeveloped countries. 
