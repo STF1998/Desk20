@@ -24,9 +24,9 @@
 </p>
 <b><p align= "center"> Figure 1: Lucidchart of the initial ideation stage. </p></b>
 
-The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources we swiftly aimed to define a simple but effective project idea that solved a critical issue but also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas we decided the most suitable and simple idea would be to create a competitive aspect based on avoiding procrastination. 
+The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources, we swiftly aimed to define a simple but effective project idea that solved a critical issue but, also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas we decided the most suitable and simple idea would be to create a competitive aspect based on avoiding procrastination. 
 
-However, while we had defined the two key aspects required by the project brief, we quickly realised we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water scarcity in developing nations. Fortunately, Gordon, one of our team members, had founded his own NGO (non-governmental organisation) called Asaqua that provided affordable solutions to the water crisis in Africa. 
+However, while we had defined the two key aspects required by the project brief, we quickly realised we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water scarcity in developing nations. Fortunately, Gordon, one of our team members, had founded his own NGO (non-governmental organisation) called Asaqua that provides affordable solutions to the water crisis in Africa. 
 
 ### The problem we aim to solve
 
@@ -38,7 +38,7 @@ FLOCUS solves two problems identified in the research and ideation stage:
 
 ### High level overview of our project
 
-From this development of the ideation stage, we produced FLOCUS, a single page application that aims to combat procrastination for university students while raising awareness for Asaqua and water scarcity. The single page application will be focused on a simple glass filling up with water from a tap as you work. The glass would fill up every study interval followed by the user being encouraged to take a short break to relax from work. The page will include a login through Facebook, which will allow the page to display a league table to encourage competitiveness between friends on how much work they are doing. Our initial aim was to integrate a google ads area to raise funds towards Asaqua however this has been included as an opportunity for future development work.  
+From this development of the ideation stage, we produced FLOCUS, a single page application that aims to combat procrastination for university students while raising awareness for Asaqua and water scarcity. The single page application will be focused on a simple glass that is filled up with water, from a tap, as you work. The glass will fill up every study interval followed by the user being encouraged to take a short break to relax from work. The page will include a login through Facebook, which will allow the page to display a league table to encourage competitiveness between friends on how much work they are doing. Our initial aim was to integrate a google ads area to raise funds for Asaqua however, this has been included as an opportunity for future development work.  
 
 
 ## Project Objectives
@@ -59,9 +59,9 @@ Build a MEAN stack single page application with integration of a front end (usin
 
 ### How are we solving the problems?
 
-To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time followed by a break. This has been inspired by the time management method called Pomodoro Technique and the use of intervals to help students work for an interval combined with rewards of a break. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
+To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up, to help them work for a period of time,followed by a break. This has been inspired by the time management method called the Pomodoro Technique and the use of intervals to help students work for an interval combined with rewards of a break. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
 
-      Solving procrastination and water scarcity, one glass at a time!
+<p align = "center">Solving procrastination and water scarcity, one glass at a time!</p>
 
 While students are working, the google ads section will be generating revenue which will be donated to Asaqua. Therefore, students not only have the satisfaction of working towards a target and rewarded with a break but are also rewarded by the fact they are actually contributing and helping raise funds for an important issue in water accessibility. It is a win-win scenario for all parties involved. 
 
