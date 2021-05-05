@@ -142,13 +142,9 @@ On the design side of the FLocus, if we had more time, we would have liked to do
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
-### Development testing
-
-TODO
-
 ### Evaluation
 
-As mentioned previously, in the future we woould like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
+As mentioned previously, in the future we would like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
 
 - Learnability
 - Memorability
