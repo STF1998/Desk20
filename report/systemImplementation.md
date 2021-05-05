@@ -91,7 +91,7 @@ Ostensibly, the argument for using the MEAN stack was compelling, not only for t
 
 ## Stack architecture implementation in our application
 
-Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js framework that helps our app's communication with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
+Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js authentication middleware that helps our app communicate with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
 
 <br>
 <p align="center">
