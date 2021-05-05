@@ -34,9 +34,9 @@ We formed a matrix with our top ideas of critical world issues and gamification 
 
 - Shoot all the big tycoons who are dominating fast fashion. 
 
-Based upon our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with use of interval times and using inspiration from the Pomodoro technique. Alongside this, our team focused on how we would incorporate the focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and showing competitive statistics between friends. This led to our punch line of: 
+Based upon our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with the use of interval times and by taking inspiration from the Pomodoro technique. Alongside this, our team focused on how to incorporate a focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and displaying competitive statistics between friends. This led to our punch line of: 
 
-Solving procrastination and raising awareness for water scarcity, one glass at a time! 
+<p align = "center">Solving procrastination and raising awareness for water scarcity, one glass at a time! </p>
 
 ### Mood board
 
