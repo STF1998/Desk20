@@ -68,7 +68,7 @@ Build a MEAN stack single page application with integration of a front end (usin
 
 ### How are we solving the problems?
 
-To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time, followed by a break. This has been inspired by the time management method called the Pomodoro Technique which, uses intervals to help students work for short periods of time, allowing for a short break as a reward. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
+To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time, followed by a break. This has been inspired by the time management method called the Pomodoro Technique which, uses intervals to help students work for short periods of time, allowing for a short breaks as a reward. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
 
 <br>
 <p align = "center">Solving procrastination and water scarcity, one glass at a time!</p>
