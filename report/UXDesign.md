@@ -138,11 +138,15 @@ We were able collect data from 23 university students. While the survey was shor
 
 From this survey we identified the key points and issues on procrastination in student populations: 
 
-- Students struggle with motivation with work they are not interested in (particularly midway through a task). 
+- Students struggle to stay motivated with work they are not interested in (particularly midway through a task). 
 
 - Students work better under pressure - possible use of timer/visual aid. 
 
 - Majority of students do not use timers to help them study - large market opportunity to provide students with a useful study tool. 
+
+- A majority of students (95.7% in our sample) often put work off that they are not interested in.
+
+- From our sample, a large majority, either always or sometimes, try to work until a task is complete. 
 
 ### Interviews and Focus Groups
 
@@ -160,7 +164,7 @@ Having defined our target market and the potential users who would be using Floc
 
 ### Wireframes
 
-The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
+The production of wireframes provided a strong direction to build on, once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
 
 <br>
 <p align="center">
@@ -190,7 +194,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=100%>
 </p>
-<h2 align="center"><b> Figure 3: User flow diagram</b></h2>
+<p align="center">Figure 3: User flow diagram</p>
 
 ## References
 
