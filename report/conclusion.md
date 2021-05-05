@@ -143,11 +143,11 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 
 As mentioned previously, in the future we woould like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
 
-- learnability
-- memorability
-- efficiency
-- satisfaction 
-- errors
+- Learnability
+- Memorability
+- Efficiency
+- Satisfaction 
+- Errors
 
 Alongside usability, future evaluiative techniques could focus on evaluating aspects of the following:
 
