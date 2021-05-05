@@ -40,11 +40,15 @@ When designing Flocus, we had two goals: to help students (like ourselves) reduc
 
 ### ASAQUA
 
-ASAQUA is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution. We believe our water tanks can facilitate clean water accessibility in rural villages.  ASAQUA collaborates with committed locals, NGOs (Non-Governmental Organisations), and research institutes and strives for a sustainable future for our next generation.
+ASAQUA is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution. 
+
+Asaqua's Mission statement:
+
+"We believe our water tanks can facilitate clean water accessibility in rural villages.  ASAQUA collaborates with committed locals, NGOs (Non-Governmental Organisations), and research institutes and strives for a sustainable future for our next generation."
 
 Their vision is a world where no child has to trudge miles every day to fetch water, and every individual has the access to clean water.
 
-While we have been working on this project it was great to learn more about the work Asaqua does in developing nations. This understanding further motivated the team to create a product to the best of our ability given the meaningful impact it could have on both procrastination and helping raise awareness for the work Asaqua does. 
+While we have been working on this project it was great to learn more about the work Asaqua does in developing nations. This understanding further motivated the team to create a product to the best of our ability, given the meaningful impact it could have on both procrastination and helping raise awareness for the work Asaqua does. 
 
 Please see below a recent photo of the work Asaqua has been doing in Africa:
 
