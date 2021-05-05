@@ -303,7 +303,7 @@ One of the primary aims, procrastination reduction, is a goal that is very diffi
 
 However, there were areas of the technical scope that we had to trim to complete our MVP:
 
--	Being able to view oneself in the league – this was a significant hurdle in the project and was particularly down to the arrangement of the API and database. As such, we decided to offer a league table that did not include the user. However, the user is still able to compare via the personal stats section. 
+-	Being able to view oneself in the league
 -	Portal Customisation
 -	Advertisements
 <br>
