@@ -66,6 +66,7 @@ The flexibility of agile added significant value to our MVP. Instead of being fo
 
 Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
 
+<br>
 
 ## Project reflection
 
@@ -77,11 +78,13 @@ Due to our big ideas and aspirations as a team, when we approached discussing th
 
 So, while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
+<br>
+
 ## Impact of COVID-19 on working practices
 
-Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members however, as mentioned above, the more meeting sna catch ups the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regard to the project. 
+Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members. However, as mentioned above, the more meeting and catch ups we had, the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regard to the project. 
 
-At times it could have been useful to be in the same room as one another however with effective use of teams and discord we were able to quickly come together (albeit virtually) to overcome any challenges we had. We believe one key aspect that ensured we worked successfully as a team was the ability to hold one another accountable for individual work. Without building those initial relationships, this would have been very hard. Credit must be given to team member, Jati, who due to the time zone difference was working late into the night in numerous occasions. Our use of virtual tools as mentioned ensured we kept a good communication channel with Jati throughout the project.
+At times it could have been useful to be in the same room as one another. However with effective use of teams and discord we were able to quickly come together (albeit virtually) to overcome any challenges we had. We believe one key aspect that ensured we worked successfully as a team was the ability to hold one another accountable for individual work. Without building those initial relationships, this would have been very hard. Credit must be given to team member, Jati, who due to the time zone difference was working late into the night in numerous occasions. Our use of virtual tools as mentioned ensured we kept a good communication channel with Jati throughout the project.
 
 Overall, we are very proud of one another for the work in this project. We are very excited to meet up for a few drinks and food to celebrate our work once the restrictions allow (and Jati is able to travel to the UK!). 
 
@@ -112,17 +115,17 @@ Absent of a specific ethical clearance by the University of Bristol, we had to c
 
 ### Design and development
 
-On the design side of the FLocus, if we had more time, we would have liked to do an extensive user study to develop a strongewr understanding of areas of improvement. However, from discussions within the team we have come up with the following ideas for ideas for future design and development of each page:
+On the design side of the FLocus, if we had more time, we would have liked to do an extensive user study to develop a stronger understanding of potential areas of improvement. However, from discussions within the team, we have come up with the following ideas for future design and development:
 
 #### Login landing page
 
-- Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside google login option.
-- An about pop up to read more about the application and what Flocus is.
+- Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside a Google login option.
+- An 'about' pop up to read more about the application and what Flocus is.
 - More animations around studying and the story behind Asaqua.
 
 #### Study page
 
-- Introduce a customisable icon that you can design for your work mascot.
+- Introduce a customisable icon that users can design as a work mascot.
 - A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
 - Portal personalisation so people can alter how long they want to work and have a break for.
 
@@ -130,16 +133,15 @@ On the design side of the FLocus, if we had more time, we would have liked to do
 
 - Improved metrics for personal statistics.
 - Potential for a swimming race animation keeping in line with the theme of water.
-- The current league table only ranked our friends, and the user is not inside it. The improvement would be to make the user also exists in the table.
+- The current league table only ranked our friends, and the user is not inside it. The improvement would be to insert the user into the table.
 
 #### About page
 
-- Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
+- Pop-ups for people to learn about ASAQUA rather than bombarding users with all the information at once.
 - Option to donate directly to Asaqua.
 
 #### General development
 
-- Possible organisation of code so the backend and frontend are in separate directories.
 - Different browser opitimisation.
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
@@ -154,7 +156,7 @@ As mentioned previously, in the future we would like to see a full user study of
 - Satisfaction 
 - Errors
 
-Alongside usability, future evaluiative techniques could focus on evaluating aspects of the following:
+Alongside usability, future evaluative techniques could focus on evaluating aspects of the following:
 
 - Content - accuracy, conciseness, understandability and does it contain key infromation?
 - Appearance - page layout, size and font of writing and page flow.
@@ -163,9 +165,9 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 
 ## Summary
 
-Overall, we have really enjoyed working as a team to build this special project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
+Overall, we have really enjoyed working as a team to build this project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
 
-We'd also like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
+We'd like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
 
 ## Project report navigation
 
