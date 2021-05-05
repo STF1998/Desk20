@@ -164,3 +164,8 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 Overall, we have really enjoyed working as a team to build this special project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
 
 We'd also like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
+
+## Project report navigation
+
+- [Previous page: Evaluation](https://github.com/STF1998/Desk20/blob/main/report/evaluation.md)
+- [Go back to Homepage](https://github.com/STF1998/Desk20)

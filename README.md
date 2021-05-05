@@ -1,7 +1,7 @@
 <img align="center" src="https://user-images.githubusercontent.com/69913789/115701016-3ae15a80-a35f-11eb-9f51-31a9b10fefda.gif" width=100%>
 
 
-<h2 align="center"> Solving procrastination and raising awareness for water scarcity one glass at a time! </h2>
+<h2 align="center"> Solving procrastination and raising awareness for water scarcity, one glass at a time! </h2>
 
 ## Our Product
 

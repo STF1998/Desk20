@@ -13,9 +13,9 @@
     - [Design heuristics/approach](#Design-heuristics/approach)
     - [Design methods](#Design-methods)
 - [**Understanding of User Group**](#Understanding-of-User-Group)
-    - [Questionnaires](#Questionnaires)
-    - [User Stories](#User-Stories)
-    - [Interviews](#Interviews)
+    - [User personas](#User-personas)
+    - [Questionaires](#Questionaires)
+    - [Interviews and Focus Groups](#Interviews-and-Focus-Groups)
 - [**Wireframes and Systems**](#Wireframes-and-Systems)
 
 ## Design Process

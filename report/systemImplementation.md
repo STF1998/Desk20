@@ -5,22 +5,30 @@
 ## Contents of System Implementation
 
 - [**Stack architecture and system design**](#Stack-architecture-and-system-design)
-  - [Class diagrams](#Class-diagrams)
-  - [Sequence diagrams](#Sequence-diagrams)
+  - [Stack architecture](#Stack-architecture)
+  - [System design](#System-design)
+  - [Class diagram](#Class-diagram)
+  - [Sequence diagram](#Sequence-diagram)
 - [**Back End - MongoDB**](#Back-End---MongoDB)
   - [Database implementation](#Database-implementation)
   - [Data model](#Data-model)
-- [**Middle Tier**](#Middle-Tier)
-  - [Express](#Express)
-  - [Node](#Node)
-  - [The RESTful API](#The-RESTful-API)
-- [**Front End**](#Front-End)
+- [**Middle Tier - Express, Node, the RESTful API**](#Middle-Tier---Express,-Node,-the-RESTful-API)
+  - [Introduction](#Introduction)
+  - [PassportJS](#PassportJS)
+  - [Records API](#Records-API)
+  - [API for League Table](#API-for-League-Table)
+- [**Front-End System Implementation**](#Front-End-System-Implementation)
   - [Angular](#Angular)
   - [Details of implementation](#Details-of-implementation)
 - [**Additional Elements and Components**](#Additional-elements-and-components)
+  - [Front-end](#Front-end)
 - [**Deployment Details**](#Deployment-Details)
+  - [GitHub](#GitHub)
+  - [Docker](#Docker)
 
-# Stack Architecture
+## Stack architecture and system design
+
+### Stack architecture
 
 Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology is:
 
@@ -89,7 +97,7 @@ Ostensibly, the argument for using the MEAN stack was compelling, not only for t
 
 <br>
 
-## Stack architecture implementation in our application
+#### Stack architecture implementation in our application
 
 Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js authentication middleware that helps our app communicate with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
 
@@ -100,9 +108,9 @@ Other than the previously discussed technologies, our application interacts with
 <b><p align= "center">Figure 4: A visual representation of a user's interaction with Flocus </p></b>
 <br>
 
-# System Design
+### System design
 
-## Authentication design
+#### Authentication design
 
 <p align="center">
 <img src="../report/Images/auth.png" width=50%>
@@ -144,7 +152,7 @@ Inside the home page we provide three sections that a user can access. These are
 
 <br>
 
-## Study page
+#### Study page
 
 Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
 
@@ -161,7 +169,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 
 <br>
 
-## League
+#### League
 
 When the league page is accessed, we process the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
@@ -188,7 +196,7 @@ In terms of records, users can only post one record at a time but, will recieve 
 <b><p align= "center">Figure 8: Class diagram </p></b>
 <br>
 
-## Sequence diagrams
+## Sequence diagram
 
 <br>
 
@@ -241,9 +249,9 @@ As a team, we agreed to use the UID given by Facebook as the primary key between
 <b><p align= "center">Figure 13: The record data model</p></b>
 <br>
 
-# Middle Tier - Express, Node, the RESTful API
+## Middle Tier - Express, Node, the RESTful API
 
-## Introduction
+### Introduction
 
 As discussed on the stack implementation section, the middle tier chosen for our application is NodeJS with the help of the ExpressJS framework. We utilised both NodeJS and ExpressJS to implement an API in our application. API stands for Application Programming Interface and its function is to allow our application to talk to other programmes such as Facebook or our database server.
 
@@ -283,7 +291,7 @@ By comparing the two above figures, it is evident that by using ExpressJS our co
 
 Other than ExpressJS, we also used PassportJS to help with our Facebook authentication process.
 
-## PassportJS
+### PassportJS
 
 PassportJS is an authentication middleware for Node.js which, is compatible with any ExpressJS application. PassportJS provides strategies to assist authentication processes including but not limited to: 
 
@@ -399,7 +407,7 @@ Req.user contains the same data as the profile variable. Finally, another import
 <b><p align= "center">Figure 25: Logout function</p></b>
 <br>
 
-## Records API
+### Records API
 
 In this section, all API requests with relation to record data will be discussed. The first API request is a POST request which, takes a record object as its parameter. For this, the object must follow the record schema that was discussed on the database section. The POST request is shown in Figure 26 below.
 
@@ -431,7 +439,7 @@ By 1500, we are referring to the number of seconds for each study session. To th
 <b><p align= "center">Figure 28: The GET method</p></b>
 <br>
 
-## API for League Table
+### API for League Table
 
 The last request is a GET request for the league table. It takes UID and a time range as its parameter. This reguest's first objective is to execute a search on the user database to find a user with the same UID as in the parameter. Then, the query accesses the friendsUID array and the friends array of the user. FriendsUID array of a user contains all the user friends’ UIDs.
 We then search through our previous records, as in the GET request described above, for each of these UID's. Finally, the GET request will return three arrays:
@@ -442,11 +450,12 @@ We then search through our previous records, as in the GET request described abo
 
 All returns are inside the time range specified in the parameter and all arrays are grouped (connected) before getting sorted in a descending order based on the number of sessions completed. By grouped we mean that if there is a change in position between elements inside one array, then the other two arrays will also experience the same change. As arrays are sorted in a descending order, the highest number of sessions completed will be on the top of the array (element 0) and the lowest will be on the bottom of the array.
 
+
 <br>
 
-# Front-End System Implementation
+## Front-End System Implementation
 
-## Angular 
+### Angular 
 
 Angular offered a number of key advantages in the development of our Single Page Application. Primarily, the component-based structure facilitated efficient code maintenance and update (Decoupled components can be easily replaced with improved implementations). Additionally, during sprint sessions, team members would often work in parallel, accessing the same section of code. Angular enhanced this process by providing an easy-to-understand structure that improved readability. We had a brief discussion regarding Vue and React however, we remained with an Angular framework due to the familiarity of the group and course administrators with its setup. Additionally, our group was eager to utilise Lottie animations for front-end design and, from our preliminary research, Angular offers the easiest implementation of the <lottie-player>.
 
@@ -459,9 +468,9 @@ During our opening sprint, we set up all required components for the project, th
 
 One of the primary objectives of Flocus is to provide a healthy and productive virtual space for students and experienced professionals to use for their studies. We realised the importance of being evidence-led when designing the front-end of our application and as such, conducted a brief literature overview to inform the design process of each component.
 
-## Details of implementation
+### Details of implementation
 
-### Study component - design
+#### Study component - design
 
 The main component in Flocus is the study page where users spend a majority of their time. It was therefore critical for us, as the designers, to produce an environment that encourages productivity whilst minimising the risk of distraction. To achieve these outcomes, we investigated a growing body of research that points to the beneficial effects of nature on health, stress reduction and productivity. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328?via%3Dihub">Research from the University of Melbourne</a> has investigated the impact of exposure to natural scenes on response times, attention deficits and error frequency when conducting menial tasks. The findings offer statistically significant evidence of a negative, causal effect of natural environments on attention deficit and error frequency. Additionally, in an <a href="https://hbr.org/2015/09/gazing-at-nature-makes-you-more-productive">interview with the Havard Business Review</a>, Kate Lee, one of the lead researchers in this paper, claimed that the benefits of green micro-breaks can also be experienced through exposure via a screensaver. For those who are unable to gaze out of the window at a natural scene, we saw a clear issue which, we can provide a solution to. As a result, we decided to introduce a natural theme to the study component and, to align with the applications aim of raising awareness for water scarcity, we decided to use a blue colour scheme. This resulted in the following component design:
 
@@ -474,7 +483,7 @@ To further emulate a natural scene, CSS transformations were implemented on cert
 
 The introduction of a clock or timer was discussed at length by the group. However, we decided to preclude this from the design as we did not want a traditional timer to distract from the theme and message of the overall component.
 
-### Study component - functionality 
+#### Study component - functionality 
 
 To introduce a glass fill animation, we used typescript which allows the user to start and stop the glass-fill as they please. The animation was implemented via the use of a SVG clip-path which is transformed vertically to reveal the underlying water animation. 
 
@@ -487,7 +496,7 @@ Upon completion of a study session (45 Minutes), the glass empties incrementally
 
 The running tap affect was implemented by accessing a HTML DOM element object via a specified ID value. The animation iteration count was then toggled between 1 and infinite upon button click. This allowed the drip effect to sync with the glass fill whilst additionally completing the current iteration so to avoid sudden pauses. 
 
-### Login component
+#### Login component
 
 The Login component is the initial design that greets users and as such, has been created to give an introduction to the theme of the site whilst offering a brief description of Flocus’s mission. To explore the avenue of serious play, we implemented a CSS hover animation on the login button and a Lottie animation.
 
@@ -496,7 +505,7 @@ The Login component is the initial design that greets users and as such, has bee
 </p>
 <b><p align= "center">Figure 32: A screenshot of welcome and login component in action </p></b>
 
-### League table component
+#### League table component
 
 Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, <a href = "https://www.sciencedirect.com/science/article/abs/pii/S0360131510000527">(Burguillo, 2010)</a> found that the introduction of competition to the classroom increased final course performance. Additionally, research by <a href = "https://www.jneurosci.org/content/33/40/15894">(Le Bouc and Pessiglione, 2013)</a> and <a href = "https://journals.sagepub.com/doi/10.1177/1948550614539770">(Kilduff, 2014)</a> displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
 
@@ -537,9 +546,7 @@ To insert values into each cell of the table, we had to first create a text node
 
 However, once this was fully implemented, we found that our CSS animations were not applying correctly to their corresponding HTMLElements. After extensive research to resolve this matter, it turned out that we were experiencing a problem relating to Angular CSS encapsulation. By default, Angular uses encapsulation so that CSS styles in one component do not affect the rest of the application. This applies an attribute to all DOM elements in the encapsulated component and because we were dynamically inserting HTML, these attributes were not being added to some of our HTML elements. As we could not find a more sophisticated work-around, we had to remove encapsulation on the league table component. Obviously, this presents risks to the rest of the applications styling. However, we were careful to choose specific class names in our HTML league structure to mitigate issues in the future. This is something that needs to be addressed in a more sophisticated manner but, because of a lack of time, we were unable to implement this before the deadline.
 
-
-
-### Asaqua component
+#### Asaqua component
 
 In an endeavour to educate users about the great work that Asaqua has been achieving in Uganda, we included the asaqua component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. This component was designed to be as simple as possible, although, we did manage to include Owl Pacino in the bottom right of the screen:
 
@@ -548,7 +555,7 @@ In an endeavour to educate users about the great work that Asaqua has been achie
 </p>
 <b><p align= "center">Figure 37: The Asaqua Component</p></b>
 
-### Homepage component
+#### Homepage component
 
 After speaking to prospective end-users in questionnaires, focus groups and informal interviews, we were made aware of the need to maintain a calm environment on the site, absent of stressful and fast-moving animations. As students ourselves, we fully understand the anxiety and tension that students and working professionals can be under during examination periods. As such, we did not want the study component to be the first thing that a user is confronted with when they complete the log-in process. We wanted to form an area in which users can decide, in their own time, when to proceed to the study component to begin their work. Additionally, from a design perspective, a home component facilitates easy navigation whilst removing the need for a permanent nav-bar and allowing front-end developers to use the full size of the screen to implement eye-pleasing animations. However, the front-end design of this component was a difficult one to achieve. We wanted to use calming animations without increasing the risk of distraction and thus compromising on our main objective of reducing procrastination. 
 
@@ -568,11 +575,11 @@ To achieve this animation, we created six Scalable Vector Graphics (SVG) circle 
 
 We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
 
-# Additional Elements and Components
+## Additional Elements and Components
 
-## Front-end
+### Front-end
 
-### Lottie animations
+#### Lottie animations
 
 Lottie is an open-source animation file format that allows creators to easily convert Adobe After-Affects animations for implementation in HTML code. For Flocus, it allowed us to display lightweight, scalable and interactive animations that enhanced the serious play aspect of our application. Initially, we began creating custom made animations for the application in AAE, converting to JSON files via the BodyMovin’ extension. However, this process was far more challenging than initially expected – Lottie files do not currently support certain mattes and effects that make animating in AAE achievable in short periods of time. As a result, we utilised the large and comprehensive Lottie file library where a large number of creators have made their work freely available.
 
@@ -593,7 +600,7 @@ URLs for Lottie animations in use:
 - winning.json; https://lottiefiles.com/42226-winning-leadership
 - Login-guy.json; https://lottiefiles.com/36707-working-man
 
-### Adobe Stock
+#### Adobe Stock
 
 Unfortunately, Flocus’s development budget did not stretch far enough to cover the subscription or the early cancelation fees of Adobe Photoshop or Illustrator. Luckily however, with the use of a 30-day free trial, a member of the team accessed Adobe Stock, a platform where third-party designs can be fully licensed for commercial use. As such, the Study component has been designed from an illustration licensed under the perpetual and worldwide Adobe licence:
 
@@ -605,13 +612,13 @@ Adobe licence information: https://stock.adobe.com/uk/license-terms
 
 Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustration-tiny-drinking-fresh-potable-person-concept/269962379
 
-# Deployment Details
+## Deployment Details
 
-## GitHub
+### GitHub
 
 A GitHub repository for the team allowed for a continuous integration of new features for the application. Each developer in the team was able to commit or fetch new changes to and from main and merge these changes to their own branch.
 
-## Docker
+### Docker
 
 It was important during the development of our application to have a consistent environment for deployment, particularly as there was a split between MacOS and Windows in the team. 
 
@@ -642,7 +649,7 @@ As new changes to the application were made, the two containers were rebuilt usi
 
 The consistent deployment environment managed by Docker enabled the team to robustly integrate new features into the application. Additionally, the Dockerfile could be changed in the future to test the application on different platforms. This would greatly simplify shipping the application to any hosting provider.
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
 - [Previous page: Background and Motivation](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)
