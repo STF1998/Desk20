@@ -67,6 +67,7 @@ Throughout the development process, Sam and Hugh focused on building and running
 
 Please see below a table summarising some of the key user test cases along with pass/fail:
 
+<br>
 <table>
 <tr>
   <th>Stage</th>
@@ -177,13 +178,14 @@ Please see below a table summarising some of the key user test cases along with 
   <td> Pass </td>
 </tr>
 </table>
+<br>
 
 This helped pick up minor bugs which, we have since fixed. These include:
-- issues with the glass filling up animation
-- issues with the font and size of some of the text on the about page
-- compatability issues with browsers focused on loading the lottie animations correctly. Specifically, the user Agent in the league component was detecting Chrome as Safari.
+- Issues with the glass filling up animation
+- Issues with the font and size of some of the text on the about page
+- Compatability issues with browsers focused on loading the lottie animations correctly. Specifically, the user agent in the league component was detecting Chrome as Safari.
 
-As outlined above, one area that was also picked up was the compatability with different browsers. Having researched online, we realised this is a common error when working with Angular-CLI. Therefore, this was included as part of key areas of functional testing below.
+As outlined above, one area that was also picked up was the compatability with different browsers and was included as part of the key areas of functional testing below.
 
 With pre-planned ethical analysis and approval, we would have liked to include the following in future evaluative technqiues:
 
