@@ -184,9 +184,9 @@ The primary objective of our application is to time a ‘study session’, which
 The study component uses a service to retrieve data from the database. To avoid the testing process tries to make calls to the database service, we used Jasmine helper to create spies that return fake values, which are to be ‘expected’ in the testing.
 
 <p align="center">
-<img src="../report/Images/backend_study_test.png" width=60%>
+<img src="../report/Images/backend_study_test.png" width=75%>
 </p>
-<b><p align= "center"> Figure : Testing of some of the most critical functionalities of the study page. </p></b>
+<b><p align= "center"> Figure 1: Testing of some of the most critical functionalities of the study page. </p></b>
 
 #### Further testing to be done on the Study Component
 
@@ -242,9 +242,9 @@ After completing user walkthroughs, which has motivated some minor changes as li
 Please see below the affinity diagram using Lucidchart:
 
 <p align="center">
-<img src="../report/Images/focus_affinity.png" width=70%>
+<img src="../report/Images/focus_affinity.png" width=80%>
 </p>
-<b><p align= "center"> Figure : Affinity diagram from user feedback </p></b>
+<b><p align= "center"> Figure 2: Affinity diagram from user feedback </p></b>
 
 The key improvement points identified from the focus group, include the following:
 
