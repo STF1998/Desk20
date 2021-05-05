@@ -125,7 +125,7 @@ The procedure to use FB’s API is as follows:
 3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
 4.	Follow the step-by-step guide on FB authentication using PassportJS in PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
 
-When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB asks the user whether the they agree to share the requested data with the application. The details of this data are shown in a confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
+When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB asks the user whether the they agree to share the requested data with the application. The details of this data are shown in a confirmation pop-up. If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
 The FB permission type in our code, determines the type of data that FB’s API will return to our application. Flocus only uses the "user_friends" permission, which means that FB will return an array consisting of all of the user’s friends. This also grants permission to the application. Additionally, there are types of data that do not require a permission to be returned. These include; user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication tokens because we always call the “isAuthenticated()” method before letting the user access data from our database.
 
@@ -146,7 +146,7 @@ Inside the home page we provide three sections that a user can access. These are
 
 ## Study page
 
-Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in the figure below.
+Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
 
 <br>
 
@@ -279,7 +279,7 @@ Without ExpressJS:
 </p>
 <b><p align= "center">Figure 15: Implementation of API requests without using ExpressJS </p></b>
 
-By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
+By comparing the two above figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
 
 Other than ExpressJS, we also used PassportJS to help with our Facebook authentication process.
 
@@ -298,7 +298,7 @@ Further information about what PassportJS is and what can be achieved with it ca
 
 However, for our application, only be focused on PassportJS for authentication using Facebook. The complete documentation can be found here: [link](http://www.passportjs.org/docs/facebook/). In this section of the report, we will not dive into the documentation, but will instead discuss the hands-on experience of how we implemented PassportJS in Flocus.
 
-To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the Figures below.
+To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the figures below.
 
 <br>
 <p align="center">
@@ -329,7 +329,7 @@ Code explanation by section number:
 
 1.	This is the section where we help Facebook identify our application by supplying the clientID and clientSecret numbers. These numbers were acquired after we created an account and application on the Facebook for developers’ site. The callbackURL is a URL that we are redirected to after the authentication process is complete, i.e. when we press the submit button after entering our username and password. The URL could be anything we want (This will be detailed further in the later section of our report). The profile field is the where we input the type of data we want to acquire from the user’s Facebook account. For instance, in the code, you should be able to see that our application is requesting the user's id, friends, displayname, name, and profile picture. However, to acquire the requested data, we need to provide the correct permission. This will also be made clear in a later part of the report.
 
-2.	This is the function that is called after the authentication process is successful. 'token' is the authentication token, 'refreshToken' will be the refreshToken, and the 'profile' will contain all user data that the user has agreed to provide (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure x). Following this, an internal search is conducted to check whether a user with the returned profile.id exists in our own database.
+2.	This is the function that is called after the authentication process is successful. 'token' is the authentication token, 'refreshToken' will be the refreshToken, and the 'profile' will contain all user data that the user has agreed to provide (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure 19). Following this, an internal search is conducted to check whether a user with the returned profile.id exists in our own database.
 
 3.	If the user exists, the database is updated by emptying their friends’ array and filling the array with the latest friend’s data. The purpose is to check if there are any new friends joining the application.
 
@@ -351,7 +351,6 @@ The figures below show the raw and json format inside the profile variable:
 <b><p align= "center">Figure 20: raw format</p></b>
 
 <br>
-
 <p align="center">
 <img src="../report/Images/passport6.png" width=85%>
 </p>
