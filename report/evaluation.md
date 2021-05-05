@@ -13,8 +13,26 @@
 
 ## Details of design evaluation 
 
+As previously discussed in our sprints and UX sections, we wanted to be customer-centric when approaching our design process. Continuous feedback from our end-user group (Cheese, Mr Water and Toast) facilitated consistent adaptation to customer requirements. We also felt that our initial questionnaire provided an early indication as to what our target audience is searching for in an application. Additionally, these early results provided insight into the potentially bad habits of our target audience and areas of improvement that we attempted to address. 
+
+Some crucial lessons from the front-end design of Flocus have been discussed below:
+
+<br>
+-	The ability to self-regulate
+
+Qualitative feedback can be very insightful and often provides advice that was never previously considered. It can also provide exciting and novel ideas – prospective end-users are, by nature, very needy and are always looking for the best from a potential product. The consequence of this is scope creep which, is the gradual growth in the scope of the project to an unrealistic size. Many in the group agree that this is certainly something that occurred too frequently. As such, it is crucial in these scenarios, to instil a degree of self-regulation to maintain a steady trajectory.
 
 
+-	Be evidence-led
+
+In the early sprints, front-end development often felt like a random walk – throwing multiple CSS animations and effects together to see if it produces something visually appealing. This approach was proven inept when evidence from Cheese’s and Mr Water’s initial feedback on the home component showcased the ability of the end-user to look through appealing designs. In an attempt to rectify the wrongs of our previously botched attempts at creating high fidelity designs, we turned to the scientific literature to provide an accurate representation of our project aims through the implementation of our designs. The consequence of this was a well thought-out and impactful study component that not only portrays the correct image for Flocus but also receives approval from prospective customers. 
+
+
+-	Beware of group thinking
+
+Although this point is short, we believe it is one of the most important. The quality of feedback in the development stage of a project is a valuable asset that can determine the final success or failure of that project. One key finding that we discovered during feedback sessions was that individual opinions often converged when in a group setting. In the future we hope to hold feedback sessions on a 1-to-1 basis.
+
+<br>
 ## Unit/Functional testing
 
 When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
