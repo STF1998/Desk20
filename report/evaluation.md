@@ -212,7 +212,7 @@ For future ideas around design testing and evaluation, please see our [conclusio
 
 ## Unit/Functional testing
 
-When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
+When developing any software, it is key to consider testing to pick up any bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid a degradation in user experience. 
 
 Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their login details but in future development this could include payment data. Therefore, testing is critical to software success, particualrly with a single poage application focused on user experience. 
 
