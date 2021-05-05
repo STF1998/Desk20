@@ -111,13 +111,13 @@ Together we identified that the end-user would need an attractive and simple use
 
 - Gordon is an a-level student who is struggling to concentrate on his exam revision due to distraction from social media and other webpages, such as the news and sport. Gordon wants to use a tool to help him focus for a specific time like 45 minutes. He does not just want to look at a clock so uses Flocus due to its interactive animation of a glass filling up. 
 
-- Hugh is a computer science student who wants to code in short 30-minute sprints however struggles to just go off his phone clock. His lifestyle is driven by sustainability and making ethical decisions as a consumer. Flocus provides him with a useful tool to time his specific coding intervals while also knowing he is doing something good for the plant through raising funds and awareness for water accessibility.  
+- Hugh is a computer science student who wants to code in short 30-minute sprints however struggles to just go off his phone clock. His lifestyle is driven by sustainability and making ethical decisions as a consumer. Flocus provides him with a useful tool to time his specific coding intervals while also knowing he is doing something good for the planet through raising funds and awareness for water accessibility.  
 
 - Thomas is a university student. He is on the autistic spectrum and struggles with looking at clocks. Flocus provides him with a visual aid instead of a clock timer, so he knows how long to work for his study intervals.   
 
 ### Questionaires 
 
-Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information as well as complying with GDPR (General Data Protection Regulation) regulations with the storage of data agreed at the start of the survey.  
+Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information and is compliant with GDPR (General Data Protection Regulation) regulation. The storage of data is agreed at the start of the survey.  
 
 We were able collect data from 23 university students. While the survey was short and has limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination of university students. Please see below snapshots of the results from the survey:
 
