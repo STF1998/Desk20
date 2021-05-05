@@ -5,7 +5,6 @@
 ## Contents of Evaluation
 
 - [**Details of design evaluation**](#Details-of-design-evaluation)
-    - [Timeline](#Timeline)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
 - [**User acceptance testing**](#User-acceptance-testing)
 
