@@ -18,6 +18,7 @@ As previously discussed in our sprints and UX sections, we wanted to be customer
 Some crucial lessons from the front-end design of Flocus have been discussed below:
 
 <br>
+
 -	The ability to self-regulate
 
 Qualitative feedback can be very insightful and often provides advice that was never previously considered. It can also provide exciting and novel ideas – prospective end-users are, by nature, very needy and are always looking for the best from a potential product. The consequence of this is scope creep which, is the gradual growth in the scope of the project to an unrealistic size. Many in the group agree that this is certainly something that occurred too frequently. As such, it is crucial in these scenarios, to instil a degree of self-regulation to maintain a steady trajectory.
