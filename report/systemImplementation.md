@@ -199,7 +199,7 @@ The figure below represents how our application is used.
 
 ## Database implementation
 
-After the implementation of the authentication process, our backend developers had to create a separate collection, ‘Records’, in the database to persistently store study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a key to identify the record owner. We then created a REST API that handles the GET and POST requests which, retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
+After the implementation of the authentication process, our backend developers had to create a separate collection, ‘Records’, in the database to persistently store study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a primary key to identify the record owner. We then created a REST API that handles the GET and POST requests which, retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
 
 The backend developers decided to normalize the data storage, so the database separately stores the user’s information and usage data in two collections. Such an approach required fewer design decisions and is flexible when coping with unknown data storage demand. However, the drawback of this approach is that joining two collections becomes more complex to implement.
 
