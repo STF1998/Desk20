@@ -508,9 +508,9 @@ For the production of the League table, we wanted users to view all friends on F
 The above typescript can be explained in the following steps:
 
 <ol>
-<li>Ensure that there are entries within the league array. If empty, do not proceed to create the table</li>
-<li>Sort all entries into descending order by number of glasses earnt</li>
-<li>Use the query selector to fetch the HTMLelement object that matches the CSS selector of ‘table’ and assign this object to a variable for further use</li>
+<li>Ensure that there are entries within the league array. If empty, do not proceed to create the table.</li>
+<li>Sort all entries into descending order by number of glasses earnt.</li>
+<li>Use the query selector to fetch the HTMLelement object that matches the CSS selector of ‘table’ and assign this object to a variable for further use.</li>
 <li>Iterate through the leagueTable array, inserting a row and three cells into the table for each user.</li>
 </ol>
 
