@@ -61,7 +61,117 @@ Throughout the development process, Sam and Hugh focused on building and running
 
 Please see below a table summarising some of the key user test cases along with pass/fail:
 
-TABLE - TODO
+<table>
+<tr>
+  <th>Stage</th>
+  <th>Page</th>
+  <th>Description</th>
+  <th>Pass/fail</th>
+</tr>
+<tr>
+  <td> 1.1 </td>
+  <td> Landing page</td>
+  <td> Check the login via Facebook button. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 1.2 </td>
+  <td> Landing page </td>
+  <td> Check animations load correctly. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 1.3 </td>
+  <td> Landing page </td>
+  <td> Check capability to login via Facebook. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.1 </td>
+  <td> Homepage </td>
+  <td> Ensure all links to homepage work. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.2 </td>
+  <td> Homepage </td>
+  <td> Ensure the STUDY button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.3 </td>
+  <td> Homepage </td>
+  <td> Ensure the LEAGUE button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.4 </td>
+  <td> Homepage </td>
+  <td> Ensure the ASAQUA button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.5 </td>
+  <td> Homepage </td>
+  <td> Ensure the logo animation is working and Flocus is visible. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.1 </td>
+  <td> Study page </td>
+  <td> Ability to click the button to start filling the glass. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.2 </td>
+  <td> Study page </td>
+  <td> Ensure the glass count increases after the 25 minutes has elapsed. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.3 </td>
+  <td> Study page </td>
+  <td> Ensure the glass filling animation runs after clicking the start button. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.4 </td>
+  <td> Study page </td>
+  <td> Ensure the back to homepage button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.1 </td>
+  <td> League page </td>
+  <td> Ensure both the league table and weekly graph is being inputted. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.2 </td>
+  <td> League page </td>
+  <td> Ensure ‘Your Week’ graph is updated after a study session has been completed. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.3 </td>
+  <td> League page </td>
+  <td> Ensure the back to homepage button works.</td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 5.1 </td>
+  <td> ASAQUA page </td>
+  <td> Ensure the the text about Flocus and ASAQUA is readable - i.e. font, font size and colour. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 5.2 </td>
+  <td> ASAQUA page </td>
+  <td> Ensure the back to homepage button works.</td>
+  <td> Pass </td>
+</tr>
+</table>
+
 
 This helped pick up minor bugs, including:
 - issues with the glass filling up animation
