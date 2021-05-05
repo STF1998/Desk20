@@ -142,13 +142,9 @@ On the design side of the FLocus, if we had more time, we would have liked to do
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
 
-### Development testing
-
-TODO
-
 ### Evaluation
 
-As mentioned previously, in the future we woould like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
+As mentioned previously, in the future we would like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
 
 - Learnability
 - Memorability
@@ -162,25 +158,6 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 - Appearance - page layout, size and font of writing and page flow.
 - Interactivity - portal personalisation, feedback and loyalty.
 - Functionality - speed, security, browser compatability and web/mobile compatability.
-
-With pre-planned ethical analysis and approval, we would have liked to include the following in future evaluative technqiues:
-
-#### Questionaires
-
-If we had the time and resources, we would have liked to undertake comprehensive questionaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students and working professionals. 
-
-These questionaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionaires are a great opportunity to ask a range of closed and open questions.
-
-#### Interviews
-
-We'd also like to organise one-to-one interview with potential end-users to underatnd their opinions regarding user flows and the design of Flocus.
-
-Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data however explore opinions as they come up in the interviews. Questionairres allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
-
-Other areas to explore for future work:
-
-- Controlled experiments - Flocus team compare user's interaction with Flocus and it's close competitiors. 
-- Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to auotmate testing of the usability. 
 
 ## Summary
 
