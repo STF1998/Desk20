@@ -498,12 +498,19 @@ For the implementation of the personal stats section titled “Your Week”, we 
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
 
-For the production of the League table, we wanted users to view all friends on Flocus and not just the top 10 performers. As such, we had to implement a dynamically resizing table that is initialised when the user first enters the league component. 
+For the production of the League table, we wanted users to view all friends on Flocus and not just the top 10 performers. As such, we had to implement a dynamically resizing table that is initialised when the user first enters the league component. The typescript implementation of this below:
 
 <p align="center">
-<img src="../report/Images/Dynamic_table.png" width=40%>
+<img src="../report/Images/Dynamic_table.png" width=50%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
+<b><p align= "center">Figure: A code snippet of the typescript code used for the dynamically sized league table.</p></b>
+
+The above typescript can be explained in the following steps:
+
+<ol>
+<li></li>
+</ol>
+
 
 
 
