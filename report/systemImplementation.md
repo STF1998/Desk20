@@ -165,7 +165,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 
 <br>
 
-The word ‘record’ on the chart means the session details, such as when does the session happen, whether the session is finished or not, and how long was the user inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database.
+The word ‘record’ on the chart refers to the session details, such as when the session happened and how long the user was inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database. Unfinished session occurs when the user decides to go to another page or closes the application before the session is finished. While finished session occurs when the glass becomes full.
 
 <br>
 
@@ -418,14 +418,26 @@ In this section, all API requests with relation to record data will be discussed
 <b><p align= "center">Figure 26: The POST request</p></b>
 <br>
 
-So, each time a user completes, pauses or exits a session, a POST request is executed and a record object is saved in our database.
+So, each time a user completes or exits a session, a POST request is executed and a record object is saved in our database. 
 
-The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure 27.
+The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified in the parameter, from the database. Then all the record objects that are returned are iteratively processed. After the completion of this process, there are two variables which, are returned. The first return value is the total time spent and the second value is the total sessions completed. This process is displayed below in the flowchart: 
 
+<br>
+<p align="center">
+<img src="../report/Images/records_flow.jpg" width=60%>
+</p>
+<b><p align= "center">Figure 27: flow chart of GET request process</p></b>
+
+<br>
+
+By 1500, we are referring to the number of seconds for each study session. To the process above, MongoDB smart query function calls aggregate. The documentation on aggregate functions can be found <a href = "https://docs.mongodb.com/manual/aggregation/">here</a>. The GET method is shown below: 
+
+<br>
 <p align="center">
 <img src="../report/Images/records2.png" width=75%>
 </p>
-<b><p align= "center">Figure 27: The GET method</p></b>
+<b><p align= "center">Figure 28: The GET method</p></b>
+<br>
 
 ### API for League Table
 
@@ -438,6 +450,9 @@ We then search through our previous records, as in the GET request described abo
 
 All returns are inside the time range specified in the parameter and all arrays are grouped (connected) before getting sorted in a descending order based on the number of sessions completed. By grouped we mean that if there is a change in position between elements inside one array, then the other two arrays will also experience the same change. As arrays are sorted in a descending order, the highest number of sessions completed will be on the top of the array (element 0) and the lowest will be on the bottom of the array.
 
+
+<br>
+
 ## Front-End System Implementation
 
 ### Angular 
@@ -449,7 +464,7 @@ During our opening sprint, we set up all required components for the project, th
 <p align="center">
 <img src="../report/Images/sprint_front.png" width=30%>
 </p>
-<b><p align= "center">Figure 28: A screenshot of our Angular components</p></b>
+<b><p align= "center">Figure 29: A screenshot of our Angular components</p></b>
 
 One of the primary objectives of Flocus is to provide a healthy and productive virtual space for students and experienced professionals to use for their studies. We realised the importance of being evidence-led when designing the front-end of our application and as such, conducted a brief literature overview to inform the design process of each component.
 
@@ -462,7 +477,7 @@ The main component in Flocus is the study page where users spend a majority of t
 <p align="center">
 <img src="../report/Images/animation.png" width=70%>
 </p>
-<b><p align= "center">Figure 29: the front-end study component created using Figma</p></b>
+<b><p align= "center">Figure 30: the front-end study component created using Figma</p></b>
 
 To further emulate a natural scene, CSS transformations were implemented on certain features of the component (e.g. clouds and birds) which, were designed so to avoid fast and distracting movements.  
 
@@ -475,7 +490,7 @@ To introduce a glass fill animation, we used typescript which allows the user to
 <p align="center">
 <img src="../report/Images/animation_newcode.png" width=80%>
 </p>
-<b><p align= "center">Figure 30: A screenshot of the HTML code used for the glass-fill animation</p></b>
+<b><p align= "center">Figure 31: A screenshot of the HTML code used for the glass-fill animation</p></b>
 
 Upon completion of a study session (45 Minutes), the glass empties incrementally over the time allocated for a break.
 
@@ -488,7 +503,7 @@ The Login component is the initial design that greets users and as such, has bee
 <p align="center">
 <img src="../report/Images/welcome.png" width=85%>
 </p>
-<b><p align= "center">Figure 31: A screenshot of welcome and login component in action </p></b>
+<b><p align= "center">Figure 32: A screenshot of welcome and login component in action </p></b>
 
 #### League table component
 
@@ -497,26 +512,26 @@ Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of
 <p align="center">
 <img src="../report/Images/league_table.png" width=85%>
 </p>
-<b><p align= "center">Figure 32: A screenshot of league table in action </p></b>
+<b><p align= "center">Figure 33: A screenshot of league table in action </p></b>
 
 For the implementation of the personal stats section titled “Your Week”, we utilised Chartjs. To discourage overuse, we have included colour indicators that provide a subtle prompt to an individual if they are overworking - a bar that displays work over 9.75 hours will turn red. For this, we followed the UK governments advice on the 48-hour working limit and assumed that a student was studying for 5 days per week. The typescript code for the Chartjs bar-chart is attached below:
 
 <p align="center">
 <img src="../report/Images/table_code1.png" width=60%>
 </p>
-<b><p align= "center">Figure 33: A code snippet of the typescript code used for the personal stats graph </p></b>
+<b><p align= "center">Figure 34: A code snippet of the typescript code used for the personal stats graph </p></b>
 
 <p align="center">
 <img src="../report/Images/table_code2.png" width=40%>
 </p>
-<b><p align= "center">Figure 34: A code snippet of the typescript code used for the personal stats graph </p></b>
+<b><p align= "center">Figure 35: A code snippet of the typescript code used for the personal stats graph </p></b>
 
 For the production of the League table, we wanted users to view all friends on Flocus and not just the top 10 performers. As such, we had to implement a dynamically resizing table that is initialised when the user first enters the league component. The typescript implementation of this below:
 
 <p align="center">
 <img src="../report/Images/Dynamic_table.png" width=60%>
 </p>
-<b><p align= "center">Figure 35: A code snippet of the typescript code used for the dynamically sized league table</p></b>
+<b><p align= "center">Figure 36: A code snippet of the typescript code used for the dynamically sized league table</p></b>
 
 The above typescript can be explained in the following steps:
 
@@ -538,7 +553,7 @@ In an endeavour to educate users about the great work that Asaqua has been achie
 <p align="center">
 <img src="../report/Images/Asaqua_Screenshot.png" width=85%>
 </p>
-<b><p align= "center">Figure 36: The Asaqua Component</p></b>
+<b><p align= "center">Figure 37: The Asaqua Component</p></b>
 
 #### Homepage component
 
@@ -549,14 +564,14 @@ We have attached a screenshot of the home component below, although to get a cle
 <p align="center">
 <img src="../report/Images/Home_Component.png" width=85%>
 </p>
-<b><p align= "center">Figure 37: The Home Component</p></b>
+<b><p align= "center">Figure 38: The Home Component</p></b>
 
 To achieve this animation, we created six Scalable Vector Graphics (SVG) circle elements and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur and FeColorMatrix to specify the filter. This filter was then used with the FeBlend which merges SVG elements. In effect, this is similar to introducing a blur effect on an SVG and then increasing the contrast.  The HTML for this is displayed in the code snippet below:
 
 <p align="center">
 <img src="../report/Images/HomeComp_Code.png" width=70%>
 </p>
-<b><p align= "center">Figure 38: A code snippet from the Home Component's main animation</p></b>
+<b><p align= "center">Figure 39: A code snippet from the Home Component's main animation</p></b>
 
 We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
 
@@ -571,7 +586,7 @@ Lottie is an open-source animation file format that allows creators to easily co
 <p align="center">
 <img src="../report/Images/lottie_code.png" width=70%>
 </p>
-<b><p align= "center">Figure 39: A snippet of the lottie-player bringing animation to life </p></b>
+<b><p align= "center">Figure 40: A snippet of the lottie-player bringing animation to life </p></b>
 
 The Lottie-player is a Web-Component for easily including and playing Lottie animations. It was the fastest implementation of Lottie, allowing us to specify certain parameters such as speed and iteration count. However, it is not absent of drawbacks. From our individual use and user feedback, it was made aware that certain browser would not render or handle the animations as desired. The browser that displayed the most issues was Safari. In an attempt to work around this glitch, we rendered the animation on a canvas rather than SVG. However, Lottie animations do not currently support certain animation effects on canvas and so when rendering, the Lottie animation became distorted and un-useable. Given the lack of sufficient time to address these concerns, we had to accept that the application was not going to operate as well in Safari as other browsers (e.g Chrome). We have passed this information to the Asaqua team for future adjustment. 
 
@@ -614,7 +629,7 @@ A Dockerfile and docker-compose.yml file were placed in the dashboard directory.
 <p align="center">
 <img src="../report/Images/docker.png" width=70%>
 </p>
-<b><p align= "center">Figure 40: The Dockerfile used </p></b>
+<b><p align= "center">Figure 41: The Dockerfile used </p></b>
 
 The dockerfile contains commands used to create a specific image of our application and each image created using the dockerfile was stored for later access. This helped achieve continuous integration of our code. Any changes in code could easily be reverted by using an old image.
 
@@ -623,12 +638,12 @@ The docker-compose.yml file was used for defining and running two Docker contain
 <p align="center">
 <img src="../report/Images/docker2.png" width=70%>
 </p>
-<b><p align= "center">Figure 41: The Docker-compose file used </p></b>
+<b><p align= "center">Figure 42: The Docker-compose file used </p></b>
 
 <p align="center">
 <img src="../report/Images/docker3.png" width=70%>
 </p>
-<b><p align= "center">Figure 42: Docker running both Node and MongoDB </p></b>
+<b><p align= "center">Figure 43: Docker running both Node and MongoDB </p></b>
 
 As new changes to the application were made, the two containers were rebuilt using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
 
