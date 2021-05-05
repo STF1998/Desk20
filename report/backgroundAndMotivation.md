@@ -272,17 +272,27 @@ Our initial demographic group is students aged 16-24 including school and univer
 
 #### Technical scope
 
-##### Technical focus
 
 Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the Front-end. The primary reason for this split was the ambition to use the external Facebook API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs, having three individuals working on these tasks greatly helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
 
-##### Feasibility
-
 When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs, course peers and online forums, we were confident that the project was achievable.
 
-#### Fidelity
-
 One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional. For this, we had to implement a live dataset, easily accessible by the users.
+
+However, there were areas of the technical scope that we had to trim to complete our MVP:
+
+-	Being able to view oneself in the league – this was a significant hurdle in the project and was particularly down to the arrangement of the API and database. As such, we decided to offer a league table that did not include the user. However, the user is still able to compare via the personal stats section. 
+-	Portal Customisation
+-	Advertisements
+
+#### Technical user-story
+
+Say an individual, that goes by the name of John Doe, is plagued by procrastination in his study sessions. A facebook friend, who is also a fellow procrastinater, informs John Doe of a superb application that has cut his procrastination in half ... it's called flocus. John, being curious, decides to join up with the Flocus application. When he logs in and checks out the league table, he realises that most of his friends on Facebook are also using Flocus and their studying times this week have been a lot more than he would have expected. John, being a competitive person, sees that his friends and family are working hard in their studies and, as a result, becomes motivated to show his peers how much of a hard worker he can be. This was only possible because of the fantastic front end development and implementation of a league table + personal stats section within the application. However, there were some areas that John Doe was frustrated with:
+
+- He couldnt see himself in the league table
+- He couldnt customise his site or produce a unique icon for himself
+- He wanted to know more about his personal working habits
+
 
 
 
