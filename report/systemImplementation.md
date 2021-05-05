@@ -5,7 +5,7 @@
 ## Contents of System Implementation
 
 - [**Stack architecture and system design**](#Stack-architecture-and-system-design)
-  - [Stack arcitecture](#Stack-arcitecture)
+  - [Stack architecture](#Stack-architecture)
   - [System design](#System-design)
   - [Class diagrams](#Class-diagrams)
   - [Sequence diagrams](#Sequence-diagrams)
