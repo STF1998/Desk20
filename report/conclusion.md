@@ -70,8 +70,6 @@ At the start, we believe we got slightly ahead of ourselves by trying to plan a 
 
 Due to our big ideas and aspirations as a team,  when we approached discussing the success of our product we slightly struggled due to define whether or not our project was a success. On one side we had created a minimum viable product that functioned effectively with a Facebook Login capability. However, on the other side there were still areas, such as the google ads and portal personlisation, that we still wanted to integrate into the application. Overall, we had been successful in creating an MVP with future potential to help raise funds for ASAQUA and act as a very effective and personlaised procrastination tool.
 
-Specific hurdles/challenges - SAM TODO
-
 So while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
 # Impact of COVID-19 on working practices
@@ -113,7 +111,7 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 
 ### Login landing page
 
-- Login capability by email as well alternative social media channels, such as twitter and LinkedIn, alongside google login option.
+- Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside google login option.
 - An about pop up to read more about the application and what Flocus is
 - More animations around studying and the story behind Asaqua.
 
@@ -145,11 +143,11 @@ On the design side of the FLocus, if we had more time we would have liked to do 
 
 As mentioned previously, in the future we woould like to see a full user study of interaction with Flocus. Usability is often considered the most essential factor to investigate as part of the evaluative process. Usability can be defined as the ease of using the webpage and fulfilling user's satisfaction. Key aspects to consider when evaluating the usability of Flocus, include:
 
-- learnability
-- memorability
-- efficiency
-- satisfaction 
-- errors
+- Learnability
+- Memorability
+- Efficiency
+- Satisfaction 
+- Errors
 
 Alongside usability, future evaluiative techniques could focus on evaluating aspects of the following:
 
