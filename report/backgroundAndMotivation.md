@@ -282,9 +282,9 @@ When we embarked on this challenge, most of us were novices when it came to web-
 
 #### Fidelity
 
-One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional.
+One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional. For this, we had to implement a live dataset, easily accessible by the users.
 
-#### Data
+
 
 
 ### Challenges
