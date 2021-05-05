@@ -13,9 +13,26 @@
   - [Beta testing](#Beta-testing)
 
 
+## Overview of evaluation
+
+As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
+
+Gordon, Tom and Jati were responsible for testing the development and back end side of things. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
+
+### Short timeline for testing and evaluation:
+
+Back end testing and evaluation:
+
+Front end testing and evaluation:
+
+
+</br>
+
 ## Details of design evaluation 
 
-As previously discussed in our sprints and UX sections, we wanted to be customer-centric when approaching our design process. Continuous feedback from our end-user group (Cheese, Mr Water and Toast) facilitated consistent adaptation to customer requirements. We also felt that our initial questionnaire provided an early indication as to what our target audience is searching for in an application. Additionally, these early results provided insight into the potentially bad habits of our target audience and areas of improvement that we attempted to address. 
+### Lessons learnt from Front-end development
+
+ As previously discussed in our sprints and UX sections, we wanted to be customer-centric when approaching our design process. Continuous feedback from our end-user group (Cheese, Mr Water and Toast) facilitated consistent adaptation to customer requirements. We also felt that our initial questionnaire provided an early indication as to what our target audience is searching for in an application. Additionally, these early results provided insight into the potentially bad habits of our target audience and areas of improvement that we attempted to address. 
 
 Some crucial lessons from the front-end design of Flocus have been discussed below:
 
@@ -37,24 +54,7 @@ Although this point is short, we believe it is one of the most important. The qu
 
 <br>
 
-## Overview of evaluation
-
-
-As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
-
-Gordon, Tom and Jati were responsible for testing the development and back end side of things. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
-
-### Short timeline for testing and evaulation:
-
-Back end testing and evaluation:
-
-Front end testing and evaluation:
-
-
-
-## Details of design evaluation 
-
- TODO - Sam
+### Manual approach to testing
 
  Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
 
