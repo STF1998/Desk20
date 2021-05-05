@@ -5,6 +5,8 @@
 ## Contents of System Implementation
 
 - [**Stack architecture and system design**](#Stack-architecture-and-system-design)
+  - [Stack arcitecture](#Stack-arcitecture)
+  - [System design](#System-design)
   - [Class diagrams](#Class-diagrams)
   - [Sequence diagrams](#Sequence-diagrams)
 - [**Back End - MongoDB**](#Back-End---MongoDB)
@@ -20,7 +22,9 @@
 - [**Additional Elements and Components**](#Additional-elements-and-components)
 - [**Deployment Details**](#Deployment-Details)
 
-# Stack Architecture
+## Stack architecture and system design
+
+### Stack architecture
 
 Our team decided to use MEAN stack for developing this project. MEAN stands for MongoDB, Express, Angular, and Node.js. Even though the stack consists of multiple technologies, all of them are based on one coding language, which is JavaScript. The roles of each technology is:
 
@@ -89,7 +93,7 @@ Ostensibly, the argument for using the MEAN stack was compelling, not only for t
 
 <br>
 
-## Stack architecture implementation in our application
+#### Stack architecture implementation in our application
 
 Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js authentication middleware that helps our app communicate with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
 
@@ -100,9 +104,9 @@ Other than the previously discussed technologies, our application interacts with
 <b><p align= "center">Figure 4: A visual representation of a user's interaction with Flocus </p></b>
 <br>
 
-# System Design
+### System design
 
-## Authentication design
+#### Authentication design
 
 <p align="center">
 <img src="../report/Images/auth.png" width=50%>
@@ -144,7 +148,7 @@ Inside the home page we provide three sections that a user can access. These are
 
 <br>
 
-## Study page
+#### Study page
 
 Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
 
@@ -161,7 +165,7 @@ The word ‘record’ on the chart means the session details, such as when does 
 
 <br>
 
-## League
+#### League
 
 When the league page is accessed, we process the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
