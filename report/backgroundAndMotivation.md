@@ -65,7 +65,7 @@ Having singled out the Pomodoro technique as a key tool to combat procrastinatio
 
 ## State of the art survey
 
-Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had similar aspects and technologies, each had subtle differences which can be seen the current industry review below. 
+Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had similar aspects and technologies, each had subtle differences. This can be seen in the current industry review below. 
 
 
 ### Current industry review
