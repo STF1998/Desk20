@@ -469,7 +469,7 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
 
 ## Team use of Git
 
-Our team created a remote repository on GitHub for collaboration and version control. The branches in our repository are the main branch and different personal branches. We use the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers has his personal feature branch, where we make a frequent commit to achieve effective version control during the sprints. Once the newly developed features are ready to merge with the production-ready working copy on the main branch, we either submit a pull request or inform the entire team about the incoming changes. Therefore, all developers can pull from the latest change, review the code and test the latest working copy with Docker.
+Our team created a remote repository on GitHub for collaboration and version control. The branches in our repository are the main branch and different personal branches. We use the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers had their personal feature branch, where we made frequent commits to achieve effective version control. Once the newly developed features were ready to merge with the production-ready working copy on the main branch, we submitted a pull request and informed the entire team about the incoming changes. Following this, all developers were able to pull from the latest version, review the code and test the latest working copy with Docker.
 
 <p align="center">
 <img src="../report/Images/git_diagram.png" width=70%>
