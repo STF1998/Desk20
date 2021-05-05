@@ -40,7 +40,7 @@ When designing Flocus, we had two goals: to help students (like ourselves) reduc
 
 ### ASAQUA
 
-Asaqua's Mission statement:
+Asaqua's mission statement:
 
 "We believe our water tanks can facilitate clean water accessibility in rural villages.  ASAQUA collaborates with committed locals, NGOs (Non-Governmental Organisations), and research institutes and strives for a sustainable future for our next generation. ASAQUA is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution."
 
