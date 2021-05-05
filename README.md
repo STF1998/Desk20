@@ -19,18 +19,18 @@ Our aim is simple: combat procrastination and raise awareness for water scarcity
 
 ### How to use Flocus?
 
-1. Sign in via the Facebook plugin.
-2. Select how long you would like to study for and the break time you would like.
-3. Start working with the webpage open. Your glass will start to fill.
-4. When your glass is full, take a break and learn more about Asaqua, the charity we have partnered with to raise awareness and funds for solving the water scarcity issue in underdeveloped nations.
-5. See your statistics and compare your work progress compared to your peers.
+1. Sign in via Facebook
+2. Invite your friends to collaborate and compete
+3. Visit the study area and turn on the tap to begin your session
+4. When your glass is full, take a break and learn more about Asaqua, the charity we've partnered with to raise awareness and funds for solving the water accessibility issue in developing nations
+5. See your statistics and compare your work progress with your peers
 
 ### Features of Flocus
 
-- Visual aid of a glass filling up as an alternative Pomodoro timer.
-- Facebook login capability
+- Visual aid of a glass-fill animation as an alternative Pomodoro timer
+- Facebook login capability to ensure you are with your friends when you study
 - League tables to compete with your friends
-- Raises awareness for water scarcity and the work ASAQUA do to improve this critical issue in underdeveloped nations.
+- Raises awareness for water scarcity and the work ASAQUA do to improve this critical issue in underdeveloped nations
 
 ## Our Target Market
 
