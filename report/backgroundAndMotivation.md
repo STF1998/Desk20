@@ -22,7 +22,7 @@ When starting this project, our team had little knowledge or understanding of si
 
 #### Single page applications
 
-Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience [[1](#Reference-List)]. A single-page application is a webpage that updated independently on each user’s action and therefore meaning the application has increased responsiveness and user satisfaction [[2](#Reference-List)]. The architecture of a single page application often consists of the following features [[3](#Reference-List)]:
+Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience [[1](#Reference-List)]. A single-page application is a webpage that updates dynamically on each user’s action which, increases responsiveness and user satisfaction [[2](#Reference-List)]. The architecture of a single page application often consists of the following features [[3](#Reference-List)]:
 
 - Web interface: Interaction between user and web server 
 
