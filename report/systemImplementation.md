@@ -165,7 +165,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 
 <br>
 
-The word ‘record’ on the chart refers to the session details, such as when the session happened and how long the user was inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database. Unfinished session occurs when the user decides to go to another page or closes the application before the session is finished. While finished session occurs when the glass becomes full.
+‘Record’ refers to the session details, such as when the session happened and how long the user was inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database. Unfinished session occurs when the user decides to go to another page or closes the application before the session is finished. While finished session occurs when the glass becomes full.
 
 <br>
 
