@@ -18,8 +18,6 @@
 
 When starting this project, our team had little knowledge or understanding of single page applications (SPA’s), Serious Play, and procrastination. During the first month, alongside developing our development skills, we spent time researching and reading papers and articles on the design and technologies to build a successful SPA (Single Page Application) to solve the fundamental problem we had identified: procrastination. This initial research helped further define our project and influenced key aspects around our design and implementation of Flocus. Below we have provided short reviews for the key areas we felt we needed to learn about before starting design and implementation of development. 
 
-<br>
-
 ### Academic research review
 
 #### Single page applications
@@ -36,13 +34,11 @@ Over the past decade, the field of application development has seen significant 
 
 - User action: A user can send input to a SPA from any I/O device, causing actions to occur. 
 
-<br>
 
 #### Serious play
 
 The methodology of Serious Play, an innovative approach to exploring complex issues with the use of playful techniques to engage audiences, was developed by the CEO (Chief Executive Officer) of Lego, Kjeld Kirk Kristiensen, alongside two academic professors at IMD Business School, Bart Victor and Johan Roos. When the above first produced Serious Play, it was intended to be used in corporate sectors generating greater engagement through imaginative and playful approaches to solving business problems [[4](#Reference-List)]. However, since then Serious Play has developed into a core set of activities and processes which integrate both innovative and creative techniques [[5](#Reference-List)]. In recent times, the Serious Play process has been applied to the software development industry with the concept being used as part of design thinking to be more productive and innovative in solving problems [[6](#Reference-List)]. Overall, the Serious Play aspect will be utilised throughout our design and implementation of a single-page web application.
 
-<br>
 
 #### Procrastination
 
@@ -50,7 +46,6 @@ Procrastination is a well-known experience amongst academic environments. It is 
 
 There is a growing body of research that explains the phenomenon of procrastination as a self-regulation challenge [[10](#Reference-List)]. Ferrari [[11](#Reference-List)] suggests that students need support or tools to help self-regulate their behaviours when in a learning environment. Zimmerman [[12](#Reference-List)] suggests that students need to learn how to effectively use tools and strategies to help improve self-regulation. In recent times, little research has focused on tools and interventions for procrastination. Overall, our idea to create a procrastination tool fills a clear gap in providing a solution to help students self-regulate their learning and study techniques.
 
-<br>
 
 #### Pomodoro Technique
 
@@ -72,13 +67,11 @@ Having singled out the Pomodoro technique as a key tool to combat procrastinatio
 
 Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had similar aspects and technologies, each had subtle differences which can be seen the current industry review below. 
 
-<br>
 
 ### Current industry review
 
 Having agreed that we would like to build a single page application inspired by the Pomodoro technique, we set about researching and analysing current existing web applications on the market that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
 
-<br>
 
 #### Pomofocus 
 
