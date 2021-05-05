@@ -18,6 +18,8 @@
 
 When starting this project, our team had little knowledge or understanding of single page applications (SPA’s), Serious Play, and procrastination. During the first month, alongside developing our development skills, we spent time researching and reading papers and articles on the design and technologies to build a successful SPA (Single Page Application) to solve the fundamental problem we had identified: procrastination. This initial research helped further define our project and influenced key aspects around our design and implementation of Flocus. Below we have provided short reviews for the key areas we felt we needed to learn about before starting design and implementation of development. 
 
+<br>
+
 ### Academic research review
 
 #### Single page applications
@@ -30,19 +32,25 @@ Over the past decade, the field of application development has seen significant 
 
 - Updated/replaced: A component can be updated or replaced by a new component or page.  
 
-- Reloaded: A typical web page needs to be reloaded, opposed to an SPA which will reload automatically.  
+- Reloaded: A typical web page needs to be reloaded, opposed to a SPA which will reload automatically.  
 
-- User action: A user can make input to an SPA from any I/O device, causing action to occur. 
+- User action: A user can send input to a SPA from any I/O device, causing actions to occur. 
+
+<br>
 
 #### Serious play
 
 The methodology of Serious Play, an innovative approach to exploring complex issues with the use of playful techniques to engage audiences, was developed by the CEO (Chief Executive Officer) of Lego, Kjeld Kirk Kristiensen, alongside two academic professors at IMD Business School, Bart Victor and Johan Roos. When the above first produced Serious Play, it was intended to be used in corporate sectors generating greater engagement through imaginative and playful approaches to solving business problems [[4](#Reference-List)]. However, since then Serious Play has developed into a core set of activities and processes which integrate both innovative and creative techniques [[5](#Reference-List)]. In recent times, the Serious Play process has been applied to the software development industry with the concept being used as part of design thinking to be more productive and innovative in solving problems [[6](#Reference-List)]. Overall, the Serious Play aspect will be utilised throughout our design and implementation of a single-page web application.
 
+<br>
+
 #### Procrastination
 
 Procrastination is a well-known experience amongst academic environments. It is defined as “the needless delay of things one intends to do” often associated with negative outcomes about performance and subjective wellbeing [[7](#Reference-List)]. Studies, such as those undertaken by Klingsieck et al. [[8](#Reference-List)], suggest that over 70% of college students tend to procrastinate on a regular basis, often with negative consequences. Kim and Seo [[9](#Reference-List)] found that younger students often procrastinate more than older students with a possible applanation of the maturity level and inability to take responsibility for their own learning. 
 
-There is a growing body of research that explains the phenomenon of procrastination as a self-regulation challenge [[10](#Reference-List)]. Ferrari [[11](#Reference-List)] suggests that students need support or tools to help self-regulate their behaviours when in a learning environment. Zimmerman [[12](#Reference-List)] suggests that students need to learn how to effectively use tools and strategies to help improve self-regulation. In recent times, little research has focused on tools and interventions for procrastination. Overall, our idea to create a procrastination tool fills a clear gap in providing a solution to help students self-regulate their learning and study techniques. 
+There is a growing body of research that explains the phenomenon of procrastination as a self-regulation challenge [[10](#Reference-List)]. Ferrari [[11](#Reference-List)] suggests that students need support or tools to help self-regulate their behaviours when in a learning environment. Zimmerman [[12](#Reference-List)] suggests that students need to learn how to effectively use tools and strategies to help improve self-regulation. In recent times, little research has focused on tools and interventions for procrastination. Overall, our idea to create a procrastination tool fills a clear gap in providing a solution to help students self-regulate their learning and study techniques.
+
+<br>
 
 #### Pomodoro Technique
 
@@ -58,13 +66,19 @@ Learn more about the Pomodoro technique at this [link](https://francescocirillo.
 
 Having singled out the Pomodoro technique as a key tool to combat procrastination, we quickly identified existing applications that are based on the technique. These web applications can be seen below in the following section.
 
+<br>
+
 ## State of the art survey
 
 Having identified the procrastination tools as the area of focus, the team then started to research and identify the top 5 current products/tools to help reduce procrastination using the pomodoro technique. While all had similar aspects and technologies, each had subtle differences which can be seen the current industry review below. 
 
+<br>
+
 ### Current industry review
 
-Having agreed that we would like to build a single page application inspired by the Pomodoro technique, we set about researching and analysing current existing web applications on the market that utilise the Pomodoro technique to help reduce procrastination and improve student productivity. 
+Having agreed that we would like to build a single page application inspired by the Pomodoro technique, we set about researching and analysing current existing web applications on the market that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
+
+<br>
 
 #### Pomofocus 
 
@@ -72,6 +86,7 @@ Website: https://pomofocus.io/
 
 Pomofocus is an online pomodoro timer that works on both web and mobile browsers. The webpage revolves around a large timer with different colour backgrounds for study and break intervals (red for study, blue for break).
 
+<br>
 <p align="center">
 <img src="../report/Images/pomo1.png" width=60%>
 </p>
@@ -100,6 +115,7 @@ Pomofocus is an online pomodoro timer that works on both web and mobile browsers
     </ul>
   </td>
 </table>
+<br>
 
 #### Tomato Timer
 
@@ -107,6 +123,7 @@ Website: https://tomato-timer.com/
 
 Tomato timer is an online clock timer that follows the Pomodoro technique inspired by Tomatoi.st. It uses jQuery and HTML5 features like Desktop Notifications, Audio API and Local Storage instead of relying on Adobe Flash and other such technologies.
 
+<br>
 <p align="center">
 <img src="../report/Images/pomo2.png" width=60%>
 </p>
@@ -138,11 +155,15 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   </td>
 </table>
 
+<br>
+
 #### Tomatoes
 
 Website: http://www.tomato.es/
 
 Tomatoes is a Pomodoro Technique driven time tracker.
+
+<br>
 
 <p align="center">
 <img src="../report/Images/pomo3.png" width=60%>
@@ -169,6 +190,7 @@ Tomatoes is a Pomodoro Technique driven time tracker.
     </ul>
   </td>
 </table>
+<br>
 
 #### Pomodoro Tracker
 
@@ -176,6 +198,7 @@ Website: https://www.pomodoro-tracker.com/
 
 Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro technique. 
 
+<br>
 <p align="center">
 <img src="../report/Images/pomo4.png" width=60%>
 </p>
@@ -203,6 +226,7 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
     </ul>
   </td>
 </table>
+<br>
 
 #### Pomodor
 
@@ -210,6 +234,7 @@ Website: https://pomodor.app/timer
 
 Easy-to-use web-based Pomodoro timer.
 
+<br>
 <p align="center">
 <img src="../report/Images/pomo5.png" width=70%>
 </p>
@@ -239,6 +264,7 @@ Easy-to-use web-based Pomodoro timer.
     </ul>
   </td>
 </table>
+<br>
 
 #### Market Opportunities identified from current industry research
 
@@ -251,10 +277,12 @@ Based on current market research, we identified the following market gaps and pl
 - None had a social enterprise aspect or links with a charity or charitable organisation. 
 
 - Lack of animations and visual aids. 
+<br>
 
 ## Defined problem
 
 The problem we aim to solve is procrastination in university student populations and a lack of awareness for water scarcity in underdeveloped nations across Africa.
+<br>
 
 ### Scope
 
@@ -269,6 +297,7 @@ Our application is a useful tool that not only provides a solution to help reduc
 - For Asaqua, we are looking to raise awareness for a critical issue around water scarcity in underdeveloped nations. 
  
 Our initial demographic group is students aged 16-24 including school and university students. We realise there is scope to extend this out to employees to help those working from home and tracking their work concentration however given the short timeline of this project we have decided to focus on the demographic we understand the best given we are students ourselves. 
+<br>
 
 #### Technical scope
 
@@ -284,6 +313,7 @@ However, there were areas of the technical scope that we had to trim to complete
 -	Being able to view oneself in the league – this was a significant hurdle in the project and was particularly down to the arrangement of the API and database. As such, we decided to offer a league table that did not include the user. However, the user is still able to compare via the personal stats section. 
 -	Portal Customisation
 -	Advertisements
+<br>
 
 #### Technical user-story
 
@@ -293,9 +323,7 @@ Say an individual, that goes by the name of John Doe, is plagued by procrastinat
 - He couldnt customise his site or produce a unique icon for himself
 - He wanted to know more about his personal working habits
 
-
-
-
+<br>
 
 ### Challenges
 
@@ -304,6 +332,7 @@ Given limited resources and time restraints, the biggest challenge of this proje
 For the front-end, the biggest challenge will be building and integrating slick animations to portray the theme of water but also a visual aid as a timer.  
 
 For the backend, the biggest challenge will be integrating with Facebook-API and selecting the data to be outputted on the webpage as part of the league table. 
+<br><br>
 
 ## Reference List
 
@@ -342,6 +371,7 @@ cognitive load, self-awareness, and time limits on ‘working best under pressur
 Journal of Personality, 15(5), 391–406, 2001. doi:10.1002/per.413.abs
 
 [12] B. J. Zimmerman. Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects. American Educational Research Journal, 45(1), 166–183, 2008. doi:10.3102/0002831207312909
+<br>
 
 ## Project report navigation
 
