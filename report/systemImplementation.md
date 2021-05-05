@@ -34,7 +34,7 @@ Below is a diagram displaying how each of the technologies within the stack inte
 <p align="center">
 <img src="../report/Images/pathwayStack.png" width=75%>
 </p>
-<b><p align= "center">Figure 1: Stack diagram.</p></b>
+<b><p align= "center">Figure 1: Stack diagram </p></b>
 
 MEAN stack was chosen due to its advantages, including:
 -	It has a large and helpful online community. There are several tutorials, lectures, and problem-solving articles or videos about MEAN stack on the web. 
@@ -83,7 +83,7 @@ However, in terms of job searches on linked in, Angular is in first place ([link
 <p align="center">
 <img src="../report/Images/angular_vs.png" width=75%>
 </p>
-<b><p align= "center">Figure: Linkdin Searches (Data was taken collected on 10th December 2018)</p></b>
+<b><p align= "center">Figure 3: LinkedIn Searches (Data was taken collected on 10th December 2018) </p></b>
 
 Ostensibly, the argument for using the MEAN stack was compelling, not only for the previously stated reasons but also because of the level of support offered by the university and our course peers. As such, we decided to adopt this approach for our project implementation. 
 
@@ -95,9 +95,9 @@ Other than the previously discussed technologies, our application interacts with
 
 <br>
 <p align="center">
-<img src="../report/Images/stach_arch.png" width=75%>
+<img src="../report/Images/stach_arch.png" width=85%>
 </p>
-<b><p align= "center">Figure : A visual representation of a user's interaction with Flocus</p></b>
+<b><p align= "center">Figure 4: A visual representation of a user's interaction with Flocus </p></b>
 <br>
 
 # System Design
@@ -107,7 +107,7 @@ Other than the previously discussed technologies, our application interacts with
 <p align="center">
 <img src="../report/Images/auth.png" width=50%>
 </p>
-<b><p align= "center">Figure: The authentication process</p></b>
+<b><p align= "center">Figure 5: The authentication process</p></b>
 
 We decided to make Facebook’s (FB)’s authentication the only sign-in method to access our application. The reasons behind this are:
 1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
@@ -125,7 +125,7 @@ The procedure to use FB’s API is as follows:
 3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
 4.	Follow the step-by-step guide on FB authentication using PassportJS in PassportJS' documentation[http://www.passportjs.org/docs/facebook/].
 
-When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB asks the user whether the they agree to share the requested data with the application. The details of this data are shown in a confirmation pop-up (shown in Figure x). If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
+When the login button in our application is clicked, the application will redirect the user to FB and asks the user to authenticate. Upon successful authentication, FB asks the user whether the they agree to share the requested data with the application. The details of this data are shown in a confirmation pop-up. If the login is not successful or the user does not agree to share their data, the user will be redirected back to our application’s login page.
 
 The FB permission type in our code, determines the type of data that FB’s API will return to our application. Flocus only uses the "user_friends" permission, which means that FB will return an array consisting of all of the user’s friends. This also grants permission to the application. Additionally, there are types of data that do not require a permission to be returned. These include; user’s name, user’s UID (FB’s user unique id), user’s profile picture (in the form of link), and the authentication token. Amazingly, PassportJS provides a function called “isAuthenticated()”, which returns true if the user is already authenticated and the session is still alive. It will return false if the user is not authenticated or the session is expired. Therefore, in our application we do not have to worry about authentication tokens because we always call the “isAuthenticated()” method before letting the user access data from our database.
 
@@ -135,9 +135,9 @@ Successful and unsuccessful login attempts will redirect users back to the login
 
 <br>
 <p align="center">
-<img src="../report/Images/auth2.png" width=50%>
+<img src="../report/Images/auth2.png" width=70%>
 </p>
-<b><p align= "center">Figure: Application schema for the home page</p></b>
+<b><p align= "center">Figure 6: Application schema for the home page</p></b>
 <br>
 
 Inside the home page we provide three sections that a user can access. These are the study page, league page, and Asaqua page.
@@ -146,14 +146,14 @@ Inside the home page we provide three sections that a user can access. These are
 
 ## Study page
 
-Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in the figure below.
+Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
 
 <br>
 
 <p align="center">
 <img src="../report/Images/studyDesign.png" width=40%>
 </p>
-<b><p align= "center">Figure: Study component timer</p></b>
+<b><p align= "center">Figure 7: Study component timer</p></b>
 
 <br>
 
@@ -173,7 +173,7 @@ The changes made allowed for a single data service to be subscribed to. Unfortun
 
 <br>
 
-## Class diagrams
+## Class diagram
 
 Shown below is the UML class diagram that demonstrates the production of UserData to be accessed by the front-end.
 
@@ -183,9 +183,9 @@ In terms of records, users can only post one record at a time but, will recieve 
 
 <br>
 <p align="center">
-<img src="../report/Images/class.png" width=75%>
+<img src="../report/Images/class.png" width=85%>
 </p>
-<b><p align= "center">Figure : Class diagram </p></b>
+<b><p align= "center">Figure 8: Class diagram </p></b>
 <br>
 
 ## Sequence diagrams
@@ -196,9 +196,9 @@ The figure below represents how our application is used.
 
 <br>
 <p align="center">
-<img src="../report/Images/sequential.png" width=75%>
+<img src="../report/Images/sequential.png" width=80%>
 </p>
-<b><p align= "center">Figure : Sequential diagram for Flocus</p></b>
+<b><p align= "center">Figure 9: Sequential diagram for Flocus </p></b>
 <br>
 
 # Back End - MongoDB
@@ -213,7 +213,7 @@ The backend developers decided to normalize the data storage, so the database se
 <p align="center">
 <img src="../report/Images/dbImplement.png" width=75%>
 </p>
-<b><p align= "center">Figure : Entity relationship diagram of the 2 database collections</p></b>
+<b><p align= "center">Figure 10: Entity relationship diagram of the two database collections</p></b>
 
 ## Data model
 
@@ -223,22 +223,22 @@ As a team, we agreed to use the UID given by Facebook as the primary key between
 
 <br>
 <p align="center">
-<img src="../report/Images/db3.png" width=75%>
+<img src="../report/Images/db3.png" width=95%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure 11: The record collection code snippet </p></b>
 
 <br>
 
 <p align="center">
 <img src="../report/Images/user_data_model.png" width=75%>
 </p>
-<b><p align= "center">Figure : The user data model</p></b>
+<b><p align= "center">Figure 12: The user data model</p></b>
 
 <br>
 <p align="center">
 <img src="../report/Images/record_data_model.png" width=75%>
 </p>
-<b><p align= "center">Figure : The record data model</p></b>
+<b><p align= "center">Figure 13: The record data model</p></b>
 <br>
 
 # Middle Tier - Express, Node, the RESTful API
@@ -265,21 +265,21 @@ In RESTful APIs, CRUD operations are used to manipulate and move data between ap
 - PUT – updating data 
 - DELETE – deleting data 
 
-These HTTP methods are implemented in our server-side code which is in NodeJS and are combined with the functionality of ExpressJS which, makes doing HTTP requests, response, and routing much easier. An example of implementing API requests using ExpressJS is shown in Figure x, while API requests without ExpressJS are shown in Figure x. 
+These HTTP methods are implemented in our server-side code which is in NodeJS and are combined with the functionality of ExpressJS which, makes doing HTTP requests, response, and routing much easier. An example of implementing API requests using ExpressJS is shown in Figure 14, while API requests without ExpressJS are shown in Figure 15 below. 
 
 <p align="center">
 <img src="../report/Images/middle_intro1.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure 14: Implementation of API requests using ExpressJS</p></b>
 
 Without ExpressJS:
 
 <p align="center">
 <img src="../report/Images/middle_intro2.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure 15: Implementation of API requests without using ExpressJS </p></b>
 
-By comparing the two figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
+By comparing the two above figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
 
 Other than ExpressJS, we also used PassportJS to help with our Facebook authentication process.
 
@@ -298,30 +298,30 @@ Further information about what PassportJS is and what can be achieved with it ca
 
 However, for our application, only be focused on PassportJS for authentication using Facebook. The complete documentation can be found here: [link](http://www.passportjs.org/docs/facebook/). In this section of the report, we will not dive into the documentation, but will instead discuss the hands-on experience of how we implemented PassportJS in Flocus.
 
-To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the Figures below.
+To apply PassportJS, we will need to install three dependencies, which are; passport, passport-facebook, and express-session. Passport and passport-facebook are dependencies that are utilised to implement the functionality of authentication, while express-session is used to enhance connection security. As we are dealing with authentication and the transfer of user data, a secure connection was required. Beyond the installation, we also needed to use the dependencies as shown in the figures below.
 
 <br>
 <p align="center">
 <img src="../report/Images/passport1.png" width=75%>
 </p>
-<b><p align= "center"></p></b>
+<b><p align= "center">Figure 16: Dependencies 1</p></b>
 
 <br>
 
 <p align="center">
 <img src="../report/Images/passport2.png" width=75%>
 </p>
-<b><p align= "center"></p></b>
+<b><p align= "center">Figure 17: Dependencies 2</p></b>
 <br>
 
-A further implementation of passport is shown in Figure x. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
+A further implementation of passport is shown in Figure 18. The skeleton of the code below was acquired from the PassportJS documentation and was then modified based on the needs of our application.
 
 <br>
 
 <p align="center">
-<img src="../report/Images/passport3.png" width=70%>
+<img src="../report/Images/passport3.png" width=90%>
 </p>
-<b><p align= "center">Figure x: </p></b>
+<b><p align= "center">Figure 18: Implementation of PassportJS </p></b>
 
 <br>
 
@@ -329,7 +329,7 @@ Code explanation by section number:
 
 1.	This is the section where we help Facebook identify our application by supplying the clientID and clientSecret numbers. These numbers were acquired after we created an account and application on the Facebook for developers’ site. The callbackURL is a URL that we are redirected to after the authentication process is complete, i.e. when we press the submit button after entering our username and password. The URL could be anything we want (This will be detailed further in the later section of our report). The profile field is the where we input the type of data we want to acquire from the user’s Facebook account. For instance, in the code, you should be able to see that our application is requesting the user's id, friends, displayname, name, and profile picture. However, to acquire the requested data, we need to provide the correct permission. This will also be made clear in a later part of the report.
 
-2.	This is the function that is called after the authentication process is successful. 'token' is the authentication token, 'refreshToken' will be the refreshToken, and the 'profile' will contain all user data that the user has agreed to provide (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure x). Following this, an internal search is conducted to check whether a user with the returned profile.id exists in our own database.
+2.	This is the function that is called after the authentication process is successful. 'token' is the authentication token, 'refreshToken' will be the refreshToken, and the 'profile' will contain all user data that the user has agreed to provide (this process happens when the user clicks ‘continue’ on the pop-up shown in Figure 19). Following this, an internal search is conducted to check whether a user with the returned profile.id exists in our own database.
 
 3.	If the user exists, the database is updated by emptying their friends’ array and filling the array with the latest friend’s data. The purpose is to check if there are any new friends joining the application.
 
@@ -340,85 +340,84 @@ The figure below shows the pop-up displayed to the test user:
 <p align="center">
 <img src="../report/Images/passport4.png" width=75%>
 </p>
-<b><p align= "center">Figure: test user pop-up</p></b>
+<b><p align= "center">Figure 19: Test user pop-up</p></b>
 <br>
 
 The figures below show the raw and json format inside the profile variable:
 
 <p align="center">
-<img src="../report/Images/passport5.png" width=75%>
+<img src="../report/Images/passport5.png" width=85%>
 </p>
-<b><p align= "center">Figure: raw format</p></b>
+<b><p align= "center">Figure 20: raw format</p></b>
 
 <br>
-
 <p align="center">
-<img src="../report/Images/passport6.png" width=75%>
+<img src="../report/Images/passport6.png" width=85%>
 </p>
-<b><p align= "center">Figure: JSON format</p></b>
+<b><p align= "center">Figure 21: JSON format</p></b>
 <br>
 
-To call the API (i.e., to be able to redirect the user to the Facebook login page), we were no table to use CRUD methods. We had to redirect a user via a link. The link name is our website name + “/auth/facebook”. Producing a GET API call (shown in Figure x below) did not redirect the user to the Facebook’s page. 
+To call the API (i.e., to be able to redirect the user to the Facebook login page), we were no table to use CRUD methods. We had to redirect a user via a link. The link name is our website name + “/auth/facebook”. Producing a GET API call (shown in Figure 22 below) did not redirect the user to the Facebook’s page. 
 
 <br>
 <p align="center">
 <img src="../report/Images/passport7.png" width=75%>
 </p>
-<b><p align= "center"></p></b>
+<b><p align= "center">Figure 22: GET Facebook-API call </p></b>
 <br>
 
 The 'scope' is the most important to draw attention to as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API can be found here(x). However, Flocus only uses the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is provided when the user offers their approval on the pop-up message. Upon the success or failure of authentication, a GET request on “/facebook/callback” is called and both outcomes will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which, is our login page. The processes that occur after this have been discussed in the previos system implementation sections.
 
-As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure x below.
+As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure 23 below.
 
 <br>
 
 <p align="center">
 <img src="../report/Images/passport8.png" width=75%>
 </p>
-<b><p align= "center">Figure: isloggedIn function</p></b>
+<b><p align= "center">Figure 23: isloggedIn function</p></b>
 
 <br>
 
-Furthermore, the function, isLoggedIn(),  is implemented in all other API calls in the application. So, an API call will only proceed if the user is logged in. If not, the user will be redirected back to the home screen. The API calls that are used to retrieve a user's data is shown in Figure x below.
+Furthermore, the function, isLoggedIn(),  is implemented in all other API calls in the application. So, an API call will only proceed if the user is logged in. If not, the user will be redirected back to the home screen. The API calls that are used to retrieve a user's data is shown in Figure 24 below.
 
 <br>
 
 <p align="center">
 <img src="../report/Images/passport9.png" width=75%>
 </p>
-<b><p align= "center">Figure: API get requests</p></b>
+<b><p align= "center">Figure 24: API get requests</p></b>
 
 <br>
 
-Req.user contains the same data as the profile variable. Finally, another important function is the logout function which, is provided by PassportJS and is shown in Figure x below. Req.logout() will end the user session and redirect the user back to the login page.
+Req.user contains the same data as the profile variable. Finally, another important function is the logout function which, is provided by PassportJS and is shown in Figure 25 below. Req.logout() will end the user session and redirect the user back to the login page.
 
 <br>
 <p align="center">
 <img src="../report/Images/passport10.png" width=75%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure 25: Logout function</p></b>
 <br>
 
 ## Records API
 
-In this section, all API requests with relation to record data will be discussed. The first API request is a POST request which, takes a record object as its parameter. For this, the object must follow the record schema that was discussed on the database section. The POST request is shown in Figure x below.
+In this section, all API requests with relation to record data will be discussed. The first API request is a POST request which, takes a record object as its parameter. For this, the object must follow the record schema that was discussed on the database section. The POST request is shown in Figure 26 below.
 
 <br>
 <p align="center">
 <img src="../report/Images/records.png" width=60%>
 </p>
-<b><p align= "center">Figure : </p></b>
+<b><p align= "center">Figure 26: The POST request</p></b>
 <br>
 
 So, each time a user completes, pauses or exits a session, a POST request is executed and a record object is saved in our database.
 
-The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure x.
+The next request is a GET request that takes a uid and a timespan as a parameter. Timespan meaning a starting date and an ending date. This GET method is utilised to get all records with the same uid and inside the time range specified on the parameter, from the database. Then all the record objects that is returned are directly going to be processed. The process is to sum all the timeSpent variable and session variable of all the returned records. Which at the end, the GET request will only return the total timeSpent and the total session of the user within the time range specified on the parameter. To achieve this, MongoDB smart query function calls aggregate is going to be used. The documentation on aggregate function could be found here https://docs.mongodb.com/manual/aggregation/. The GET method is shown below in Figure 27.
 
 <p align="center">
 <img src="../report/Images/records2.png" width=75%>
 </p>
-<b><p align= "center">Figure : The GET method</p></b>
+<b><p align= "center">Figure 27: The GET method</p></b>
 
 ## API for League Table
 
@@ -442,7 +441,7 @@ During our opening sprint, we set up all required components for the project, th
 <p align="center">
 <img src="../report/Images/sprint_front.png" width=30%>
 </p>
-<b><p align= "center">Figure : A screenshot of our Angular components.</p></b>
+<b><p align= "center">Figure 28: A screenshot of our Angular components</p></b>
 
 One of the primary objectives of Flocus is to provide a healthy and productive virtual space for students and experienced professionals to use for their studies. We realised the importance of being evidence-led when designing the front-end of our application and as such, conducted a brief literature overview to inform the design process of each component.
 
@@ -455,7 +454,7 @@ The main component in Flocus is the study page where users spend a majority of t
 <p align="center">
 <img src="../report/Images/animation.png" width=70%>
 </p>
-<b><p align= "center">Figure : the front-end study component created using Figma</p></b>
+<b><p align= "center">Figure 29: the front-end study component created using Figma</p></b>
 
 To further emulate a natural scene, CSS transformations were implemented on certain features of the component (e.g. clouds and birds) which, were designed so to avoid fast and distracting movements.  
 
@@ -466,9 +465,9 @@ The introduction of a clock or timer was discussed at length by the group. Howev
 To introduce a glass fill animation, we used typescript which allows the user to start and stop the glass-fill as they please. The animation was implemented via the use of a SVG clip-path which is transformed vertically to reveal the underlying water animation. 
 
 <p align="center">
-<img src="../report/Images/animation_newcode.png" width=70%>
+<img src="../report/Images/animation_newcode.png" width=80%>
 </p>
-<b><p align= "center">Figure : A screenshot of the HTML code used for the glass-fill animation.</p></b>
+<b><p align= "center">Figure 30: A screenshot of the HTML code used for the glass-fill animation</p></b>
 
 Upon completion of a study session (45 Minutes), the glass empties incrementally over the time allocated for a break.
 
@@ -479,37 +478,37 @@ The running tap affect was implemented by accessing a HTML DOM element object vi
 The Login component is the initial design that greets users and as such, has been created to give an introduction to the theme of the site whilst offering a brief description of Flocus’s mission. To explore the avenue of serious play, we implemented a CSS hover animation on the login button and a Lottie animation.
 
 <p align="center">
-<img src="../report/Images/welcome.png" width=80%>
+<img src="../report/Images/welcome.png" width=85%>
 </p>
-<b><p align= "center">Figure : A screenshot of welcome and login component in action. </p></b>
+<b><p align= "center">Figure 31: A screenshot of welcome and login component in action </p></b>
 
 ### League table component
 
 Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, <a href = "https://www.sciencedirect.com/science/article/abs/pii/S0360131510000527">(Burguillo, 2010)</a> found that the introduction of competition to the classroom increased final course performance. Additionally, research by <a href = "https://www.jneurosci.org/content/33/40/15894">(Le Bouc and Pessiglione, 2013)</a> and <a href = "https://journals.sagepub.com/doi/10.1177/1948550614539770">(Kilduff, 2014)</a> displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
 
 <p align="center">
-<img src="../report/Images/league_table.png" width=80%>
+<img src="../report/Images/league_table.png" width=85%>
 </p>
-<b><p align= "center">Figure : A screenshot of league table in action. </p></b>
+<b><p align= "center">Figure 32: A screenshot of league table in action </p></b>
 
 For the implementation of the personal stats section titled “Your Week”, we utilised Chartjs. To discourage overuse, we have included colour indicators that provide a subtle prompt to an individual if they are overworking - a bar that displays work over 9.75 hours will turn red. For this, we followed the UK governments advice on the 48-hour working limit and assumed that a student was studying for 5 days per week. The typescript code for the Chartjs bar-chart is attached below:
 
 <p align="center">
-<img src="../report/Images/table_code1.png" width=50%>
+<img src="../report/Images/table_code1.png" width=60%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
+<b><p align= "center">Figure 33: A code snippet of the typescript code used for the personal stats graph </p></b>
 
 <p align="center">
-<img src="../report/Images/table_code2.png" width=30%>
+<img src="../report/Images/table_code2.png" width=40%>
 </p>
-<b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
+<b><p align= "center">Figure 34: A code snippet of the typescript code used for the personal stats graph </p></b>
 
 For the production of the League table, we wanted users to view all friends on Flocus and not just the top 10 performers. As such, we had to implement a dynamically resizing table that is initialised when the user first enters the league component. The typescript implementation of this below:
 
 <p align="center">
-<img src="../report/Images/Dynamic_table.png" width=50%>
+<img src="../report/Images/Dynamic_table.png" width=60%>
 </p>
-<b><p align= "center">Figure: A code snippet of the typescript code used for the dynamically sized league table.</p></b>
+<b><p align= "center">Figure 35: A code snippet of the typescript code used for the dynamically sized league table</p></b>
 
 The above typescript can be explained in the following steps:
 
@@ -531,9 +530,9 @@ However, once this was fully implemented, we found that our CSS animations were 
 In an endeavour to educate users about the great work that Asaqua has been achieving in Uganda, we included the asaqua component. We also wanted to ensure that users fully understand the Flocus project and how to use the site. This component was designed to be as simple as possible, although, we did manage to include Owl Pacino in the bottom right of the screen:
 
 <p align="center">
-<img src="../report/Images/Asaqua_Screenshot.png" width=80%>
+<img src="../report/Images/Asaqua_Screenshot.png" width=85%>
 </p>
-<b><p align= "center">Figure : The Asaqua Component</p></b>
+<b><p align= "center">Figure 36: The Asaqua Component</p></b>
 
 ### Homepage component
 
@@ -542,16 +541,16 @@ After speaking to prospective end-users in questionnaires, focus groups and info
 We have attached a screenshot of the home component below, although to get a clearer view of the animation please visit our demo video.
 
 <p align="center">
-<img src="../report/Images/Home_Component.png" width=80%>
+<img src="../report/Images/Home_Component.png" width=85%>
 </p>
-<b><p align= "center">Figure : The Home Component</p></b>
+<b><p align= "center">Figure 37: The Home Component</p></b>
 
 To achieve this animation, we created six Scalable Vector Graphics (SVG) circle elements and implemented CSS keyframe animations on three of them. To implement the liquid effect of waterdrops merging, we utilised the FeGaussianBlur and FeColorMatrix to specify the filter. This filter was then used with the FeBlend which merges SVG elements. In effect, this is similar to introducing a blur effect on an SVG and then increasing the contrast.  The HTML for this is displayed in the code snippet below:
 
 <p align="center">
-<img src="../report/Images/HomeComp_Code.png" width=65%>
+<img src="../report/Images/HomeComp_Code.png" width=70%>
 </p>
-<b><p align= "center">Figure : A code snippet from the Home Component's main animation</p></b>
+<b><p align= "center">Figure 38: A code snippet from the Home Component's main animation</p></b>
 
 We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
 
@@ -566,7 +565,7 @@ Lottie is an open-source animation file format that allows creators to easily co
 <p align="center">
 <img src="../report/Images/lottie_code.png" width=70%>
 </p>
-<b><p align= "center">Figure : A snippet of the lottie-player bringing animation to life. </p></b>
+<b><p align= "center">Figure 39: A snippet of the lottie-player bringing animation to life </p></b>
 
 The Lottie-player is a Web-Component for easily including and playing Lottie animations. It was the fastest implementation of Lottie, allowing us to specify certain parameters such as speed and iteration count. However, it is not absent of drawbacks. From our individual use and user feedback, it was made aware that certain browser would not render or handle the animations as desired. The browser that displayed the most issues was Safari. In an attempt to work around this glitch, we rendered the animation on a canvas rather than SVG. However, Lottie animations do not currently support certain animation effects on canvas and so when rendering, the Lottie animation became distorted and un-useable. Given the lack of sufficient time to address these concerns, we had to accept that the application was not going to operate as well in Safari as other browsers (e.g Chrome). We have passed this information to the Asaqua team for future adjustment. 
 
@@ -609,7 +608,7 @@ A Dockerfile and docker-compose.yml file were placed in the dashboard directory.
 <p align="center">
 <img src="../report/Images/docker.png" width=70%>
 </p>
-<b><p align= "center">Figure : The Dockerfile used </p></b>
+<b><p align= "center">Figure 40: The Dockerfile used </p></b>
 
 The dockerfile contains commands used to create a specific image of our application and each image created using the dockerfile was stored for later access. This helped achieve continuous integration of our code. Any changes in code could easily be reverted by using an old image.
 
@@ -618,12 +617,12 @@ The docker-compose.yml file was used for defining and running two Docker contain
 <p align="center">
 <img src="../report/Images/docker2.png" width=70%>
 </p>
-<b><p align= "center">Figure : The Docker-compose file used </p></b>
+<b><p align= "center">Figure 41: The Docker-compose file used </p></b>
 
 <p align="center">
 <img src="../report/Images/docker3.png" width=70%>
 </p>
-<b><p align= "center">Figure : Docker running both Node and MongoDB </p></b>
+<b><p align= "center">Figure 42: Docker running both Node and MongoDB </p></b>
 
 As new changes to the application were made, the two containers were rebuilt using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
 
