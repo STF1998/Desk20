@@ -7,8 +7,8 @@
 - [**Stack architecture and system design**](#Stack-architecture-and-system-design)
   - [Stack architecture](#Stack-architecture)
   - [System design](#System-design)
-  - [Class diagrams](#Class-diagrams)
-  - [Sequence diagrams](#Sequence-diagrams)
+  - [Class diagram](#Class-diagram)
+  - [Sequence diagram](#Sequence-diagram)
 - [**Back End - MongoDB**](#Back-End---MongoDB)
   - [Database implementation](#Database-implementation)
   - [Data model](#Data-model)
@@ -192,7 +192,7 @@ In terms of records, users can only post one record at a time but, will recieve 
 <b><p align= "center">Figure 8: Class diagram </p></b>
 <br>
 
-## Sequence diagrams
+## Sequence diagram
 
 <br>
 
