@@ -26,26 +26,28 @@
 
 Throughout the project, we feel we have worked effectively and efficiently with one another with consistent communication throughout the design, development, and evaluation process.
 
-From the beginning, everyone in the team expressed a desire to work in specific areas, one of the reasons we believe we worked well together as a group. Sam took more of a leadership role alongside front-end development with effective management across full-stack development. While initially we were slightly disjointed in the design stage of the project, we came together very well prior to the Easter break to really define our project and vision together for this project. This ensured we were aligned as approached the development stage.
+From the beginning, everyone in the team expressed a desire to work in specific areas, one of the reasons we believe we worked well together as a group. Sam took more of a leadership role alongside front-end development with effective management across full-stack development. While initially we were slightly disjointed in the design stage of the project, we came together very well prior to the Easter break to define our project and vision together for this project. This ensured we were aligned as we approached the development stage.
 
-While we may have struggled at times to get everyone in a meeting due to covid restrictions and difference in time zones, we feel our use of alternative technology and creation of discord chats and use of GitHub allowed the group to work effectively regardless of location or time zone. In the key sprints of development, our team had regular weekly meetings at the start of the week to ensure everyone’s progress and aims for the week were on the same page. If we had any issues throughout the week, we effectively shared queries via the discord chat and Sam hosted regular 1-to-1 talks with team members to ensure they were on track. 
+While we may have struggled at times to get everyone in a meeting due to covid restrictions and difference in time zones, we feel our use of alternative technology, creation of discord chats and, use of GitHub allowed the group to work effectively regardless of location or time zone. In the key sprints of development, our team had regular weekly meetings at the start of the week to ensure everyone’s progress and aims for the week were on the same page. If we had any issues throughout the week, we effectively shared queries via the discord chat and Sam hosted regular 1-to-1 talks with team members to ensure they were on track. 
 
 ### Management of issues
 
 Initially, as a team we did struggle with team communication. This was caused by the lack of familiarity with one another and challenging coursework in other modules. However, to improve our relationship as a team we started to meet more regularly, having short meetings before the Thursday lab where we would update one another on ideas, progress on the project and day-to-day activities. 
 
-At the start, we found this incredibly useful to get to know one another given the current virtual environment we found ourselves in. As we approached the development sprints, these meetings became incredibly useful in helping define our project as well as ensuring each member understood all the aspects of Flocus. As we approached sprint development before the Easter break, we started dividing into subgroups with Sam and Hugh focused on the front-end with Jati, Gordon and Tom focused on the back end. Alongside our weekly meetings on Thursday, these subgroups would meet at the beginning of each week to go over any issues and talk about the work for the upcoming week. 
+At the start, we found this incredibly useful to get to know one another given the current virtual environment we found ourselves in. As we approached the development sprints, these meetings became incredibly useful in helping define our project as well as ensuring each member understood all the aspects of Flocus. As we approached sprint development before the Easter break, we started dividing into subgroups with Sam and Hugh focused on the front-end and Jati, Gordon and Tom focused on the back-end. Alongside our weekly meetings on Thursday, these subgroups would meet at the beginning of each week to go over any issues and talk about the work for the upcoming week. 
 
-This worked well, particularly in the development sprints, allowing subgroups to focus on specific problems and challenges with the Thursday meeting used to ensure everyone was on the same page and discuss prioritised issues. We often built the project in Docker on the Thursday meetings to ensure everything was running as it should with a focus on checking the implementations from the previous week of development. 
+This worked well, particularly in the development sprints, allowing subgroups to focus on specific problems and challenges with the Thursday meetings used to ensure everyone was on the same page and discuss prioritised issues. We often built the project in Docker on the Thursday meetings to ensure everything was running as it should with a focus on checking the implementations from the previous week of development. 
 
 Please see an example below of the Flocus team using a Thursday meeting opportunity to discuss the Facebook login page. 
 
+<br>
 <p align="center">
 <img src="../report/Images/teamsCall.jpg" width=70%>
 </p>
 <b><p align= "center"> Figure 1: A screenshot of a recent team meeting discussing the Facebook login page. </p></b>
+</br>
 
-Alonsgide these meetings, the use of discord was key for the management of issues. As seen in the communication channels section, we had different discord sub-channels to discuss specific issues to do with ther sprints. These were increibly useful for sub teams to query issues and then if any required the whole team they would be put into the general channel. Overall, the regular team and sub-team meetings alongside use of discord channels enabled quick resolution of any issues the team came across throughout the project.
+Alonsgide these meetings, the use of discord was key for the management of issues. As seen in the communication channels section, we had different discord sub-channels to discuss specific issues. These were incredibly useful for sub-teams to query issues and if a specific challenge required the whole team, discussion took place in the general channel. Overall, the regular team and sub-team meetings alongside use of discord channels enabled quick resolution of any of the issues that the team came across throughout the project.
 
 ### Evaluation of agile techniques 
 
@@ -60,26 +62,29 @@ During our final stand-up &#128543;, we discussed our overall experience of the 
 
 Our sprints enabled us to focus on an iterative process of development and allowed us to engage key stakeholders towards the end of each sprint – facilitating a customer centric approach. Additionally, we were able to integrate Asaqua, our partner NGO, into the development process through Gordon’s end-of-sprint liaison and feedback sessions with their team. Organising our tasks into manageable responsibilities also helped the team deal with stress, ensuring that no-one was overwhelmed with work. 
 
-The flexibility of agile added significant value to our MVP. Instead of being focused on process and pre-composed plans, being able to deal with our individual and group responsibilities during incremental sprints, facilitated a greater responsiveness to end-user and stakeholder feedback. This ensured that our design did not deviate from our initial objectives for the theme and message of the application. Additionally, From the feedback that Gordon received from the Asaqua team, the transparency provided by the Agile framework allowed them to maintain a full understating of development. This will provide benefit in the future as Asaqua builds on the work that we have previously achieved.  
+The flexibility of agile added significant value to our MVP. Instead of being focused on process and pre-composed plans, being able to deal with our individual and group responsibilities during incremental sprints, facilitated a greater responsiveness to end-user and stakeholder feedback. This ensured that our design did not deviate from our initial objectives for the theme and message of the application. Additionally, from the feedback that Gordon received from the Asaqua team, the transparency provided by the Agile framework allowed them to maintain a full understating of development. This will provide benefit in the future as Asaqua builds on the work that we have previously achieved.  
 
 Agile has been a powerful tool, not only affording benefits to the development team, but also assuring client and stakeholder engagement. Furthermore, agile has helped us deal with issues in an easy and concise manner (such as scheduling and scope creep). As a team, we are very happy that we have maintained this approach throughout the project. 
 
+<br>
 
 ## Project reflection
 
-Overall, as a team we are very proud of Flocus, including the design, development and evaluation of our MVP (minimum viable product).
+Overall, we are very proud of Flocus, including the design, development and evaluation of our MVP (minimum viable product).
 
 At the start, we believe we got slightly ahead of ourselves by trying to plan a project idea that had far too many moving parts for a project of this size. However, after a couple of meetings we quickly nailed down the area of focus to procrastination with an aspect of raising awareness for a critical world issue. While the project required only one of these aspects, we believed we could effectively and efficiently design a product that was a procrastination tool but raised awareness for water accessibility, including the theme of water running throughout the whole application.
 
-Due to our big ideas and aspirations as a team,  when we approached discussing the success of our product, we slightly struggled due to define whether or not our project was a success. On one side we had created a minimum viable product that functioned effectively with a Facebook Login capability. However, on the other side there were still areas, such as the google ads and portal personlisation, that we still wanted to integrate into the application. Overall, we had been successful in creating an MVP with future potential to help raise funds for ASAQUA and act as a very effective and personlaised procrastination tool.
+Due to our big ideas and aspirations as a team, when we approached discussing the success of our product, we slightly struggled to define whether or not our project was a success. On one side we had created a minimum viable product that functioned effectively with a Facebook Login capability. However, on the other side there were still areas, such as the google ads and portal personlisation, that we still wanted to integrate into the application. Overall, we had been successful in creating an MVP with future potential to help raise funds for ASAQUA and, an application that acts as a very effective procrastination tool.
 
 So, while we had not met our personal goals for the product, we had been successful in developing an MVP to be passed onto the development team at ASQUA to further optimise and improve the web application in the near future. 
 
+<br>
+
 ## Impact of COVID-19 on working practices
 
-Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members however, as mentioned above, the more meeting sna catch ups the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regard to the project. 
+Overall, we believe we successfully adapted and changed our approach to ensure we delivered a strong MVP (minimum viable product) given circusmtances created by the COVID-19 pandemic. Initally, the biggest challenge was developing relationships between team members. However, as mentioned above, the more meeting and catch ups we had, the more we got to know one another. This meant that by the time we came to designing Flocus, the team had gelled well and were on the same page in regard to the project. 
 
-At times it could have been useful to be in the same room as one another however with effective use of teams and discord we were able to quickly come together (albeit virtually) to overcome any challenges we had. We believe one key aspect that ensured we worked successfully as a team was the ability to hold one another accountable for individual work. Without building those initial relationships, this would have been very hard. Credit must be given to team member, Jati, who due to the time zone difference was working late into the night in numerous occasions. Our use of virtual tools as mentioned ensured we kept a good communication channel with Jati throughout the project.
+At times it could have been useful to be in the same room as one another. However with effective use of teams and discord we were able to quickly come together (albeit virtually) to overcome any challenges we had. We believe one key aspect that ensured we worked successfully as a team was the ability to hold one another accountable for individual work. Without building those initial relationships, this would have been very hard. Credit must be given to team member, Jati, who due to the time zone difference was working late into the night in numerous occasions. Our use of virtual tools as mentioned ensured we kept a good communication channel with Jati throughout the project.
 
 Overall, we are very proud of one another for the work in this project. We are very excited to meet up for a few drinks and food to celebrate our work once the restrictions allow (and Jati is able to travel to the UK!). 
 
@@ -110,17 +115,17 @@ Absent of a specific ethical clearance by the University of Bristol, we had to c
 
 ### Design and development
 
-On the design side of the FLocus, if we had more time, we would have liked to do an extensive user study to develop a strongewr understanding of areas of improvement. However, from discussions within the team we have come up with the following ideas for ideas for future design and development of each page:
+On the design side of the FLocus, if we had more time, we would have liked to do an extensive user study to develop a stronger understanding of potential areas of improvement. However, from discussions within the team, we have come up with the following ideas for future design and development:
 
 #### Login landing page
 
-- Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside google login option.
-- An about pop up to read more about the application and what Flocus is.
+- Login capability by email as well alternative social media channels, such as Twitter and LinkedIn, alongside a Google login option.
+- An 'about' pop up to read more about the application and what Flocus is.
 - More animations around studying and the story behind Asaqua.
 
 #### Study page
 
-- Introduce a customisable icon that you can design for your work mascot.
+- Introduce a customisable icon that users can design as a work mascot.
 - A Google ads section integrated into the page - this will raise revenue that will be donated to ASAQUA. The user is donating by working.
 - Portal personalisation so people can alter how long they want to work and have a break for.
 
@@ -128,16 +133,15 @@ On the design side of the FLocus, if we had more time, we would have liked to do
 
 - Improved metrics for personal statistics.
 - Potential for a swimming race animation keeping in line with the theme of water.
-- The current league table only ranked our friends, and the user is not inside it. The improvement would be to make the user also exists in the table.
+- The current league table only ranked our friends, and the user is not inside it. The improvement would be to insert the user into the table.
 
 #### About page
 
-- Pop-ups for people to learn about ASAQUA rather than bombard with all the information at once.
+- Pop-ups for people to learn about ASAQUA rather than bombarding users with all the information at once.
 - Option to donate directly to Asaqua.
 
 #### General development
 
-- Possible organisation of code so the backend and frontend are in separate directories.
 - Different browser opitimisation.
 - Optimise the web page to be effective on web and mobile browsers.
 - Possible tool that could be converted into a PWA (progressive web application) to be effective on mobiles as well as desktop browsers.
@@ -152,7 +156,7 @@ As mentioned previously, in the future we would like to see a full user study of
 - Satisfaction 
 - Errors
 
-Alongside usability, future evaluiative techniques could focus on evaluating aspects of the following:
+Alongside usability, future evaluative techniques could focus on evaluating aspects of the following:
 
 - Content - accuracy, conciseness, understandability and does it contain key infromation?
 - Appearance - page layout, size and font of writing and page flow.
@@ -161,9 +165,9 @@ Alongside usability, future evaluiative techniques could focus on evaluating asp
 
 ## Summary
 
-Overall, we have really enjoyed working as a team to build this special project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
+Overall, we have really enjoyed working as a team to build this project. It has been great to build a tool that is useful to students like ourselves but also raise awareness for a big issue in water accessibility. 
 
-We'd also like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
+We'd like to thank the lecturing team for all their help throughout the process. We'd also like to give a specific thanks to Marceli who very kindly helped us navigate through some of our toughest challenges. 
 
 ## Project report navigation
 
