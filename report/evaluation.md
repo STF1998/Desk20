@@ -33,6 +33,7 @@ In the early sprints, front-end development often felt like a random walk – th
 Although this point is short, we believe it is one of the most important. The quality of feedback in the development stage of a project is a valuable asset that can determine the final success or failure of that project. One key finding that we discovered during feedback sessions was that individual opinions often converged when in a group setting. In the future we hope to hold feedback sessions on a 1-to-1 basis.
 
 <br>
+
 ## Unit/Functional testing
 
 When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
