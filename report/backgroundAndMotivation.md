@@ -281,16 +281,16 @@ The problem we aim to solve is procrastination in university student populations
 
 #### Conceptual scope
 
-With the use of a visual aid of a glass filling up, our aim is to create a SPA (single page application) that helps reduce procrastination and provides an insight into the critical issue of water scarcity in underdeveloped nations through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer and install a competitive aspect using league tables with friends. We have the theme of water running through our application with the link to water scarcity and the work Asaqua does to help improve this in underdeveloped nations. 
+With the use of a visual aid of a glass filling up, our aim is to create a SPA (single page application) that helps reduce procrastination and provides an insight into the critical issue of water scarcity in underdeveloped nations through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer and a competitive aspect by using league tables. We have the theme of water running through our application with a link to water scarcity and the work Asaqua does to help improve this in underdeveloped nations. 
 
-Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work Asaqua does to help improve water scarcity. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in university student populations.  
+Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but, provides an insight into the work Asaqua does to help improve water scarcity. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in university student populations. 
 
 - For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
 
 - For Asaqua, we are looking to raise awareness for a critical issue around water scarcity in underdeveloped nations. 
  
 Our initial demographic group is students aged 16-24 including school and university students. We realise there is scope to extend this out to employees to help those working from home and tracking their work concentration however given the short timeline of this project we have decided to focus on the demographic we understand the best given we are students ourselves. 
-<br>
+
 
 #### Technical scope
 
