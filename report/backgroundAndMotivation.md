@@ -306,7 +306,7 @@ However, there were areas of the technical scope that we had to trim to complete
 -	Being able to view oneself in the league
 -	Portal Customisation
 -	Advertisements
-<br>
+
 
 #### Technical user-story
 
@@ -320,11 +320,11 @@ Say an individual, that goes by the name of John Doe, is plagued by procrastinat
 
 ### Challenges
 
-Given limited resources and time restraints, the biggest challenge of this project is effectively creating an MVP (minimum viable product) that is a tool to help reduce procrastination but also raises awareness for a critical issue in water scarcity and the work Asaqua does to improve water accessibility in underdeveloped countries. 
+Given limited resources and time restraints, the biggest challenge of this project has been effectively creating an MVP (minimum viable product) that is a tool to help reduce procrastination but also raises awareness for a critical issue in water scarcity and the work Asaqua does to improve water accessibility in underdeveloped countries. 
 
-For the front-end, the biggest challenge will be building and integrating slick animations to portray the theme of water but also a visual aid as a timer.  
+For the front-end, the biggest challenge has been building and integrating slick animations to portray the theme of water but also a visual aid as a timer.  
 
-For the backend, the biggest challenge will be integrating with Facebook-API and selecting the data to be outputted on the webpage as part of the league table. 
+For the backend, the biggest challenge has been integrating the Facebook-API and selecting the data to be displayed on the webpage as part of the league table. 
 <br><br>
 
 ## Reference List
