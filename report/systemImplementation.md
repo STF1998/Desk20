@@ -165,6 +165,12 @@ The word ‘record’ on the chart means the session details, such as when does 
 
 When the league page is accessed, we process the users data in our database (given the schema shown in the database section) to display each user's, and their friends’, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation.
 
+Implementing the league table was more difficult than anticipated. We originally intended to use the RESTful API functions such as getFriendsUid() to get each user’s friends’ IDs which, would then allow us to use our getRecord() function, using the ids collected to form a league table. 
+
+However, it became clear that this was a mistake after realising how messy and extremely inefficient the code was. After careful discussion, we decided to create a new route in the API and use a MongoDB query in this route. A get function in /api/league used the MongoDB query to return an array of the user’s friend records for a specified time period. Initially, the query returned only the user’s id with their study records. However, there were changes made later to replace the ids returned with names instead.
+
+The changes made allowed for a single data service to be subscribed to. Unfortunately, the getLeague() function did not provide any information on the user’s score. Therefore, the league table currently does not include the user’s score.
+
 <br>
 
 ## Class diagrams
