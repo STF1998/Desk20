@@ -5,21 +5,23 @@
 ## Contents of Evaluation
 
 - [**Details of design evaluation**](#Details-of-design-evaluation)
-    - [Timeline](#Timeline)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
+  - [Cross browser compatibility testing](#Cross-browser-compatibility-testing)
 - [**User acceptance testing**](#User-acceptance-testing)
+  - [Alpha testing](#Alpha-testing)
+  - [Beta testing](#Beta-testing)
 
-# Details of design evaluation 
+## Details of design evaluation 
 
 
 
-# Unit/Functional testing
+## Unit/Functional testing
 
 When developing any software, it is key to consider testing to pick up an bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid the end-user coming across any bugs/errors. 
 
 Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their login details but in future development this could include payment data. Therefore, testing is critical to software success, particualrly with a single poage application focused on user experience. 
 
-## Cross Browser Compatibility testing
+### Cross browser compatibility testing
 
 <br>
 
@@ -34,7 +36,7 @@ We wanted to ensure that prospective users are not restricted to use a specific 
 <ul>
     <li>Google Chrome</li>
     <li>Firefox</li>
-    <li>Microsift Edge</li>
+    <li>Microsoft Edge</li>
 </ul>
 
 We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
@@ -59,7 +61,117 @@ Throughout the development process, Sam and Hugh focused on building and running
 
 Please see below a table summarising some of the key user test cases along with pass/fail:
 
-TABLE - TODO
+<table>
+<tr>
+  <th>Stage</th>
+  <th>Page</th>
+  <th>Description</th>
+  <th>Pass/fail</th>
+</tr>
+<tr>
+  <td> 1.1 </td>
+  <td> Landing page</td>
+  <td> Check the login via Facebook button. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 1.2 </td>
+  <td> Landing page </td>
+  <td> Check animations load correctly. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 1.3 </td>
+  <td> Landing page </td>
+  <td> Check capability to login via Facebook. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.1 </td>
+  <td> Homepage </td>
+  <td> Ensure all links to homepage work. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.2 </td>
+  <td> Homepage </td>
+  <td> Ensure the STUDY button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.3 </td>
+  <td> Homepage </td>
+  <td> Ensure the LEAGUE button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.4 </td>
+  <td> Homepage </td>
+  <td> Ensure the ASAQUA button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 2.5 </td>
+  <td> Homepage </td>
+  <td> Ensure the logo animation is working and Flocus is visible. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.1 </td>
+  <td> Study page </td>
+  <td> Ability to click the button to start filling the glass. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.2 </td>
+  <td> Study page </td>
+  <td> Ensure the glass count increases after the 25 minutes has elapsed. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.3 </td>
+  <td> Study page </td>
+  <td> Ensure the glass filling animation runs after clicking the start button. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 3.4 </td>
+  <td> Study page </td>
+  <td> Ensure the back to homepage button works. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.1 </td>
+  <td> League page </td>
+  <td> Ensure both the league table and weekly graph is being inputted. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.2 </td>
+  <td> League page </td>
+  <td> Ensure ‘Your Week’ graph is updated after a study session has been completed. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 4.3 </td>
+  <td> League page </td>
+  <td> Ensure the back to homepage button works.</td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 5.1 </td>
+  <td> ASAQUA page </td>
+  <td> Ensure the the text about Flocus and ASAQUA is readable - i.e. font, font size and colour. </td>
+  <td> Pass </td>
+</tr>
+<tr>
+  <td> 5.2 </td>
+  <td> ASAQUA page </td>
+  <td> Ensure the back to homepage button works.</td>
+  <td> Pass </td>
+</tr>
+</table>
+
 
 This helped pick up minor bugs, including:
 - issues with the glass filling up animation
@@ -78,9 +190,7 @@ The focus group focused on the following areas:
 - possible user scenarios
 - user walkthroughs
 
-By focusing on the above areas, it made it easier to find any bugs and share anonymous opinions about the design and implementation of Flocus. To enable an effective and efficent focus group, we launched a live version of Flocus through Heroku. 
-
-Gordon - heroku - TODO
+By focusing on the above areas, it made it easier to find any bugs and share anonymous opinions about the design and implementation of Flocus. To enable an effective and efficent focus group, we launched a live version of Flocus through Heroku. To allow our users to access our application from the public domain, we used the Heroku node.js hosting platform to deploy the application for beta testing. Since we were already using Docker to test our application during development, we just had to push our Docker image to Heroku, which is run on its dynos container just like in our Docker container. In addition, we replaced the Docker mount volume with the MongoDB Atlas DBaaS for the database, which is accessible from the public domain and stores testing data persistently. Then, we randomly distributed some Facebook testing accounts to our users, allowing them to use our application on their computer anonymously. We allowed the users three days to test and try out our application.
 
 After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
@@ -109,7 +219,7 @@ Possible types of future user testing, include:
 
 Please see the conclusion section to learn more about future evaluative technqiues.
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: Conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md)
 - [Previous page: Sprints and Project Management](https://github.com/STF1998/Desk20/blob/main/report/sprints%26ProjectManagement.md)

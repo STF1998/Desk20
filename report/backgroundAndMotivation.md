@@ -272,7 +272,13 @@ Our initial demographic group is students aged 16-24 including school and univer
 
 #### Technical scope
 
-(TODO) - Jati
+##### Technical focus
+
+Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the Front-end. The primary reason for this split was the ambition to use the external Facebook API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs, having three individuals working on these tasks greatly helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
+
+##### Feasibility
+
+When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs, course peers and online forums, we were confident that the project was achievable.
 
 ### Challenges
 

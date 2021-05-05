@@ -8,7 +8,14 @@
   - [Agile methodology](#Agile-methodology)
   - [Communication channels](#Communication-channels)
 - [**Meet the team**](#Meet-The-Team)
-- [**The Sprints documentation*](#The-Sprints-documentation)
+- [**The Sprints documentation**](#The-Sprints-documentation)
+  - [Sprint 1 - An Early Setback and The Ideation Process](#Sprint-1---An-Early-Setback-and-The-Ideation-Process)
+  - [Sprint 2 - Angular and API setup](#Sprint-2---Angular-and-API-setup)
+  - [Sprint 3 - Facebook API issues and Design Time](#Sprint-3---Facebook-API-issues-and-Design-Time)
+  - [Sprint 4 - The Study Component and MongoDB](#Sprint-4---The-Study-Component-and-MongoDB)
+  - [Sprint 5 - Bringing Things Together](#Sprint-5---Bringing-Things-Together)
+  - [Sprint 6 - The League Table and Databases](#Sprint-6---The-League-Table-and-Databases)
+  - [Sprint 7 - The Final Countdown](#Sprint-7---The-Final-Countdown)
 - [**Team use of Git**](#Use-of-Git)
 
 ## Group Working Methods
@@ -81,7 +88,7 @@ The above image displays our discord chat set-up. Initially, all project discuss
   <td> Gordon Tse</td>
   <td><img src="../report/Images/circle-cropped (7).png" width=1000%></td>
   <td> Gordon's role has been focused on the back-end with particular focus on the database and integration with the Facebook API and data upkeep. </td>
-  <td></td>
+  <td> Building future-proof and flexible data models that allow multiple components to access data efficiently. </td>
 </tr>
 <tr>
   <td> Tom Cockain </td>
@@ -466,7 +473,7 @@ Our team created a remote repository on GitHub for collaboration and version con
 </p>
 <b><p align= "center"> Figure : Diagrammatical representation of our GitHub repository . </p></b>
 
-# Project report navigation
+## Project report navigation
 
 - [Next page: Evaluation](https://github.com/STF1998/Desk20/blob/main/report/evaluation.md)
 - [Previous page: UX Design](https://github.com/STF1998/Desk20/blob/main/report/UXDesign.md)
