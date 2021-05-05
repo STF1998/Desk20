@@ -127,7 +127,6 @@ export class LeagueComponent implements OnInit {
         cell.appendChild(text);
       }
     }
-    // this is to stop the thing from going mad
     this.fill = 0;
   }
 

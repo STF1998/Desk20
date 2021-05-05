@@ -444,7 +444,7 @@ One of the primary objectives of Flocus is to provide a healthy and productive v
 
 ### Study component - design
 
-The main component in Flocus is the study page where users spend a majority of their time. It was therefore critical for us, as the designers, to produce an environment that encourages productivity whilst minimising the risk of distraction. To achieve these outcomes, we investigated a growing body of research that points to the beneficial effects of nature on health, stress reduction and productivity. Research from the University of Melbourne investigated the impact of exposure to natural scenes on response times, attention deficits and error frequency when conducting menial tasks. The findings offered statistically significant evidence of a negative, causal effect of natural environments on attention deficit and error frequency. Although the effect with the largest magnitude came from immersion in a natural environment, exposure via a screensaver also offered statistically significant results(). As a result, we decided to introduce a natural theme to the study component and, to align with the applications aim of raising awareness for water scarcity, we decided to use a blue colour scheme. This resulted in the following component design:
+The main component in Flocus is the study page where users spend a majority of their time. It was therefore critical for us, as the designers, to produce an environment that encourages productivity whilst minimising the risk of distraction. To achieve these outcomes, we investigated a growing body of research that points to the beneficial effects of nature on health, stress reduction and productivity. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328?via%3Dihub">Research from the University of Melbourne</a> has investigated the impact of exposure to natural scenes on response times, attention deficits and error frequency when conducting menial tasks. The findings offer statistically significant evidence of a negative, causal effect of natural environments on attention deficit and error frequency. Additionally, in an <a href="https://hbr.org/2015/09/gazing-at-nature-makes-you-more-productive">interview with the Havard Business Review</a>, Kate Lee, one of the lead researchers in this paper, claimed that the benefits of green micro-breaks can also be experienced through exposure via a screensaver. For those who are unable to gaze out of the window at a natural scene, we saw a clear issue which, we can provide a solution to. As a result, we decided to introduce a natural theme to the study component and, to align with the applications aim of raising awareness for water scarcity, we decided to use a blue colour scheme. This resulted in the following component design:
 
 <p align="center">
 <img src="../report/Images/animation.png" width=70%>
@@ -479,7 +479,7 @@ The Login component is the initial design that greets users and as such, has bee
 
 ### League table component
 
-Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, (Burguillo, 2010) found that the introduction of competition to the classroom increased final course performance. Additionally, research by (Le Bouc and Pessiglione, 2013) and (Kilduff, 2014) displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
+Tom Cockain, a developer of Flocus, provided the initial inspiration and idea of a league table that would further enhance user experience and reduce procrastination. To ensure that this approach was appropriate given our desired outcomes, we looked to the psychological field of study. Many contemporary studies have found a positive effect of competition on student course outcomes, motivation and effort. For example, <a href = "https://www.sciencedirect.com/science/article/abs/pii/S0360131510000527">(Burguillo, 2010)</a> found that the introduction of competition to the classroom increased final course performance. Additionally, research by <a href = "https://www.jneurosci.org/content/33/40/15894">(Le Bouc and Pessiglione, 2013)</a> and <a href = "https://journals.sagepub.com/doi/10.1177/1948550614539770">(Kilduff, 2014)</a> displayed a positive causal effect in student effort over the long- and short-term upon the introduction of a competitor. Despite the potentially positive outcome of increased competition, we were still concerned about individuals falling too far behind their peers and, as a result becoming de-motivated. Equally we were concerned about a minority pulling away with a clear margin of victory for long periods of time. To mitigate these risks, we decided to implement a 1-week competition duration. Additionally, a personal stats section was added to provide motivation for self-improvement. 
 
 <p align="center">
 <img src="../report/Images/league_table.png" width=80%>
@@ -497,6 +497,26 @@ For the implementation of the personal stats section titled “Your Week”, we 
 <img src="../report/Images/table_code2.png" width=30%>
 </p>
 <b><p align= "center">Figure : A code snippet of the typescript code used for the personal stats graph. </p></b>
+
+For the production of the League table, we wanted users to view all friends on Flocus and not just the top 10 performers. As such, we had to implement a dynamically resizing table that is initialised when the user first enters the league component. The typescript implementation of this below:
+
+<p align="center">
+<img src="../report/Images/Dynamic_table.png" width=50%>
+</p>
+<b><p align= "center">Figure: A code snippet of the typescript code used for the dynamically sized league table.</p></b>
+
+The above typescript can be explained in the following steps:
+
+<ol>
+<li>Ensure that there are entries within the league array. If empty, do not proceed to create the table.</li>
+<li>Sort all entries into descending order by number of glasses earnt.</li>
+<li>Use the query selector to fetch the HTMLelement object that matches the CSS selector of ‘table’ and assign this object to a variable for further use.</li>
+<li>Iterate through the leagueTable array, inserting a row and three cells into the table for each user.</li>
+</ol>
+
+To insert values into each cell of the table, we had to first create a text node and then append the cell with the .appendChild(String text) method.
+
+However, once this was fully implemented, we found that our CSS animations were not applying correctly to their corresponding HTMLElements. After extensive research to resolve this matter, it turned out that we were experiencing a problem relating to Angular CSS encapsulation. By default, Angular uses encapsulation so that CSS styles in one component do not affect the rest of the application. This applies an attribute to all DOM elements in the encapsulated component and because we were dynamically inserting HTML, these attributes were not being added to some of our HTML elements. As we could not find a more sophisticated work-around, we had to remove encapsulation on the league table component. Obviously, this presents risks to the rest of the applications styling. However, we were careful to choose specific class names in our HTML league structure to mitigate issues in the future. This is something that needs to be addressed in a more sophisticated manner but, because of a lack of time, we were unable to implement this before the deadline.
 
 
 
