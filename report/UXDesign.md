@@ -13,9 +13,9 @@
     - [Design heuristics/approach](#Design-heuristics/approach)
     - [Design methods](#Design-methods)
 - [**Understanding of User Group**](#Understanding-of-User-Group)
-    - [Questionnaires](#Questionnaires)
-    - [User Stories](#User-Stories)
-    - [Interviews](#Interviews)
+    - [User personas](#User-personas)
+    - [Questionaires](#Questionaires)
+    - [Interviews and Focus Groups](#Interviews-and-Focus-Groups)
 - [**Wireframes and Systems**](#Wireframes-and-Systems)
 
 ## Design Process
@@ -34,9 +34,9 @@ We formed a matrix with our top ideas of critical world issues and gamification 
 
 - Shoot all the big tycoons who are dominating fast fashion. 
 
-Based upon our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with use of interval times and using inspiration from the Pomodoro technique. Alongside this, our team focused on how we would incorporate the focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and showing competitive statistics between friends. This led to our punch line of: 
+Based on our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with the use of interval times and by taking inspiration from the Pomodoro technique. Alongside this, our team focused on how to incorporate a focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and displaying competitive statistics between friends. This led to our punch line of: 
 
-Solving procrastination and raising awareness for water scarcity, one glass at a time! 
+<p align = "center">Solving procrastination and raising awareness for water scarcity, one glass at a time! </p>
 
 ### Mood board
 
@@ -46,7 +46,7 @@ Please see figure below:
 
 <p align="center"><img src="../report/Images/MoodBoard.png" width=100%>
 </p>
-<h2 align="center"><b> Figure 1: A mood board created as part of the ideation stage.</b></h2>
+<p align="center"><b> Figure 1: A mood board created as part of the ideation stage.</b></p>
 
 ### Paper prototyping
 
@@ -64,7 +64,7 @@ See the video below representing our paper prototyping with a digital twist:
 
 ## Users and Stakeholders
 
-After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how do we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
+After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how to we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
 
 <p align="center">
 <img src="../report/Images/Power-Interest.png" width=70%>
@@ -73,13 +73,13 @@ After agreeing on the idea of Flocus and deciding on initial design themes and m
 <p align="center">
 <img src="../report/Images/Power-Interest_key.png" width=30%>
 </p>
-<h2 align="center"><b> Figure 2: Our version of Mendelow's Matrix</b></h2>
+<p align="center"><b> Figure 2: Our version of Mendelow's Matrix</b></p>
 
 We have included some remarks regarding the “Manage Closely”, “Keep Satisfied” and “Keep Informed” stakeholders:
 
 #### ASAQUA
 
-Our first stakeholder is Asaqua, the NGO (non-governmental organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome: 
+Our first stakeholder is Asaqua, the NGO (non-government organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome: 
 	
 - Increase awareness of Asaqua and its operations.
 
@@ -105,19 +105,19 @@ To implement full functionality, Flocus will need to receive Facebook’s approv
 
 ### User personas
 
-When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however after initial focus groups and interviews with friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful but easy on the eye animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
+When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however, after initial feedback from friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful, but easy on the eye, animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
 
-Together we identified that the end-user would need an attractive and simple user-interface to interact with focused around a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
+Together we identified that the end-user would need an attractive and simple user-interface to interact with, focused around a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
 
 - Gordon is an a-level student who is struggling to concentrate on his exam revision due to distraction from social media and other webpages, such as the news and sport. Gordon wants to use a tool to help him focus for a specific time like 45 minutes. He does not just want to look at a clock so uses Flocus due to its interactive animation of a glass filling up. 
 
-- Hugh is a computer science student who wants to code in short 30-minute sprints however struggles to just go off his phone clock. His lifestyle is driven by sustainability and making ethical decisions as a consumer. Flocus provides him with a useful tool to time his specific coding intervals while also knowing he is doing something good for the plant through raising funds and awareness for water accessibility.  
+- Hugh is a computer science student who wants to code in short 30-minute sprints however struggles to just go off his phone clock. His lifestyle is driven by sustainability and making ethical decisions as a consumer. Flocus provides him with a useful tool to time his specific coding intervals while also knowing he is doing something good for the planet through raising funds and awareness for water accessibility.  
 
 - Thomas is a university student. He is on the autistic spectrum and struggles with looking at clocks. Flocus provides him with a visual aid instead of a clock timer, so he knows how long to work for his study intervals.   
 
 ### Questionaires 
 
-Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information as well as complying with GDPR (General Data Protection Regulation) regulations with the storage of data agreed at the start of the survey.  
+Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information and is compliant with GDPR (General Data Protection Regulation) regulation. The storage of data is agreed at the start of the survey.  
 
 We were able collect data from 23 university students. While the survey was short and has limited responses, it provided a small snapshot of the behaviours, study techniques and interactions with procrastination of university students. Please see below snapshots of the results from the survey:
 
@@ -138,11 +138,15 @@ We were able collect data from 23 university students. While the survey was shor
 
 From this survey we identified the key points and issues on procrastination in student populations: 
 
-- Students struggle with motivation with work they are not interested in (particularly midway through a task). 
+- Students struggle to stay motivated with work they are not interested in (particularly midway through a task). 
 
 - Students work better under pressure - possible use of timer/visual aid. 
 
 - Majority of students do not use timers to help them study - large market opportunity to provide students with a useful study tool. 
+
+- A majority of students (95.7% in our sample) often put work off that they are not interested in.
+
+- From our sample, a large majority, either always or sometimes, try to work until a task is complete. 
 
 ### Interviews and Focus Groups
 
@@ -160,7 +164,7 @@ Having defined our target market and the potential users who would be using Floc
 
 ### Wireframes
 
-The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
+The production of wireframes provided a strong direction to build on, once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
 
 <br>
 <p align="center">
@@ -190,7 +194,7 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 <p align="center">
 <img src="../report/Images/flow_diagram.png" width=100%>
 </p>
-<h2 align="center"><b> Figure 3: User flow diagram</b></h2>
+<b><p align="center">Figure 3: User flow diagram</p></b>
 
 ## References
 
