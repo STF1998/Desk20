@@ -120,11 +120,11 @@ tr th:first-child {
 .lottie{
     position: fixed;
     height: 50%;
-    left: 10%;
-    top: 100%;
-    -moz-transform: translateX(-10%) translateY(-100%) ;
-    -webkit-transform: translateX(-10%) translateY(-100%);
-    transform: translateX(-10%) translateY(-100%);
+    left: 17%;
+    top: 110%;
+    -moz-transform: translateX(-17%) translateY(-110%) ;
+    -webkit-transform: translateX(-17%) translateY(-110%);
+    transform: translateX(-17%) translateY(-110%);
 }
 
 .image{
