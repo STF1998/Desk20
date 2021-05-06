@@ -81,7 +81,7 @@ We have included some remarks regarding the “Manage Closely”, “Keep Satisf
 
 #### ASAQUA
 
-Our first stakeholder is Asaqua, the NGO (non-government organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the Asaqua and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which Asaqua and Flocus identified as potential targets and considerations for the project outcome: 
+Our first stakeholder is ASAQUA, the NGO (non-government organization) that Flocus is seeking to support. Gordon, a back-end developer, and Scrum Master for Flocus, played a key role in liaison between the ASAQUA and Flocus teams so to ensure the final project aligned with the NGOs requirements. There were a couple of areas in which ASAQUA and Flocus identified as potential targets and considerations for the project outcome: 
 	
 - Increase awareness of Asaqua and its operations.
 
@@ -89,15 +89,15 @@ Our first stakeholder is Asaqua, the NGO (non-government organization) that Floc
 
 #### Increase awareness of Asaqua and its operations
 
-In the UK, 9 in 10 households have access to the internet [1] and, on average, adults spend around 5hr 30min online each day [2]. As such, the task to produce a Single Page Application (SPA) offered the perfect opportunity to raise brand awareness for Asaqua. The main tool that Flocus has at its disposal, is the ability to familiarise users with the Asaqua brand. We also wanted to maximise users’ communication with friends which, is part of the reason for why we chose a social media platform for our log-in. Word-of-mouth is one of the most effective ways of building trust and having users connect with their friends and family over Facebook will encourage support and interaction. 
+In the UK, 9 in 10 households have access to the internet [1] and, on average, adults spend around 5hr 30min online each day [2]. As such, the task to produce a Single Page Application (SPA) offered the perfect opportunity to raise brand awareness for ASAQUA. The main tool that Flocus has at its disposal, is the ability to familiarise users with the ASAQUA brand. We also wanted to maximise users’ communication with friends which, is part of the reason for why we chose a social media platform for our log-in. Word-of-mouth is one of the most effective ways of building trust and having users connect with their friends and family over Facebook will encourage support and interaction. 
 
 #### Future revenue streams
 
-We Identified two main methods in which Flocus could attract funding for Asaqua: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy and as such, we decided not to pursue this. The prospect of introducing donations and subscriptions to Flocus will be pursued by Asaqua if they decide to do so.
+We Identified two main methods in which Flocus could attract funding for ASAQUA: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy and as such, we decided not to pursue this. The prospect of introducing donations and subscriptions to Flocus will be pursued by Asaqua if they decide to do so.
 
 #### University of Bristol
 
-To succeed on the project, it was a necessity to conform to the specification as set out by the University of Bristol. As such, it was critical to brief external partners such as Asaqua on the scope of the task whilst clarify any queries regarding the project aim. Additionally, as Flocus will be a live project following Asaqua’s takeover and therefore in the public domain, it was crucial that we conducted ourselves in-line with the University's expectations. 
+To succeed on the project, it was a necessity to conform to the specification as set out by the University of Bristol. As such, it was critical to brief external partners such as ASAQUA on the scope of the task whilst clarify any queries regarding the project aim. Additionally, as Flocus will be a live project following ASAQUA’s takeover and therefore in the public domain, it was crucial that we conducted ourselves in-line with the University's expectations. 
 
 #### Facebook
 
@@ -111,7 +111,7 @@ To implement full functionality, Flocus will need to receive Facebook’s approv
 
 When designing Flocus we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock however, after initial feedback from friends and family, we identified that an animation would be more suitable and more enticing to use given its novelty compared to a clock timer. Our single-page application provides users with a useful, but easy on the eye, animation for a study interval while raising awareness and funds for a key issue: water accessibility in developing nations. 
 
-Together we identified that the end-user would need an attractive and simple user-interface to interact with, focused around a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
+Together we identified that the end-user would need an attractive and simple user-interface to interact with, focused on a study interval, statistics and information about the charity and world issue we are raising awareness for. To begin identifying potential users, our team spent time speaking to family and friends through informal focus groups and interviews to determine whether there is a user group that would use and enjoy the novelty of Flocus. After speaking to family and friends, we started to build specific end-users and created user stories; some examples can be seen below: 
 
 - Gordon is an a-level student who is struggling to concentrate on his exam revision due to distraction from social media and other webpages, such as the news and sport. Gordon wants to use a tool to help him focus for a specific time like 45 minutes. He does not just want to look at a clock so uses Flocus due to its interactive animation of a glass filling up. 
 
@@ -119,7 +119,7 @@ Together we identified that the end-user would need an attractive and simple use
 
 - Thomas is a university student. He is on the autistic spectrum and struggles with looking at clocks. Flocus provides him with a visual aid instead of a clock timer, so he knows how long to work for his study intervals.   
 
-### Questionaires 
+### Questionnaires  
 
 Having defined our user stories, we began developing the key aspects around reducing procrastination. Alongside our literature review of papers on procrastination, as part of our research into users and the key aspects to focus when trying to reduce procrastination, we created and sent out a google forms survey to university students in our friendship and peer groups. The survey can be seen at this [link](https://forms.gle/rgQhqEh3buj86prAA). Our study did not store any personal or sensitive data/information and is compliant with GDPR (General Data Protection Regulation) regulation. The storage of data is agreed at the start of the survey.  
 
@@ -148,7 +148,7 @@ From this survey we identified the key points and issues on procrastination in s
 
 - Majority of students do not use timers to help them study - large market opportunity to provide students with a useful study tool. 
 
-- A majority of students (95.7% in our sample) often put work off that they are not interested in.
+- Majority of students (95.7% in our sample) often put work off that they are not interested in.
 
 - From our sample, a large majority, either always or sometimes, try to work until a task is complete. 
 
@@ -168,7 +168,7 @@ Having defined our target market and the potential users who would be using Floc
 
 ### Wireframes
 
-The production of wireframes provided a strong direction to build on, once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below:
+The production of wireframes provided a strong direction to build on once our development sprints began. It also gave the front-end a preliminary insight into web-page design with HTML and CSS. Although the wireframes were very basic, their production provided a good topic for conversation around design and UX. We have displayed our completed wireframes below: 
 
 <br>
 <p align="center">
