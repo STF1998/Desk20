@@ -247,7 +247,7 @@ Importance coefficient:
 
 <br>
 <p align="center">
-<img src="../report/Images/testing_matrix1.png" width=70%>
+<img src="../report/Images/testing_table1.png" width=70%>
 </p>
 <br>
 
@@ -255,10 +255,9 @@ Progress thus far:
 
 <br>
 <p align="center">
-<img src="../report/Images/testing_matrix2.png" width=70%>
+<img src="../report/Images/testing_table2.png" width=70%>
 </p>
 <br>
-
 
 ### Cross browser compatibility testing
 
