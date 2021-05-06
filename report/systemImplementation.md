@@ -155,7 +155,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 <br>
 
 <p align="center">
-<img src="../report/Images/studyDesign.png" width=40%>
+<img src="../report/Images/Recordimages.jpg" width=40%>
 </p>
 <b><p align= "center">Figure 7: Study component timer</p></b>
 
