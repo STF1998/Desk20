@@ -14,7 +14,6 @@
 - [**System Explanation Video**](#System-Explanation-Video)
   - [Video link](#Video-link)
 
-
 ## Abstract
 
 ### Motivation for the project
@@ -28,8 +27,6 @@ The team began the project by drafting up ideas around playful ideas and serious
 
 However, while we had defined the two key aspects required by the project brief, we quickly realised that we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water scarcity in developing nations. Fortunately, Gordon, one of our team members, has founded his own NGO (non-governmental organisation) called Asaqua that provides affordable solutions to the water crisis in Africa. 
 
-<br>
-
 ### The problem we aim to solve
 
 FLOCUS solves two problems identified in the research and ideation stage:
@@ -38,11 +35,9 @@ FLOCUS solves two problems identified in the research and ideation stage:
 
 -	Severe lack of awareness for water scarcity in Africa.
 
-<br>
-
 ### High level overview of our project
 
-From this development of the ideation stage, we produced FLOCUS, a single page application that aims to combat procrastination for university students while raising awareness for Asaqua and water scarcity. The single page application will be focused on a simple glass that is filled up with water, from a tap, as you work. The glass will fill up every study interval followed by the user being encouraged to take a short break to relax from work. The page will include a login through Facebook, which will allow the page to display a league table to encourage competitiveness between friends on how much work they are doing. Our initial aim was to integrate a google ads area to raise funds for Asaqua however, this has been included as an opportunity for future development work.  
+From this development of the ideation stage, we produced Flocus, a single page application that aims to combat procrastination for university students while raising awareness for Asaqua and water scarcity. The single page application will be focused on a simple glass that is filled up with water, from a tap, as you work. The glass will fill up every study interval followed by the user being encouraged to take a short break to relax from work. The page will include a login through Facebook, which will allow the page to display a league table to encourage competitiveness between friends on how much work they are doing. Our initial aim was to integrate a google ads area to raise funds for Asaqua however, this has been included as an opportunity for future development work.  
 
 <br>
 
@@ -54,8 +49,6 @@ From this development of the ideation stage, we produced FLOCUS, a single page a
 
 Build a MEAN stack single page application with integration of a front end (using Angular-CLI), including a responsive design, with a Facebook API to provide a login capability and league table between friends. 
 
-<br>
-
 #### High level project aims
 
 - Help solve procrastination in university student populations by providing a visual aid to help students study for a time interval (following the Pomodoro technique). 
@@ -63,8 +56,6 @@ Build a MEAN stack single page application with integration of a front end (usin
 - Raise awareness for water scarcity and ASAQUA, an NGO (non-governmental organization) working to solve the water crisis in underdeveloped nations across Africa. 
 
 - Integrate a table/chart to represent a competitive aspect between friends to encourage competitiveness and work ethic amongst student populations. 
-
-<br>
 
 ### How are we solving the problems?
 
@@ -88,14 +79,17 @@ See the following key points that we used as a checklist to keep the team motiva
 
 - Integrate the single page application with Facebook-API for login capability.
 
+<br>
 
 ## System Explanation Video
 
 ### Video link
 
-See the video link below showing a short explanation of our system and how we envisage consumers using FLOCUS.
+See the video link below showing a short explanation of our system and how we envisage consumers using Flocus.
 
 TODO --> [This will be a youtube link to a short screen recording of using our webpage.] 
+
+<br>
 
 ## Project report navigation
 
