@@ -18,20 +18,10 @@
     #b3cbec 11px
     );
     position: absolute;
-<<<<<<< HEAD
-    top: 200%;
-    left: 0%;
-    -moz-transform: translateX(0%) translateY(-200%);
-    -webkit-transform: translateX(0%) translateY(-200%);
-    transform: translateX(0%) translateY(-200%);
-    width: 650px;
-    height:650px;
-=======
     top: 300px;
     left: 120px;
     width: 540px;
     height:540px;
->>>>>>> b00c8fab (screen compatibility)
     border-radius: 50%;
 
 }
