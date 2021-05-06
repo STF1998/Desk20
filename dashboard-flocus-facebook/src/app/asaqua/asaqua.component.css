@@ -57,13 +57,8 @@
 
 .asaqua{
     position: absolute;
-<<<<<<< HEAD
-    top:100%;
-    left: 80%;
-=======
     top: 350px;
     left: 800px;
->>>>>>> b00c8fab (screen compatibility)
     width: 450px;
     height: 400px;
 }
