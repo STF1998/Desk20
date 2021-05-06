@@ -129,7 +129,7 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   <td>
     <ul>
       <li> Simple and to the point. </li>
-      <li> Ability to set notifications so you don’t have to stay on the page. </li>
+      <li> Ability to set notifications so you do not have to stay on the page. </li>
       <li> Keyboard shortcuts. </li>
       <li> Ability to change the alert sound. </li>
       <li> No advertising on the website. </li>
@@ -139,8 +139,8 @@ Tomato timer is an online clock timer that follows the Pomodoro technique inspir
   </td>
   <td>
     <ul>
-      <li> No insight into what you’re doing with that time. </li>
-      <li> Unattractive front end design. </li>
+      <li> No insight into what you are doing with that time. </li>
+      <li> Unattractive front-end design. </li>
       <li> No ability to track past activity. </li>
     </ul>
   </td>
@@ -212,7 +212,7 @@ Pomodoro Tracker is a simple and free time tracker inspired by the Pomodoro tech
   <td>
     <ul>
       <li> Advertising on the page. </li>
-      <li> The colour of the text isn’t particular clear due to light grey text on charcoal grey background. </li>
+      <li> The colour of the text is not clear due to light grey text on charcoal grey background. </li>
     </ul>
   </td>
 </table>
@@ -249,7 +249,7 @@ Easy-to-use web-based Pomodoro timer.
     <ul>
       <li> Very basic user interface. </li>
       <li> No animations. </li>
-      <li> Clock timer doesn't fit the page. </li>
+      <li> Clock timer does not fit the page. </li>
       <li> Better suited to mobile device browsers. </li>
     </ul>
   </td>
@@ -290,25 +290,25 @@ Our initial demographic group is students aged 16-24 including school and univer
 
 #### Technical scope
 
-Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the Front-end. The primary reason for this split was the ambition to use the external Facebook API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs, having three individuals working on these tasks greatly helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
+Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the Front-end. The primary reason for this split was the ambition to use the external Facebook API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs (application programming interfaces), having three individuals working on these tasks helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
 
-When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs, course peers and online forums, we were confident that the project was achievable.
+When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2 Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs (Teaching assistants), course peers and online forums, we were confident that the project was achievable. 
 
 One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional. To achieve the desired level of functionality, we had to implement a live dataset that is easily accessible by users.
 
 However, there were areas of the technical scope that we had to trim to complete our MVP:
 
--	Being able to view oneself in the league
--	Portal Customisation
--	Advertisements
+-	Being able to view oneself in the league.
+-	Portal customisation.
+-	Advertisements.
 
 #### Technical user-story
 
-Say an individual, that goes by the name of John Doe, is plagued by procrastination in his study sessions. A facebook friend, who is also a fellow procrastinater, informs John Doe of a superb application that has cut his procrastination in half called Flocus. John, being curious, decides to join up with the Flocus application. When he logs in and checks out the league table, he realises that most of his friends on Facebook are also using Flocus and their studying times this week have been a lot more than he would have expected. John, being a competitive person, sees that his friends and family are working hard in their studies and, as a result, becomes motivated to show his peers how much of a hard worker he can be. This was only possible because of the fantastic front end development and implementation of a league table + personal stats section within the application. However, there were some areas that John Doe was frustrated with:
+Say an individual, that goes by the name of John Doe, is plagued by procrastination in his study sessions. A Facebook friend, who is also a fellow procrastinator, informs John Doe of a superb application that has cut his procrastination in half called Flocus. John, being curious, decides to join up with the Flocus application. When he logs in and checks out the league table, he realises that most of his friends on Facebook are also using Flocus and their studying times this week have been a lot more than he would have expected. John, being a competitive person, sees that his friends and family are working hard in their studies and, as a result, becomes motivated to show his peers how much of a hard worker he can be. This was only possible because of the fantastic front-end development and implementation of a league table + personal stats section within the application. However, there were some areas that John Doe was frustrated with: 
 
-- He couldnt see himself in the league table
-- He couldnt customise his site or produce a unique icon for himself
-- He wanted to know more about his personal working habits
+- He could not see himself in the league table. 
+- He could not customise his site or produce a unique icon for himself. 
+- He wanted to know more about his personal working habits. 
 
 ### Challenges
 
