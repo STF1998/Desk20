@@ -205,30 +205,6 @@ When developing any software, it is key to consider testing to pick up any bugs 
 
 Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their facebook details but in future development this could include payment data. Therefore, testing is critical to software success, particularly with a single page application focused on user experience. 
 
-### Study component testing
-
-The primary objective of the study component is to time a ‘study session’ and, as such, it is crucial to guarantee the timer is working accurately and storing data correctly to keep track of a user’s performance. Due to the time limitation, we were not able to implement testing on all units within the components. Instead, we focused on the components that offer the most important functionality, namely:
-
-- Retrieving the user ID correctly from the data service
-
-- Loading the the correct user’s record data to display
-
-- Starting the timer and timing accurately after clicking the button
-
-- Correctly saving user’s record on time is up
-
-- Correctly saving user’s record on destroy
-
-The study component uses a service to retrieve data from the database. To prevent this database service from being called during testing, we have used Jasmine helper to create spies that return fake values, which are ‘expected’ in testing.
-
-<p align="center">
-<img src="../report/Images/backend_study_test.png" width=75%>
-</p>
-<b><p align= "center">Figure 1: Testing of some of the most critical functionalities of the study page.</p></b>
-
-#### Further testing to be done on the Study Component
-
-As we use Karma to test our application, the testing is run on the browser, allowing us to test the runtime behaviour of different features on different browsers. To deliver a consistent cross-browser user experience, it would be ideal to test the animations including the filling up and emptying-out processes.
 
 ### Testing Priority and Sequence
 
@@ -256,6 +232,34 @@ Progress thus far:
 </p>
 <br>
 
+
+### Study component testing
+
+The primary objective of the study component is to time a ‘study session’ and, as such, it is crucial to guarantee the timer is working accurately and storing data correctly to keep track of a user’s performance. Due to the time limitation, we were not able to implement testing on all units within the components. Instead, we focused on the units that offer the most important functionality, namely:
+
+- Retrieving the user ID correctly from the data service
+
+- Loading the the correct user’s record data to display
+
+- Starting the timer and timing accurately after clicking the button
+
+- Correctly saving user’s record on time is up
+
+- Correctly saving user’s record on destroy
+
+The study component uses a service to retrieve data from the database. To prevent this database service from being called during testing, we have used Jasmine helper to create spies that return fake values, which are ‘expected’ in testing.
+
+<br>
+<p align="center">
+<img src="../report/Images/backend_study_test.png" width=75%>
+</p>
+<b><p align= "center">Figure 1: Testing of some of the most critical functionalities of the study page.</p></b>
+
+#### Further testing to be done on the Study Component
+
+As we use Karma to test our application, the testing is run on the browser, allowing us to test the runtime behaviour of different features on different browsers. To deliver a consistent cross-browser user experience, it would be ideal to test the animations including the filling up and emptying-out processes.
+<br>
+
 ### Cross browser compatibility testing
 
 <br>
@@ -274,8 +278,7 @@ We wanted to ensure that prospective users are not restricted to use a specific 
 
 We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
 
-This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
-
+This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view the League table Lottie animation when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing and meant that we have covered <a href = "https://gs.statcounter.com/browser-market-share">90% of the world's internet users</a> when using their favoured browser. However, This is not to say that other browser will not support our application.
 <br> 
 
 ## User acceptance testing
