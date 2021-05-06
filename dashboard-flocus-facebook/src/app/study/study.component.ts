@@ -43,7 +43,7 @@ export class StudyComponent implements OnInit, OnDestroy {
           "timeSpent": Math.floor(this.timePassed / 1000)
         })).subscribe(
           feedback => {
-            console.log(feedback);
+            //console.log(feedback);
           }
         );
       this.timePassed = 0;
@@ -88,7 +88,7 @@ export class StudyComponent implements OnInit, OnDestroy {
             "timeSpent": Math.floor(this.timePassed / 1000)
           })).subscribe(
             feedback => {
-              console.log(feedback);
+              //console.log(feedback);
             }
           );
           this.retrieveGlassCount();
@@ -136,7 +136,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     if (this.pressed == true) {
       this.elem = document.getElementById('waterfill');
       this.yPos = this.ydist * this.waterLevel;
-      console.log(this.yPos);
+      //console.log(this.yPos);
       if (this.elem != null) {
         this.elem.style.transform = "translate(0px," + this.yPos + "px)";
       }
@@ -144,7 +144,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   }
 
   private emptyOut() {
-    console.log("empty out called");
+    //console.log("empty out called");
     this.elem = document.getElementById('waterfill');
     this.yPos = this.ydist * this.waterLevel;
     this.stop = setInterval(this.empty.bind(this), 1000);
@@ -152,17 +152,17 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private empty() {
 
-    console.log("empty");
+    //console.log("empty");
 
     if (this.yPos >= 0) {
-      console.log("clearing interval stop");
+      //console.log("clearing interval stop");
       clearInterval(this.stop);
     }
     else {
       if (this.elem != null) {
         this.yPos = this.yPos + this.yIncrementForEmpty;
         this.elem.style.transform = "translate(0px," + this.yPos + "px)";
-        console.log(this.yPos);
+        //console.log(this.yPos);
       }
     }
   }
@@ -170,7 +170,7 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   private dripDrop(start: string) {
 
-    console.log("drip drop");
+   
 
     var id = document.getElementById("dropframe");
     if (id == null) {
@@ -193,7 +193,7 @@ export class StudyComponent implements OnInit, OnDestroy {
     var dayStart = new Date(date.setHours(0, 0, 0, 0));
     var dayEnd = new Date(date.setHours(23, 59, 59, 999));
 
-    console.log(this.userid);
+    //console.log(this.userid);
     var httpParams = new HttpParams()
       .set("uid", this.userid)
       .set("rangeStart", JSON.parse(JSON.stringify(dayStart)))
@@ -209,7 +209,7 @@ export class StudyComponent implements OnInit, OnDestroy {
         } else {
           this.dayGlassCount = 0;
         }
-        console.log(this.dayGlassCount);
+        //console.log(this.dayGlassCount);
       },
       error => {
         console.log(error);

@@ -16,31 +16,6 @@ router.post('/', async (req, res) => {
 });
 
 
-
-
-// Old api (return an array of all records in json)
-// router.get('/', async (req, res) => {
-
-//   console.log("Getting from api with" + req);
-
-//   const record = await Record.find({
-//     "uid": req.query.uid,
-//     "timestamp": {
-//       "$gte": req.query.rangeStart,
-//       "$lte": req.query.rangeEnd
-//     },
-//     "timeSpent": {
-//       "$gte": req.query.timeSpentLower,
-//       "$lte": req.query.timeSpentUpper
-//     }
-//   });
-
-//   if (!record) return res.status(404).send('No such user');
-//   res.header("Content-Type", 'application/json');
-//   res.send(JSON.stringify(record));
-// });
-
-
 // New api (return a summary of 1. completed session & 2. total time spent)
 router.get('/', async (req, res) => {
 

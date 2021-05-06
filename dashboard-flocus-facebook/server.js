@@ -52,7 +52,7 @@ passport.use(new facebookStrategy({
         }
         
         if (user) {
-          console.log("user found");
+         
           
           user.friends = [];
           for (let i = 0; i < profile._json.friends.data.length; i++) {
@@ -64,7 +64,6 @@ passport.use(new facebookStrategy({
             if (err)
               throw err;
           });
-          loginToken = token;
           return done(null, user);
         }
         else {
@@ -147,8 +146,6 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
   
     for (let i = 0; i < theUser.friends.length; i++) {
       await User.findOne({ 'name': theUser.friends[i] }, 'uid', function (err, user) {
-        //if (!user) return res.status(404).send('The movie with the given ID was not found.');
-        //if (err) return;
         if (err) {
           return;
         }
@@ -159,7 +156,7 @@ app.get('/friendsUID', isLoggedIn, async function (req, res) {
         }
       });;
     }
-  console.log("going inside here");
+  
   theUser.friendsUID = uids;
   theUser.save(function (err) {
     if (err)
@@ -195,12 +192,12 @@ app.get('/friends', isLoggedIn, function (req, res) {
 
 app.get('/logout', isLoggedIn, function (req, res) {
   req.logout();
-  console.log(req.isAuthenticated());
+  
   res.redirect('/');
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html')); 
 });
 
 

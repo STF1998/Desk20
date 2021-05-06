@@ -73,6 +73,7 @@ h1 {
 	animation: wobbleWobblewobble 60s infinite;
 }
 
+
 .nav-link{
 	position: absolute;
 	top: 2%;
@@ -91,6 +92,7 @@ h1 {
     -webkit-transform: translateX(-3%);
 	color: #5c82b8;
   }
+
 
 @keyframes wobble{
 	0% {transform: translate(0%, 0%); }
