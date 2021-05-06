@@ -83,7 +83,6 @@ passport.use(new facebookStrategy({
               newUser.friends.push(profile._json.friends.data[i].name);
             }
           }
-          console.log(user.profile);
           newUser.save(function (err) {
             if (err)
               throw err;
