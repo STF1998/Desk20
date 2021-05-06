@@ -142,6 +142,10 @@ export class StudyComponent implements OnInit, OnDestroy {
     if (this.pressed == true) {
       this.elem = document.getElementById('waterfill');
       this.yPos = this.ydist * this.waterLevel;
+<<<<<<< HEAD
+=======
+      console.log(this.yPos);
+>>>>>>> b00c8fab (screen compatibility)
       if (this.elem != null) {
         this.elem.style.transform = "translate(0px," + this.yPos + "px)";
       }
