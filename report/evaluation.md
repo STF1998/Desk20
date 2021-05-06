@@ -254,7 +254,6 @@ The study component uses a service to retrieve data from the database. To preven
 <img src="../report/Images/backend_study_test.png" width=75%>
 </p>
 <b><p align= "center">Figure 1: Testing of some of the most critical functionalities of the study page.</p></b>
-<br>
 
 #### Further testing to be done on the Study Component
 
