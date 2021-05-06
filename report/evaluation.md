@@ -300,8 +300,6 @@ By focusing on the above areas, it made it easier to find bugs and share anonymo
 
 One error that we picked up through the use of the heroku website was that the counter for the study component was not automatically keeping up to date. Our users discovered a bug that the daily glass count number in the study component did not show the right count, and they raised this to us during the focus group. After further investigation, we found that the query parameter to retrieve the daily glass count was set incorrectly. We amended the parameter and the issue was fixed.
 
-The Heroku demo can be seen at the following [link](https://flocus.herokuapp.com/).
-
 After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
 Please see below the affinity diagram using Lucidchart:
