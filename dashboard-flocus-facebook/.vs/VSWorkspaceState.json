@@ -4,6 +4,6 @@
     "\\src",
     "\\src\\app"
   ],
-  "SelectedNode": "\\.env",
+  "SelectedNode": "\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }
