@@ -95,8 +95,6 @@ However, in terms of job searches on linked in, Angular is in first place ([link
 
 Ostensibly, the argument for using the MEAN stack was compelling, not only for the previously stated reasons but also because of the level of support offered by the university and our course peers. As such, we decided to adopt this approach for our project implementation. 
 
-<br>
-
 #### Stack architecture implementation in our application
 
 Other than the previously discussed technologies, our application interacts with Facebook’s API. For this, we have used PassportJS which, is a Node.js authentication middleware that helps our app communicate with Facebook. To help with the visualisation of how our application works, We have included a diagram of the various technologies and communication branches associated with Flocus:
@@ -150,8 +148,6 @@ Successful and unsuccessful login attempts will redirect users back to the login
 
 Inside the home page we provide three sections that a user can access. These are the study page, league page, and Asaqua page.
 
-<br>
-
 #### Study page
 
 Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
@@ -166,8 +162,6 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 <br>
 
 ‘Record’ refers to the session details, such as when the session happened and how long the user was inside the session. The chart displayed above also shows that we save both finished and unfinished sessions to the database. Unfinished session occurs when the user decides to go to another page or closes the application before the session is finished. While finished session occurs when the glass becomes full.
-
-<br>
 
 #### League
 
@@ -196,9 +190,9 @@ In terms of records, users can only post one record at a time but, will recieve 
 <b><p align= "center">Figure 8: Class diagram </p></b>
 <br>
 
-## Sequence diagram
-
 <br>
+
+## Sequence diagram
 
 The figure below represents how our application is used.
 
@@ -209,9 +203,11 @@ The figure below represents how our application is used.
 <b><p align= "center">Figure 9: Sequential diagram for Flocus </p></b>
 <br>
 
-# Back End - MongoDB
+<br>
 
-## Database implementation
+## Back End - MongoDB
+
+### Database implementation
 
 After the implementation of the authentication process, our backend developers had to create a separate collection, ‘Records’, in the database to persistently store study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a primary key to identify the record owner. We then created a REST API that handles the GET and POST requests which, retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
 
@@ -223,7 +219,7 @@ The backend developers decided to normalize the data storage, so the database se
 </p>
 <b><p align= "center">Figure 10: Entity relationship diagram of the two database collections</p></b>
 
-## Data model
+### Data model
 
 The above entity-relationship diagram shows that our database has a normalized set-up despite using a NoSQL database service. When a user logs into our application, Facebook’s passport API returns the necessary information to our server. This allows us to save and update the data associated with the user within the User Collection. This ensures all data is up to date for when the user logs into Flocus next time. It is particularly important for the league feature to retrieve data of the user’s friends, who have potentially joined our application, or have been added as a new Facebook friend by the user since their initial sign-up.
 
@@ -247,6 +243,8 @@ As a team, we agreed to use the UID given by Facebook as the primary key between
 <img src="../report/Images/record_data_model.png" width=75%>
 </p>
 <b><p align= "center">Figure 13: The record data model</p></b>
+<br>
+
 <br>
 
 ## Middle Tier - Express, Node, the RESTful API
@@ -450,7 +448,6 @@ We then search through our previous records, as in the GET request described abo
 
 All returns are inside the time range specified in the parameter and all arrays are grouped (connected) before getting sorted in a descending order based on the number of sessions completed. By grouped we mean that if there is a change in position between elements inside one array, then the other two arrays will also experience the same change. As arrays are sorted in a descending order, the highest number of sessions completed will be on the top of the array (element 0) and the lowest will be on the bottom of the array.
 
-
 <br>
 
 ## Front-End System Implementation
@@ -575,6 +572,8 @@ To achieve this animation, we created six Scalable Vector Graphics (SVG) circle 
 
 We have placed the nav-bar on the right-hand side and have implemented CSS state changes on hover. 
 
+<br>
+
 ## Additional Elements and Components
 
 ### Front-end
@@ -612,6 +611,8 @@ Adobe licence information: https://stock.adobe.com/uk/license-terms
 
 Original design: https://stock.adobe.com/uk/images/clean-water-vector-illustration-tiny-drinking-fresh-potable-person-concept/269962379
 
+<br> 
+
 ## Deployment Details
 
 ### GitHub
@@ -648,6 +649,8 @@ The docker-compose.yml file was used for defining and running two Docker contain
 As new changes to the application were made, the two containers were rebuilt using the command ‘docker-compose pull’ and ‘docker-compose build nodejs’. The integration of new code could then be tested thoroughly by running the containers with the desired environment.
 
 The consistent deployment environment managed by Docker enabled the team to robustly integrate new features into the application. Additionally, the Dockerfile could be changed in the future to test the application on different platforms. This would greatly simplify shipping the application to any hosting provider.
+
+<br>
 
 ## Project report navigation
 
