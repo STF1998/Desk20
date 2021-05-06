@@ -62,6 +62,8 @@ See the video below representing our paper prototyping with a digital twist:
   <br/><br/>
 </p>
 
+<br>
+
 ## Users and Stakeholders
 
 After agreeing on the idea of Flocus and deciding on initial design themes and messaging, we needed to ascertain who the stakeholders of the project were and how to we deal with their requirements and concerns. To achieve this, we began by brain-storming main stakeholders and discussing their influence and power over the project. Once we had achieved this, we formulated a Power-Interest matrix to further understand how specific stakeholder groups could have a future impact on the Flocus project. This is displayed below:
@@ -100,6 +102,8 @@ To succeed on the project, it was a necessity to conform to the specification as
 #### Facebook
 
 To implement full functionality, Flocus will need to receive Facebook’s approval for the log-in process. It has therefore been important to conform to Facebook’s best practices guide and expectations whilst in the design process.
+
+<br>
 
 ## Understanding of User Group
 
@@ -156,11 +160,11 @@ These interviews could be focused on flows on certain webpages with a focus on a
 
 As an alternative to the above, we held informal conversations with friends and peers to find out more about study techniques and what individuals liked about the top 5 current tools on the market (outlined in the [Background and Motivation section](https://github.com/STF1998/Desk20/blob/main/report/backgroundAndMotivation.md)). These conversations, yet informal, helped build our user personas and stories throughout the design and development process. 
 
+<br>
+
 ## Wireframes and Systems
 
 Having defined our target market and the potential users who would be using Flocus, we quickly developed a strategy around key subsystem requirements and wireframe designs before defining our sprints and product development stage.
-
-
 
 ### Wireframes
 
@@ -186,7 +190,6 @@ The production of wireframes provided a strong direction to build on, once our d
 <br>
 <br>
 
-
 ### User flow diagram
 
 Having finalised our SPA and UX design, we put together a simple flow diagram using Lucidchart to display how we envisage users migrating through Flocus. See below:
@@ -196,11 +199,15 @@ Having finalised our SPA and UX design, we put together a simple flow diagram us
 </p>
 <b><p align="center">Figure 3: User flow diagram</p></b>
 
+<br>
+
 ## References
 
 [1] https://www.ofcom.org.uk/__data/assets/pdf_file/0024/149253/online-nation-summary.pdf
 
 [2] https://www.digitalinformationworld.com/2019/02/internet-users-spend-more-than-a-quarter-of-their-lives-online.html
+
+<br>
 
 ## Project report navigation
 
