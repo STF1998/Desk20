@@ -23,7 +23,7 @@
 </p>
 <b><p align= "center"> Figure 1: Lucidchart of the initial ideation stage. </p></b>
 
-The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources, we swiftly aimed to define a simple but effective project idea that solved a critical issue but, also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas, we decided that the most suitable and simple idea would be to create a competitive aspect, based on avoiding procrastination. 
+The team began the project by drafting up ideas around playful ideas and serious world issues, shown by Figure 1. Given limited time and resources, we swiftly aimed to define a simple but effective project idea that solved a critical issue but also had a playful aspect. Having drafted several ideas, we quickly decided to focus on solving an issue that we all understood and had experienced at some point in our lives: procrastination. Secondly, after analysing various game ideas, we decided that the most suitable and simple idea would be to create a competitive aspect, based on avoiding procrastination. 
 
 However, while we had defined the two key aspects required by the project brief, we quickly realised that we could solve a critical issue in procrastination but also raise awareness for an issue slightly further afield: water scarcity in developing nations. Fortunately, Gordon, one of our team members, has founded his own NGO (non-governmental organisation) called Asaqua that provides affordable solutions to the water crisis in Africa. 
 
@@ -47,7 +47,7 @@ From this development of the ideation stage, we produced Flocus, a single page a
 
 #### Main goal of the project
 
-Build a MEAN stack single page application with integration of a front end (using Angular-CLI), including a responsive design, with a Facebook API to provide a login capability and league table between friends. 
+Build a MEAN stack single page application with integration of a front end (using Angular-CLI), including a responsive design, with a Facebook API (application programming interfaces) to provide a login capability and league table between friends. 
 
 #### High level project aims
 
@@ -59,15 +59,15 @@ Build a MEAN stack single page application with integration of a front end (usin
 
 ### How are we solving the problems?
 
-To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period of time, followed by a break. This has been inspired by the time management method called the Pomodoro Technique which, uses intervals to help students work for short periods of time, allowing for a short breaks as a reward. We have decided to use a visual aid of a glass filling up so students have a visual representation of their progress and with its link to water given the key message of our web application:
+To help reduce procrastination in student populations, we are building a single-page application that allows students to use a visual aid of a glass filling up to help them work for a period, followed by a break. This has been inspired by the time management method called the Pomodoro Technique which, uses intervals to help students work for short periods of time, allowing for a short break as a reward. We have decided to use a visual aid of a glass filling up, so students have a visual representation of their progress and with its link to water given the key message of our web application: 
 
 <br>
 <p align = "center">Solving procrastination and water scarcity, one glass at a time!</p>
 <br>
 
-While students are working, the google ads section will be generating revenue which, will be donated to Asaqua. Therefore, students not only have the satisfaction of working towards a target but are also rewarded by the fact they are actually contributing and helping raise funds for an important issue in water accessibility. It is a win-win scenario for all parties involved. 
+While students are working, the google ads section will be generating revenue which, will be donated to Asaqua. Therefore, students not only have the satisfaction of working towards a target but are also rewarded by the fact they are contributing and helping raise funds for a critical issue in water accessibility. It is a win-win scenario for all parties involved. 
 
-To further encourage students to use Flocus, we are integrating a Facebook login to allow students to compete with their friends on how much time they are committing to work and also, how much they are raising for charity. The competitive nature will further encourage students to increase their productivity while also, encouraging users to use the application on future occasions, rather than being a one-stop shop.
+To further encourage students to use Flocus, we are integrating a Facebook login to allow students to compete with their friends on how much time they are committing to work and how much they are raising for charity. The competitive nature will further encourage students to increase their productivity while also, encouraging users to use the application on future occasions, rather than being a one-stop shop. 
 
 ### Team checklist
 
@@ -85,7 +85,7 @@ See the following key points that we used as a checklist to keep the team motiva
 
 ### Video link
 
-See the video link below showing a short explanation of our system and how we envisage consumers using Flocus.
+See the video link below showing a brief explanation of our system and how we envisage consumers using Flocus. 
 
 TODO --> [This will be a youtube link to a short screen recording of using our webpage.] 
 
