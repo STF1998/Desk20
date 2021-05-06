@@ -292,6 +292,8 @@ The focus group focused on the following areas:
 
 By focusing on the above areas, it made it easier to find bugs and share anonymous opinions about the design and implementation of Flocus. To enable an effective and efficient focus group, we launched a live version of Flocus through Heroku. To allow our users to access our application from the public domain, we used the Heroku node.js hosting platform to deploy the application for beta testing. Since we were already using Docker to test our application during development, we just had to push our Docker image to Heroku, which is run on its dynos container just like in our Docker container. In addition, we replaced the Docker mount volume with the MongoDB Atlas DBaaS for the database, which is accessible from the public domain and stores testing data persistently. Then, we randomly distributed some Facebook testing accounts to our users, allowing them to use our application on their computer anonymously. We allowed the users three days to test and try out our application. 
 
+The Heroku demo can be seen at the following [link](https://flocus.herokuapp.com/).
+
 After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
 Please see below the affinity diagram using Lucidchart:
