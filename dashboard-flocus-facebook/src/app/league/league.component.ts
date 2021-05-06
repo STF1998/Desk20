@@ -156,18 +156,17 @@ export class LeagueComponent implements OnInit {
   private async retrieveUserData(userid: string, todayDate: Date) {
     var sundayStart = new Date(new Date(new Date().setDate(todayDate.getDate() - todayDate.getDay())).setHours(0, 0, 0, 0));
     var sundayEnd = new Date(new Date(new Date().setDate(todayDate.getDate() - todayDate.getDay())).setHours(23, 59, 59, 999));
-    console.log(sundayStart + " " + sundayEnd);
+    
 
     // Get current week data (-7 if previous week)
     for (var i = 1; i <= 7; i++) {
       var currentDayStart = new Date(sundayStart.setDate(sundayStart.getDate() + 1));
       var currentDayEnd = new Date(sundayEnd.setDate(sundayEnd.getDate() + 1));
-      console.log(currentDayStart);
-      console.log(currentDayEnd);
+      
 
       this.retrieveUserRecord(this.userid, currentDayStart, currentDayEnd, i);
     }
-    console.log(this.dailyCount);
+    
 
   }
 
@@ -185,8 +184,7 @@ export class LeagueComponent implements OnInit {
       data => {
         this.stats = data;
         if (this.stats.length == 1) {
-          console.log(this.stats[0].session);
-          console.log(this.stats[0].totalTime);
+          
           this.dailyCount[day - 1] = this.stats[0].session;
         } else {
           this.dailyCount[day - 1] = 0;
@@ -247,17 +245,13 @@ export class LeagueComponent implements OnInit {
         data => {
           this.scores = data;
           // this.friendNames = data[1];
-          console.log(this.scores);
-          console.log(this.scores.length);
+          
           for (let i = 0; i < this.scores.length; i++) {
             let row: any = ["", 0, 0];
             row[0] = this.scores[i].name;
             row[1] = Math.round(this.scores[i].totalTime / 3600 * 10) / 10;
             row[2] = this.scores[i].session;
-            console.log(row[0]);
-            console.log(row[1]);
-            console.log(row[2]);
-            console.log(row);
+           
             this.leagueTable[i] = row;
           }
           this.setTable();

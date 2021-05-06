@@ -126,13 +126,10 @@ let league = await User.aggregate(
   ])
 
     if (!league) return res.status(404).send('No such user');
-    console.log(JSON.stringify(league));
     res.header("Content-Type", 'application/json');
     res.send(JSON.stringify(league));
 });
 
 
 module.exports = router;
-//console.log(req.query.uid);
-  //console.log(req.query.rangeStart);
-  //console.log(req.query.rangeEnd);
+
