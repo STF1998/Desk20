@@ -18,14 +18,6 @@
 As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
 
 Gordon, Tom and Jati were responsible for testing the development and back-end. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
-
-### Short timeline for testing and evaluation:
-
-Back end testing and evaluation:
-
-Front end testing and evaluation:
-
-
 </br>
 
 ## Details of design evaluation 
@@ -240,6 +232,33 @@ The study component uses a service to retrieve data from the database. To preven
 #### Further testing to be done on the Study Component
 
 As we use Karma to test our application, the testing is run on the browser, allowing us to test the runtime behaviour of different features on different browsers. To deliver a consistent cross-browser user experience, it would be ideal to test the animations including the filling up and emptying-out processes.
+
+### Testing Priority and Sequence
+
+Alongside the manual testing, we also created automated unit testing, which allows the test to run
+on different browsers. The objective of the unit testing is to ensure our application is always running
+exactly as we planned on the supported browsers even after code refactorization and component rerouting. We set the priority of testing based on the following factors:
+
+Importance coefficient:
+• Top – 4
+• High – 3
+• Medium – 2
+• Low – 1
+
+<br>
+<p align="center">
+<img src="../report/Images/testing_matrix1.png" width=70%>
+</p>
+<br>
+
+Progress thus far:
+
+<br>
+<p align="center">
+<img src="../report/Images/testing_matrix2.png" width=70%>
+</p>
+<br>
+
 
 ### Cross browser compatibility testing
 
