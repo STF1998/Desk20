@@ -22,7 +22,7 @@
 
 ### Overview
 
-When developing a single page application, it is critical to consider development methodology, particularly given the large number of moving parts associated with full-stack development. When discussing the development stage, we discussed the pros and cons of an agile vs waterfall methodology before agreeing on the agile approach. The waterfall approach is focused more on a rigid structure of tasks that lead to a final product whereas an agile approach prioritises a more flexible and iterative process to software development. To learn more about development methodologies, please check out this [link](https://www.wrike.com/project-management-guide/methodologies/) that we found very useful.
+When developing a single page application, it is critical to consider development methodology, particularly given the substantial number of moving parts associated with full-stack development. When discussing the development stage, we discussed the pros and cons of an agile vs waterfall methodology before agreeing on the agile approach. The waterfall approach is focused more on a rigid structure of tasks that lead to a final product whereas an agile approach prioritises a more flexible and iterative process to software development. To learn more about development methodologies, please check out this [link](https://www.wrike.com/project-management-guide/methodologies/) that we found extremely useful.
 
 Check out the Figure 1 below that helps explain the difference in the methodology approaches (Source: [link](https://saigontechnology.com/blog/agile-vs-waterfall-in-software-development)).
 
@@ -33,11 +33,11 @@ Check out the Figure 1 below that helps explain the difference in the methodolog
 
 ### Agile methodology
 
-We focused on an agile methodology that allowed for an iterative and flexible process as well as a greater focus on user interaction. An agile methodology allowed us to effectively and efficiently respond to adversity and challenges throughout the project. One aspect we really enjoyed, as a team, was the iterative aspect and opportunity to provide ideas on improvement from a wide range of perspectives. This led to a better and improved application after each development sprint. 
+We focused on an agile methodology that allowed for an iterative and flexible process as well as a greater focus on user interaction. An agile methodology allowed us to respond to adversity and challenges effectively and efficiently throughout the project. One aspect we really enjoyed, as a team, was the iterative aspect and opportunity to provide ideas on improvement from a wide range of perspectives. This led to a better and improved application after each development sprint. 
 
-When approaching the development stage, we were naturally developing a plan around the SCRUM framework. While there are multiple frameworks that come under the agile methodology, the SCRUM framework suited this project because it provided the development team with a flexible and iterative process but gave each individual deadlines and targets to hit, something critical given the current climate of working from home. Each individual in the team had their role and targets but also had a strong understanding of what other team members were doing. This approach allowed us to focus on quality with the flexibility to change priorities as a team when challenges occurred or we wanted to focus on a specific area before moving onto the next.
+When approaching the development stage, we were naturally developing a plan around the SCRUM framework. While there are multiple frameworks that come under the agile methodology, the SCRUM framework suited this project because it provided the development team with a flexible and iterative process but gave each individual deadlines and targets to hit, something critical given the current climate of working from home. Everyone in the team had their role and targets but also had a strong understanding of what other team members were doing. This approach allowed us to focus on quality with the flexibility to change priorities as a team when challenges occurred, or we wanted to focus on a specific area before moving onto the next. 
 
-Initially, as a team we sat down (albeit virtually) and wrote a list of the key features and components that we wanted FLOCUS to include. We finalised our user personas and basic wireframes, which can be seen here (TODO). The below diagram ([link](https://devcom.com/tech-blog/agile-advantages-for-business/)) is a graphical representation of the cycle of agile development we aimed to follow as a group in the design, development and implementation of our product.
+Initially, as a team we sat down (albeit virtually) and wrote a list of the key features and components that we wanted Flocus to include. We finalised our user personas and basic wireframes, which can be seen here (TODO). The below diagram ([link](https://devcom.com/tech-blog/agile-advantages-for-business/)) is a graphical representation of the cycle of agile development we aimed to follow as a group in the design, development, and implementation of our product.
 
 <p align="center">
 <img src="../report/Images/methodology-agile.png" width=70%>
@@ -56,7 +56,8 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 </p>
 <b><p align= "center"> Figure 3: Our Discord Chat Setup </p></b>
 
-The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
+The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavored to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat. 
+
 <br>
 
 ## Meet The Team
@@ -101,6 +102,8 @@ The above image displays our discord chat set-up. Initially, all project discuss
 </table>
 <br>
 
+<br>
+
 ## The Sprints Documentation
 
 Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
@@ -113,11 +116,9 @@ Throughout development, we consulted prospective users so to continuously tailor
 
 <br>
 
-
 ### Sprint 1 - An Early Setback and The Ideation Process
 
 ##### 26th February – 5th March
-
 
 Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team, our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases. We organised a meeting at Desk 20 on Monday morning to discuss the matter and revisit the ideation process. We identified some key objectives for that week:
 
@@ -128,7 +129,7 @@ Once we had fully understood the project specification and met with everyone in 
   <li>Send out questionnaires to gauge market demand</li>
 </ul>
 
-With some creative thinking, we eventually came to the idea of Flocus. Gordon proposed the idea to the Asaqua team and fortunately, they were very keen to take on the proposed project with us. We gained some qualitative feedback on our initial proposal from our end-user group. This is displayed below:
+With some creative thinking, we eventually came to the idea of Flocus. Gordon proposed the idea to the ASAQUA team and fortunately, they were very keen to take on the proposed project with us. We gained some qualitative feedback on our initial proposal from our end-user group. This is displayed below:
 
 <br>
 <div align = "center">
@@ -153,7 +154,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
       <ul>
         <li>Liked the idea</li>
         <li>Concerned about it being distracting</li>
-        <li>Thought that it was important to be raising awarness for water scarcity</li>
+        <li>Thought that it was important to be raising awareness for water scarcity</li>
       </ul>
     </td>
   </tr>
@@ -161,7 +162,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
     <td>Toast</td>
     <td>
       <ul>
-        <li>Unsure if it would be well recieved by the market</li>
+        <li>Unsure if it would be well received by the market</li>
         <li>Was interested to give it a couple of weeks trial</li>
       </ul>
     </td>
@@ -170,10 +171,7 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
 </div>
 <br>
 
-Generally, we received enthusiastic responses to the idea with constructive critism often concerning the hurdles of implementation. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
-
-<br>
-
+Generally, we received enthusiastic responses to the idea with constructive criticism often concerning the hurdles of implementation. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
 
 ### Sprint 2 - Angular and API setup
 
@@ -190,13 +188,11 @@ To make a start, we held an initial development meeting to discuss the component
   <li>Review feedback from questionnaires</li>
 </ul>
 
-<br>
-
 ### Sprint 3 - Facebook API issues and Design Time
 
 ##### 26th March – 2nd April
 
-During the initial stages of development we were able to produce a preliminary design for the home component. This is displayed in the .gif below.
+During the initial stages of development, we were able to produce a preliminary design for the home component. This is displayed in the .gif below. 
 
 <br>
 <p align="center">
@@ -207,7 +203,7 @@ During the initial stages of development we were able to produce a preliminary d
 </p>
 <br>
 
-Whilst we continued the design of the study component, which was taking longer than expected, we offered the home page to the user group for feedback. We wanted to know if the home component was appropriately designed, given the aim and theme of the application. We recieved the following feedback:
+Whilst we continued the design of the study component, which was taking longer than expected, we offered the home page to the user group for feedback. We wanted to know if the home component was appropriately designed, given the aim and theme of the application. We received the following feedback: 
 
 <br>
 <div align = "center">
@@ -241,7 +237,7 @@ Whilst we continued the design of the study component, which was taking longer t
     <td>Toast</td>
     <td>
       <ul>
-        <li>Looks proffessionally done</li>
+        <li>Looks professionally done</li>
         <li>Was unsure if it sticks to the theme</li>
       </ul>
     </td>
@@ -250,7 +246,7 @@ Whilst we continued the design of the study component, which was taking longer t
 </div>
 <br>
 
-The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took constructive criticism onboard to pursue a design that fulfilled our project aims. Subsequent to this, we called a meeting to organise the following actions and events for the week ahead:
+The feedback from the user group generally hinted that we needed to head back to the drawing board. Although it was disappointing that our first attempt was not adequate for the users’ expectations, it was important that we took constructive criticism onboard to pursue a design that fulfilled our project aims. After this, we called a meeting to organise the following actions and events for the week ahead:
 
 <ul>
     <li>Adjust the Home component design to user group feedback</li>
@@ -272,8 +268,6 @@ However, as we progressed, we realised that there was another problem above the 
 </ul>
 
 After further research, it became clear that Facebook is strict and careful about letting other applications access their users’ data. Nonetheless, if the procedure provided is followed, there should be no problem when using their API. Facebook provide up to 2000 easy to use and configure test users that we utilised to test the app. The subsequent steps of the implementation were to follow the PassportJS documentation and tutorials online.
-
-<br>
 
 ### Sprint 4 - The Study Component and MongoDB
 
@@ -321,7 +315,7 @@ The front-end development process had seen success in the implementation of the 
     <td>Mr Water</td>
     <td>
       <ul>
-        <li>Their university room overlooks a road - they thought that the study component would create a calm enviroment to study in</li>
+        <li>Their university room overlooks a road - they thought that the study component would create a calm environment to study in</li>
         <li>Thought that the animations were slow and not distracting</li>
       </ul>
     </td>
@@ -330,7 +324,7 @@ The front-end development process had seen success in the implementation of the 
     <td>Toast</td>
     <td>
       <ul>
-        <li>Thought that it Looked proffessionally done</li>
+        <li>Thought that it Looked professionally done</li>
         <li>Was worried that they wouldn't know what to do if they had to use it</li>
       </ul>
     </td>
@@ -343,8 +337,6 @@ We found this feedback very encouraging as it mirrored the impact and theme that
 
 In the backend development, one of the key challenges in this sprint was to figure out the logic to correctly store data returned from Facebook with a well-thought-out data model. Not only did we have to ensure the data in our database is always up-to-date, but also to make the data model flexible and future-proof. We had not decided how other components will be interacting with the database at that time, so we went for the normalised approach even though we have a NoSQL database. During this sprint, we were mainly using Postman to test the functionality of Passport.js instead of connecting to the database instance right away, which can visualise the behaviour of the Passport.js and helped the developer to learn using it.
 
-<br>
-
 ### Sprint 5 - Bringing Things Together
 
 ##### 16th April - 23th April
@@ -356,15 +348,12 @@ Sprint 5 took us into the second half of our development process. We started to 
     <li>Learning Javascript for error handling and data processing</li>
     <li>Learning the process of calling an API request and getting the data on the frontend side</li>
     <li>Learning MongoDB functions to be able to connect and collect data from database</li>
-    <li>Include Asaqua page for user education and water scarcity awareness</li>
+    <li>Include ASAQUA page for user education and water scarcity awareness</li>
 </ul>
 
 The Facebook API implementation was nearly complete, although, there were a few related issues that needed to be addressed in Sprint 5. In terms of coding, the struggle was after we successfully implemented facebook’s API and were able to retrieve simple data from it, such as; the user’s name, the authentication token, and user’s Facebook id. However, when we tried to retrieve more complex data which, was in the form of an object, array, or an array inside an object, it was harder to achieve error handling. Error handling, in this case, is to take care of a null variable or array element. For instance, some people have data inside their friends’ array, but some do not. Some people also have a middle name, but some do not. This issue was far trickier to address than initially expected which was partially due to our lack of prior knowledge in Javascript. However, after doing further research, hands-on debugging, and contacting a helpful teaching assistant (shout out to Marceli), this problem no longer exists. 
 
 A further struggle was to implement a simple routing mechanism on Angular. Making Angular automatically route from the Login to the Home component once the user had successfully logged in via Facebook was challenging. Understanding and implementing the user status checker inside an Angular page/component was a struggle. However, Angular documentation and online forums such as Stack Overflow helped us troubleshoot this problem. 
-
-<br>
-
 
 ### Sprint 6 - The League Table and Databases
 
@@ -379,21 +368,21 @@ Sprint 6 marked the penultimate week of development and we realised that there w
     <li>Implementing data access from different components with the successful login status</li>
     <li>Check functionality of front-end with a variety of devices and with widely used browsers</li>
     <li>Launch our application on Heroku in preparation for the focus group participants</li>
-    <li>Receive feedback on the League table and Asaqua components from the User Group</li>
+    <li>Receive feedback on the League table and ASAQUA components from the User Group</li>
 </ul>
 
 During this sprint, we implemented most of the middle tier RESTful APIs, which are the bridges between the components and the database. The frontend components of our application do not directly access the APIs but through the Angular data service. Although we tested our RESTful APIs as Passport.js in the previous sprints, we struggled to pass the request body to the API through the Angular HTTP client. Whilst we were testing our get requests to the APIs with Postman, we passed a request body in JSON format to the API as parameters to the MongoDB Query. However, we did not realise that the Angular HTTP client does not support sending a request body, which causes the API to receive undefined values as the parameters. Eventually, we found a workaround to pass the necessary parameters as HTTP params via the data service. It took some time for our developers to figure out what was happening, so the related tasks in this sprint had a slight delay in delivery.
 
 After having the necessary APIs functioning as planned, the study and the league components required the successful login status given in the login process. They also need the UID as the key to the Record collection. We then created several more get requests to confirm the login status and retrieve the UIDs for those components. We also soon realized that just relying on the UID as a key to get the league table, which involves looping and sorting, was rather computationally complex (in the worst case the complexity is O(n^2n) which, might hinder our server’s reliability). Therefore, we reconstructed the MongoDB query to become multi-staged, leaving all the complex computation to MongoDB to speed up the data retrieval process.
 
-As for the front-end development, We did not want to trouble our user group too many times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the Asaqua and the League components. The draft designs that we presented are displayed below:
+As for the front-end development, we did not want to trouble our user group too many times and, as such, decided to only ask for their feedback once more. Considering that this would be our final feedback before we ran our closing focus group, we wanted to ensure that we presented a site that was as close to the final product as possible. Towards the end of Sprint 6, we asked for feedback on two components: the ASAQUA and the League components. The draft designs that we presented are displayed below:
 
 <br>
 
 <p align="center">
 <img src="../report/Images/old_Asaqua_comp.png" width=70%>
 </p>
-<b><p align= "center"> Figure 5: The Initial Asaqua Component</p></b>
+<b><p align= "center"> Figure 5: The Initial ASAQUA Component</p></b>
 
 <br>
 
@@ -415,8 +404,8 @@ As for the front-end development, We did not want to trouble our user group too 
     <td> Cheese </td>
     <td>
       <ul>
-        <li>Thought that the Asaqua page was clean and informative</li>
-        <li>Would have been nice to see a link to Asaqua</li>
+        <li>Thought that the ASAQUA page was clean and informative</li>
+        <li>Would have been nice to see a link to ASAQUA</li>
         <li>Commented on the league table, saying that the page felt incomplete</li>
         <li>Suggested another personal stats section on the league component</li>
       </ul>
@@ -426,7 +415,7 @@ As for the front-end development, We did not want to trouble our user group too 
     <td>Mr Water</td>
     <td>
       <ul>
-        <li>Thought that the Asaqua component did an important job - no further comments</li>
+        <li>Thought that the ASAQUA component did an important job - no further comments</li>
         <li>Really liked the league table page, although said that it looked slightly bare</li>
       </ul>
     </td>
@@ -435,8 +424,8 @@ As for the front-end development, We did not want to trouble our user group too 
     <td>Toast</td>
     <td>
       <ul>
-        <li>Asaqua page is good but could do with a link to the NGOs website</li>
-        <li>Suggested that we may need to provide more information on Asaqua</li>
+        <li>ASAQUA page is good but could do with a link to the NGOs website</li>
+        <li>Suggested that we may need to provide more information on ASAQUA</li>
         <li>Positively commented on the league table</li>
       </ul>
     </td>
@@ -446,9 +435,7 @@ As for the front-end development, We did not want to trouble our user group too 
 <br>
 <br>
 
-This feedback was pivotal in finalising our designs. As we moved into Sprint 7, we implemented the suggested changes by adding a link to the Asaqua page and providing more information on the NGO and it’s activities. We investigated the prospect of delivering further metrics for the personal stats area but unfortunately, we decided that we did not have enough remaining time given our current workload. Instead, we repurposed the code used in the log-in component for the lottie animation and placed this on the bottom left of the screen which, brought the page to a finished product. This was great feedback as it led as to furthering our goal of implementing serious play in our application. 
-
-<br>
+This feedback was pivotal in finalising our designs. As we moved into Sprint 7, we implemented the suggested changes by adding a link to the ASAQUA page and providing more information on the NGO and it’s activities. We investigated the prospect of delivering further metrics for the personal stats area but unfortunately, we decided that we did not have enough remaining time given our current workload. Instead, we repurposed the code used in the log-in component for the lottie animation and placed this on the bottom left of the screen which, brought the page to a finished product. This was great feedback as it led as to furthering our goal of implementing serious play in our application. 
 
 ### Sprint 7 - The Final Countdown
 
@@ -461,20 +448,23 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
     <li>Completion of testing from Sprint 6 </li>
     <li>Continue adapting code to our test results</li>
     <li>Hold a final focus group for our study participants to gain some insight into how well received the application is</li>
-    <li>Pass on any interesting findings from the focus group to Asaqua if adjustments cannot be made prior to the deadline</li>
+    <li>Pass on any interesting findings from the focus group to ASAQUA if adjustments cannot be made prior to the deadline</li>
 </ul>
 
-<br>
 <br>
 
 ## Team use of Git
 
 Our team created a remote repository on GitHub for collaboration and version control. The branches in our repository are the main branch and different personal branches. We used the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers had their personal feature branch, where we made frequent commits to achieve effective version control. Once the newly developed features were ready to merge with the production-ready working copy on the main branch, we submitted a pull request and informed the entire team about the incoming changes. Following this, all developers were able to pull from the latest version, review the code and test the latest working copy with Docker.
 
+In addition to the main and the personal branches, we had also added a ‘release’ branch for Heroku deployment. The ‘release’ branch would only merge with the main branch when it is ready for deployment. In the ‘release’ branch, the server.js and db.js are correspondingly updated to redirect the application from Facebook to the deployed application after login, and to connect to the cloud database service.
+
 <p align="center">
 <img src="../report/Images/git_diagram.png" width=70%>
 </p>
 <b><p align= "center"> Figure 7: Diagrammatical representation of our GitHub repository </p></b>
+
+<br>
 
 ## Project report navigation
 

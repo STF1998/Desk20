@@ -20,7 +20,7 @@ const league = require('./server/routes/league');
 const app = express();
 
 // Parsers for POST data
-app.use(session({ secret: 'desktwentyforthewin' }));
+app.use(session({ secret: process.env.SESSION_SECRET}));
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -37,8 +37,8 @@ app.use('/api/record', record);
 app.use('/api/league', league);
 
 passport.use(new facebookStrategy({
-  clientID: "498052027866336",
-  clientSecret: "5efc9fa04492574b0d5632d917432018",
+  clientID: process.env.FACEBOOK_CLIENT_ID,
+  clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
   callbackURL: "http://localhost:3000/facebook/callback",
   profileFields: ['id', 'friends', 'displayName', 'name', 'picture.type(large)']
 
@@ -46,6 +46,7 @@ passport.use(new facebookStrategy({
   function (token, refreshToken, profile, done) {
     process.nextTick(function () {
       User.findOne({ 'uid': profile.id }, function (err, user) {
+        
         if (err) {
           return done(err);
         }
@@ -82,7 +83,6 @@ passport.use(new facebookStrategy({
               newUser.friends.push(profile._json.friends.data[i].name);
             }
           }
-          console.log(user.profile);
           newUser.save(function (err) {
             if (err)
               throw err;
