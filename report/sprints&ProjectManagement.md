@@ -457,6 +457,8 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
 
 Our team created a remote repository on GitHub for collaboration and version control. The branches in our repository are the main branch and different personal branches. We used the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers had their personal feature branch, where we made frequent commits to achieve effective version control. Once the newly developed features were ready to merge with the production-ready working copy on the main branch, we submitted a pull request and informed the entire team about the incoming changes. Following this, all developers were able to pull from the latest version, review the code and test the latest working copy with Docker.
 
+In addition to the main and the personal branches, we had also added a ‘release’ branch for Heroku deployment. The ‘release’ branch would only merge with the main branch when it is ready for deployment. In the ‘release’ branch, the server.js and db.js are correspondingly updated to redirect the application from Facebook to the deployed application after login, and to connect to the cloud database service.
+
 <p align="center">
 <img src="../report/Images/git_diagram.png" width=70%>
 </p>
