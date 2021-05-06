@@ -4,47 +4,44 @@
 
 ## Contents of Evaluation
 
+- [**Overview of Evaluation**](#Overview-of-Evaluation)
 - [**Details of design evaluation**](#Details-of-design-evaluation)
+  - [Lessons learnt from front-end development](#Lessons-learnt-from-front-end-development)
+  - [Manual approach to testing](#Manual-approach-to-testing)
 - [**Unit/Functional testing**](#Unit/Functional-testing)
   - [Study component testing](#Study-component-testing)
+  - [Testing Priority and Sequence](#Testing-Priority-and-Sequence)
   - [Cross browser compatibility testing](#Cross-browser-compatibility-testing)
 - [**User acceptance testing**](#User-acceptance-testing)
-  - [Alpha testing](#Alpha-testing)
   - [Beta testing](#Beta-testing)
-
 
 ## Overview of Evaluation
 
 As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
 
 Gordon, Tom and Jati were responsible for testing the development and back-end. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
+
 </br>
 
 ## Details of design evaluation 
 
-### Lessons learnt from Front-end development
+### Lessons learnt from front-end development
 
  As previously discussed in our sprints and UX sections, we wanted to be customer-centric when approaching our design process. Continuous feedback from our end-user group (Cheese, Mr Water and Toast) facilitated consistent adaptation to customer requirements. We also felt that our initial questionnaire provided an early indication as to what our target audience is searching for in an application. Additionally, these early results provided insight into the potentially bad habits of our target audience and areas of improvement that we attempted to address. 
 
 Some crucial lessons from the front-end design of Flocus have been discussed below:
 
-<br>
-
 -	The ability to self-regulate
 
 Qualitative feedback can be very insightful and often provides advice that was never previously considered. It can also provide exciting and novel ideas – prospective end-users are, by nature, very needy and are always looking for the best from a potential product. The consequence of this is scope creep which, is the gradual growth in the scope of the project to an unrealistic size. Many in the group agree that this is certainly something that occurred too frequently. As such, it is crucial in these scenarios, to instil a degree of self-regulation to maintain a steady trajectory.
-
 
 -	Be evidence-led
 
 In the early sprints, front-end development often felt like a random walk – throwing multiple CSS animations and effects together to see if it produces something visually appealing. This approach was proven inept when evidence from Cheese’s and Mr Water’s initial feedback on the home component showcased the ability of the end-user to look through appealing designs. In an attempt to rectify the wrongs of our previously botched attempts at creating high fidelity designs, we turned to the scientific literature to provide an accurate representation of our project aims through the implementation of our designs. The consequence of this was a well thought-out and impactful study component that not only portrays the correct image for Flocus but also receives approval from prospective customers. 
 
-
 -	Beware of group thinking
 
 Although this point is short, we believe it is one of the most important. The quality of feedback in the development stage of a project is a valuable asset that can determine the final success or failure of that project. One key finding that we discovered during feedback sessions was that individual opinions often converged when in a group setting. In the future we hope to hold feedback sessions on a 1-to-1 basis.
-
-<br>
 
 ### Manual approach to testing
 
@@ -235,15 +232,15 @@ As we use Karma to test our application, the testing is run on the browser, allo
 
 ### Testing Priority and Sequence
 
-Alongside the manual testing, we also created automated unit testing, which allows the test to run
+Alongside manual testing, we also created automated unit testing, which allows the test to run
 on different browsers. The objective of the unit testing is to ensure our application is always running
-exactly as we planned on the supported browsers even after code refactorization and component rerouting. We set the priority of testing based on the following factors:
+exactly as we planned on the supported browsers even after code refactorisation and component rerouting. We set the priority of testing based on the following factors:
 
 Importance coefficient:
-• Top – 4
-• High – 3
-• Medium – 2
-• Low – 1
+- Very high – 4
+- High – 3
+- Average – 2
+- Low – 1
 
 <br>
 <p align="center">
@@ -279,15 +276,7 @@ We tested the study component on Safari but, on reflection, did not have a compr
 
 This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view Lottie animations when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing.
 
-
-# User testing
-
-Due to our target end user being the same demographic as every team member, we were fortunate to have abundance of possible end-users to test out Flocus on. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
-
-- Users can complete the main action of using the visual aid as a study tool
-- Users can navigate the pages easily 
-- Don't come across any significant bugs/errors
-- Have an enjoyable experience of Flocus
+<br> 
 
 ## User acceptance testing
 
@@ -330,6 +319,8 @@ Possible types of future user testing, include:
 - Further in house testing
 
 Please see the conclusion section to learn more about future evaluative technqiues.
+
+<br> 
 
 ## Project report navigation
 
