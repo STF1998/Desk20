@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\home",
-    "\\src\\app\\league"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\server.js",
+  "SelectedNode": "\\.env",
   "PreviewInSolutionExplorer": false
 }
