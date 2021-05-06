@@ -198,7 +198,7 @@ export class StudyComponent implements OnInit, OnDestroy {
       .set("uid", this.userid)
       .set("rangeStart", JSON.parse(JSON.stringify(dayStart)))
       .set("rangeEnd", JSON.parse(JSON.stringify(dayEnd)))
-      .set("timeSpentLower", this.studyTime.toString())
+      .set("timeSpentLower", (this.studyTime / 1000).toString())
       .set("timeSpentUpper", (this.studyTime / 1000).toString());
 
     this.DataService.getRecord(httpParams).subscribe(
