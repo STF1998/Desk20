@@ -318,7 +318,7 @@ Possible types of future user testing, include:
 - Heat map testing - help undersatnd how users move about the web page
 - Further in house testing
 
-Please see the conclusion section to learn more about future evaluative technqiues.
+Please see the [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md) section to learn more about future evaluative technqiues.
 
 <br> 
 
