@@ -33,5 +33,7 @@
 
 a:hover{
   transform: translateX(-3%);
+  -moz-transform: translateX(-3%);
+  -webkit-transform: translateX(-3%);
   color: #5c82b8;
 }
