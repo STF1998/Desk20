@@ -73,6 +73,9 @@ h1 {
 	animation: wobbleWobblewobble 60s infinite;
 }
 
+
+
+
 @keyframes wobble{
 	0% {transform: translate(0%, 0%); }
 	50% {transform: translate(-10%, -5%); }

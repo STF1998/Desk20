@@ -83,6 +83,7 @@ passport.use(new facebookStrategy({
               newUser.friends.push(profile._json.friends.data[i].name);
             }
           }
+
           newUser.save(function (err) {
             if (err)
               throw err;
@@ -200,7 +201,7 @@ app.get('/logout', isLoggedIn, function (req, res) {
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/dashboard/index.html')); 
 });
 
 
