@@ -251,6 +251,12 @@ The study component uses a service to retrieve data from the database. To preven
 </p>
 <b><p align= "center">Figure 1: Testing of some of the most critical functionalities of the study page.</p></b>
 
+Despite the limited unit testing, we manually tested the components before integrating it with the
+rest of the application. We mainly used console.log to display values during runtime, which allows us
+to ensure all the methods are functioning as expected. For the APIs and services, we used Postman
+to test the functionality and manually checked their store and retrieve the right data from the
+database during runtime.
+
 #### Further testing to be done on the Study Component
 
 As we use Karma to test our application, the testing is run on the browser, allowing us to test the runtime behaviour of different features on different browsers. To deliver a consistent cross-browser user experience, it would be ideal to test the animations including the filling up and emptying-out processes.
