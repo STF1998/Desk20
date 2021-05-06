@@ -57,6 +57,7 @@ Due to the COVID-19 pandemic, our team has been working from home throughout the
 <b><p align= "center"> Figure 3: Our Discord Chat Setup </p></b>
 
 The above image displays our discord chat set-up. Initially, all project discussion took place in the general chat. However, once we upped the tempo of work and thus the frequency of chatter, important messages quickly became lost amid the daily discussions. After spending longer than needed searching for a previous message, Hugh, Flocus front-end developer, set-up separate chat rooms and the whole group endeavoured to stick to a strict chatroom regime. This also helped us to cut down on procrastinating chat.
+
 <br>
 
 ## Meet The Team
@@ -101,6 +102,8 @@ The above image displays our discord chat set-up. Initially, all project discuss
 </table>
 <br>
 
+<br>
+
 ## The Sprints Documentation
 
 Throughout development, we consulted prospective users so to continuously tailor our design. At the end of each sprint, we received feedback from these individuals on our previous progress and adapted our development in response to their constructive criticisms. For ethical reasons, we cannot provide any personally identifiable information, although we have included their feedback and our subsequent development responses at the end of each section. For reference, we have provided these individuals’ personal choice of nickname: 
@@ -113,11 +116,9 @@ Throughout development, we consulted prospective users so to continuously tailor
 
 <br>
 
-
 ### Sprint 1 - An Early Setback and The Ideation Process
 
 ##### 26th February – 5th March
-
 
 Once we had fully understood the project specification and met with everyone in our group (albeit virtually), we started the ideation process. We were eager to work with an external partner as we hoped to convert the upcoming project into a real-world application. We had the initial idea of working with Ecosia, the eco-friendly search-engine seeking to tackle deforestation and climate change. However, after being in communication with their team, our hopes of working with them quickly faded as they were unable to designate resources to onboard us with their databases. We organised a meeting at Desk 20 on Monday morning to discuss the matter and revisit the ideation process. We identified some key objectives for that week:
 
@@ -172,9 +173,6 @@ With some creative thinking, we eventually came to the idea of Flocus. Gordon pr
 
 Generally, we received enthusiastic responses to the idea with constructive critism often concerning the hurdles of implementation. We noted the feedback regarding UX and distraction and, designed the upcoming study component to address these concerns. 
 
-<br>
-
-
 ### Sprint 2 - Angular and API setup
 
 ##### 19th March – 26th March
@@ -189,8 +187,6 @@ To make a start, we held an initial development meeting to discuss the component
   <li>Set-up the general environment: Connect express with docker and MongoDB</li>
   <li>Review feedback from questionnaires</li>
 </ul>
-
-<br>
 
 ### Sprint 3 - Facebook API issues and Design Time
 
@@ -273,8 +269,6 @@ However, as we progressed, we realised that there was another problem above the 
 
 After further research, it became clear that Facebook is strict and careful about letting other applications access their users’ data. Nonetheless, if the procedure provided is followed, there should be no problem when using their API. Facebook provide up to 2000 easy to use and configure test users that we utilised to test the app. The subsequent steps of the implementation were to follow the PassportJS documentation and tutorials online.
 
-<br>
-
 ### Sprint 4 - The Study Component and MongoDB
 
 ##### 9th April - 16th April
@@ -343,8 +337,6 @@ We found this feedback very encouraging as it mirrored the impact and theme that
 
 In the backend development, one of the key challenges in this sprint was to figure out the logic to correctly store data returned from Facebook with a well-thought-out data model. Not only did we have to ensure the data in our database is always up-to-date, but also to make the data model flexible and future-proof. We had not decided how other components will be interacting with the database at that time, so we went for the normalised approach even though we have a NoSQL database. During this sprint, we were mainly using Postman to test the functionality of Passport.js instead of connecting to the database instance right away, which can visualise the behaviour of the Passport.js and helped the developer to learn using it.
 
-<br>
-
 ### Sprint 5 - Bringing Things Together
 
 ##### 16th April - 23th April
@@ -362,9 +354,6 @@ Sprint 5 took us into the second half of our development process. We started to 
 The Facebook API implementation was nearly complete, although, there were a few related issues that needed to be addressed in Sprint 5. In terms of coding, the struggle was after we successfully implemented facebook’s API and were able to retrieve simple data from it, such as; the user’s name, the authentication token, and user’s Facebook id. However, when we tried to retrieve more complex data which, was in the form of an object, array, or an array inside an object, it was harder to achieve error handling. Error handling, in this case, is to take care of a null variable or array element. For instance, some people have data inside their friends’ array, but some do not. Some people also have a middle name, but some do not. This issue was far trickier to address than initially expected which was partially due to our lack of prior knowledge in Javascript. However, after doing further research, hands-on debugging, and contacting a helpful teaching assistant (shout out to Marceli), this problem no longer exists. 
 
 A further struggle was to implement a simple routing mechanism on Angular. Making Angular automatically route from the Login to the Home component once the user had successfully logged in via Facebook was challenging. Understanding and implementing the user status checker inside an Angular page/component was a struggle. However, Angular documentation and online forums such as Stack Overflow helped us troubleshoot this problem. 
-
-<br>
-
 
 ### Sprint 6 - The League Table and Databases
 
@@ -448,8 +437,6 @@ As for the front-end development, We did not want to trouble our user group too 
 
 This feedback was pivotal in finalising our designs. As we moved into Sprint 7, we implemented the suggested changes by adding a link to the Asaqua page and providing more information on the NGO and it’s activities. We investigated the prospect of delivering further metrics for the personal stats area but unfortunately, we decided that we did not have enough remaining time given our current workload. Instead, we repurposed the code used in the log-in component for the lottie animation and placed this on the bottom left of the screen which, brought the page to a finished product. This was great feedback as it led as to furthering our goal of implementing serious play in our application. 
 
-<br>
-
 ### Sprint 7 - The Final Countdown
 
 ##### 30th April - 7th May
@@ -465,7 +452,6 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
 </ul>
 
 <br>
-<br>
 
 ## Team use of Git
 
@@ -475,6 +461,8 @@ Our team created a remote repository on GitHub for collaboration and version con
 <img src="../report/Images/git_diagram.png" width=70%>
 </p>
 <b><p align= "center"> Figure 7: Diagrammatical representation of our GitHub repository </p></b>
+
+<br>
 
 ## Project report navigation
 
