@@ -17,9 +17,9 @@
 
 ## Overview of Evaluation
 
-As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP we split into two sub teams to focus on different areas of testing and evaluation. 
+As a team we were very eager to all have a part to play in testing and evaluating both the design and development of Flocus. While we had on-going testing and evaluation of the design and development throughout the sprints, as we approached our finished MVP, we split into two sub teams to focus on different areas of testing and evaluation. 
 
-Gordon, Tom and Jati were responsible for testing the development and back-end. Sam and Hugh were resposible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP.
+Gordon, Tom and Jati were responsible for testing the development and back-end. Sam and Hugh were responsible for user testing and a focus towards ensuring the design and UX of Flocus was sufficient for an MVP. 
 
 </br>
 
@@ -33,28 +33,28 @@ Some crucial lessons from the front-end design of Flocus have been discussed bel
 
 -	The ability to self-regulate
 
-Qualitative feedback can be very insightful and often provides advice that was never previously considered. It can also provide exciting and novel ideas – prospective end-users are, by nature, very needy and are always looking for the best from a potential product. The consequence of this is scope creep which, is the gradual growth in the scope of the project to an unrealistic size. Many in the group agree that this is certainly something that occurred too frequently. As such, it is crucial in these scenarios, to instil a degree of self-regulation to maintain a steady trajectory.
+Qualitative feedback can be very insightful and often provides advice that was never previously considered. It can also provide exciting and novel ideas – prospective end-users are, by nature, very needy and are always looking for the best from a potential product. The consequence of this is scope creep which, is the gradual growth in the scope of the project to an unrealistic size. Many in the group agree that this is certainly something that occurred too frequently. As such, it is crucial in these scenarios, to instill a degree of self-regulation to maintain a steady trajectory. 
 
 -	Be evidence-led
 
-In the early sprints, front-end development often felt like a random walk – throwing multiple CSS animations and effects together to see if it produces something visually appealing. This approach was proven inept when evidence from Cheese’s and Mr Water’s initial feedback on the home component showcased the ability of the end-user to look through appealing designs. In an attempt to rectify the wrongs of our previously botched attempts at creating high fidelity designs, we turned to the scientific literature to provide an accurate representation of our project aims through the implementation of our designs. The consequence of this was a well thought-out and impactful study component that not only portrays the correct image for Flocus but also receives approval from prospective customers. 
+In the early sprints, front-end development often felt like a random walk – throwing multiple CSS animations and effects together to see if it produces something visually appealing. This approach was proven inept when evidence from Cheese’s and Mr Water’s initial feedback on the home component highlighted the ability of the end-user to look through appealing designs. To rectify the wrongs of our previously botched attempts at creating high fidelity designs, we turned to the scientific literature to provide an accurate representation of our project aims through the implementation of our designs. The consequence of this was a well thought-out and impactful study component that not only portrays the correct image for Flocus but also receives approval from prospective customers. 
 
 -	Beware of group thinking
 
-Although this point is short, we believe it is one of the most important. The quality of feedback in the development stage of a project is a valuable asset that can determine the final success or failure of that project. One key finding that we discovered during feedback sessions was that individual opinions often converged when in a group setting. In the future we hope to hold feedback sessions on a 1-to-1 basis.
+Although this point is short, we believe it is one of the most important. The quality of feedback in the development stage of a project is an asset that can determine the final success or failure of that project. One key finding that we discovered during feedback sessions was that individual opinions often converged when in a group setting. In the future we hope to hold feedback sessions on a 1-to-1 basis. 
 
 ### Manual approach to testing
 
- Due to our target end user being the same demographic as every team member, we were fortunate to have an abundance of possible end-users to test out Flocus. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points:
+Due to our target end user being the same demographic as every team member, we were fortunate to have an abundance of end-users to test out Flocus. When setting out our usability and design testing plan, we wanted to focus on ensuring we had tested the following key points: 
 
-- Users can complete the main action of using the visual aid as a study tool
-- Users can navigate the pages easily 
-- Don't come across any significant bugs/errors
-- Have an enjoyable experience of Flocus
+- Users can complete the main action of using the visual aid as a study tool.
+- Users can navigate the pages easily.
+- Do not come across any significant bugs/errors.
+- Have an enjoyable experience of Flocus.
 
-Throughout the development process, Sam and Hugh focused on building and running Flocus to ensure there were no bugs in the code by testing out manual scenarios. As we approached the end of the development sprints, Hugh and Sam worked together to devise several possible user scenarios and flows from the landing page. These test cases were based off the user stories/personas created when designing the front-end. 
+Throughout the development process, Sam and Hugh focused on building and running Flocus to ensure there were no bugs in the code by testing out manual scenarios. As we approached the end of the development sprints, Hugh and Sam worked together to devise several user scenarios and flows from the landing page. These test cases were based off the user stories/personas created when designing the front-end. 
 
-Please see below a table summarising some of the key user test cases along with pass/fail:
+Please see below a table summarising some of the key user test cases along with pass/fail: 
 
 <br>
 <table>
@@ -157,7 +157,7 @@ Please see below a table summarising some of the key user test cases along with 
 <tr>
   <td> 5.1 </td>
   <td> ASAQUA page </td>
-  <td> Ensure the the text about Flocus and ASAQUA is readable - i.e. font, font size and colour. </td>
+  <td> Ensure the text about Flocus and ASAQUA is readable - i.e. font, font size and colour. </td>
   <td> Pass </td>
 </tr>
 <tr>
@@ -170,29 +170,30 @@ Please see below a table summarising some of the key user test cases along with 
 <br>
 
 This helped pick up minor bugs which, we have since fixed. These include:
-- Issues with the glass filling up animation
-- Issues with the font and size of some of the text on the about page
-- Compatability issues with browsers focused on loading the lottie animations correctly. Specifically, the user agent in the league component was detecting Chrome as Safari.
 
-As outlined above, one area that was also picked up was the compatability with different browsers and was included as part of the key areas of functional testing below.
+- Issues with the glass filling up animation.
+- Issues with the font and size of some of the text on the about page.
+- Compatibility issues with browsers focused on loading the lottie animations correctly. Specifically, the user agent in the league component was detecting Chrome as Safari.
 
-With pre-planned ethical analysis and approval, we would have liked to include the following in future evaluative technqiues:
+As outlined above, one area that was also picked up was the compatibility with different browsers and was included as part of the key areas of functional testing below.
 
-#### Questionaires
+With pre-planned ethical analysis and approval, we would have liked to include the following in future evaluative techniques: 
 
-If we had the time and resources, we would have liked to undertake comprehensive questionaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students and working professionals. 
+#### Questionnaires
 
-These questionaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionaires are a great opportunity to ask a range of closed and open questions.
+If we had the time and resources, we would have liked to undertake comprehensive questionnaires. These would have been used to evaluate user pathways and UX impressions with a focus on collecting data from a wide range of demographics, including students, and working professionals. 
+
+These questionnaires are perfect for collecting a broad range of qualitative and quantitative data with diverse demographic and user opinions. Questionnaires are a fantastic opportunity to ask a range of closed and open questions. 
 
 #### Interviews
 
-We'd also like to organise one-to-one interviews with potential end-users to understand their opinions regarding user flows and the design of Flocus.
+We would also like to organise one-to-one interviews with potential end-users to understand their opinions regarding user flows and the design of Flocus. 
 
-Due to the nature of interviews, the interviewer is able to ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data although we would have explored opinions as they come up in the interviews. Questionaires allow for a more structured data collection. These combined technqiues allow for collection and analysis of diverse qualitative and quantitaive data. 
+Due to the nature of interviews, the interviewer can ask direct questions about the usability and how users interact with Flocus. We would have followed a semi-structured framework to ensure we collect the required data although we would have explored opinions as they come up in the interviews. Questionnaires allow for a more structured data collection. These combined techniques allow for collection and analysis of diverse qualitative and quantitative data.  
 
 Other areas to explore for future work:
 
-- Controlled experiments - Flocus team compare user's interaction with Flocus and it's close competitiors. 
+- Controlled experiments - Flocus team compare user's interaction with Flocus and its close competitiors. 
 - Automated usability tools - with further knowledge and experience we would have liked to integrate useful plugins, such as bugsnag and hotjar, and use tools such as USEful to automate testing of usability. 
 
 For future ideas around design testing and evaluation, please see our [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md).
@@ -203,8 +204,7 @@ For future ideas around design testing and evaluation, please see our [conclusio
 
 When developing any software, it is key to consider testing to pick up any bugs or errors in the software code. When developing a single page application with a clear focus on user experience, functional testing is key to avoid a degradation in user experience. 
 
-Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors they may not trust the organisation to store important data i.e. in our example it is handling their facebook details but in future development this could include payment data. Therefore, testing is critical to software success, particularly with a single page application focused on user experience. 
-
+Often a user will be put off by the simplest of bugs. There is a level of trust between the user and organisation; if they come across errors, they may not trust the organisation to store important data i.e., in our example it is handling their Facebook details but in future development this could include payment data. Therefore, testing is critical to software success, particularly with a single page application focused on user experience. 
 
 ### Testing Priority and Sequence
 
@@ -237,15 +237,11 @@ Progress thus far:
 
 The primary objective of the study component is to time a ‘study session’ and, as such, it is crucial to guarantee the timer is working accurately and storing data correctly to keep track of a user’s performance. Due to the time limitation, we were not able to implement testing on all units within the components. Instead, we focused on the units that offer the most important functionality, namely:
 
-- Retrieving the user ID correctly from the data service
-
-- Loading the the correct user’s record data to display
-
-- Starting the timer and timing accurately after clicking the button
-
-- Correctly saving user’s record on time is up
-
-- Correctly saving user’s record on destroy
+- Retrieving the user ID correctly from the data service.
+- Loading the correct user’s record data to display.
+- Starting the timer and timing accurately after clicking the button.
+- Correctly saving user’s record on time is up.
+- Correctly saving user’s record on destroy.
 
 The study component uses a service to retrieve data from the database. To prevent this database service from being called during testing, we have used Jasmine helper to create spies that return fake values, which are ‘expected’ in testing.
 
@@ -278,23 +274,23 @@ We wanted to ensure that prospective users are not restricted to use a specific 
 
 We tested the study component on Safari but, on reflection, did not have a comprehensive approach to continuous testing in this browser. As such, during Sprint 6 when our front-end developers ran manual cross-compatibility tests, we identified a potential issue with our application – when a Cascading Style Sheet animation is triggered on the same page as a Lottie animation, the animation will glitch and flicker. This did not produce a complete deterioration in functionality but, drastically impedes the experience (glitchy applications can be very frustrating for the user).
 
-This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto Asaqua for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view the League table Lottie animation when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing and meant that we have covered <a href = "https://gs.statcounter.com/browser-market-share">90% of the world's internet users</a> when using their favoured browser. However, This is not to say that other browser will not support our application.
+This error is frequently reported in forums and is displayed when accessing the Lottie page via Safari. We have passed the relevant information onto ASAQUA for future adjustment when Safari or Lottie resolves this matter. Generally, we wanted to avoid browser detection via user agents but, on this unique occasion it has been justified and users will be unable to view the League table Lottie animation when using the Safari browser. This intervention has ensured that our application has been proven cross-compatible with the popular four browsers in our manual testing and meant that we have covered <a href = "https://gs.statcounter.com/browser-market-share">90% of the world's internet users</a> when using their favoured browser. However, This is not to say that other browser will not support our application.
 <br> 
 
 ## User acceptance testing
 
 ### Beta testing
 
-As part of our user acceptance testing, we undertook field testing with real end-users. However, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers across Zoom. Focus groups are a great method to help understand user experiences and opinions of web applications. However, in the future we advise combining focus groups with interviews and questionairres to help avoid groupthink.
+As part of our user acceptance testing, we undertook field testing with real end-users. However, due to limited ethical approval and time restraints, we ran a single focus group with 8 friends and peers across Zoom. Focus groups are a great method to help understand user experiences and opinions of web applications. However, in the future we advise combining focus groups with interviews and questionnaires to help avoid groupthink. 
 
-To ensure these individuals remained anonymous and we abide by ethical guidelines, we did not record or ask for any personal data from those involved in the focus group. Instead, we took written observation notes and asked individuals to anonymously add to a Lucidchart to help develop a version of an affinity chart.
+To ensure these individuals remained anonymous and we abide by ethical guidelines, we did not record or ask for any personal data from those involved in the focus group. Instead, we took written observation notes and asked individuals to anonymously add to a Lucidchart to help develop a version of an affinity chart. 
 
 The focus group focused on the following areas:
 - thoughts on aesthetics of the web application
 - possible user scenarios
 - user walkthroughs
 
-By focusing on the above areas, it made it easier to find bugs and share anonymous opinions about the design and implementation of Flocus. To enable an effective and efficent focus group, we launched a live version of Flocus through Heroku. To allow our users to access our application from the public domain, we used the Heroku node.js hosting platform to deploy the application for beta testing. Since we were already using Docker to test our application during development, we just had to push our Docker image to Heroku, which is run on its dynos container just like in our Docker container. In addition, we replaced the Docker mount volume with the MongoDB Atlas DBaaS for the database, which is accessible from the public domain and stores testing data persistently. Then, we randomly distributed some Facebook testing accounts to our users, allowing them to use our application on their computer anonymously. We allowed the users three days to test and try out our application.
+By focusing on the above areas, it made it easier to find bugs and share anonymous opinions about the design and implementation of Flocus. To enable an effective and efficient focus group, we launched a live version of Flocus through Heroku. To allow our users to access our application from the public domain, we used the Heroku node.js hosting platform to deploy the application for beta testing. Since we were already using Docker to test our application during development, we just had to push our Docker image to Heroku, which is run on its dynos container just like in our Docker container. In addition, we replaced the Docker mount volume with the MongoDB Atlas DBaaS for the database, which is accessible from the public domain and stores testing data persistently. Then, we randomly distributed some Facebook testing accounts to our users, allowing them to use our application on their computer anonymously. We allowed the users three days to test and try out our application. 
 
 After completing user walkthroughs, which has motivated some minor changes as listed in the sprints section and the future development section, we then asked the focus group to contribute to an affinity diagram on the strengths and weaknesses of Flocus. 
 
@@ -307,21 +303,21 @@ Please see below the affinity diagram using Lucidchart:
 
 The key improvement points identified from the focus group, include the following:
 
-- greater personalisation with ability to select work time
-- ability to be in the league table with their friends
-- timer alongside glass to help know time instead of guessing
-- Facebook logout button missing
+- greater personalisation with ability to select work time.
+- ability to be in the league table with their friends.
+- timer alongside glass to help know time instead of guessing.
+- Facebook logout button missing.
 
 #### Future methods
 
 Possible types of future user testing, include:
 
 - Surveys - help understand user experience.
-- A/B testing - experiemtn with different versions
-- Heat map testing - help undersatnd how users move about the web page
-- Further in house testing
+- A/B testing - experiment with different versions.
+- Heat map testing - help understand how users move about the web page.
+- Further in-house testing.
 
-Please see the [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md) section to learn more about future evaluative technqiues.
+Please see the [conclusion](https://github.com/STF1998/Desk20/blob/main/report/conclusion.md) section to learn more about future evaluative techniques.
 
 <br> 
 
