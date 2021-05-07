@@ -3,9 +3,6 @@
 
 <h2 align="center"> Solving procrastination and raising awareness for water scarcity, one glass at a time! </h2>
 
-
-https://github.com/STF1998/Desk20/blob/main/A%20Short%20Demo.mov
-
 ## Our Product
 
 Flocus is a single-page application (SPA) that aims to combat procrastination for university students studying on devices while raising awareness for the critical world issue of water scarcity. Our application uses a visual aid of a glass-fill animation as students work. The work schedule follows the principles of the Pomodoro technique, allowing users to work for 25 minutes followed by a short break. In this break, users will have the opportunity to learn more about water scarcity and ASAQUA, a charity that is working to improve water scarcity in developing nations.
