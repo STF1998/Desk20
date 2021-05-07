@@ -22,7 +22,7 @@ When starting this project, our team had little knowledge or understanding of si
 
 #### Single page applications
 
-Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience [[1](#Reference-List)]. A single-page application is a webpage that updates dynamically on each user’s action which, increases responsiveness and user satisfaction [[2](#Reference-List)]. The architecture of a single page application often consists of the following features [[3](#Reference-List)]:
+Over the past decade, the field of application development has seen significant growth and innovation with the acceleration of development technologies. Single-page applications have become increasingly popular with expanding reach and enhanced user experience [[1](#Reference-List)]. A single-page application is a webpage that updates dynamically on each user’s action which increases responsiveness and user satisfaction [[2](#Reference-List)]. The architecture of a single page application often consists of the following features [[3](#Reference-List)]:
 
 - Web interface: Interaction between user and web server 
 
@@ -37,7 +37,7 @@ Over the past decade, the field of application development has seen significant 
 
 #### Serious play
 
-The methodology of Serious Play, an innovative approach to exploring complex issues with the use of playful techniques to engage audiences, was developed by the CEO (Chief Executive Officer) of Lego, Kjeld Kirk Kristiensen, alongside two academic professors at IMD Business School, Bart Victor and Johan Roos. When the above first produced Serious Play, it was intended to be used in corporate sectors generating greater engagement through imaginative and playful approaches to solving business problems [[4](#Reference-List)]. However, since then Serious Play has developed into a core set of activities and processes which integrate both innovative and creative techniques [[5](#Reference-List)]. In recent times, the Serious Play process has been applied to the software development industry with the concept being used as part of design thinking to be more productive and innovative in solving problems [[6](#Reference-List)]. Overall, the Serious Play aspect will be utilised throughout our design and implementation of a single-page web application.
+The methodology of Serious Play, an innovative approach to exploring complex issues with the use of playful techniques to engage audiences, was developed by the CEO (Chief Executive Officer) of Lego, Kjeld Kirk Kristiensen, alongside two academic professors at IMD Business School, Bart Victor and Johan Roos. When the above first produced Serious Play, it was intended to be used in corporate sectors generating greater engagement through imaginative and playful approaches to solving business problems [[4](#Reference-List)]. However, since then Serious Play has developed into a core set of activities and processes which integrate both innovative and creative techniques [[5](#Reference-List)]. In recent times, the Serious Play process has been applied to the software development industry with the concept being used as part of design thinking to be more productive and innovative in solving real-world problems [[6](#Reference-List)]. Overall, the Serious Play aspect will be utilised throughout our design and implementation of a single-page web application.
 
 
 #### Procrastination
@@ -57,7 +57,7 @@ Having researched procrastination tools, our team identified the Pomodoro techni
 4.	Then enjoy a five-minute break.
 5.	After four Pomodoro’s, take a longer, more restorative 15 to 30 minute break.
 
-Learn more about the Pomodoro technique at this [link](https://francescocirillo.com/pages/pomodoro-technique)!
+Learn more about the Pomodoro technique at this [link](https://francescocirillo.com/pages/pomodoro-technique).
 
 Having singled out the Pomodoro technique as a key tool to combat procrastination, we quickly identified existing applications that are based on the technique. These web applications can be seen below in the following section.
 
@@ -69,7 +69,7 @@ Having identified the procrastination tools as the area of focus, the team then 
 
 ### Current industry review
 
-Having agreed that we would like to build a single page application inspired by the Pomodoro technique, we set about researching and analysing current existing web applications on the market that utilise the Pomodoro technique to help reduce procrastination and improve student productivity.
+Having agreed that we would like to build a single page application inspired by the Pomodoro technique, we set about researching and analysing current existing web applications on the market that utilise the Pomodoro technique to help reduce procrastination and improve productivity.
 
 #### Pomofocus 
 
@@ -260,13 +260,11 @@ Easy-to-use web-based Pomodoro timer.
 
 Based on current market research, we identified the following market gaps and places for improvement for online procrastination tools inspired by the Pomodoro technique: 
 
-- Lack of visual aid - sole focus on a clock timer. 
+- Lack of visual aid and animations with a sole focus on a clock timer. 
 
 - Very few had the ability to see statistics compared to friend's work/study behaviours. 
 
 - None had a social enterprise aspect or links with a charity or charitable organisation. 
-
-- Lack of animations and visual aids. 
 
 <br>
 
@@ -278,21 +276,21 @@ The problem we aim to solve is procrastination in university student populations
 
 #### Conceptual scope
 
-With the use of a visual aid of a glass filling up, our aim is to create a SPA (single page application) that helps reduce procrastination and provides an insight into the critical issue of water scarcity in underdeveloped nations through the work of Asaqua. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer and a competitive aspect by using league tables. We have the theme of water running through our application with a link to water scarcity and the work Asaqua does to help improve this in underdeveloped nations. 
+With the use of a visual aid of glass-fill animation, our aim is to create a SPA (single page application) that helps reduce procrastination and provides an insight into the critical issue of water scarcity in underdeveloped nations through the work of ASAQUA. We have focused on providing a simple but effective solution to reducing procrastination with a visual aid as a timer and a competitive aspect by using league tables between Facebook friends. We have the theme of water running through our application given the link to water scarcity and the work ASAQUA does to help improve this in underdeveloped nations. 
 
-Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but, provides an insight into the work Asaqua does to help improve water scarcity. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in university student populations. 
+Our application is a useful tool that not only provides a solution to help reduce procrastination and increase work productivity but provides an insight into the work ASAQUA does to help improve water scarcity. Thus, our application looks to raise awareness for water accessibility while also provoking changes in studying behaviours in university student populations. 
 
 - For procrastination, we are aiming to provoke a change in behaviour by using a visual aid to help students/employees ensure they are focused on their work and not being distracted by other factors.  
 
 - For Asaqua, we are looking to raise awareness for a critical issue around water scarcity in underdeveloped nations. 
  
-Our initial demographic group is students aged 16-24 including school and university students. We realise there is scope to extend this out to employees to help those working from home and tracking their work concentration however given the short timeline of this project we have decided to focus on the demographic we understand the best given we are students ourselves. 
+Our initial demographic group is students aged 18-24, including university students. We realise there is scope to extend this out to professional workers to help those working from home and tracking their work concentration. However, given the short timeline of this project, we decided to focus on the demographic we understand the best given we are students ourselves. 
 
 #### Technical scope
 
-Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the Front-end. The primary reason for this split was the ambition to use the external Facebook API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs (application programming interfaces), having three individuals working on these tasks helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
+Prior to the start of the development sprints, we had gained a broad understanding of the challenges that lay ahead and were therefore able to allocate project roles. We opted for a 3:2 split with three members (Jati, Gordon and Tom) responsible for back-end and two members (Sam and Hugh) responsible for the front-end. The primary reason for this split was the ambition to use the external Facebook-API in our project implementation. We expected there to be big challenges with the set-up of our database and APIs (application programming interfaces), thus having three individuals working on these tasks helped the process. Additionally, having two group members on the front-end enabled us to perfect the user experience and focus on our user group feedback. 
 
-When we embarked on this challenge, most of us were novices when it came to web-development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2 Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs (Teaching assistants), course peers and online forums, we were confident that the project was achievable. 
+When we embarked on this challenge, most of us were novices when it came to web development. Both Hugh and Gordon had previous experience in creating websites for their businesses and charities (H2 Nutrition and Asaqua, respectively) but little experience with projects of this scope. As with most projects, the ideation process often provided exciting concepts that were far beyond our reach. Hugh and Gordon, with their prior experience, offered good guidance to mitigate an over-ambitious scope. We believe that we selected an ambitious MVP to implement but, given the level of support offered by TAs (Teaching assistants), course peers and online forums, we were confident that the project was achievable. 
 
 One of the primary aims, procrastination reduction, is a goal that is very difficult to achieve. Social media, persuasive advertisements, and other interesting digital distractions are working against us in trying to reach this outcome. To be able to convince the final markers, end-users, and focus group participants of our concept, we had to produce an environment that was enjoyable, distraction-free and offered genuine benefits for reducing procrastination. For this, front end-development was crucial. We also wanted to be able to display Flocus’s power to encourage interaction and competition and as such, the back-end also had to be highly functional. To achieve the desired level of functionality, we had to implement a live dataset that is easily accessible by users.
 
@@ -312,11 +310,11 @@ Say an individual, that goes by the name of John Doe, is plagued by procrastinat
 
 ### Challenges
 
-Given limited resources and time restraints, the biggest challenge of this project has been effectively creating an MVP (minimum viable product) that is a tool to help reduce procrastination but also raises awareness for a critical issue in water scarcity and the work Asaqua does to improve water accessibility in underdeveloped countries. 
+Given limited resources and time restraints, the biggest challenge of this project has been effectively creating an MVP (minimum viable product) that is a tool to help reduce procrastination but also raises awareness for a critical issue in water scarcity and the work ASAQUA does to improve water scarcity in underdeveloped countries. 
 
-For the front-end, the biggest challenge has been building and integrating slick animations to portray the theme of water but also a visual aid as a timer.  
+For the front-end, the biggest challenge will be building and integrating slick animations to portray the theme of water but also a visual aid as a timer.  
 
-For the backend, the biggest challenge has been integrating the Facebook-API and selecting the data to be displayed on the webpage as part of the league table. 
+For the back-end, the biggest challenge will be integrating the Facebook-API and selecting the data to be displayed on the webpage as part of the league table aspect. 
 
 <br>
 
