@@ -24,15 +24,11 @@
 
 We formed a matrix with our top ideas of critical world issues and gamification ideas. Together we devised our top 5 ideas integrating a game aspect and solving a critical world issue. These included: 
 
-- Farm your own forest. The fight against deforestation.  
-
-- Visualisation of how sea levels are rising in certain areas with predictions for next decade. 
-
-- Gambling page - that donates to charities.
-
-- Interactive timer with competition between friends to help reduce procrastination. 
-
-- Shoot all the big tycoons who are dominating fast fashion. 
+1. Farm your own forest. The fight against deforestation.
+2. Visualisation of how sea levels are rising in certain areas with predictions for next decade. 
+3. Gambling page that donates to charities.
+4. Interactive timer with competition between friends to help reduce procrastination. 
+5. Shoot all the big tycoons who are dominating fast fashion. 
 
 Based on our own experiences, our teams’ competitive side and Gordon's existing work with an NGO (non-governmental organisation) focused on improving water scarcity, we decided to build a project idea around procrastination, competition with friends and water accessibility. We started developing ideas around how we could reduce procrastination with the use of interval times and by taking inspiration from the Pomodoro technique. Alongside this, our team focused on how to incorporate a focus on reducing procrastination with the theme of raising awareness for water accessibility. We decided that we wanted to create an interactive animation around water and displaying competitive statistics between friends. This led to our punch line of: 
 
@@ -40,7 +36,7 @@ Based on our own experiences, our teams’ competitive side and Gordon's existin
 
 ### Mood board
 
-Given the situation caused by the COVID-19 pandemic, we decided to create an online mood board using lucid chart allowing us to pull together our ideas around textures, colours, art, photos, typography, patterns, and shapes. At this stage, we were starting to narrow down the specifics of our idea while working out what was feasible. 
+Given the situation caused by the COVID-19 pandemic, we decided to create an online mood board using Lucidchart allowing us to pull together our ideas around textures, colours, art, photos, typography, patterns, and shapes. At this stage, we were starting to narrow down the specifics of our idea while working out what was feasible. 
 
 Please see figure below: 
 
@@ -50,7 +46,7 @@ Please see figure below:
 
 ### Paper prototyping
 
-Based on initial conversations with friends, family, and peers, we began drawing up some initial ideas of how we envisaged the application looking and working. We created a user walkthrough of our initial idea and created a Lucidchart to represent what users would see flow through the app with specific attributes associated with different pages/pop-ups. After creating come Lucidchart’s, Hugh made a short video with a final paper prototype of Flocus. 
+Based on initial conversations with friends, family, and peers, we began drawing up some initial ideas of how we envisaged the application looking and working. We created a user walkthrough of our initial idea and created a Lucidchart to represent what users would see flow through the app with specific attributes associated with different pages/pop-ups. After creating some Lucidchart’s, Hugh made a short video with a paper prototype of Flocus. 
 
 See the video below representing our paper prototyping with a digital twist: 
 
@@ -93,7 +89,7 @@ In the UK, 9 in 10 households have access to the internet [1] and, on average, a
 
 #### Future revenue streams
 
-We Identified two main methods in which Flocus could attract funding for ASAQUA: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy and as such, we decided not to pursue this. The prospect of introducing donations and subscriptions to Flocus will be pursued by Asaqua if they decide to do so.
+We Identified two main methods in which Flocus could attract funding for ASAQUA: ad revenues and user donations. To implement this, we looked at several sites that integrate advertisements and SMS/e-mail sign-ups in a natural way without disrupting overall site functionality. Examples include The Guardian, Facebook, and clothing brands such as ASOS. We also looked at sites such as The Daily Mail which offered a prime example of ad-cluttering which, is certainly something to avoid from a UX standpoint. Despite our previous considerations, we were concerned that the introduction of ads would potentially distract from the design process, resulting in a less user-friendly environment. Additionally, the role of building brand awareness may have been impacted by this funding strategy and as such, we decided not to pursue this. The prospect of introducing donations and subscriptions to Flocus will be pursued by ASAQUA if they decide to do so.
 
 #### University of Bristol
 
