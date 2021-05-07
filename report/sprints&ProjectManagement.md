@@ -37,7 +37,7 @@ We focused on an agile methodology that allowed for an iterative and flexible pr
 
 When approaching the development stage, we were naturally developing a plan around the SCRUM framework. While there are multiple frameworks that come under the agile methodology, the SCRUM framework suited this project because it provided the development team with a flexible and iterative process but gave each individual deadlines and targets to hit, something critical given the current climate of working from home. Everyone in the team had their role and targets but also had a strong understanding of what other team members were doing. This approach allowed us to focus on quality with the flexibility to change priorities as a team when challenges occurred, or we wanted to focus on a specific area before moving onto the next. 
 
-Initially, as a team we sat down (albeit virtually) and wrote a list of the key features and components that we wanted Flocus to include. We finalised our user personas and basic wireframes, which can be seen here (TODO). The below diagram ([link](https://devcom.com/tech-blog/agile-advantages-for-business/)) is a graphical representation of the cycle of agile development we aimed to follow as a group in the design, development, and implementation of our product.
+Initially, as a team we sat down (albeit virtually) and wrote a list of the key features and components that we wanted Flocus to include. We finalised our user personas and basic wireframes. The below diagram ([link](https://devcom.com/tech-blog/agile-advantages-for-business/)) is a graphical representation of the cycle of agile development we aimed to follow as a group in the design, development, and implementation of our product.
 
 <p align="center">
 <img src="../report/Images/methodology-agile.png" width=70%>
@@ -457,7 +457,7 @@ Our final sprint, Sprint 7, was characterised by the evaluation and final write-
 
 Our team created a remote repository on GitHub for collaboration and version control. The branches in our repository are the main branch and different personal branches. We used the main branch to maintain our latest production-ready working copy. During the sprints, each of our developers had their personal feature branch, where we made frequent commits to achieve effective version control. Once the newly developed features were ready to merge with the production-ready working copy on the main branch, we submitted a pull request and informed the entire team about the incoming changes. Following this, all developers were able to pull from the latest version, review the code and test the latest working copy with Docker.
 
-In addition to the main and the personal branches, we had also added a ‘release’ branch for Heroku deployment. The ‘release’ branch would only merge with the main branch when it is ready for deployment. In the ‘release’ branch, the server.js and db.js are correspondingly updated to redirect the application from Facebook to the deployed application after login, and to connect to the cloud database service.
+In addition to the main and the personal branches, we had also added a ‘release’ branch for Heroku deployment. The ‘release’ branch only merged with the main branch when it was ready for deployment. In the ‘release’ branch, the server.js and db.js are correspondingly updated to redirect the application from Facebook to the deployed application after login, and to connect to the cloud database service.
 
 <p align="center">
 <img src="../report/Images/git_diagram.png" width=70%>
