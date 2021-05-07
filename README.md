@@ -5,9 +5,9 @@
 
 ## Our Product
 
-Flocus is a single-page application (SPA) that aims to combat procrastination for university students studying on devices while raising awareness for the critical world issue of water scarcity. Our application uses a visual aid of a glass-fill animation as students work. The work schedule follows the principles of the Pomodoro technique, allowing users to work for 25 minutes followed by a short break. In this break, users will have the opportunity to learn more about water scarcity and ASAQUA, a charity that is working to improve water scarcity in developing nations.
+Flocus is a single-page application (SPA) that aims to combat procrastination for university students while raising awareness for the critical world issue of water scarcity in underdeveloped nations. Our application uses a visual aid of a glass-fill animation as students work. The work schedule follows the principles of the Pomodoro technique, allowing users to work for 25 minutes followed by a short break. In this break, users will have the opportunity to learn more about water scarcity and ASAQUA, a charity that is working to improve water scarcity in underdeveloped nations.
 
-Flocus provides a natural and relaxing studying environment whilst also encouraging good working practices. The league table offers a competitive incentive which, should help users reduce procrastination, increase productivity, and continue returning to the site. 
+Flocus provides a natural and relaxing study environment whilst also encouraging good study techniques. The league table offers a competitive incentive which should help users reduce procrastination, increase productivity, and continue returning to the site. 
 
 <p align = "center">Our aim is simple: combat procrastination and raise awareness for water scarcity one glass at a time!<p>
 
@@ -23,7 +23,7 @@ Flocus provides a natural and relaxing studying environment whilst also encourag
 2. Invite your friends to collaborate and compete.
 3. Visit the study area and turn on the tap to begin your session.
 4. When your glass is full, take a break and learn more about ASAQUA, the charity we have partnered with to raise awareness and funds for solving the water accessibility issue in developing nations.
-5. See your statistics and compare your work progress with your peers.
+5. See your statistics and compare your work progress with your friends and peers.
 
 ### Features of Flocus
 
@@ -34,7 +34,7 @@ Flocus provides a natural and relaxing studying environment whilst also encourag
 
 ## Our Target Market
 
-When designing Flocus, we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval times for students were focused on a clock timer. However, after initial informal focus groups and interviews with friends and peers, we identified that animations would be more suitable and more enticing to use given its novelty compared to a clock timer. Our application provides users with a useful but easy on the eye animation for a study interval while raising awareness for a key issue: water scarcity in underdeveloped nations. 
+When designing Flocus, we had two goals: to help students (like ourselves) reduce procrastination and raise awareness for a critical world issue. Many of the current interval timers for students were focused on a clock timer. However, after initial informal focus groups and interviews with friends and peers, we identified that animations would be more suitable and more enticing to use given its novelty compared to a clock timer. Our application provides users with a useful but easy-on-the-eye animation for a study interval while raising awareness for a key issue: water scarcity in underdeveloped nations. 
 
 ## Who are we passing Flocus onto?
 
@@ -43,7 +43,6 @@ When designing Flocus, we had two goals: to help students (like ourselves) reduc
 ASAQUA's mission statement:
 
 "We believe our water tanks can facilitate clean water accessibility in rural villages.  ASAQUA collaborates with committed locals, NGOs (Non-Governmental Organisations), and research institutes and strives for a sustainable future for our next generation. ASAQUA is dedicated to solving the water crisis in underdeveloped countries by offering an affordable rainwater harvesting solution."
-
 
 Their vision is a world where no child has to trudge miles every day to fetch water, and every individual has access to clean water.
 
@@ -78,7 +77,7 @@ Hugh's role has been focused on the front-end design and implementation alongsid
 
 - [**Jati Wicaksono**](https://github.com/jatiwicaksono98) (Username: CL20627)
 
-Jati's role has been focused on the back end with particular focus on building our API (application programming interfaces) and integrating with Facebook's API allowing login usability on the page. 
+Jati's role has been focused on the back-end with particular focus on building our API (application programming interfaces) and integrating with Facebook's API allowing login usability on the page. 
 
 - [**Gordon Tse**](https://github.com/gordon-tse) (Username: XV20486)
 
