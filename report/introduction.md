@@ -89,8 +89,9 @@ See the following key points that we used as a checklist to keep the team motiva
 
 See the video link below showing a brief explanation of our system and how we envisage consumers using Flocus. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cRzbT89weNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=cRzbT89weNE"><img src="https://img.youtube.com/vi/cRzbT89weNE/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
 <br>
 
 ## Project report navigation
