@@ -44,9 +44,11 @@ Below is a diagram displaying how each of the technologies within the stack inte
 </p>
 <b><p align= "center">Figure 1: Stack diagram </p></b>
 
+<br>
+
 MEAN stack was chosen due to its advantages, including:
 -	It has a large and helpful online community. There are several tutorials, lectures, and problem-solving articles or videos about MEAN stack on the web. 
--	Single programming language – this helps to create an easy working environment for full stack development.
+-	Single programming language – this helps to create an easy working environment for full-stack development.
 -	Supports automated testing – ensures readily available quality checks.
 -	Isomorphic coding – allows developers to switch to another framework without altering much of the original code.
 -	Support from the faculty, as the lectures and support provided was focused on MEAN stack.
@@ -86,7 +88,7 @@ According to the GitHub stars received on each of the front-end framework (Angul
 </p>
 <b><p align= "center">Figure 2: Number of stars on GitHub projects for Angular, React, and Vue</p></b>
 
-However, in terms of job searches on linked in, Angular is in first place ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)): 
+However, in terms of job searches on LinkedIn, Angular work is the most common ([link](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)): 
 
 <p align="center">
 <img src="../report/Images/angular_vs.png" width=75%>
@@ -116,16 +118,19 @@ Other than the previously discussed technologies, our application interacts with
 <b><p align= "center">Figure 5: The authentication process</p></b>
 
 We decided to make Facebook’s (FB) authentication the only sign-in method to access our application. The reasons behind this are:
+
 1.   FB’s API makes it convenient for users to find and connect with their friends on our app. The playful aspect of our application is to enable users to compete for the longest studying time among their friends and FB’s API automatically connects users with their friends on our application.
 2.   FB’s API enables one-click signup/login and, can provide essential user data (e.g. user’s name, user’s FB profile pic) without manual user input during the registration process.
 3.   FB’s API is well documented by Facebook. Furthermore, accessing FB’s API is made easy by PassportJS.
-4. There is also an abundance of external support provided by people around the world in the form of videos, articles, and QnA.
+4.   There is also an abundance of external support provided by people around the world in the form of videos, articles, and Q&A.
 
 The downside of using FB’s authentication is:
+
 1.   If our app is in development mode, FB does not allow real FB users, other than the app administrator, to login to our application. However, FB provides up to 2000 test users for the purposes of testing our application. Further details are going to be discussed in the unit testing section.
 2. To deploy our application, we need to follow FB’s app review process. Only after our application is approved, will real users be able to use our app.
 
 The procedure to use FB’s API is as follows:
+
 1. 	Create a FB account and go to the FB for developer’s site.
 2.	Create the application.
 3.  FB will return the ClientID number and Client Secret number. Enter the numbers into the PassportJS code when requested.
@@ -146,11 +151,11 @@ Successful and unsuccessful login attempts will redirect users back to the login
 <b><p align= "center">Figure 6: Application schema for the home page</p></b>
 <br>
 
-Inside the home page we provide three sections that a user can access. These are the study page, league page, and Asaqua page.
+Inside the home page we provide three sections that a user can access. These are the Study page, League page, and ASAQUA page.
 
 #### Study page
 
-Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes. The flowchart for how the timer works is shown in Figure 7 below.
+Inside the study page, we provide an empty glass and a start/stop button. When the button is clicked, a study session is created. The timer starts and the glass will start filling up. We decided to set one study session to be 25 minutes following the Pomodoro technique. The flowchart for how the timer works is shown in Figure 7 below.
 
 <br>
 
@@ -167,9 +172,7 @@ Inside the study page, we provide an empty glass and a start/stop button. When t
 
 When the league page is accessed, we process the user's data in our database (given the schema shown in the database section) to display each user's, and their friend's, total study time alongside their completed sessions for the week (from Monday to Sunday). Then, we sort and display the results based on who has completed the most sessions within the previous week. These results are displayed on a league table. The user's weekly progress is also displayed in a personal stats section. The associated designs are explained in the front-end system implementation. 
 
-Implementing the league table was more difficult than anticipated. We originally intended to use the RESTful API functions such as getFriendsUid() to get each user’s friends’ IDs which, would then allow us to use our getRecord() function, using the ids collected to form a league table. 
-
-However, it became clear that this was a mistake after realising how messy and extremely inefficient the code was. After careful discussion, we decided to create a new route in the API and use a MongoDB query in this route. A get function in /api/league used the MongoDB query to return an array of the user’s friend records for a specified time period. Initially, the query returned only the user’s id with their study records. However, there were changes made later to replace the ids returned with names instead.
+Implementing the league table was more difficult than anticipated. We originally intended to use the RESTful API functions, such as getFriendsUid(), to get each user’s friends’ IDs. This would allow us to use our getRecord() function, using the ids collected to form a league table. However, it became clear that this was a mistake after realising how messy and extremely inefficient the code was. After careful discussion, we decided to create a new route in the API and decided to use a MongoDB query for this route. A get function in /api/league used the MongoDB query to return an array of the user’s friend records for a specified time period. Initially, the query returned only the user’s id with their study records. However, there were changes made later to replace the ids returned with names instead.
 
 The changes made allowed for a single data service to be subscribed to. Unfortunately, the getLeague() function did not provide any information on the user’s score. Therefore, the league table currently does not include the user’s score.
 
@@ -209,10 +212,9 @@ The figure below represents how our application is used.
 
 ### Database implementation
 
-After the implementation of the authentication process, our backend developers had to create a separate collection, ‘Records’, in the database to persistently store study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a primary key to identify the record owner. We then created a REST API that handles the GET and POST requests which, retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
+After the implementation of the authentication process, our backend developers had to create a separate collection, ‘Records’, in the database to persistently store study time records. Our application maintains the data of a study session recorded by the user, namely the timestamp and the time spent during a session. Each record also contains the user's Facebook UID as a primary key to identify the record owner. We then created a RESTful API that handles the GET and POST requests which, retrieve a summary of previous records and write new records to the database through calling the corresponding methods in an angular data service.
 
 The backend developers decided to normalize the data storage, so the database separately stores the user’s information and usage data in two collections. Such an approach required fewer design decisions and is flexible when coping with unknown data storage demand. However, the drawback of this approach is that joining two collections becomes more complex to implement.
-
 
 <p align="center">
 <img src="../report/Images/dbImplement.png" width=75%>
@@ -221,7 +223,7 @@ The backend developers decided to normalize the data storage, so the database se
 
 ### Data model
 
-The above entity-relationship diagram shows that our database has a normalized set-up despite using a NoSQL database service. When a user logs into our application, Facebook’s passport API returns the necessary information to our server. This allows us to save and update the data associated with the user within the User Collection. This ensures all data is up to date for when the user logs into Flocus next time. It is particularly important for the league feature to retrieve data of the user’s friends, who have potentially joined our application, or have been added as a new Facebook friend by the user since their initial sign-up.
+The above entity-relationship diagram shows that our database has a normalised set-up despite using a NoSQL database service. When a user logs into our application, Facebook’s passport API returns the necessary information to our server. This allows us to save and update the data associated with the user within the User Collection. This ensures all data is up to date for when the user logs into Flocus next time. It is particularly important for the league feature to retrieve data of the user’s friends, who have potentially joined our application, or have been added as a new Facebook friend by the user since their initial sign-up.
 
 As a team, we agreed to use the UID given by Facebook as the primary key between the two data collections. The Record collection holds the user's record log, which is generated when a user has completed a session or leaves the study component before their work session is over. Such a data model keeps as much user data as possible. Therefore, it allows for flexible data retrieval when fulfilling the demands of different components and offers the potential for future extensions. For example, you can flexibly alter the timespan in which you require data from, by specifying the desired time start and time end parameters. This offers the opportunity for future developers to extend the competition period or to easily add new components to the application. When our application needs data from both collections (aka a join query in a SQL model), we perform multi-staged queries to the database. The database then handles all the computationally complex sorting and searching functions which, reduces the computational burden on our server.
 
@@ -251,7 +253,7 @@ As a team, we agreed to use the UID given by Facebook as the primary key between
 
 ### Introduction
 
-As discussed on the stack implementation section, the middle tier chosen for our application is NodeJS with the help of the ExpressJS framework. We utilised both NodeJS and ExpressJS to implement an API in our application. API stands for Application Programming Interface and its function is to allow our application to talk to other programs, such as Facebook or our database server. 
+As discussed in the stack implementation section, the middle tier chosen for our application is NodeJS with the help of the ExpressJS framework. We utilised both NodeJS and ExpressJS to implement an API in our application. API stands for Application Programming Interface and its function is to allow our application to talk to other programs, such as Facebook or our database server. 
 
 On this project, RESTful architecture has been implemented on our API. RESTful stands for Representational State Transfer and to be called RESTful, an API needs to follow these 6 constraints: 
 
@@ -285,7 +287,7 @@ Without ExpressJS:
 </p>
 <b><p align= "center">Figure 15: Implementation of API requests without using ExpressJS </p></b>
 
-By comparing the two above figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand/read. Therefore, in our application we decided to implement RESTful API using ExpressJS.
+By comparing the two above figures, it is evident that by using ExpressJS our code is much more robust, simple, and easier to understand. Therefore, in our application we decided to implement RESTful API using ExpressJS.
 
 Other than ExpressJS, we also used PassportJS to help with our Facebook authentication process.
 
@@ -340,7 +342,9 @@ Code explanation by section number:
 3.	If the user exists, the database is updated by emptying their friends’ array and filling the array with the latest friend’s data. The purpose is to check if there are any new friends joining the application.
 
 4.	If the user does not exist, the user’s id, name, profile picture, and friends are saved to our own database. The Friends data that is returned by Facebook is not a complete list of all the user’s friends but just a list of friends who have also signed-up with our application.
+
 <br>
+
 The figure below shows the pop-up displayed to the test user:
 
 <p align="center">
@@ -372,7 +376,7 @@ To call the API (i.e., to be able to redirect the user to the Facebook login pag
 <b><p align= "center">Figure 22: GET Facebook-API call </p></b>
 <br>
 
-The 'scope' is the most important to draw attention to as it includes the type of permission that we are going to use. The complete list of permission types on Facebook’s API can be found here(x). However, Flocus only uses the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is provided when the user offers their approval on the pop-up message. Upon the success or failure of authentication, a GET request on “/facebook/callback” is called and both outcomes will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which, is our login page. The processes that occur after this have been discussed in the previous system implementation sections.
+The 'scope' is the most important to draw attention to as it includes the type of permission that we are going to use. Flocus only uses the user_friends permission to get the user’s friends data. This means that all other data that is acquired by Flocus does not need any permission type to be acquired. It would only need the user’s permission, and this is provided when the user offers their approval on the pop-up message. Upon the success or failure of authentication, a GET request on “/facebook/callback” is called and both outcomes will redirect the user to GET “/toTheLogin” which is an API call to show us the index.html which, is our login page. The processes that occur after this have been discussed in the previous system implementation sections.
 
 As discussed previously, PassportJS provides us with the isAuthenticated() method which checks if the user is logged in or not. The function is implemented inside another function in our application which is shown in Figure 23 below.
 
@@ -385,7 +389,7 @@ As discussed previously, PassportJS provides us with the isAuthenticated() metho
 
 <br>
 
-Furthermore, the function, isLoggedIn(),  is implemented in all other API calls in the application. So, an API call will only proceed if the user is logged in. If not, the user will be redirected back to the home screen. The API calls that are used to retrieve a user's data is shown in Figure 24 below.
+Furthermore, the function, isLoggedIn(), is implemented in all other API calls in the application. So, an API call will only proceed if the user is logged in. If not, the user will be redirected back to the home screen. The API calls that are used to retrieve a user's data is shown in Figure 24 below.
 
 <br>
 
