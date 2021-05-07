@@ -89,7 +89,7 @@ See the following key points that we used as a checklist to keep the team motiva
 
 See the video link below showing a brief explanation of our system and how we envisage consumers using Flocus. 
 
-TODO --> [This will be a youtube link to a short screen recording of using our webpage.] 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cRzbT89weNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
