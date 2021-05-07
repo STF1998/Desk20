@@ -119,7 +119,7 @@ Absent of a specific ethical clearance by the University of Bristol, we had to c
 
 ### Design and development
 
-On the design side of the FLocus, if we had more time, we would have liked to do an extensive user study to develop a stronger understanding of potential areas of improvement. However, from discussions within the team, we have produced the following ideas for future design and development: 
+On the design side of the Flocus, if we had more time, we would have liked to do an extensive user study to develop a stronger understanding of potential areas of improvement. However, from discussions within the team, we have produced the following ideas for future design and development: 
 
 #### Login landing page
 
